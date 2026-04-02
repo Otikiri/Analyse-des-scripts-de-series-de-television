@@ -1,5 +1,7 @@
 import stats_lexical as sl
 import data_loader as dl
+from gensim import models
+from gensim import corpora
 
 # Chargements de donnees
 df = dl.chargerDonnees("/home/sv/Study/Analyse-des-scripts-de-series-de-television/datasets")
@@ -20,6 +22,27 @@ df = dl.chargerDonnees("/home/sv/Study/Analyse-des-scripts-de-series-de-televisi
 # print("\nfreq mots au cours du temps:")
 # print(sl.freqMotsAuCoursDuTemps(df))
 
-# sl.retrouverAlphaLDA(df,10)
+# sl.retrouverAlphaLDA(df,16)
 # print(df['token'].head(10))
-sl.retrouverNTopics(df)
+# topic_range=range(12,17)
+# sl.retrouverNTopics(df,topic_range)
+
+
+df = df[df['token'].apply(len)>0]
+textes = df['token'].tolist()
+
+dictionnaire = corpora.Dictionary(textes)
+corpus = [dictionnaire.doc2bow(texte) for texte in textes]
+model = models.LdaModel(
+    corpus=corpus,
+    num_topics=14,
+    id2word=dictionnaire,
+    passes=50,
+    alpha='auto',
+    eta='auto',
+    random_state=42
+)
+
+for i, topic in model.show_topics(num_topics=16, num_words=8, formatted=False):
+    words = [w for w, p in topic]
+    print(f"Topic {i+1}: {words}")

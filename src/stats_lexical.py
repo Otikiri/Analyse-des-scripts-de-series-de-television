@@ -139,7 +139,7 @@ def retrouverAlphaLDA(df,nTopics=5,alpha_values=
     df = df[df['token'].apply(len)>0]
     textes = df['token'].tolist()
     dictionnaire = corpora.Dictionary(textes)
-    dictionnaire.filter_extremes(no_below=10, no_above=0.3)
+    dictionnaire.filter_extremes(no_below=5, no_above=0.5)
     corpus = [dictionnaire.doc2bow(texte) for texte in textes]
 
     scores = []
@@ -148,8 +148,9 @@ def retrouverAlphaLDA(df,nTopics=5,alpha_values=
             corpus=corpus, 
             num_topics=nTopics, 
             id2word=dictionnaire,
-            passes=20, 
+            passes=50, 
             alpha=alpha,
+            eta='auto',
             random_state=42,
         )
         coherence = models.CoherenceModel(
@@ -195,7 +196,7 @@ def retrouverNTopics(df, topic_range=range(2, 15)):
     df = df[df['token'].apply(len)>0]
     textes = df['token'].tolist()
     dictionnaire = corpora.Dictionary(textes)
-    dictionnaire.filter_extremes(no_below=10, no_above=0.3)
+    dictionnaire.filter_extremes(no_below=5, no_above=0.5)
     corpus = [dictionnaire.doc2bow(texte) for texte in textes]
 
     scores = []
@@ -205,7 +206,8 @@ def retrouverNTopics(df, topic_range=range(2, 15)):
             num_topics=n,
             id2word=dictionnaire,
             passes=50,
-            alpha=0.3,      # best from your results
+            alpha='auto',
+            eta='auto',
             random_state=42
         )
         coherence = models.CoherenceModel(
