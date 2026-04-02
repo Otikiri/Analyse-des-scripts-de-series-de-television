@@ -3,13 +3,16 @@
 # ==========================================================
 import pandas as pd
 from collections import Counter
+from gensim import corpora
+from gensim import models
+import matplotlib.pyplot as plt
+import numpy as np
 # Module dependencies 
 import utils as ut
 
 #---------------------------------------------------------------
 # STATS GLOBAL DE MOTS
 #---------------------------------------------------------------
-
 
 # Tableau des statistiques des mots
 # Donne les statistiques globale sur tout les mots de la serie/saison
@@ -28,7 +31,6 @@ def donnerStatsMots(df):
             }
         )
     return pd.DataFrame(ligne)
-
 
 #---------------------------------------------------------------
 # FREQ DE MOTS PAR CONVERSATIONS
@@ -52,7 +54,6 @@ def freqMotsParConversation(df):
             })
     fmc=pd.DataFrame(lignes)
     return fmc
-
 
 #---------------------------------------------------------------
 # FREQ DE MOTS PAR ACTEUR
@@ -89,7 +90,7 @@ def freqMotsParActeur(df):
 def freqMotsParEpisode(df):
     lignes = []
     for (saison,episode), groupe in df.groupby(['saison','episode']):
-        ttMots = ut.retournerTokens(groupe)
+        ttMots = ut.retournerTtMots(groupe)
         compteur = Counter(ttMots)
         total = sum(compteur.values())
 
@@ -133,3 +134,100 @@ def freqMotsAuCoursDuTemps(df, motsASuivre=['love', 'wedding', 'coffee', 'baby',
     return nvDf
 
 
+def retrouverAlphaLDA(df,nTopics=5,alpha_values=
+    [0.01,0.1,0.3,0.4,0.5,0.6,0.7,0.8,0.9,'auto']): 
+    df = df[df['token'].apply(len)>0]
+    textes = df['token'].tolist()
+    dictionnaire = corpora.Dictionary(textes)
+    dictionnaire.filter_extremes(no_below=10, no_above=0.3)
+    corpus = [dictionnaire.doc2bow(texte) for texte in textes]
+
+    scores = []
+    for alpha in (alpha_values): 
+        model = models.LdaModel(
+            corpus=corpus, 
+            num_topics=nTopics, 
+            id2word=dictionnaire,
+            passes=20, 
+            alpha=alpha,
+            random_state=42,
+        )
+        coherence = models.CoherenceModel(
+            model=model, 
+            texts=textes, 
+            dictionary=dictionnaire, 
+            coherence='c_v'
+        ).get_coherence()
+        bound =model.log_perplexity(corpus)
+        perplexity = np.exp2(-bound)
+        scores.append({'alpha':alpha,'coherence':round(coherence,4),'perplexity':round(perplexity,4)})
+        print(f"alpha={alpha} → coherence={round(coherence, 4)} | perplexity={round(perplexity,4)}")
+    
+    #fonction de plot 
+    scores_df = pd.DataFrame(scores)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+
+    # use range(len()) for x positions instead of the alpha values directly
+    x = range(len(scores_df))
+    labels = scores_df['alpha'].astype(str)  # convert all to string for labels
+
+    ax1.bar(x, scores_df['perplexity'], color='steelblue')
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(labels, rotation=45)
+    ax1.set_title('Perplexity by Alpha (lower = better)')
+    ax1.set_xlabel('Alpha')
+    ax1.set_ylabel('Perplexity')
+
+    ax2.bar(x, scores_df['coherence'], color='green')
+    ax2.set_xticks(x)
+    ax2.set_xticklabels(labels, rotation=45)
+    ax2.set_title('Coherence by Alpha (higher = better)')
+    ax2.set_xlabel('Alpha')
+    ax2.set_ylabel('Coherence')
+
+    plt.suptitle(f'LDA Evaluation (n_topics={nTopics})')
+    plt.tight_layout()
+    plt.show()
+
+    return scores_df
+
+def retrouverNTopics(df, topic_range=range(2, 15)):
+    df = df[df['token'].apply(len)>0]
+    textes = df['token'].tolist()
+    dictionnaire = corpora.Dictionary(textes)
+    dictionnaire.filter_extremes(no_below=10, no_above=0.3)
+    corpus = [dictionnaire.doc2bow(texte) for texte in textes]
+
+    scores = []
+    for n in topic_range:
+        model =models.LdaModel(
+            corpus=corpus,
+            num_topics=n,
+            id2word=dictionnaire,
+            passes=50,
+            alpha=0.3,      # best from your results
+            random_state=42
+        )
+        coherence = models.CoherenceModel(
+            model=model,
+            texts=textes,
+            dictionary=dictionnaire,
+            coherence='c_v'
+        ).get_coherence()
+
+        scores.append({'n_topics': n, 'coherence': round(coherence, 4)})
+        print(f"n_topics={n} → coherence={round(coherence, 4)}")
+
+    scores_df = pd.DataFrame(scores)
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(scores_df['n_topics'], scores_df['coherence'], marker='o', color='steelblue')
+    plt.xlabel('Number of Topics')
+    plt.ylabel('Coherence Score')
+    plt.title('Coherence by Number of Topics')
+    plt.tight_layout()
+    plt.show()
+
+    best = scores_df.loc[scores_df['coherence'].idxmax()]
+    print(f"\nBest n_topics={best['n_topics']} → coherence={best['coherence']}")
+    return scores_df
