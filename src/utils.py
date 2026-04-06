@@ -48,6 +48,48 @@ motVide.update([
     'ross', 'rachel', 'monica', 'chandler', 'joey', 'phoebe',
 ])
 
+FRIENDS_FILLER = {
+    # Exclamations, laughs & reactions
+    "yeah", "oh", "okay", "ok", "hey", "well", "ooh", "wow", "aww",
+    "uh", "uhh", "hmm", "um", "uhm", "umm", "ohh", "ahh", "oooh", "ah", "huh", "god", "yes", "sure", "fine",
+    "great", "sorry", "please", "thank", "thanks", "dude", "alright", "ha", "haha",
+    "whoa", "oops", "shh", "totally", "kinda", "anyway", "hell", "yknow",
+
+    # Contractions without apostrophes (non-standard transcription formats)
+    "'s", "'t", "'re", "'m", "'d", "'ve", "'ll", "n't", "ca", "wo", "kay", "lookin", "cha",
+    "gon", "na", "wan", "ta", "gonna", "wanna", "gotta",
+    "dont", "doesnt", "didnt", "cant", "wont", "wouldnt", "couldnt", "shouldnt", "isnt",
+    "youre", "theres", "thats", "theyre", "shes", "hes", "whats", "ive", "ill",
+
+    # Generic verbs
+    "go", "get", "last","year", "got", "cut", "come", "let", "see", "say", "said",
+    "think", "know", "look", "want", "tell", "make", "take",
+    "give", "try", "put", "call", "stop", "feel", "wait", "would", "could", "do",
+    "need", "talk", "hear", "listen", "happen", "leave", "keep", "show", "find",
+    "believe", "care", "ask", "bring", "start", "sound", "turn", "hold", "use",
+    "understand", "thought", "used", "went",
+
+    # Generic adverbs / modifiers / time
+    "really", "right", "like", "just", "back", "still", "never", "first",
+    "little", "way", "maybe", "guess", "mean", "good", "thing", "time",
+    "one", "stuff", "even", "much", "actually", "already", "else", "another",
+    "also", "always", "around", "away", "two", "three", "us", "bad", "big",
+    "old", "new", "long", "hi", "hello", "bye", "goodbye", "morning", "night",
+    "tonight", "today", "tomorrow", "yesterday",
+    "ever", "next", "yet", "lot", "pretty", "nice", "cool", "minute", "cause", "bet",
+    "better", "every", "whole", "wrong", "together", "might", "since", "funny",
+    "best", "place", "people", "day", "name", "happened",
+
+    # Vague pronouns & Endearments
+    "something", "anything", "nothing", "everything", "someone",
+    "guy", "guys", "honey", "sweetie", "babe", "man", "boy", "girl", "woman", "lady",
+
+    "rach", "mon", "joe", "pheebs", "bing", "geller", "green", 
+    "buffay", "tribbiani", "hannigan", "zelner", "mr", "mrs", "dr", "sir", "miss"
+}
+
+motVide.update(FRIENDS_FILLER)
+
 # lemmatizer : permet de reduire des mots a leur racine
 lemmatizer = WordNetLemmatizer()
 
@@ -108,8 +150,11 @@ def retournerTokens(df):
 def joinTokens(tokens):
     return ' '.join([w for token in tokens for w in token])
 
+# ==============================================================
+# FONCTIONS D'AFFICHAGE
+# ==============================================================
 
-
+# Export de png du plot de l'evolution du mots
 def plotEvolutionMots(df):
     plt.figure(figsize=(10, 6))
     for mot in df['mot'].unique():
