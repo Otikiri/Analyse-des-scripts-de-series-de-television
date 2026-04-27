@@ -1,0 +1,579 @@
+,acteur,nb_lignes,nb_mots_total
+0,A Casino Boss,1,10
+1,A Crew Member,3,7
+2,A Disembodied Voice,1,2
+3,A Drunken Gambler,1,11
+4,A Female Student,1,8
+5,A Male Customer,1,9
+6,A Student,1,6
+7,A Tourist,1,8
+8,A Waiter,1,10
+9,A Waiter In Drag,1,6
+10,A Woman,3,15
+11,Actor,1,22
+12,Adoption Agency Guy,1,1
+13,Adrienne,2,12
+14,Agency Guy,11,110
+15,Air Stewardess,7,85
+16,Airline Employee,4,46
+17,Alan,6,47
+18,Alex,1,1
+19,Alexandra Steele,1,13
+20,Alice,42,546
+21,Alison,1,19
+22,All,328,821
+23,Allesandro,11,174
+24,Amanda,21,289
+25,Amber,5,28
+26,Amger,1,9
+27,Amy,125,1416
+28,Anchorwoman,1,55
+29,Andrea,2,10
+30,Angela,13,97
+31,Annabelle,7,46
+32,Another Extra,1,2
+33,Another Scientist,2,25
+34,Another Tour Guide,1,17
+35,Anxious Wedding Guest,4,9
+36,Arthur,2,10
+37,Ashley,1,5
+38,Assistant,11,135
+39,Attendant,1,6
+40,Aunt Iris,5,61
+41,Aunt Lillian,8,64
+42,Aunt Lisa,5,26
+43,Aunt Millie,3,19
+44,Aurora,29,216
+45,Ballerina,3,7
+46,Bandleader,3,45
+47,Bank Officer,2,28
+48,Barry,39,432
+49,Bass Singer,1,5
+50,Ben,77,260
+51,Benjamin,37,486
+52,Bernice,3,33
+53,Best Man,3,92
+54,Big Bully,22,164
+55,Big Nosed Rachel,11,206
+56,Bill,10,88
+57,Billy,10,82
+58,Billy Crystal,1,19
+59,Bitsy,16,148
+60,Bitter Lady,3,55
+61,Bitter Woman,1,11
+62,Blackjack Dealer,2,6
+63,Blonde Girl,1,5
+64,Bob,18,183
+65,Bobby,9,79
+66,Bonnie,8,44
+67,Boss,5,56
+68,Both,18,62
+69,Boy,1,1
+70,Boy In The Cape,6,36
+71,Boys,1,1
+72,Brenda,14,111
+73,Burt,3,31
+74,Cailin,6,47
+75,Caitlin,25,119
+76,Carl,9,96
+77,Carol,199,1527
+78,Caroline,6,57
+79,Casey,2,4
+80,Cashier,7,82
+81,Cassie,16,148
+82,Casting Assistant,1,7
+83,Casting Guy,4,16
+84,Catherine,4,52
+85,Cecilia,49,654
+86,Celia,6,25
+87,Chan,82,1162
+88,Chandler,8402,92175
+89,Chandlers,1,6
+90,Charity Guy,18,213
+91,Charlie,191,1872
+92,Charlton Heston,9,135
+93,Chase Lassiter,1,5
+94,Cheryl,17,116
+95,Chip,18,188
+96,Chloe,31,295
+97,Claudia,3,35
+98,Clerk,7,39
+99,Cliff,20,175
+100,Clown,1,2
+101,Colleen,9,92
+102,Coma Guy,7,44
+103,Conan,21,482
+104,Cookie,4,34
+105,Cop,14,198
+106,Courtney,14,156
+107,Cowgirl,1,6
+108,Croupler,2,11
+109,Customer,12,67
+110,Customers,1,2
+111,Cynthia,4,53
+112,Dan,7,51
+113,Dana,11,160
+114,Danielle,5,58
+115,Danny,58,424
+116,Dave,4,13
+117,David,137,1930
+118,Delivery Girl,1,2
+119,Delivery Guy,5,36
+120,Delivery Room Nurse,1,1
+121,Dennis Phillips,8,92
+122,Devon,4,35
+123,Dick Clark,2,28
+124,Dina,31,358
+125,Director,60,648
+126,Dirk,3,32
+127,Doctor,20,191
+128,Doctor Connelly,5,89
+129,Don,12,158
+130,Donny,11,254
+131,Donny Osmond,1,36
+132,Doug,50,774
+133,Dr Green,1,3
+134,Dr Horton,1,17
+135,Dream Joey,3,17
+136,Dream Monica,3,30
+137,Drew,4,57
+138,Drunk Man,2,24
+139,Drunken Gambler,2,9
+140,Duncan,20,228
+141,Earl,29,275
+142,Eddie,64,962
+143,Eldad,4,15
+144,Elizabeth,94,724
+145,Elizabeth Hornswoggle,1,1
+146,Emeril,1,21
+147,Emil Alexander,1,3
+148,Emily,167,1949
+149,Emma,1,2
+150,Employee,1,5
+151,Eric,68,866
+152,Erica,92,1055
+153,Erin,24,152
+154,Ernie,2,45
+155,Estelle,30,377
+156,Estl,6,151
+157,Everyone There,1,2
+158,Evil Bitch,6,53
+159,Extra,1,2
+160,Fake Monica,18,299
+161,Fat Girl,2,4
+162,Fat Joey,3,32
+163,Fat Monica,15,134
+164,Fbob,27,306
+165,Felicity,5,31
+166,Female Clerk,3,23
+167,Female Jeweler,1,7
+168,Female Student,1,4
+169,Fergie,3,27
+170,Fireman,1,2
+171,First Dorm Guy,2,6
+172,Flight Attendant,8,65
+173,Fran,7,60
+174,Frank,147,1752
+175,Frankie,2,18
+176,Frannie,7,65
+177,Fredrick,1,3
+178,French Phoebe,1,26
+179,Friend,4,67
+180,Front Desk Clerk,2,23
+181,Fun Bobby,2,50
+182,Gail,2,16
+183,Gang,6,10
+184,Gary,97,925
+185,Gary Collins,2,104
+186,Gate Agent,2,24
+187,Gavin,64,690
+188,Gene,27,136
+189,Gerston,2,11
+190,Gert,3,24
+191,Ginger,16,136
+192,Girl,26,122
+193,Girls,3,9
+194,Glenda,2,14
+195,Grandma Tribbiani,7,18
+196,Grandmother,18,278
+197,Gunter,1,7
+198,Gunther,130,976
+199,Guru Saj,13,186
+200,Guy,60,456
+201,Guy All The Way In The Back,1,4
+202,Guys,5,21
+203,Gym Employee,6,54
+204,Handyman,2,5
+205,Hayley,12,117
+206,Health Inspector,1,19
+207,Heather,1,2
+208,Helen,2,19
+209,Helena,18,216
+210,Henrietta,1,1
+211,Her Friend,1,5
+212,Her Friends,1,2
+213,Hilda,4,14
+214,Hillary,16,141
+215,Hitchhiker,6,35
+216,Hold Voice,4,44
+217,Hombre Man,9,31
+218,Hooker,4,45
+219,Hope,2,2
+220,Hoshi,4,56
+221,Host,4,72
+222,Hotel Clerk,3,30
+223,Housekeeper,5,72
+224,Intern,6,45
+225,Interviewer,27,231
+226,Isabella,10,64
+227,Issac,12,100
+228,Jack,19,120
+229,Jade,17,263
+230,Jake,5,27
+231,Jamie,11,70
+232,Jane,1,26
+233,Janice,216,2714
+234,Janine,92,836
+235,Janitor,13,178
+236,Jasmine,8,37
+237,Jason,15,144
+238,Jay Leno,5,118
+239,Jeanette,1,8
+240,Jeannie,2,23
+241,Jeannine,3,33
+242,Jen,5,34
+243,Jennifer,16,86
+244,Jessica Ashley,4,30
+245,Jessica Lockhart,4,25
+246,Jester,4,35
+247,Jill,83,885
+248,Jim,13,97
+249,Jo Lynn,1,19
+250,Joanna,73,817
+251,Joanne,5,43
+252,Joey,8236,93430
+253,Joey All Nervous,1,4
+254,Joey Groans And,1,33
+255,Joey Nods,1,1
+256,Joey On Tv,1,9
+257,Josh,5,43
+258,Joshua,98,941
+259,Judge,11,155
+260,Judy,10,118
+261,Julie,55,524
+262,Julio,13,104
+263,Kara,4,20
+264,Karin,2,39
+265,Kash,8,24
+266,Kate,61,608
+267,Kathy,91,817
+268,Katie,22,183
+269,Ken,5,76
+270,Kevin,2,36
+271,Kid,8,57
+272,Kids,3,6
+273,Kiki,4,40
+274,Kim,41,510
+275,Kitchen Worker,2,14
+276,Kori,7,88
+277,Krista,9,66
+278,Kristen,32,184
+279,Kristin,5,40
+280,Kyle,6,60
+281,Kyle Lowder,1,1
+282,Lady,4,59
+283,Larry,21,187
+284,Laura,28,246
+285,Lauren,25,207
+286,Leader,5,47
+287,Lecturer,2,36
+288,Lennart,33,465
+289,Leslie,18,270
+290,Lewis,10,92
+291,Liam,7,64
+292,Lipson,6,116
+293,Lisa,10,63
+294,Lisa Kudrow,2,6
+295,Little Bully,20,205
+296,Little Girl,7,15
+297,Lizzie,11,59
+298,Locksmith,1,3
+299,Looking Down And,1,4
+300,Lorraine,6,107
+301,Lowell,11,96
+302,Luisa,16,168
+303,Lydia,22,198
+304,Mac,2,48
+305,Mackenzie,11,98
+306,Malcom,14,164
+307,Male Guest,1,2
+308,Male Jeweler,10,66
+309,Male Nurse,2,2
+310,Male Student,1,1
+311,Man,57,377
+312,Man At The Wedding,3,17
+313,Man On Tv,3,6
+314,Man With A Bow Tie,2,22
+315,Manny,8,61
+316,Marc,7,53
+317,Marge,1,7
+318,Margha,11,81
+319,Marjorie,3,8
+320,Mark,52,491
+321,Marsha,4,45
+322,Mary Ellen,4,31
+323,Matress King,2,51
+324,Matt,15,244
+325,Matthew,8,84
+326,Matthew Ashford,2,9
+327,Matthew Perry,1,1
+328,Max,13,117
+329,Meg,2,42
+330,Megan,15,114
+331,Mel,1,4
+332,Melanie,8,123
+333,Melissa,33,485
+334,Mich,14,151
+335,Michelle,17,183
+336,Mike,358,3675
+337,Mindy,27,330
+338,Minister,13,198
+339,Minster,3,24
+340,Mischa,14,182
+341,Missy,10,53
+342,Mnca,107,1018
+343,Molly,17,117
+344,Mona,111,984
+345,Monica,8302,87789
+346,Morse,10,104
+347,Mover,3,9
+348,Mr A,8,99
+349,Mr Campbell,10,57
+350,Mr Zellner,3,10
+351,Mr Zelner,18,145
+352,Mrs Buffay,7,52
+353,Mrs Green,23,310
+354,Mugger,3,24
+355,Nancy,9,68
+356,Narrator,1,9
+357,Nina,14,88
+358,Nurse,53,476
+359,Old Woman,1,6
+360,Older Scientist,2,19
+361,Others,3,6
+362,Owen,10,35
+363,Pa,1,15
+364,Paleontologist,1,15
+365,Paolo,23,60
+366,Parker,33,432
+367,Party Guests,1,22
+368,Passenger,6,118
+369,Passerby,1,7
+370,Past Life Phoebe,1,20
+371,Patrick,3,14
+372,Patron,3,13
+373,Paul,133,1282
+374,Paula,6,104
+375,Paulo,3,9
+376,Pbs Volunteer,2,17
+377,Pete,103,1394
+378,Peter,1,10
+379,Petrie,1,6
+380,Phil,2,20
+381,Phoe,80,984
+382,Phoebe,7417,85149
+383,Phoebe Sr,15,288
+384,Photographer,5,58
+385,Pizza Guy,8,61
+386,Policeman,22,109
+387,Precious,11,138
+388,Priest On Tv,1,22
+389,Producer,3,35
+390,Professor Feesen,1,2
+391,Professor Sherman,1,2
+392,Professor Spafford,6,85
+393,Professore Clerk,1,8
+394,Prospective Nanny,4,49
+395,Quartet,5,68
+396,R Zelner,1,3
+397,Racel,1,6
+398,Rach,140,1712
+399,Rache,1,6
+400,Rachel,9145,101709
+401,Rahcel,2,6
+402,Ray,6,87
+403,Raymond,1,2
+404,Realtor,2,19
+405,Receptionist,34,336
+406,Referee,1,18
+407,Richard,256,2518
+408,Rick,10,70
+409,Rita,3,5
+410,Rob,15,170
+411,Robbie,5,5
+412,Robert,21,152
+413,Robin,10,127
+414,Robin Williams,1,4
+415,Roger,25,303
+416,Ronni,19,201
+417,Ross,9095,102510
+418,Roy,25,434
+419,Rtst,18,252
+420,Russ,23,128
+421,Russell,12,160
+422,Ryan,33,270
+423,Salesman,3,21
+424,Sally,2,39
+425,Salon Girl,3,20
+426,Sandy,31,440
+427,Santos,2,4
+428,Sarah,29,346
+429,Scott,4,29
+430,Sebastian,9,43
+431,Second Dorm Guy,1,4
+432,Second Girl,2,5
+433,Secretary,1,7
+434,Security Guard,4,40
+435,Sergei,7,16
+436,Shelley,12,114
+437,Sherman Whitfield,1,6
+438,Shop Assistant,1,3
+439,Sick Bastard,2,10
+440,Sid,2,18
+441,Singer,4,52
+442,Sleep Clinic Worker,3,29
+443,Smart Kid,1,8
+444,Sonia,4,39
+445,Soothing Male Voice,1,16
+446,Sophie,14,92
+447,Spokeswoman,2,45
+448,Stage Director,6,39
+449,Stage Manager,3,22
+450,Stanley,6,82
+451,Stephanie,14,71
+452,Steve,57,577
+453,Stevens,3,31
+454,Store Guy,2,20
+455,Strange Man,1,6
+456,Stranger,6,50
+457,Stripper,5,24
+458,Stu,6,47
+459,Student,9,73
+460,Supervisor,8,99
+461,Susan,113,843
+462,Susie,35,407
+463,Tag,146,1214
+464,Tall Guy,6,60
+465,Tattoo Artist,1,16
+466,Teacher,16,182
+467,Terry,19,175
+468,The Acting Teacher,1,20
+469,The Assistant Director,4,31
+470,The Attendant,1,10
+471,The Bass Barber,2,13
+472,The Casting Director,28,304
+473,The Chorus Line,2,2
+474,The Cigarette Guy,1,11
+475,The Cigarette Smoking Guy,1,12
+476,The Colonel,1,2
+477,The Conductor,2,13
+478,The Cooking Teacher,20,179
+479,The Croupier,3,15
+480,The Cute Guy,3,26
+481,The Director,55,562
+482,The Doctor,20,186
+483,The Dry Cleaner,13,92
+484,The Fan,8,95
+485,The Fireman,5,61
+486,The Flight Attendant,4,20
+487,The Food Critic,3,37
+488,The Girls,6,15
+489,The Grip,2,11
+490,The Guys,10,20
+491,The Head Librarian,2,35
+492,The Hot Girl,3,34
+493,The Housekeeper,1,6
+494,The Husband,1,1
+495,The Instructor,7,46
+496,The Interviewer,32,430
+497,The Knocker,1,7
+498,The Librarian,1,17
+499,The Little Girl,1,1
+500,The Lurker,6,40
+501,The Man,6,57
+502,The Man In The Sportscar,1,4
+503,The Museum Official,6,120
+504,The Old Man,2,6
+505,The Other Woman,1,2
+506,The Paramedic,1,12
+507,The Pastor,1,6
+508,The Photographer,2,22
+509,The Porsche Owner,6,57
+510,The Potential Roommate,7,19
+511,The Presenter,1,49
+512,The Producer,6,58
+513,The Professor,2,23
+514,The Rabbi,4,20
+515,The Saleslady,6,38
+516,The Salesman,21,226
+517,The Saleswoman,4,41
+518,The Second Guest,1,14
+519,The Security Guard,7,34
+520,The Singing Man,6,53
+521,The Smoking Woman,7,37
+522,The Stripper,11,116
+523,The Teacher,18,179
+524,The Vampire,1,28
+525,The Vendor,4,35
+526,The Waiter,16,97
+527,The Waitress,1,23
+528,The Wedding Guest,2,7
+529,The Whole Party,1,1
+530,The Woman,13,94
+531,The Woman Dealer,3,24
+532,The Woman From Poughkeepsie,1,9
+533,The Writer,1,5
+534,Theodore,9,71
+535,Ticket Agent,21,152
+536,Ticket Counter Attendant,5,41
+537,Tilly,8,45
+538,Tim,46,382
+539,Together,1,18
+540,Tom,15,119
+541,Tommy,21,254
+542,Tony,3,31
+543,Tour Guide,6,131
+544,Trainer,2,29
+545,Transit Authority Guy,1,12
+546,Trudie Styler,12,124
+547,Tv,2,17
+548,Tv Announcer,4,59
+549,Tv Doctor,1,10
+550,Uncle Dan,1,9
+551,Ursula,71,565
+552,Van Damme,14,147
+553,Vince,16,167
+554,Voice,4,38
+555,Waiter,53,525
+556,Waiter In Drag,2,8
+557,Waiters,2,16
+558,Waitress,7,45
+559,Wayne,11,107
+560,Wedding Planner,1,21
+561,Wendy,15,153
+562,Whitfield,5,42
+563,Whitney,8,51
+564,Will,51,446
+565,Witch,1,2
+566,Woman,106,775
+567,Woman At Door,2,7
+568,Woman At Door In A Sing Song Voice,1,1
+569,Woman At The Wedding,3,13
+570,Woman Giving Birth,1,6
+571,Woman On Train,4,48
+572,Woman On Tv,3,25
+573,Young Ethan,28,336
+574,Young Monica,1,2
+575,Young Ross,1,12
+576,Zack,20,178
+577,Zoe,1,6

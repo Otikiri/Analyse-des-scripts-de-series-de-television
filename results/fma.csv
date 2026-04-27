@@ -1,0 +1,6151 @@
+,acteur,mot,nb_fois,frequence_%
+0,A Casino Boss,work,1,50.0
+1,A Casino Boss,break,1,50.0
+2,A Crew Member,scene,2,100.0
+3,A Drunken Gambler,lucky,1,100.0
+4,A Male Customer,weird,1,50.0
+5,A Male Customer,birthday,1,50.0
+6,A Student,happening,1,50.0
+7,A Student,accent,1,50.0
+8,A Tourist,mind,1,50.0
+9,A Tourist,picture,1,50.0
+10,A Waiter,dragon,1,25.0
+11,A Waiter,tips,1,25.0
+12,A Waiter,monday,1,25.0
+13,A Waiter,tuesday,1,25.0
+14,A Waiter In Drag,taken,1,50.0
+15,A Waiter In Drag,order,1,50.0
+16,A Woman,taking,1,25.0
+17,A Woman,whatever,1,25.0
+18,A Woman,comes,1,25.0
+19,A Woman,hurry,1,25.0
+20,Actor,glove,1,12.5
+21,Actor,upon,1,12.5
+22,Actor,hand,1,12.5
+23,Actor,touch,1,12.5
+24,Actor,thy,1,12.5
+25,Actor,cheek,1,12.5
+26,Actor,casting,1,12.5
+27,Actor,director,1,12.5
+28,Adrienne,telling,1,50.0
+29,Adrienne,anybody,1,50.0
+30,Agency Guy,erica,3,13.6364
+31,Agency Guy,comfortable,1,4.5455
+32,Agency Guy,moment,1,4.5455
+33,Agency Guy,meet,1,4.5455
+34,Agency Guy,acquainted,1,4.5455
+35,Agency Guy,question,1,4.5455
+36,Agency Guy,system,1,4.5455
+37,Agency Guy,assures,1,4.5455
+38,Agency Guy,total,1,4.5455
+39,Agency Guy,anonimity,1,4.5455
+40,Agency Guy,proud,1,4.5455
+41,Agency Guy,preliminary,1,4.5455
+42,Agency Guy,forms,1,4.5455
+43,Agency Guy,open,1,4.5455
+44,Agency Guy,adoption,1,4.5455
+45,Agency Guy,explain,1,4.5455
+46,Agency Guy,impossible,1,4.5455
+47,Agency Guy,check,1,4.5455
+48,Agency Guy,file,1,4.5455
+49,Agency Guy,excuse,1,4.5455
+50,Air Stewardess,passenger,5,26.3158
+51,Air Stewardess,philange,4,21.0526
+52,Air Stewardess,plane,3,15.7895
+53,Air Stewardess,sit,2,10.5263
+54,Air Stewardess,excuse,1,5.2632
+55,Air Stewardess,left,1,5.2632
+56,Air Stewardess,flying,1,5.2632
+57,Air Stewardess,afraid,1,5.2632
+58,Air Stewardess,seat,1,5.2632
+59,Airline Employee,may,1,11.1111
+60,Airline Employee,tickets,1,11.1111
+61,Airline Employee,move,1,11.1111
+62,Airline Employee,thumb,1,11.1111
+63,Airline Employee,seat,1,11.1111
+64,Airline Employee,number,1,11.1111
+65,Airline Employee,class,1,11.1111
+66,Airline Employee,ticket,1,11.1111
+67,Airline Employee,afraid,1,11.1111
+68,Alan,alan,1,11.1111
+69,Alan,heard,1,11.1111
+70,Alan,schho,1,11.1111
+71,Alan,guyschh,1,11.1111
+72,Alan,relieved,1,11.1111
+73,Alan,stand,1,11.1111
+74,Alan,friends,1,11.1111
+75,Alan,closing,1,11.1111
+76,Alan,credits,1,11.1111
+77,Alexandra Steele,coasts,1,20.0
+78,Alexandra Steele,beautiful,1,20.0
+79,Alexandra Steele,weather,1,20.0
+80,Alexandra Steele,york,1,20.0
+81,Alexandra Steele,sunny,1,20.0
+82,Alice,frank,6,6.383
+83,Alice,babies,5,5.3191
+84,Alice,none,3,3.1915
+85,Alice,baby,3,3.1915
+86,Alice,kids,2,2.1277
+87,Alice,age,2,2.1277
+88,Alice,love,2,2.1277
+89,Alice,though,2,2.1277
+90,Alice,less,2,2.1277
+91,Alice,doctors,2,2.1277
+92,Alice,home,2,2.1277
+93,Alice,family,2,2.1277
+94,Alice,pictured,1,1.0638
+95,Alice,student,1,1.0638
+96,Alice,talked,1,1.0638
+97,Alice,living,1,1.0638
+98,Alice,realise,1,1.0638
+99,Alice,difference,1,1.0638
+100,Alice,comes,1,1.0638
+101,Alice,matter,1,1.0638
+102,Alison,major,1,20.0
+103,Alison,useless,1,20.0
+104,Alison,often,1,20.0
+105,Alison,classifieds,1,20.0
+106,Alison,philosopher,1,20.0
+107,All,yay,7,4.0936
+108,All,surprise,5,2.924
+109,All,nooo,4,2.3392
+110,All,luck,4,2.3392
+111,All,credits,4,2.3392
+112,All,kidding,3,1.7544
+113,All,punch,3,1.7544
+114,All,end,3,1.7544
+115,All,love,3,1.7544
+116,All,absolutely,3,1.7544
+117,All,shoot,3,1.7544
+118,All,drop,3,1.7544
+119,All,woah,3,1.7544
+120,All,nubbin,3,1.7544
+121,All,celebrating,3,1.7544
+122,All,sweet,2,1.1696
+123,All,mmm,2,1.1696
+124,All,help,2,1.1696
+125,All,seat,2,1.1696
+126,All,candy,2,1.1696
+127,Allesandro,allesandro,2,4.3478
+128,Allesandro,review,2,4.3478
+129,Allesandro,chef,2,4.3478
+130,Allesandro,hang,1,2.1739
+131,Allesandro,chance,1,2.1739
+132,Allesandro,retraction,1,2.1739
+133,Allesandro,food,1,2.1739
+134,Allesandro,inedible,1,2.1739
+135,Allesandro,swill,1,2.1739
+136,Allesandro,service,1,2.1739
+137,Allesandro,grossly,1,2.1739
+138,Allesandro,incompetent,1,2.1739
+139,Allesandro,except,1,2.1739
+140,Allesandro,discover,1,2.1739
+141,Allesandro,card,1,2.1739
+142,Allesandro,proud,1,2.1739
+143,Allesandro,sauce,1,2.1739
+144,Allesandro,delicious,1,2.1739
+145,Allesandro,lebanon,1,2.1739
+146,Allesandro,critic,1,2.1739
+147,Amanda,gosh,4,5.5556
+148,Amanda,flat,2,2.7778
+149,Amanda,remember,2,2.7778
+150,Amanda,appreciate,2,2.7778
+151,Amanda,amanda,1,1.3889
+152,Amanda,calling,1,1.3889
+153,Amanda,neighborhood,1,1.3889
+154,Amanda,hoping,1,1.3889
+155,Amanda,pop,1,1.3889
+156,Amanda,assure,1,1.3889
+157,Amanda,directly,1,1.3889
+158,Amanda,ring,1,1.3889
+159,Amanda,mobile,1,1.3889
+160,Amanda,young,1,1.3889
+161,Amanda,catch,1,1.3889
+162,Amanda,touch,1,1.3889
+163,Amanda,abs,1,1.3889
+164,Amanda,exercise,1,1.3889
+165,Amanda,married,1,1.3889
+166,Amanda,smell,1,1.3889
+167,Amber,drake,4,44.4444
+168,Amber,remore,2,22.2222
+169,Amber,amber,1,11.1111
+170,Amber,half,1,11.1111
+171,Amber,brother,1,11.1111
+172,Amger,love,1,25.0
+173,Amger,drake,1,25.0
+174,Amger,remore,1,25.0
+175,Amger,whatever,1,25.0
+176,Amy,baby,11,3.7543
+177,Amy,sister,5,1.7065
+178,Amy,help,5,1.7065
+179,Amy,ella,4,1.3652
+180,Amy,amy,3,1.0239
+181,Amy,married,3,1.0239
+182,Amy,apartment,3,1.0239
+183,Amy,boyfriend,3,1.0239
+184,Amy,myron,3,1.0239
+185,Amy,babies,3,1.0239
+186,Amy,fat,3,1.0239
+187,Amy,real,3,1.0239
+188,Amy,emma,3,1.0239
+189,Amy,hair,3,1.0239
+190,Amy,straightener,3,1.0239
+191,Amy,high,3,1.0239
+192,Amy,charlie,2,0.6826
+193,Amy,falafel,2,0.6826
+194,Amy,days,2,0.6826
+195,Amy,lives,2,0.6826
+196,Anchorwoman,live,2,9.5238
+197,Anchorwoman,chocolate,1,4.7619
+198,Anchorwoman,bunnies,1,4.7619
+199,Anchorwoman,baskets,1,4.7619
+200,Anchorwoman,traditional,1,4.7619
+201,Anchorwoman,easter,1,4.7619
+202,Anchorwoman,gifts,1,4.7619
+203,Anchorwoman,insist,1,4.7619
+204,Anchorwoman,giving,1,4.7619
+205,Anchorwoman,chicks,1,4.7619
+206,Anchorwoman,presents,1,4.7619
+207,Anchorwoman,unfortunately,1,4.7619
+208,Anchorwoman,sad,1,4.7619
+209,Anchorwoman,fact,1,4.7619
+210,Anchorwoman,remains,1,4.7619
+211,Anchorwoman,fourth,1,4.7619
+212,Anchorwoman,july,1,4.7619
+213,Anchorwoman,result,1,4.7619
+214,Anchorwoman,improper,1,4.7619
+215,Anchorwoman,dead,1,4.7619
+216,Andrea,dorothy,1,50.0
+217,Andrea,daughter,1,50.0
+218,Angela,bob,3,13.6364
+219,Angela,friends,2,9.0909
+220,Angela,wearing,1,4.5455
+221,Angela,dress,1,4.5455
+222,Angela,accents,1,4.5455
+223,Angela,boobs,1,4.5455
+224,Angela,forget,1,4.5455
+225,Angela,smart,1,4.5455
+226,Angela,sophisticated,1,4.5455
+227,Angela,real,1,4.5455
+228,Angela,job,1,4.5455
+229,Angela,auditions,1,4.5455
+230,Angela,month,1,4.5455
+231,Angela,actor,1,4.5455
+232,Angela,four,1,4.5455
+233,Angela,brooklyn,1,4.5455
+234,Angela,heights,1,4.5455
+235,Angela,unbelievable,1,4.5455
+236,Angela,bed,1,4.5455
+237,Annabelle,nobody,1,16.6667
+238,Annabelle,knows,1,16.6667
+239,Annabelle,girls,1,16.6667
+240,Annabelle,hombre,1,16.6667
+241,Annabelle,sorta,1,16.6667
+242,Annabelle,plans,1,16.6667
+243,Another Scientist,scott,1,12.5
+244,Another Scientist,flip,1,12.5
+245,Another Scientist,light,1,12.5
+246,Another Scientist,switch,1,12.5
+247,Another Scientist,times,1,12.5
+248,Another Scientist,room,1,12.5
+249,Another Scientist,family,1,12.5
+250,Another Scientist,die,1,12.5
+251,Another Tour Guide,ted,1,16.6667
+252,Another Tour Guide,moved,1,16.6667
+253,Another Tour Guide,month,1,16.6667
+254,Another Tour Guide,ago,1,16.6667
+255,Another Tour Guide,york,1,16.6667
+256,Another Tour Guide,scares,1,16.6667
+257,Anxious Wedding Guest,car,1,50.0
+258,Anxious Wedding Guest,blue,1,50.0
+259,Arthur,security,1,50.0
+260,Arthur,fired,1,50.0
+261,Assistant,red,2,6.0606
+262,Assistant,light,2,6.0606
+263,Assistant,spraying,2,6.0606
+264,Assistant,count,2,6.0606
+265,Assistant,five,2,6.0606
+266,Assistant,dark,1,3.0303
+267,Assistant,puerto,1,3.0303
+268,Assistant,rican,1,3.0303
+269,Assistant,face,1,3.0303
+270,Assistant,goes,1,3.0303
+271,Assistant,close,1,3.0303
+272,Assistant,eyes,1,3.0303
+273,Assistant,stops,1,3.0303
+274,Assistant,pat,1,3.0303
+275,Assistant,avoid,1,3.0303
+276,Assistant,drip,1,3.0303
+277,Assistant,marks,1,3.0303
+278,Assistant,catch,1,3.0303
+279,Assistant,quick,1,3.0303
+280,Assistant,turned,1,3.0303
+281,Attendant,running,1,50.0
+282,Attendant,chapel,1,50.0
+283,Aunt Iris,tony,1,5.5556
+284,Aunt Iris,randall,1,5.5556
+285,Aunt Iris,dead,1,5.5556
+286,Aunt Iris,may,1,5.5556
+287,Aunt Iris,hit,1,5.5556
+288,Aunt Iris,car,1,5.5556
+289,Aunt Iris,bluffing,1,5.5556
+290,Aunt Iris,lesson,1,5.5556
+291,Aunt Iris,number,1,5.5556
+292,Aunt Iris,poker,1,5.5556
+293,Aunt Iris,game,1,5.5556
+294,Aunt Iris,pure,1,5.5556
+295,Aunt Iris,crap,1,5.5556
+296,Aunt Iris,earrings,1,5.5556
+297,Aunt Iris,girls,1,5.5556
+298,Aunt Iris,sit,1,5.5556
+299,Aunt Iris,parked,1,5.5556
+300,Aunt Iris,meter,1,5.5556
+301,Aunt Lillian,may,2,14.2857
+302,Aunt Lillian,died,2,14.2857
+303,Aunt Lillian,doctor,1,7.1429
+304,Aunt Lillian,says,1,7.1429
+305,Aunt Lillian,matter,1,7.1429
+306,Aunt Lillian,hours,1,7.1429
+307,Aunt Lillian,whatever,1,7.1429
+308,Aunt Lillian,pick,1,7.1429
+309,Aunt Lillian,shoes,1,7.1429
+310,Aunt Lillian,slimmer,1,7.1429
+311,Aunt Lillian,heel,1,7.1429
+312,Aunt Lillian,burgundy,1,7.1429
+313,Aunt Lisa,congratulations,1,11.1111
+314,Aunt Lisa,baby,1,11.1111
+315,Aunt Lisa,wedding,1,11.1111
+316,Aunt Lisa,married,1,11.1111
+317,Aunt Lisa,life,1,11.1111
+318,Aunt Lisa,treating,1,11.1111
+319,Aunt Lisa,looked,1,11.1111
+320,Aunt Lisa,beautiful,1,11.1111
+321,Aunt Lisa,sweet,1,11.1111
+322,Aunt Millie,beautiful,1,25.0
+323,Aunt Millie,wedding,1,25.0
+324,Aunt Millie,leaving,1,25.0
+325,Aunt Millie,kiss,1,25.0
+326,Aurora,rick,2,5.2632
+327,Aurora,ethan,2,5.2632
+328,Aurora,luckily,1,2.6316
+329,Aurora,none,1,2.6316
+330,Aurora,bullets,1,2.6316
+331,Aurora,hit,1,2.6316
+332,Aurora,engine,1,2.6316
+333,Aurora,block,1,2.6316
+334,Aurora,made,1,2.6316
+335,Aurora,border,1,2.6316
+336,Aurora,barely,1,2.6316
+337,Aurora,stories,1,2.6316
+338,Aurora,sudden,1,2.6316
+339,Aurora,realised,1,2.6316
+340,Aurora,yammon,1,2.6316
+341,Aurora,husband,1,2.6316
+342,Aurora,married,1,2.6316
+343,Aurora,worry,1,2.6316
+344,Aurora,imagine,1,2.6316
+345,Aurora,mmmm,1,2.6316
+346,Ballerina,love,1,100.0
+347,Bandleader,ladies,1,11.1111
+348,Bandleader,gentlemen,1,11.1111
+349,Bandleader,gives,1,11.1111
+350,Bandleader,pleasure,1,11.1111
+351,Bandleader,introduce,1,11.1111
+352,Bandleader,everyone,1,11.1111
+353,Bandleader,seats,1,11.1111
+354,Bandleader,dinner,1,11.1111
+355,Bandleader,served,1,11.1111
+356,Bank Officer,lambert,2,22.2222
+357,Bank Officer,close,1,11.1111
+358,Bank Officer,accounts,1,11.1111
+359,Bank Officer,kind,1,11.1111
+360,Bank Officer,problem,1,11.1111
+361,Bank Officer,handles,1,11.1111
+362,Bank Officer,closures,1,11.1111
+363,Bank Officer,karen,1,11.1111
+364,Barry,mindy,8,11.5942
+365,Barry,aruba,3,4.3478
+366,Barry,hurt,3,4.3478
+367,Barry,happy,3,4.3478
+368,Barry,love,3,4.3478
+369,Barry,weekend,2,2.8986
+370,Barry,bernice,2,2.8986
+371,Barry,whatever,2,2.8986
+372,Barry,gim,2,2.8986
+373,Barry,robbie,1,1.4493
+374,Barry,hours,1,1.4493
+375,Barry,doin,1,1.4493
+376,Barry,sec,1,1.4493
+377,Barry,may,1,1.4493
+378,Barry,kind,1,1.4493
+379,Barry,careful,1,1.4493
+380,Barry,quite,1,1.4493
+381,Barry,taken,1,1.4493
+382,Barry,month,1,1.4493
+383,Barry,ago,1,1.4493
+384,Bass Singer,likes,1,50.0
+385,Bass Singer,buttmunch,1,50.0
+386,Ben,santa,10,13.3333
+387,Ben,dad,3,4.0
+388,Ben,daddy,3,4.0
+389,Ben,coming,3,4.0
+390,Ben,damnit,3,4.0
+391,Ben,bang,3,4.0
+392,Ben,break,2,2.6667
+393,Ben,pranks,2,2.6667
+394,Ben,crap,2,2.6667
+395,Ben,christmas,2,2.6667
+396,Ben,jingle,2,2.6667
+397,Ben,bells,2,2.6667
+398,Ben,yay,1,1.3333
+399,Ben,allowed,1,1.3333
+400,Ben,soda,1,1.3333
+401,Ben,virgin,1,1.3333
+402,Ben,anymore,1,1.3333
+403,Ben,sharing,1,1.3333
+404,Ben,gotcha,1,1.3333
+405,Ben,remember,1,1.3333
+406,Benjamin,charlie,4,3.3333
+407,Benjamin,biely,4,3.3333
+408,Benjamin,likewise,2,1.6667
+409,Benjamin,break,2,1.6667
+410,Benjamin,feelings,2,1.6667
+411,Benjamin,joking,2,1.6667
+412,Benjamin,based,2,1.6667
+413,Benjamin,field,2,1.6667
+414,Benjamin,certainly,2,1.6667
+415,Benjamin,baby,2,1.6667
+416,Benjamin,apologize,2,1.6667
+417,Benjamin,spell,2,1.6667
+418,Benjamin,may,2,1.6667
+419,Benjamin,interview,2,1.6667
+420,Benjamin,grant,2,1.6667
+421,Benjamin,love,2,1.6667
+422,Benjamin,absolutely,1,0.8333
+423,Benjamin,stunning,1,0.8333
+424,Benjamin,heard,1,0.8333
+425,Benjamin,chose,1,0.8333
+426,Bernice,farber,3,20.0
+427,Bernice,jason,2,13.3333
+428,Bernice,greenstein,1,6.6667
+429,Bernice,gagging,1,6.6667
+430,Bernice,bobby,1,6.6667
+431,Bernice,rush,1,6.6667
+432,Bernice,adjustment,1,6.6667
+433,Bernice,bit,1,6.6667
+434,Bernice,emergency,1,6.6667
+435,Bernice,costalano,1,6.6667
+436,Bernice,choking,1,6.6667
+437,Bernice,retainer,1,6.6667
+438,Best Man,attention,1,5.2632
+439,Best Man,making,1,5.2632
+440,Best Man,toast,1,5.2632
+441,Best Man,remember,1,5.2632
+442,Best Man,barry,1,5.2632
+443,Best Man,home,1,5.2632
+444,Best Man,date,1,5.2632
+445,Best Man,hired,1,5.2632
+446,Best Man,band,1,5.2632
+447,Best Man,speech,1,5.2632
+448,Best Man,wish,1,5.2632
+449,Best Man,wonderful,1,5.2632
+450,Best Man,life,1,5.2632
+451,Best Man,seriousness,1,5.2632
+452,Best Man,women,1,5.2632
+453,Best Man,guts,1,5.2632
+454,Best Man,fewer,1,5.2632
+455,Best Man,asses,1,5.2632
+456,Best Man,hanging,1,5.2632
+457,Big Bully,clear,2,5.4054
+458,Big Bully,faces,2,5.4054
+459,Big Bully,walks,1,2.7027
+460,Big Bully,counter,1,2.7027
+461,Big Bully,seats,1,2.7027
+462,Big Bully,problem,1,2.7027
+463,Big Bully,hehehehey,1,2.7027
+464,Big Bully,wear,1,2.7027
+465,Big Bully,hat,1,2.7027
+466,Big Bully,enough,1,2.7027
+467,Big Bully,couch,1,2.7027
+468,Big Bully,belongs,1,2.7027
+469,Big Bully,wondering,1,2.7027
+470,Big Bully,sitting,1,2.7027
+471,Big Bully,realize,1,2.7027
+472,Big Bully,outside,1,2.7027
+473,Big Bully,kick,1,2.7027
+474,Big Bully,ass,1,2.7027
+475,Big Bully,talks,1,2.7027
+476,Big Bully,watch,1,2.7027
+477,Big Nosed Rachel,chip,5,11.9048
+478,Big Nosed Rachel,dumped,2,4.7619
+479,Big Nosed Rachel,slut,2,4.7619
+480,Big Nosed Rachel,nancy,2,4.7619
+481,Big Nosed Rachel,branson,2,4.7619
+482,Big Nosed Rachel,boys,2,4.7619
+483,Big Nosed Rachel,silly,2,4.7619
+484,Big Nosed Rachel,broke,1,2.381
+485,Big Nosed Rachel,parents,1,2.381
+486,Big Nosed Rachel,town,1,2.381
+487,Big Nosed Rachel,sex,1,2.381
+488,Big Nosed Rachel,creeps,1,2.381
+489,Big Nosed Rachel,called,1,2.381
+490,Big Nosed Rachel,tenderness,1,2.381
+491,Big Nosed Rachel,happy,1,2.381
+492,Big Nosed Rachel,thanksgiving,1,2.381
+493,Big Nosed Rachel,sweethart,1,2.381
+494,Big Nosed Rachel,ugh,1,2.381
+495,Big Nosed Rachel,begs,1,2.381
+496,Big Nosed Rachel,high,1,2.381
+497,Bill,adopting,2,11.1111
+498,Bill,owen,2,11.1111
+499,Bill,process,1,5.5556
+500,Bill,frustrating,1,5.5556
+501,Bill,worth,1,5.5556
+502,Bill,snacks,1,5.5556
+503,Bill,everybody,1,5.5556
+504,Bill,eat,1,5.5556
+505,Bill,sour,1,5.5556
+506,Bill,worms,1,5.5556
+507,Bill,spuds,1,5.5556
+508,Bill,grandmother,1,5.5556
+509,Bill,boyfriend,1,5.5556
+510,Bill,situation,1,5.5556
+511,Bill,number,1,5.5556
+512,Bill,later,1,5.5556
+513,Billy,thomas,2,14.2857
+514,Billy,move,1,7.1429
+515,Billy,bit,1,7.1429
+516,Billy,matter,1,7.1429
+517,Billy,bowling,1,7.1429
+518,Billy,somebody,1,7.1429
+519,Billy,shoes,1,7.1429
+520,Billy,heeled,1,7.1429
+521,Billy,nobody,1,7.1429
+522,Billy,sleeping,1,7.1429
+523,Billy,wife,1,7.1429
+524,Billy,private,1,7.1429
+525,Billy,conversation,1,7.1429
+526,Billy Crystal,excuse,1,33.3333
+527,Billy Crystal,crowded,1,33.3333
+528,Billy Crystal,mind,1,33.3333
+529,Bitsy,meet,2,5.7143
+530,Bitsy,finally,1,2.8571
+531,Bitsy,tour,1,2.8571
+532,Bitsy,later,1,2.8571
+533,Bitsy,floors,1,2.8571
+534,Bitsy,living,1,2.8571
+535,Bitsy,room,1,2.8571
+536,Bitsy,friends,1,2.8571
+537,Bitsy,sit,1,2.8571
+538,Bitsy,bit,1,2.8571
+539,Bitsy,excuse,1,2.8571
+540,Bitsy,makes,1,2.8571
+541,Bitsy,pill,1,2.8571
+542,Bitsy,popping,1,2.8571
+543,Bitsy,wife,1,2.8571
+544,Bitsy,dear,1,2.8571
+545,Bitsy,chit,1,2.8571
+546,Bitsy,chatting,1,2.8571
+547,Bitsy,friend,1,2.8571
+548,Bitsy,moving,1,2.8571
+549,Bitter Lady,chapter,2,20.0
+550,Bitter Lady,period,1,10.0
+551,Bitter Lady,thinkin,1,10.0
+552,Bitter Lady,intermission,1,10.0
+553,Bitter Lady,life,1,10.0
+554,Bitter Lady,intermissions,1,10.0
+555,Bitter Lady,divorce,1,10.0
+556,Bitter Lady,letter,1,10.0
+557,Bitter Lady,word,1,10.0
+558,Bitter Woman,chapter,1,50.0
+559,Bitter Woman,period,1,50.0
+560,Blackjack Dealer,changing,1,33.3333
+561,Blackjack Dealer,hundred,1,33.3333
+562,Blackjack Dealer,luck,1,33.3333
+563,Blonde Girl,leaving,1,100.0
+564,Bob,toby,8,18.6047
+565,Bob,found,2,4.6512
+566,Bob,office,2,4.6512
+567,Bob,cleveland,1,2.3256
+568,Bob,yep,1,2.3256
+569,Bob,noticed,1,2.3256
+570,Bob,complaints,1,2.3256
+571,Bob,move,1,2.3256
+572,Bob,less,1,2.3256
+573,Bob,high,1,2.3256
+574,Bob,profile,1,2.3256
+575,Bob,spot,1,2.3256
+576,Bob,ginger,1,2.3256
+577,Bob,corner,1,2.3256
+578,Bob,either,1,2.3256
+579,Bob,remove,1,2.3256
+580,Bob,pal,1,2.3256
+581,Bob,sec,1,2.3256
+582,Bob,meeting,1,2.3256
+583,Bob,hoping,1,2.3256
+584,Bobby,band,2,10.0
+585,Bobby,farber,1,5.0
+586,Bobby,twelve,1,5.0
+587,Bobby,stupid,1,5.0
+588,Bobby,dina,1,5.0
+589,Bobby,took,1,5.0
+590,Bobby,hit,1,5.0
+591,Bobby,high,1,5.0
+592,Bobby,hopes,1,5.0
+593,Bobby,pal,1,5.0
+594,Bobby,rooster,1,5.0
+595,Bobby,numb,1,5.0
+596,Bobby,nuts,1,5.0
+597,Bobby,answer,1,5.0
+598,Bobby,earlier,1,5.0
+599,Bobby,question,1,5.0
+600,Bobby,straight,1,5.0
+601,Bobby,gangster,1,5.0
+602,Bobby,rap,1,5.0
+603,Bonnie,started,1,12.5
+604,Bonnie,wearing,1,12.5
+605,Bonnie,bras,1,12.5
+606,Bonnie,helping,1,12.5
+607,Bonnie,head,1,12.5
+608,Bonnie,sunburned,1,12.5
+609,Bonnie,million,1,12.5
+610,Bonnie,room,1,12.5
+611,Boss,interesting,1,9.0909
+612,Boss,mention,1,9.0909
+613,Boss,shoes,1,9.0909
+614,Boss,chander,1,9.0909
+615,Boss,clear,1,9.0909
+616,Boss,selling,1,9.0909
+617,Boss,point,1,9.0909
+618,Boss,appeals,1,9.0909
+619,Boss,key,1,9.0909
+620,Boss,demographic,1,9.0909
+621,Boss,work,1,9.0909
+622,Both,yay,2,9.5238
+623,Both,commercial,1,4.7619
+624,Both,break,1,4.7619
+625,Both,whoo,1,4.7619
+626,Both,marcel,1,4.7619
+627,Both,bananaman,1,4.7619
+628,Both,buddy,1,4.7619
+629,Both,sunshine,1,4.7619
+630,Both,sky,1,4.7619
+631,Both,clear,1,4.7619
+632,Both,dark,1,4.7619
+633,Both,disappeared,1,4.7619
+634,Both,extend,1,4.7619
+635,Both,footrests,1,4.7619
+636,Both,recline,1,4.7619
+637,Both,chairs,1,4.7619
+638,Both,opening,1,4.7619
+639,Both,titles,1,4.7619
+640,Both,bus,1,4.7619
+641,Both,baywatch,1,4.7619
+642,Boy,mommy,1,100.0
+643,Boy In The Cape,money,2,22.2222
+644,Boy In The Cape,shut,2,22.2222
+645,Boy In The Cape,friend,1,11.1111
+646,Boy In The Cape,lewis,1,11.1111
+647,Boy In The Cape,giving,1,11.1111
+648,Boy In The Cape,rather,1,11.1111
+649,Boy In The Cape,fair,1,11.1111
+650,Brenda,tile,1,4.5455
+651,Brenda,cleaner,1,4.5455
+652,Brenda,incredible,1,4.5455
+653,Brenda,clothes,1,4.5455
+654,Brenda,laundry,1,4.5455
+655,Brenda,room,1,4.5455
+656,Brenda,clean,1,4.5455
+657,Brenda,behind,1,4.5455
+658,Brenda,refrigerator,1,4.5455
+659,Brenda,top,1,4.5455
+660,Brenda,taking,1,4.5455
+661,Brenda,lunch,1,4.5455
+662,Brenda,break,1,4.5455
+663,Brenda,goes,1,4.5455
+664,Brenda,fluffs,1,4.5455
+665,Brenda,pillows,1,4.5455
+666,Brenda,couch,1,4.5455
+667,Brenda,must,1,4.5455
+668,Brenda,wife,1,4.5455
+669,Brenda,lesbian,1,4.5455
+670,Burt,looks,1,12.5
+671,Burt,generous,1,12.5
+672,Burt,grades,1,12.5
+673,Burt,semester,1,12.5
+674,Burt,fire,1,12.5
+675,Burt,date,1,12.5
+676,Burt,student,1,12.5
+677,Burt,rules,1,12.5
+678,Cailin,may,2,25.0
+679,Cailin,join,1,12.5
+680,Cailin,meet,1,12.5
+681,Cailin,remember,1,12.5
+682,Cailin,standing,1,12.5
+683,Cailin,waiting,1,12.5
+684,Cailin,scream,1,12.5
+685,Caitlin,pizza,3,17.6471
+686,Caitlin,gas,2,11.7647
+687,Caitlin,ugh,1,5.8824
+688,Caitlin,hate,1,5.8824
+689,Caitlin,dollars,1,5.8824
+690,Caitlin,chicken,1,5.8824
+691,Caitlin,later,1,5.8824
+692,Caitlin,delivery,1,5.8824
+693,Caitlin,vegetarian,1,5.8824
+694,Caitlin,money,1,5.8824
+695,Caitlin,ordered,1,5.8824
+696,Caitlin,many,1,5.8824
+697,Caitlin,problem,1,5.8824
+698,Caitlin,flirting,1,5.8824
+699,Carl,car,2,8.6957
+700,Carl,piece,1,4.3478
+701,Carl,cake,1,4.3478
+702,Carl,maid,1,4.3478
+703,Carl,fiasco,1,4.3478
+704,Carl,sayin,1,4.3478
+705,Carl,picture,1,4.3478
+706,Carl,begley,1,4.3478
+707,Carl,stupid,1,4.3478
+708,Carl,electric,1,4.3478
+709,Carl,shoot,1,4.3478
+710,Carl,environmental,1,4.3478
+711,Carl,issues,1,4.3478
+712,Carl,per,1,4.3478
+713,Carl,buddy,1,4.3478
+714,Carl,real,1,4.3478
+715,Carl,exactly,1,4.3478
+716,Carl,caught,1,4.3478
+717,Carl,behind,1,4.3478
+718,Carl,hammerhead,1,4.3478
+719,Carol,susan,15,5.1546
+720,Carol,ben,8,2.7491
+721,Carol,love,5,1.7182
+722,Carol,women,3,1.0309
+723,Carol,coming,3,1.0309
+724,Carol,hang,3,1.0309
+725,Carol,second,3,1.0309
+726,Carol,helen,3,1.0309
+727,Carol,leg,3,1.0309
+728,Carol,cramp,3,1.0309
+729,Carol,stay,3,1.0309
+730,Carol,waiting,3,1.0309
+731,Carol,wedding,3,1.0309
+732,Carol,making,2,0.6873
+733,Carol,save,2,0.6873
+734,Carol,looks,2,0.6873
+735,Carol,coffee,2,0.6873
+736,Carol,home,2,0.6873
+737,Carol,anniversary,2,0.6873
+738,Carol,sooo,2,0.6873
+739,Caroline,cutie,1,8.3333
+740,Caroline,pie,1,8.3333
+741,Caroline,assume,1,8.3333
+742,Caroline,baby,1,8.3333
+743,Caroline,uterus,1,8.3333
+744,Caroline,skipped,1,8.3333
+745,Caroline,beat,1,8.3333
+746,Caroline,brother,1,8.3333
+747,Caroline,boyfriend,1,8.3333
+748,Caroline,adopt,1,8.3333
+749,Caroline,years,1,8.3333
+750,Caroline,agency,1,8.3333
+751,Cashier,delivered,1,4.1667
+752,Cashier,fill,1,4.1667
+753,Cashier,address,1,4.1667
+754,Cashier,card,1,4.1667
+755,Cashier,notice,1,4.1667
+756,Cashier,picked,1,4.1667
+757,Cashier,dinosaur,1,4.1667
+758,Cashier,items,1,4.1667
+759,Cashier,fascinated,1,4.1667
+760,Cashier,paleontology,1,4.1667
+761,Cashier,read,1,4.1667
+762,Cashier,walter,1,4.1667
+763,Cashier,alvarez,1,4.1667
+764,Cashier,book,1,4.1667
+765,Cashier,love,1,4.1667
+766,Cashier,neighborhood,1,4.1667
+767,Cashier,gym,1,4.1667
+768,Cashier,corner,1,4.1667
+769,Cashier,building,1,4.1667
+770,Cashier,work,1,4.1667
+771,Cassie,letting,2,7.1429
+772,Cassie,stay,2,7.1429
+773,Cassie,heard,1,3.5714
+774,Cassie,voices,1,3.5714
+775,Cassie,must,1,3.5714
+776,Cassie,meet,1,3.5714
+777,Cassie,saw,1,3.5714
+778,Cassie,setting,1,3.5714
+779,Cassie,tent,1,3.5714
+780,Cassie,line,1,3.5714
+781,Cassie,return,1,3.5714
+782,Cassie,jedi,1,3.5714
+783,Cassie,fiancee,1,3.5714
+784,Cassie,stares,1,3.5714
+785,Cassie,reacquainted,1,3.5714
+786,Cassie,done,1,3.5714
+787,Cassie,hung,1,3.5714
+788,Cassie,parents,1,3.5714
+789,Cassie,rented,1,3.5714
+790,Cassie,beach,1,3.5714
+791,Casting Guy,excuse,1,20.0
+792,Casting Guy,bucks,1,20.0
+793,Casting Guy,five,1,20.0
+794,Casting Guy,dollars,1,20.0
+795,Casting Guy,coming,1,20.0
+796,Catherine,catherine,1,8.3333
+797,Catherine,listing,1,8.3333
+798,Catherine,agent,1,8.3333
+799,Catherine,buying,1,8.3333
+800,Catherine,bigger,1,8.3333
+801,Catherine,view,1,8.3333
+802,Catherine,central,1,8.3333
+803,Catherine,appliances,1,8.3333
+804,Catherine,included,1,8.3333
+805,Catherine,light,1,8.3333
+806,Catherine,kitchen,1,8.3333
+807,Catherine,happy,1,8.3333
+808,Cecilia,owns,9,6.338
+809,Cecilia,room,7,4.9296
+810,Cecilia,jessica,6,4.2254
+811,Cecilia,years,5,3.5211
+812,Cecilia,supposed,3,2.1127
+813,Cecilia,fan,2,1.4085
+814,Cecilia,dying,2,1.4085
+815,Cecilia,person,2,1.4085
+816,Cecilia,true,2,1.4085
+817,Cecilia,character,2,1.4085
+818,Cecilia,owe,2,1.4085
+819,Cecilia,left,2,1.4085
+820,Cecilia,ago,2,1.4085
+821,Cecilia,different,2,1.4085
+822,Cecilia,hands,2,1.4085
+823,Cecilia,certainly,2,1.4085
+824,Cecilia,experience,1,0.7042
+825,Cecilia,meet,1,0.7042
+826,Cecilia,hug,1,0.7042
+827,Cecilia,whose,1,0.7042
+828,Celia,stand,1,25.0
+829,Celia,claws,1,25.0
+830,Celia,dirty,1,25.0
+831,Celia,hot,1,25.0
+832,Chan,work,4,1.4388
+833,Chan,russ,4,1.4388
+834,Chan,diary,4,1.4388
+835,Chan,cup,3,1.0791
+836,Chan,sunday,3,1.0791
+837,Chan,phoebs,3,1.0791
+838,Chan,read,3,1.0791
+839,Chan,different,3,1.0791
+840,Chan,job,3,1.0791
+841,Chan,hot,3,1.0791
+842,Chan,fun,2,0.7194
+843,Chan,woah,2,0.7194
+844,Chan,goin,2,0.7194
+845,Chan,slowly,2,0.7194
+846,Chan,coffee,2,0.7194
+847,Chan,puts,2,0.7194
+848,Chan,insane,2,0.7194
+849,Chan,hand,2,0.7194
+850,Chan,pound,2,0.7194
+851,Chan,run,2,0.7194
+852,Chandler,love,144,0.7414
+853,Chandler,work,82,0.4222
+854,Chandler,room,80,0.4119
+855,Chandler,credits,63,0.3244
+856,Chandler,baby,62,0.3192
+857,Chandler,end,60,0.3089
+858,Chandler,break,59,0.3038
+859,Chandler,married,59,0.3038
+860,Chandler,janice,58,0.2986
+861,Chandler,game,57,0.2935
+862,Chandler,life,53,0.2729
+863,Chandler,years,53,0.2729
+864,Chandler,money,53,0.2729
+865,Chandler,opening,52,0.2677
+866,Chandler,somebody,52,0.2677
+867,Chandler,made,51,0.2626
+868,Chandler,remember,49,0.2523
+869,Chandler,sex,49,0.2523
+870,Chandler,home,48,0.2471
+871,Chandler,kind,48,0.2471
+872,Chandlers,none,1,100.0
+873,Charity Guy,children,4,7.6923
+874,Charity Guy,contribution,2,3.8462
+875,Charity Guy,behalf,2,3.8462
+876,Charity Guy,shirt,2,3.8462
+877,Charity Guy,donation,2,3.8462
+878,Charity Guy,money,2,3.8462
+879,Charity Guy,may,1,1.9231
+880,Charity Guy,help,1,1.9231
+881,Charity Guy,large,1,1.9231
+882,Charity Guy,small,1,1.9231
+883,Charity Guy,appreciated,1,1.9231
+884,Charity Guy,generous,1,1.9231
+885,Charity Guy,include,1,1.9231
+886,Charity Guy,names,1,1.9231
+887,Charity Guy,newsletter,1,1.9231
+888,Charity Guy,wore,1,1.9231
+889,Charity Guy,gym,1,1.9231
+890,Charity Guy,gay,1,1.9231
+891,Charity Guy,mike,1,1.9231
+892,Charity Guy,love,1,1.9231
+893,Charlie,grant,5,1.3441
+894,Charlie,speech,5,1.3441
+895,Charlie,dinner,4,1.0753
+896,Charlie,benji,4,1.0753
+897,Charlie,broke,4,1.0753
+898,Charlie,heard,4,1.0753
+899,Charlie,left,3,0.8065
+900,Charlie,benjamin,3,0.8065
+901,Charlie,love,3,0.8065
+902,Charlie,fun,3,0.8065
+903,Charlie,hum,3,0.8065
+904,Charlie,professor,3,0.8065
+905,Charlie,completely,2,0.5376
+906,Charlie,meet,2,0.5376
+907,Charlie,hobart,2,0.5376
+908,Charlie,help,2,0.5376
+909,Charlie,looks,2,0.5376
+910,Charlie,shall,2,0.5376
+911,Charlie,seriously,2,0.5376
+912,Charlie,romantic,2,0.5376
+913,Charlton Heston,actor,3,8.5714
+914,Charlton Heston,pants,2,5.7143
+915,Charlton Heston,stink,2,5.7143
+916,Charlton Heston,must,2,5.7143
+917,Charlton Heston,kid,1,2.8571
+918,Charlton Heston,kick,1,2.8571
+919,Charlton Heston,butt,1,2.8571
+920,Charlton Heston,picture,1,2.8571
+921,Charlton Heston,opp,1,2.8571
+922,Charlton Heston,thinks,1,2.8571
+923,Charlton Heston,stinks,1,2.8571
+924,Charlton Heston,lawrence,1,2.8571
+925,Charlton Heston,oliver,1,2.8571
+926,Charlton Heston,sometimes,1,2.8571
+927,Charlton Heston,stank,1,2.8571
+928,Charlton Heston,bob,1,2.8571
+929,Charlton Heston,redford,1,2.8571
+930,Charlton Heston,watch,1,2.8571
+931,Charlton Heston,worth,1,2.8571
+932,Charlton Heston,salt,1,2.8571
+933,Chase Lassiter,familiar,1,100.0
+934,Cheryl,mitzi,4,19.0476
+935,Cheryl,hamster,2,9.5238
+936,Cheryl,delicious,1,4.7619
+937,Cheryl,dinner,1,4.7619
+938,Cheryl,according,1,4.7619
+939,Cheryl,recent,1,4.7619
+940,Cheryl,findings,1,4.7619
+941,Cheryl,hope,1,4.7619
+942,Cheryl,seen,1,4.7619
+943,Cheryl,seat,1,4.7619
+944,Cheryl,rather,1,4.7619
+945,Cheryl,weird,1,4.7619
+946,Cheryl,smell,1,4.7619
+947,Cheryl,inside,1,4.7619
+948,Cheryl,comfortable,1,4.7619
+949,Cheryl,rat,1,4.7619
+950,Cheryl,work,1,4.7619
+951,Chip,touch,2,3.6364
+952,Chip,high,2,3.6364
+953,Chip,school,2,3.6364
+954,Chip,simmons,2,3.6364
+955,Chip,zana,2,3.6364
+956,Chip,free,2,3.6364
+957,Chip,chip,1,1.8182
+958,Chip,runnin,1,1.8182
+959,Chip,bank,1,1.8182
+960,Chip,number,1,1.8182
+961,Chip,later,1,1.8182
+962,Chip,doin,1,1.8182
+963,Chip,amy,1,1.8182
+964,Chip,welch,1,1.8182
+965,Chip,seen,1,1.8182
+966,Chip,cute,1,1.8182
+967,Chip,anyone,1,1.8182
+968,Chip,hang,1,1.8182
+969,Chip,spindler,1,1.8182
+970,Chip,devane,1,1.8182
+971,Chloe,dance,3,5.6604
+972,Chloe,issac,2,3.7736
+973,Chloe,dinosaur,2,3.7736
+974,Chloe,wants,2,3.7736
+975,Chloe,anybody,2,3.7736
+976,Chloe,smile,2,3.7736
+977,Chloe,married,2,3.7736
+978,Chloe,rushing,2,3.7736
+979,Chloe,luck,2,3.7736
+980,Chloe,girlfriend,2,3.7736
+981,Chloe,seen,1,1.8868
+982,Chloe,scare,1,1.8868
+983,Chloe,relax,1,1.8868
+984,Chloe,ing,1,1.8868
+985,Chloe,philly,1,1.8868
+986,Chloe,advances,1,1.8868
+987,Chloe,collating,1,1.8868
+988,Chloe,past,1,1.8868
+989,Chloe,five,1,1.8868
+990,Chloe,years,1,1.8868
+991,Claudia,smoke,2,22.2222
+992,Claudia,kid,1,11.1111
+993,Claudia,bother,1,11.1111
+994,Claudia,oklahoma,1,11.1111
+995,Claudia,legal,1,11.1111
+996,Claudia,offices,1,11.1111
+997,Claudia,fifteen,1,11.1111
+998,Claudia,less,1,11.1111
+999,Clerk,help,1,12.5
+1000,Clerk,fill,1,12.5
+1001,Clerk,form,1,12.5
+1002,Clerk,line,1,12.5
+1003,Clerk,six,1,12.5
+1004,Clerk,dollars,1,12.5
+1005,Clerk,eight,1,12.5
+1006,Clerk,clock,1,12.5
+1007,Cliff,questions,2,5.8824
+1008,Cliff,crazy,2,5.8824
+1009,Cliff,spoon,2,5.8824
+1010,Cliff,doctor,2,5.8824
+1011,Cliff,room,2,5.8824
+1012,Cliff,november,1,2.9412
+1013,Cliff,figure,1,2.9412
+1014,Cliff,based,1,2.9412
+1015,Cliff,date,1,2.9412
+1016,Cliff,birth,1,2.9412
+1017,Cliff,personal,1,2.9412
+1018,Cliff,must,1,2.9412
+1019,Cliff,widower,1,2.9412
+1020,Cliff,gorilla,1,2.9412
+1021,Cliff,least,1,2.9412
+1022,Cliff,explain,1,2.9412
+1023,Cliff,making,1,2.9412
+1024,Cliff,eat,1,2.9412
+1025,Cliff,foot,1,2.9412
+1026,Cliff,itches,1,2.9412
+1027,Colleen,help,2,11.1111
+1028,Colleen,adopted,2,11.1111
+1029,Colleen,happy,1,5.5556
+1030,Colleen,information,1,5.5556
+1031,Colleen,broken,1,5.5556
+1032,Colleen,categories,1,5.5556
+1033,Colleen,cross,1,5.5556
+1034,Colleen,referenced,1,5.5556
+1035,Colleen,colour,1,5.5556
+1036,Colleen,coded,1,5.5556
+1037,Colleen,correspond,1,5.5556
+1038,Colleen,forms,1,5.5556
+1039,Colleen,bathroom,1,5.5556
+1040,Colleen,hall,1,5.5556
+1041,Colleen,left,1,5.5556
+1042,Colleen,second,1,5.5556
+1043,Coma Guy,woozy,1,25.0
+1044,Coma Guy,basically,1,25.0
+1045,Coma Guy,etch,1,25.0
+1046,Coma Guy,sketch,1,25.0
+1047,Conan,must,6,5.0
+1048,Conan,friends,4,3.3333
+1049,Conan,love,4,3.3333
+1050,Conan,moments,4,3.3333
+1051,Conan,sometimes,3,2.5
+1052,Conan,work,3,2.5
+1053,Conan,scene,3,2.5
+1054,Conan,fat,3,2.5
+1055,Conan,suit,3,2.5
+1056,Conan,mistakes,2,1.6667
+1057,Conan,probably,2,1.6667
+1058,Conan,everybody,2,1.6667
+1059,Conan,years,2,1.6667
+1060,Conan,mess,2,1.6667
+1061,Conan,physically,2,1.6667
+1062,Conan,bit,2,1.6667
+1063,Conan,monkey,2,1.6667
+1064,Conan,intentionally,2,1.6667
+1065,Conan,word,2,1.6667
+1066,Conan,tradition,1,0.8333
+1067,Cookie,drinkin,1,12.5
+1068,Cookie,kiddin,1,12.5
+1069,Cookie,exact,1,12.5
+1070,Cookie,drink,1,12.5
+1071,Cookie,made,1,12.5
+1072,Cookie,shot,1,12.5
+1073,Cookie,husband,1,12.5
+1074,Cookie,punch,1,12.5
+1075,Cop,sipowicz,3,9.0909
+1076,Cop,badge,2,6.0606
+1077,Cop,second,1,3.0303
+1078,Cop,precinct,1,3.0303
+1079,Cop,homicide,1,3.0303
+1080,Cop,vice,1,3.0303
+1081,Cop,real,1,3.0303
+1082,Cop,loss,1,3.0303
+1083,Cop,heard,1,3.0303
+1084,Cop,kid,1,3.0303
+1085,Cop,silver,1,3.0303
+1086,Cop,spoons,1,3.0303
+1087,Cop,choice,1,3.0303
+1088,Cop,job,1,3.0303
+1089,Cop,foolish,1,3.0303
+1090,Cop,arrest,1,3.0303
+1091,Cop,came,1,3.0303
+1092,Cop,jail,1,3.0303
+1093,Cop,wondering,1,3.0303
+1094,Cop,dinner,1,3.0303
+1095,Courtney,mess,3,7.8947
+1096,Courtney,fall,2,5.2632
+1097,Courtney,matthew,2,5.2632
+1098,Courtney,days,1,2.6316
+1099,Courtney,amazing,1,2.6316
+1100,Courtney,week,1,2.6316
+1101,Courtney,saying,1,2.6316
+1102,Courtney,lines,1,2.6316
+1103,Courtney,audience,1,2.6316
+1104,Courtney,nervous,1,2.6316
+1105,Courtney,probably,1,2.6316
+1106,Courtney,five,1,2.6316
+1107,Courtney,ten,1,2.6316
+1108,Courtney,takes,1,2.6316
+1109,Courtney,without,1,2.6316
+1110,Courtney,coffee,1,2.6316
+1111,Courtney,cup,1,2.6316
+1112,Courtney,left,1,2.6316
+1113,Courtney,hand,1,2.6316
+1114,Courtney,messing,1,2.6316
+1115,Cowgirl,candy,1,100.0
+1116,Croupler,eight,2,33.3333
+1117,Croupler,coming,1,16.6667
+1118,Croupler,shooter,1,16.6667
+1119,Croupler,money,1,16.6667
+1120,Croupler,easy,1,16.6667
+1121,Customer,office,1,7.1429
+1122,Customer,john,1,7.1429
+1123,Customer,beautiful,1,7.1429
+1124,Customer,excuse,1,7.1429
+1125,Customer,dying,1,7.1429
+1126,Customer,ring,1,7.1429
+1127,Customer,waiter,1,7.1429
+1128,Customer,cappuccino,1,7.1429
+1129,Customer,coffee,1,7.1429
+1130,Customer,idiot,1,7.1429
+1131,Customer,stupid,1,7.1429
+1132,Customer,cowboy,1,7.1429
+1133,Customer,blinded,1,7.1429
+1134,Customer,suing,1,7.1429
+1135,Cynthia,video,2,20.0
+1136,Cynthia,fun,1,10.0
+1137,Cynthia,wondering,1,10.0
+1138,Cynthia,candles,1,10.0
+1139,Cynthia,blanket,1,10.0
+1140,Cynthia,camera,1,10.0
+1141,Cynthia,tape,1,10.0
+1142,Cynthia,sex,1,10.0
+1143,Cynthia,date,1,10.0
+1144,Dan,meet,1,9.0909
+1145,Dan,nah,1,9.0909
+1146,Dan,medical,1,9.0909
+1147,Dan,school,1,9.0909
+1148,Dan,girlie,1,9.0909
+1149,Dan,gulf,1,9.0909
+1150,Dan,war,1,9.0909
+1151,Dan,somebody,1,9.0909
+1152,Dan,cover,1,9.0909
+1153,Dan,shift,1,9.0909
+1154,Dan,head,1,9.0909
+1155,Dana,howie,2,7.1429
+1156,Dana,asks,2,7.1429
+1157,Dana,movie,2,7.1429
+1158,Dana,ran,1,3.5714
+1159,Dana,school,1,3.5714
+1160,Dana,apparently,1,3.5714
+1161,Dana,editing,1,3.5714
+1162,Dana,calls,1,3.5714
+1163,Dana,edit,1,3.5714
+1164,Dana,spoken,1,3.5714
+1165,Dana,ten,1,3.5714
+1166,Dana,years,1,3.5714
+1167,Dana,favor,1,3.5714
+1168,Dana,cup,1,3.5714
+1169,Dana,coffee,1,3.5714
+1170,Dana,flattered,1,3.5714
+1171,Dana,sweet,1,3.5714
+1172,Dana,hurt,1,3.5714
+1173,Dana,wish,1,3.5714
+1174,Dana,course,1,3.5714
+1175,Danielle,calling,1,12.5
+1176,Danielle,turns,1,12.5
+1177,Danielle,number,1,12.5
+1178,Danielle,finally,1,12.5
+1179,Danielle,information,1,12.5
+1180,Danielle,answer,1,12.5
+1181,Danielle,later,1,12.5
+1182,Danielle,everybody,1,12.5
+1183,Danny,party,3,3.3333
+1184,Danny,sister,3,3.3333
+1185,Danny,close,3,3.3333
+1186,Danny,hair,2,2.2222
+1187,Danny,absolutely,2,2.2222
+1188,Danny,pizza,2,2.2222
+1189,Danny,ladle,2,2.2222
+1190,Danny,friday,2,2.2222
+1191,Danny,date,2,2.2222
+1192,Danny,krista,2,2.2222
+1193,Danny,yesss,1,1.1111
+1194,Danny,short,1,1.1111
+1195,Danny,rid,1,1.1111
+1196,Danny,fogger,1,1.1111
+1197,Danny,smell,1,1.1111
+1198,Danny,appearances,1,1.1111
+1199,Danny,shopping,1,1.1111
+1200,Danny,bags,1,1.1111
+1201,Danny,sack,1,1.1111
+1202,Danny,catalog,1,1.1111
+1203,David,minsk,10,2.8011
+1204,David,mike,7,1.9608
+1205,David,probably,6,1.6807
+1206,David,life,5,1.4006
+1207,David,beautiful,5,1.4006
+1208,David,break,4,1.1204
+1209,David,phenomenal,4,1.1204
+1210,David,seeing,4,1.1204
+1211,David,saying,3,0.8403
+1212,David,kind,3,0.8403
+1213,David,question,3,0.8403
+1214,David,kiss,3,0.8403
+1215,David,fella,3,0.8403
+1216,David,blanc,2,0.5602
+1217,David,face,2,0.5602
+1218,David,certain,2,0.5602
+1219,David,though,2,0.5602
+1220,David,story,2,0.5602
+1221,David,started,2,0.5602
+1222,David,york,2,0.5602
+1223,Delivery Guy,pizza,1,16.6667
+1224,Delivery Guy,delivery,1,16.6667
+1225,Delivery Guy,scripts,1,16.6667
+1226,Delivery Guy,sign,1,16.6667
+1227,Delivery Guy,affect,1,16.6667
+1228,Delivery Guy,plot,1,16.6667
+1229,Dennis Phillips,dennis,2,10.5263
+1230,Dennis Phillips,chinese,2,10.5263
+1231,Dennis Phillips,congratulations,1,5.2632
+1232,Dennis Phillips,missed,1,5.2632
+1233,Dennis Phillips,ceremony,1,5.2632
+1234,Dennis Phillips,stuck,1,5.2632
+1235,Dennis Phillips,auditions,1,5.2632
+1236,Dennis Phillips,directing,1,5.2632
+1237,Dennis Phillips,broadway,1,5.2632
+1238,Dennis Phillips,phillips,1,5.2632
+1239,Dennis Phillips,excuse,1,5.2632
+1240,Dennis Phillips,drink,1,5.2632
+1241,Dennis Phillips,moment,1,5.2632
+1242,Dennis Phillips,benefit,1,5.2632
+1243,Dennis Phillips,quite,1,5.2632
+1244,Dennis Phillips,project,1,5.2632
+1245,Dennis Phillips,cast,1,5.2632
+1246,Devon,mate,1,11.1111
+1247,Devon,realise,1,11.1111
+1248,Devon,seen,1,11.1111
+1249,Devon,concert,1,11.1111
+1250,Devon,playing,1,11.1111
+1251,Devon,rugby,1,11.1111
+1252,Devon,riverside,1,11.1111
+1253,Devon,park,1,11.1111
+1254,Devon,cheers,1,11.1111
+1255,Dick Clark,times,2,15.3846
+1256,Dick Clark,square,2,15.3846
+1257,Dick Clark,dick,1,7.6923
+1258,Dick Clark,clark,1,7.6923
+1259,Dick Clark,live,1,7.6923
+1260,Dick Clark,virtual,1,7.6923
+1261,Dick Clark,snowstorm,1,7.6923
+1262,Dick Clark,confetti,1,7.6923
+1263,Dick Clark,twenty,1,7.6923
+1264,Dick Clark,seconds,1,7.6923
+1265,Dick Clark,midnight,1,7.6923
+1266,Dina,baby,4,6.6667
+1267,Dina,bobby,3,5.0
+1268,Dina,scared,3,5.0
+1269,Dina,mother,2,3.3333
+1270,Dina,pregnant,2,3.3333
+1271,Dina,help,2,3.3333
+1272,Dina,mom,2,3.3333
+1273,Dina,dad,2,3.3333
+1274,Dina,real,2,3.3333
+1275,Dina,uncle,2,3.3333
+1276,Dina,dating,1,1.6667
+1277,Dina,kill,1,1.6667
+1278,Dina,charles,1,1.6667
+1279,Dina,least,1,1.6667
+1280,Dina,murderer,1,1.6667
+1281,Dina,ice,1,1.6667
+1282,Dina,loosening,1,1.6667
+1283,Dina,saddle,1,1.6667
+1284,Dina,horse,1,1.6667
+1285,Dina,brilliant,1,1.6667
+1286,Director,action,9,6.0811
+1287,Director,dance,6,4.0541
+1288,Director,everybody,5,3.3784
+1289,Director,everyone,4,2.7027
+1290,Director,french,3,2.027
+1291,Director,hand,3,2.027
+1292,Director,sissone,3,2.027
+1293,Director,step,3,2.027
+1294,Director,audition,2,1.3514
+1295,Director,dancing,2,1.3514
+1296,Director,tall,2,1.3514
+1297,Director,ten,2,1.3514
+1298,Director,shot,2,1.3514
+1299,Director,work,2,1.3514
+1300,Director,lovely,2,1.3514
+1301,Director,jazz,2,1.3514
+1302,Director,head,2,1.3514
+1303,Director,pas,2,1.3514
+1304,Director,bouree,2,1.3514
+1305,Director,watch,2,1.3514
+1306,Dirk,scientist,1,16.6667
+1307,Dirk,days,1,16.6667
+1308,Dirk,character,1,16.6667
+1309,Dirk,nobel,1,16.6667
+1310,Dirk,prize,1,16.6667
+1311,Dirk,sats,1,16.6667
+1312,Doctor,baby,3,8.1081
+1313,Doctor,pushing,2,5.4054
+1314,Doctor,along,2,5.4054
+1315,Doctor,twins,2,5.4054
+1316,Doctor,head,1,2.7027
+1317,Doctor,crowning,1,2.7027
+1318,Doctor,shoulders,1,2.7027
+1319,Doctor,umbilical,1,2.7027
+1320,Doctor,cord,1,2.7027
+1321,Doctor,relax,1,2.7027
+1322,Doctor,paperwork,1,2.7027
+1323,Doctor,clinic,1,2.7027
+1324,Doctor,ohio,1,2.7027
+1325,Doctor,looks,1,2.7027
+1326,Doctor,erica,1,2.7027
+1327,Doctor,comes,1,2.7027
+1328,Doctor,wendy,1,2.7027
+1329,Doctor,carlin,1,2.7027
+1330,Doctor,allergic,1,2.7027
+1331,Doctor,reaction,1,2.7027
+1332,Doctor Connelly,options,2,7.6923
+1333,Doctor Connelly,chances,2,7.6923
+1334,Doctor Connelly,news,1,3.8462
+1335,Doctor Connelly,test,1,3.8462
+1336,Doctor Connelly,week,1,3.8462
+1337,Doctor Connelly,though,1,3.8462
+1338,Doctor Connelly,conceiving,1,3.8462
+1339,Doctor Connelly,natural,1,3.8462
+1340,Doctor Connelly,means,1,3.8462
+1341,Doctor Connelly,sex,1,3.8462
+1342,Doctor Connelly,regular,1,3.8462
+1343,Doctor Connelly,basis,1,3.8462
+1344,Doctor Connelly,given,1,3.8462
+1345,Doctor Connelly,situation,1,3.8462
+1346,Doctor Connelly,greatest,1,3.8462
+1347,Doctor Connelly,success,1,3.8462
+1348,Doctor Connelly,surrogacy,1,3.8462
+1349,Doctor Connelly,insemination,1,3.8462
+1350,Doctor Connelly,using,1,3.8462
+1351,Doctor Connelly,sperm,1,3.8462
+1352,Don,cheese,3,7.8947
+1353,Don,terrible,1,2.6316
+1354,Don,lunch,1,2.6316
+1355,Don,reattica,1,2.6316
+1356,Don,sun,1,2.6316
+1357,Don,dried,1,2.6316
+1358,Don,tomatoes,1,2.6316
+1359,Don,exactly,1,2.6316
+1360,Don,strange,1,2.6316
+1361,Don,octavio,1,2.6316
+1362,Don,alessandro,1,2.6316
+1363,Don,kidding,1,2.6316
+1364,Don,food,1,2.6316
+1365,Don,fantastic,1,2.6316
+1366,Don,menu,1,2.6316
+1367,Don,coffees,1,2.6316
+1368,Don,anyone,1,2.6316
+1369,Don,slowly,1,2.6316
+1370,Don,phasing,1,2.6316
+1371,Don,wine,1,2.6316
+1372,Donny,gene,6,7.7922
+1373,Donny,seconds,4,5.1948
+1374,Donny,clock,4,5.1948
+1375,Donny,circle,4,5.1948
+1376,Donny,describe,3,3.8961
+1377,Donny,winner,3,3.8961
+1378,Donny,henrietta,3,3.8961
+1379,Donny,welcome,2,2.5974
+1380,Donny,luck,2,2.5974
+1381,Donny,ten,2,2.5974
+1382,Donny,thousand,2,2.5974
+1383,Donny,dollars,2,2.5974
+1384,Donny,playing,1,1.2987
+1385,Donny,star,1,1.2987
+1386,Donny,general,1,1.2987
+1387,Donny,hospital,1,1.2987
+1388,Donny,leslie,1,1.2987
+1389,Donny,charleson,1,1.2987
+1390,Donny,everybody,1,1.2987
+1391,Donny,pyramid,1,1.2987
+1392,Donny Osmond,welcome,1,6.6667
+1393,Donny Osmond,soap,1,6.6667
+1394,Donny Osmond,opera,1,6.6667
+1395,Donny Osmond,week,1,6.6667
+1396,Donny Osmond,pyramid,1,6.6667
+1397,Donny Osmond,meet,1,6.6667
+1398,Donny Osmond,contestants,1,6.6667
+1399,Donny Osmond,gene,1,6.6667
+1400,Donny Osmond,lester,1,6.6667
+1401,Donny Osmond,database,1,6.6667
+1402,Donny Osmond,specialist,1,6.6667
+1403,Donny Osmond,playing,1,6.6667
+1404,Donny Osmond,days,1,6.6667
+1405,Donny Osmond,life,1,6.6667
+1406,Donny Osmond,star,1,6.6667
+1407,Doug,team,5,2.8736
+1408,Doug,dartmouth,4,2.2989
+1409,Doug,work,3,1.7241
+1410,Doug,looked,3,1.7241
+1411,Doug,job,3,1.7241
+1412,Doug,wife,3,1.7241
+1413,Doug,real,2,1.1494
+1414,Doug,forgot,2,1.1494
+1415,Doug,swearing,2,1.1494
+1416,Doug,love,2,1.1494
+1417,Doug,kara,2,1.1494
+1418,Doug,divorce,2,1.1494
+1419,Doug,warm,1,0.5747
+1420,Doug,welcome,1,0.5747
+1421,Doug,hope,1,0.5747
+1422,Doug,remember,1,0.5747
+1423,Doug,chuckles,1,0.5747
+1424,Doug,heard,1,0.5747
+1425,Doug,fun,1,0.5747
+1426,Doug,aboard,1,0.5747
+1427,Dr Green,kids,1,100.0
+1428,Dr Horton,medical,1,25.0
+1429,Dr Horton,award,1,25.0
+1430,Dr Horton,remore,1,25.0
+1431,Dr Horton,lucky,1,25.0
+1432,Dream Joey,finish,1,25.0
+1433,Dream Joey,bed,1,25.0
+1434,Dream Joey,cat,1,25.0
+1435,Dream Joey,love,1,25.0
+1436,Dream Monica,love,2,22.2222
+1437,Dream Monica,crossword,1,11.1111
+1438,Dream Monica,puzzles,1,11.1111
+1439,Dream Monica,left,1,11.1111
+1440,Dream Monica,letter,1,11.1111
+1441,Dream Monica,word,1,11.1111
+1442,Dream Monica,dog,1,11.1111
+1443,Dream Monica,smart,1,11.1111
+1444,Drew,gay,1,11.1111
+1445,Drew,relationship,1,11.1111
+1446,Drew,serious,1,11.1111
+1447,Drew,second,1,11.1111
+1448,Drew,free,1,11.1111
+1449,Drew,box,1,11.1111
+1450,Drew,cubans,1,11.1111
+1451,Drew,office,1,11.1111
+1452,Drew,five,1,11.1111
+1453,Drunk Man,wonderful,1,25.0
+1454,Drunk Man,young,1,25.0
+1455,Drunk Man,must,1,25.0
+1456,Drunk Man,teenage,1,25.0
+1457,Drunken Gambler,roll,1,50.0
+1458,Drunken Gambler,table,1,50.0
+1459,Duncan,straight,4,9.3023
+1460,Duncan,hug,2,4.6512
+1461,Duncan,college,2,4.6512
+1462,Duncan,missed,1,2.3256
+1463,Duncan,changed,1,2.3256
+1464,Duncan,phoebs,1,2.3256
+1465,Duncan,divorce,1,2.3256
+1466,Duncan,married,1,2.3256
+1467,Duncan,kept,1,2.3256
+1468,Duncan,telling,1,2.3256
+1469,Duncan,reach,1,2.3256
+1470,Duncan,point,1,2.3256
+1471,Duncan,live,1,2.3256
+1472,Duncan,lie,1,2.3256
+1473,Duncan,anymore,1,2.3256
+1474,Duncan,level,1,2.3256
+1475,Duncan,knew,1,2.3256
+1476,Duncan,though,1,2.3256
+1477,Duncan,supposed,1,2.3256
+1478,Duncan,ice,1,2.3256
+1479,Earl,toner,5,9.8039
+1480,Earl,kill,2,3.9216
+1481,Earl,hang,2,3.9216
+1482,Earl,everybody,2,3.9216
+1483,Earl,universe,2,3.9216
+1484,Earl,push,1,1.9608
+1485,Earl,working,1,1.9608
+1486,Earl,ten,1,1.9608
+1487,Earl,years,1,1.9608
+1488,Earl,meaningless,1,1.9608
+1489,Earl,dead,1,1.9608
+1490,Earl,end,1,1.9608
+1491,Earl,job,1,1.9608
+1492,Earl,nobody,1,1.9608
+1493,Earl,knows,1,1.9608
+1494,Earl,exist,1,1.9608
+1495,Earl,work,1,1.9608
+1496,Earl,cubicle,1,1.9608
+1497,Earl,surrounded,1,1.9608
+1498,Earl,five,1,1.9608
+1499,Eddie,check,4,1.8182
+1500,Eddie,buddy,4,1.8182
+1501,Eddie,fish,4,1.8182
+1502,Eddie,eddie,4,1.8182
+1503,Eddie,woah,3,1.3636
+1504,Eddie,dehydrating,3,1.3636
+1505,Eddie,sleep,2,0.9091
+1506,Eddie,heh,2,0.9091
+1507,Eddie,water,2,0.9091
+1508,Eddie,behind,2,0.9091
+1509,Eddie,door,2,0.9091
+1510,Eddie,work,2,0.9091
+1511,Eddie,pal,2,0.9091
+1512,Eddie,walks,2,0.9091
+1513,Eddie,pals,2,0.9091
+1514,Eddie,moved,2,0.9091
+1515,Eddie,point,2,0.9091
+1516,Eddie,girlfriend,2,0.9091
+1517,Eddie,tilly,2,0.9091
+1518,Eddie,made,2,0.9091
+1519,Eldad,embarrassed,1,33.3333
+1520,Eldad,papaya,1,33.3333
+1521,Eldad,extract,1,33.3333
+1522,Elizabeth,professor,3,2.1127
+1523,Elizabeth,daddy,3,2.1127
+1524,Elizabeth,run,3,2.1127
+1525,Elizabeth,class,2,1.4085
+1526,Elizabeth,felt,2,1.4085
+1527,Elizabeth,teacher,2,1.4085
+1528,Elizabeth,student,2,1.4085
+1529,Elizabeth,semester,2,1.4085
+1530,Elizabeth,hot,2,1.4085
+1531,Elizabeth,dad,2,1.4085
+1532,Elizabeth,water,2,1.4085
+1533,Elizabeth,meet,2,1.4085
+1534,Elizabeth,coming,2,1.4085
+1535,Elizabeth,store,2,1.4085
+1536,Elizabeth,enjoyed,1,0.7042
+1537,Elizabeth,embarrassed,1,0.7042
+1538,Elizabeth,calling,1,0.7042
+1539,Elizabeth,hottie,1,0.7042
+1540,Elizabeth,evaluation,1,0.7042
+1541,Elizabeth,weird,1,0.7042
+1542,Emeril,duck,1,33.3333
+1543,Emeril,cares,1,33.3333
+1544,Emeril,legs,1,33.3333
+1545,Emily,married,6,1.6529
+1546,Emily,liam,5,1.3774
+1547,Emily,friends,4,1.1019
+1548,Emily,wedding,4,1.1019
+1549,Emily,love,4,1.1019
+1550,Emily,left,4,1.1019
+1551,Emily,saying,3,0.8264
+1552,Emily,family,3,0.8264
+1553,Emily,mad,3,0.8264
+1554,Emily,bit,3,0.8264
+1555,Emily,heard,3,0.8264
+1556,Emily,wish,3,0.8264
+1557,Emily,party,3,0.8264
+1558,Emily,made,2,0.551
+1559,Emily,perfectly,2,0.551
+1560,Emily,emily,2,0.551
+1561,Emily,course,2,0.551
+1562,Emily,least,2,0.551
+1563,Emily,airport,2,0.551
+1564,Emily,room,2,0.551
+1565,Emma,ish,1,100.0
+1566,Eric,ursula,7,3.9326
+1567,Eric,sex,4,2.2472
+1568,Eric,sister,3,1.6854
+1569,Eric,eric,3,1.6854
+1570,Eric,roommate,3,1.6854
+1571,Eric,heckles,3,1.6854
+1572,Eric,weird,3,1.6854
+1573,Eric,angry,3,1.6854
+1574,Eric,sweating,3,1.6854
+1575,Eric,welcome,2,1.1236
+1576,Eric,probably,2,1.1236
+1577,Eric,person,2,1.1236
+1578,Eric,bit,2,1.1236
+1579,Eric,love,2,1.1236
+1580,Eric,kiss,2,1.1236
+1581,Eric,saying,2,1.1236
+1582,Eric,crazy,2,1.1236
+1583,Eric,helped,2,1.1236
+1584,Eric,beautiful,2,1.1236
+1585,Eric,impulsive,2,1.1236
+1586,Erica,baby,8,3.5714
+1587,Erica,drake,5,2.2321
+1588,Erica,hands,5,2.2321
+1589,Erica,doctor,4,1.7857
+1590,Erica,face,4,1.7857
+1591,Erica,amazing,3,1.3393
+1592,Erica,reverend,3,1.3393
+1593,Erica,erica,3,1.3393
+1594,Erica,ate,2,0.8929
+1595,Erica,stomach,2,0.8929
+1596,Erica,aches,2,0.8929
+1597,Erica,minutes,2,0.8929
+1598,Erica,help,2,0.8929
+1599,Erica,happy,2,0.8929
+1600,Erica,heartbeats,2,0.8929
+1601,Erica,mind,2,0.8929
+1602,Erica,kind,2,0.8929
+1603,Erica,couple,2,0.8929
+1604,Erica,fun,2,0.8929
+1605,Erica,file,2,0.8929
+1606,Erin,high,1,6.25
+1607,Erin,school,1,6.25
+1608,Erin,fun,1,6.25
+1609,Erin,benitez,1,6.25
+1610,Erin,shut,1,6.25
+1611,Erin,work,1,6.25
+1612,Erin,future,1,6.25
+1613,Erin,real,1,6.25
+1614,Erin,spark,1,6.25
+1615,Erin,help,1,6.25
+1616,Erin,clue,1,6.25
+1617,Erin,interested,1,6.25
+1618,Erin,serious,1,6.25
+1619,Erin,relationship,1,6.25
+1620,Erin,wayne,1,6.25
+1621,Erin,gretzky,1,6.25
+1622,Ernie,bert,6,40.0
+1623,Ernie,hole,2,13.3333
+1624,Ernie,friend,2,13.3333
+1625,Ernie,deep,1,6.6667
+1626,Ernie,digging,1,6.6667
+1627,Ernie,moment,1,6.6667
+1628,Ernie,ago,1,6.6667
+1629,Ernie,lost,1,6.6667
+1630,Estelle,estelle,4,5.0633
+1631,Estelle,audition,4,5.0633
+1632,Estelle,fired,2,2.5316
+1633,Estelle,week,1,1.2658
+1634,Estelle,astor,1,1.2658
+1635,Estelle,theatre,1,1.2658
+1636,Estelle,monologue,1,1.2658
+1637,Estelle,prepared,1,1.2658
+1638,Estelle,glad,1,1.2658
+1639,Estelle,found,1,1.2658
+1640,Estelle,actor,1,1.2658
+1641,Estelle,part,1,1.2658
+1642,Estelle,lead,1,1.2658
+1643,Estelle,series,1,1.2658
+1644,Estelle,mac,1,1.2658
+1645,Estelle,came,1,1.2658
+1646,Estelle,crawling,1,1.2658
+1647,Estelle,harm,1,1.2658
+1648,Estelle,foul,1,1.2658
+1649,Estelle,damage,1,1.2658
+1650,Estl,pause,3,7.3171
+1651,Estl,talented,2,4.878
+1652,Estl,later,2,4.878
+1653,Estl,darling,2,4.878
+1654,Estl,lori,2,4.878
+1655,Estl,doll,2,4.878
+1656,Estl,huuuuh,2,4.878
+1657,Estl,saying,1,2.439
+1658,Estl,bird,1,2.439
+1659,Estl,dead,1,2.439
+1660,Estl,act,1,2.439
+1661,Estl,left,1,2.439
+1662,Estl,break,1,2.439
+1663,Estl,knock,1,2.439
+1664,Estl,door,1,2.439
+1665,Estl,favorite,1,2.439
+1666,Estl,client,1,2.439
+1667,Estl,audition,1,2.439
+1668,Estl,seen,1,2.439
+1669,Estl,ecstatic,1,2.439
+1670,Evil Bitch,sick,2,16.6667
+1671,Evil Bitch,bastard,2,16.6667
+1672,Evil Bitch,labor,1,8.3333
+1673,Evil Bitch,son,1,8.3333
+1674,Evil Bitch,bitch,1,8.3333
+1675,Evil Bitch,fat,1,8.3333
+1676,Evil Bitch,pervert,1,8.3333
+1677,Evil Bitch,girlfriend,1,8.3333
+1678,Evil Bitch,husband,1,8.3333
+1679,Evil Bitch,stupid,1,8.3333
+1680,Fake Monica,sing,2,2.9851
+1681,Fake Monica,amish,2,2.9851
+1682,Fake Monica,movie,2,2.9851
+1683,Fake Monica,life,2,2.9851
+1684,Fake Monica,kid,2,2.9851
+1685,Fake Monica,kidding,1,1.4925
+1686,Fake Monica,spent,1,1.4925
+1687,Fake Monica,years,1,1.4925
+1688,Fake Monica,amsterdam,1,1.4925
+1689,Fake Monica,monana,1,1.4925
+1690,Fake Monica,brave,1,1.4925
+1691,Fake Monica,caught,1,1.4925
+1692,Fake Monica,fact,1,1.4925
+1693,Fake Monica,short,1,1.4925
+1694,Fake Monica,breasts,1,1.4925
+1695,Fake Monica,auditioning,1,1.4925
+1696,Fake Monica,broadway,1,1.4925
+1697,Fake Monica,open,1,1.4925
+1698,Fake Monica,cats,1,1.4925
+1699,Fake Monica,memories,1,1.4925
+1700,Fat Girl,gert,1,100.0
+1701,Fat Joey,chef,1,16.6667
+1702,Fat Joey,sweetheart,1,16.6667
+1703,Fat Joey,sugar,1,16.6667
+1704,Fat Joey,doin,1,16.6667
+1705,Fat Joey,ending,1,16.6667
+1706,Fat Joey,credits,1,16.6667
+1707,Fat Monica,sister,2,7.6923
+1708,Fat Monica,macaroni,2,7.6923
+1709,Fat Monica,cheese,2,7.6923
+1710,Fat Monica,flower,1,3.8462
+1711,Fat Monica,dinner,1,3.8462
+1712,Fat Monica,dammit,1,3.8462
+1713,Fat Monica,begging,1,3.8462
+1714,Fat Monica,days,1,3.8462
+1715,Fat Monica,nancy,1,3.8462
+1716,Fat Monica,branson,1,3.8462
+1717,Fat Monica,mom,1,3.8462
+1718,Fat Monica,dad,1,3.8462
+1719,Fat Monica,loser,1,3.8462
+1720,Fat Monica,gosh,1,3.8462
+1721,Fat Monica,chip,1,3.8462
+1722,Fat Monica,promise,1,3.8462
+1723,Fat Monica,definitely,1,3.8462
+1724,Fat Monica,whether,1,3.8462
+1725,Fat Monica,judy,1,3.8462
+1726,Fat Monica,finally,1,3.8462
+1727,Fbob,flask,2,2.9851
+1728,Fbob,quit,2,2.9851
+1729,Fbob,drinking,2,2.9851
+1730,Fbob,hardware,2,2.9851
+1731,Fbob,stores,2,2.9851
+1732,Fbob,open,2,2.9851
+1733,Fbob,past,2,2.9851
+1734,Fbob,midnight,2,2.9851
+1735,Fbob,village,2,2.9851
+1736,Fbob,working,1,1.4925
+1737,Fbob,pick,1,1.4925
+1738,Fbob,picking,1,1.4925
+1739,Fbob,anybody,1,1.4925
+1740,Fbob,picked,1,1.4925
+1741,Fbob,everyone,1,1.4925
+1742,Fbob,raises,1,1.4925
+1743,Fbob,hands,1,1.4925
+1744,Fbob,public,1,1.4925
+1745,Fbob,display,1,1.4925
+1746,Fbob,affection,1,1.4925
+1747,Felicity,home,1,20.0
+1748,Felicity,hoping,1,20.0
+1749,Felicity,hum,1,20.0
+1750,Felicity,york,1,20.0
+1751,Felicity,mmm,1,20.0
+1752,Female Clerk,help,1,50.0
+1753,Female Clerk,picture,1,50.0
+1754,Female Jeweler,sold,1,50.0
+1755,Female Jeweler,gentleman,1,50.0
+1756,Fergie,friend,1,25.0
+1757,Fergie,says,1,25.0
+1758,Fergie,hat,1,25.0
+1759,Fergie,dashing,1,25.0
+1760,Fireman,vince,1,100.0
+1761,First Dorm Guy,attack,1,50.0
+1762,First Dorm Guy,balloons,1,50.0
+1763,Flight Attendant,boarding,2,13.3333
+1764,Flight Attendant,pass,2,13.3333
+1765,Flight Attendant,message,2,13.3333
+1766,Flight Attendant,may,1,6.6667
+1767,Flight Attendant,allowed,1,6.6667
+1768,Flight Attendant,jetway,1,6.6667
+1769,Flight Attendant,unless,1,6.6667
+1770,Flight Attendant,federal,1,6.6667
+1771,Flight Attendant,regulations,1,6.6667
+1772,Flight Attendant,excuse,1,6.6667
+1773,Flight Attendant,loved,1,6.6667
+1774,Flight Attendant,present,1,6.6667
+1775,Fran,cold,1,7.1429
+1776,Fran,pee,1,7.1429
+1777,Fran,cup,1,7.1429
+1778,Fran,coffee,1,7.1429
+1779,Fran,window,1,7.1429
+1780,Fran,fired,1,7.1429
+1781,Fran,riff,1,7.1429
+1782,Fran,till,1,7.1429
+1783,Fran,order,1,7.1429
+1784,Fran,err,1,7.1429
+1785,Fran,biscottie,1,7.1429
+1786,Fran,cookies,1,7.1429
+1787,Fran,commercial,1,7.1429
+1788,Fran,break,1,7.1429
+1789,Frank,alice,7,2.439
+1790,Frank,melt,5,1.7422
+1791,Frank,baby,5,1.7422
+1792,Frank,dad,4,1.3937
+1793,Frank,coming,4,1.3937
+1794,Frank,friend,3,1.0453
+1795,Frank,phone,3,1.0453
+1796,Frank,work,3,1.0453
+1797,Frank,sister,3,1.0453
+1798,Frank,mom,3,1.0453
+1799,Frank,knight,3,1.0453
+1800,Frank,young,3,1.0453
+1801,Frank,sudden,3,1.0453
+1802,Frank,head,3,1.0453
+1803,Frank,harad,3,1.0453
+1804,Frank,lunch,3,1.0453
+1805,Frank,stilts,3,1.0453
+1806,Frank,square,2,0.6969
+1807,Frank,ninja,2,0.6969
+1808,Frank,stars,2,0.6969
+1809,Frankie,cuffs,1,50.0
+1810,Frankie,inseam,1,50.0
+1811,Frannie,paul,3,16.6667
+1812,Frannie,sex,2,11.1111
+1813,Frannie,husband,1,5.5556
+1814,Frannie,hate,1,5.5556
+1815,Frannie,pushing,1,5.5556
+1816,Frannie,aunt,1,5.5556
+1817,Frannie,roz,1,5.5556
+1818,Frannie,parrot,1,5.5556
+1819,Frannie,jungle,1,5.5556
+1820,Frannie,wine,1,5.5556
+1821,Frannie,kidding,1,5.5556
+1822,Frannie,credit,1,5.5556
+1823,Frannie,snap,1,5.5556
+1824,Frannie,turtle,1,5.5556
+1825,Frannie,years,1,5.5556
+1826,Fredrick,sweetheart,1,100.0
+1827,French Phoebe,gauze,4,44.4444
+1828,French Phoebe,whew,1,11.1111
+1829,French Phoebe,ridiculous,1,11.1111
+1830,French Phoebe,end,1,11.1111
+1831,French Phoebe,contrl,1,11.1111
+1832,French Phoebe,gif,1,11.1111
+1833,Friend,kids,1,5.2632
+1834,Friend,train,1,5.2632
+1835,Friend,richard,1,5.2632
+1836,Friend,burke,1,5.2632
+1837,Friend,gave,1,5.2632
+1838,Friend,ride,1,5.2632
+1839,Friend,speaking,1,5.2632
+1840,Friend,twinkie,1,5.2632
+1841,Friend,city,1,5.2632
+1842,Friend,sprays,1,5.2632
+1843,Friend,whipped,1,5.2632
+1844,Friend,cream,1,5.2632
+1845,Friend,probably,1,5.2632
+1846,Friend,young,1,5.2632
+1847,Friend,enough,1,5.2632
+1848,Friend,pointing,1,5.2632
+1849,Friend,folds,1,5.2632
+1850,Friend,arms,1,5.2632
+1851,Friend,breasts,1,5.2632
+1852,Front Desk Clerk,wedding,1,14.2857
+1853,Front Desk Clerk,gift,1,14.2857
+1854,Front Desk Clerk,hotel,1,14.2857
+1855,Front Desk Clerk,honeymoon,1,14.2857
+1856,Front Desk Clerk,suite,1,14.2857
+1857,Front Desk Clerk,copy,1,14.2857
+1858,Front Desk Clerk,bill,1,14.2857
+1859,Fun Bobby,late,1,10.0
+1860,Fun Bobby,grandfather,1,10.0
+1861,Fun Bobby,died,1,10.0
+1862,Fun Bobby,hours,1,10.0
+1863,Fun Bobby,ago,1,10.0
+1864,Fun Bobby,flight,1,10.0
+1865,Fun Bobby,til,1,10.0
+1866,Fun Bobby,open,1,10.0
+1867,Fun Bobby,casket,1,10.0
+1868,Fun Bobby,least,1,10.0
+1869,Gail,gail,1,33.3333
+1870,Gail,somewhere,1,33.3333
+1871,Gail,meeting,1,33.3333
+1872,Gang,awwwwwwww,1,25.0
+1873,Gang,allright,1,25.0
+1874,Gang,phoebs,1,25.0
+1875,Gang,leaves,1,25.0
+1876,Gary,brooklyn,7,4.1916
+1877,Gary,heights,7,4.1916
+1878,Gary,move,6,3.5928
+1879,Gary,checked,4,2.3952
+1880,Gary,happy,3,1.7964
+1881,Gary,soon,3,1.7964
+1882,Gary,second,3,1.7964
+1883,Gary,moving,3,1.7964
+1884,Gary,post,3,1.7964
+1885,Gary,candy,2,1.1976
+1886,Gary,says,2,1.1976
+1887,Gary,later,2,1.1976
+1888,Gary,badge,2,1.1976
+1889,Gary,forward,2,1.1976
+1890,Gary,listings,2,1.1976
+1891,Gary,bedroom,2,1.1976
+1892,Gary,sweethart,2,1.1976
+1893,Gary,car,2,1.1976
+1894,Gary,witness,2,1.1976
+1895,Gary,roommate,1,0.5988
+1896,Gary Collins,pledge,3,10.7143
+1897,Gary Collins,volunteers,3,10.7143
+1898,Gary Collins,kind,2,7.1429
+1899,Gary Collins,programming,2,7.1429
+1900,Gary Collins,welcome,1,3.5714
+1901,Gary Collins,fall,1,3.5714
+1902,Gary Collins,telethon,1,3.5714
+1903,Gary Collins,enjoying,1,3.5714
+1904,Gary Collins,performance,1,3.5714
+1905,Gary Collins,cirque,1,3.5714
+1906,Gary Collins,soleil,1,3.5714
+1907,Gary Collins,simple,1,3.5714
+1908,Gary Collins,operator,1,3.5714
+1909,Gary Collins,looks,1,3.5714
+1910,Gary Collins,surpassed,1,3.5714
+1911,Gary Collins,total,1,3.5714
+1912,Gary Collins,viewers,1,3.5714
+1913,Gary Collins,taken,1,3.5714
+1914,Gary Collins,may,1,3.5714
+1915,Gary Collins,sharpest,1,3.5714
+1916,Gate Agent,flight,2,28.5714
+1917,Gate Agent,athens,2,28.5714
+1918,Gate Agent,ticketed,1,14.2857
+1919,Gate Agent,passengers,1,14.2857
+1920,Gate Agent,board,1,14.2857
+1921,Gavin,gavin,4,2.649
+1922,Gavin,meet,3,1.9868
+1923,Gavin,presentation,3,1.9868
+1924,Gavin,brought,2,1.3245
+1925,Gavin,sick,2,1.3245
+1926,Gavin,work,2,1.3245
+1927,Gavin,hum,2,1.3245
+1928,Gavin,picture,2,1.3245
+1929,Gavin,worry,2,1.3245
+1930,Gavin,baby,2,1.3245
+1931,Gavin,job,2,1.3245
+1932,Gavin,weeks,2,1.3245
+1933,Gavin,pleased,2,1.3245
+1934,Gavin,tag,2,1.3245
+1935,Gavin,mom,2,1.3245
+1936,Gavin,secretary,2,1.3245
+1937,Gavin,mind,2,1.3245
+1938,Gavin,birthday,2,1.3245
+1939,Gavin,soup,1,0.6623
+1940,Gavin,heard,1,0.6623
+1941,Gene,white,2,3.5714
+1942,Gene,pass,2,3.5714
+1943,Gene,christie,2,3.5714
+1944,Gene,crossed,1,1.7857
+1945,Gene,line,1,1.7857
+1946,Gene,diary,1,1.7857
+1947,Gene,cafeteria,1,1.7857
+1948,Gene,coffee,1,1.7857
+1949,Gene,heavier,1,1.7857
+1950,Gene,milk,1,1.7857
+1951,Gene,sandwich,1,1.7857
+1952,Gene,made,1,1.7857
+1953,Gene,eggs,1,1.7857
+1954,Gene,hamburger,1,1.7857
+1955,Gene,kid,1,1.7857
+1956,Gene,starting,1,1.7857
+1957,Gene,college,1,1.7857
+1958,Gene,surgery,1,1.7857
+1959,Gene,knee,1,1.7857
+1960,Gene,lost,1,1.7857
+1961,Gerston,margaritas,1,33.3333
+1962,Gerston,stronger,1,33.3333
+1963,Gerston,problem,1,33.3333
+1964,Gert,feet,2,25.0
+1965,Gert,dancing,1,12.5
+1966,Gert,girls,1,12.5
+1967,Gert,moving,1,12.5
+1968,Gert,faster,1,12.5
+1969,Gert,fast,1,12.5
+1970,Gert,enough,1,12.5
+1971,Ginger,bothers,2,11.7647
+1972,Ginger,wasting,2,11.7647
+1973,Ginger,nubbin,2,11.7647
+1974,Ginger,bathroom,1,5.8824
+1975,Ginger,hiding,1,5.8824
+1976,Ginger,behind,1,5.8824
+1977,Ginger,coats,1,5.8824
+1978,Ginger,damn,1,5.8824
+1979,Ginger,hate,1,5.8824
+1980,Ginger,worry,1,5.8824
+1981,Ginger,leg,1,5.8824
+1982,Ginger,nipples,1,5.8824
+1983,Ginger,remembered,1,5.8824
+1984,Ginger,later,1,5.8824
+1985,Girl,scrud,2,6.6667
+1986,Girl,mommy,2,6.6667
+1987,Girl,trick,2,6.6667
+1988,Girl,treat,2,6.6667
+1989,Girl,looks,1,3.3333
+1990,Girl,mackenzie,1,3.3333
+1991,Girl,stupid,1,3.3333
+1992,Girl,parents,1,3.3333
+1993,Girl,selling,1,3.3333
+1994,Girl,house,1,3.3333
+1995,Girl,learned,1,3.3333
+1996,Girl,dance,1,3.3333
+1997,Girl,broke,1,3.3333
+1998,Girl,sarah,1,3.3333
+1999,Girl,leg,1,3.3333
+2000,Girl,mirror,1,3.3333
+2001,Girl,touched,1,3.3333
+2002,Girl,fanny,1,3.3333
+2003,Girl,job,1,3.3333
+2004,Girl,ewww,1,3.3333
+2005,Glenda,explain,1,33.3333
+2006,Glenda,works,1,33.3333
+2007,Glenda,booth,1,33.3333
+2008,Grandma Tribbiani,sam,2,22.2222
+2009,Grandma Tribbiani,waterston,2,22.2222
+2010,Grandma Tribbiani,crimes,1,11.1111
+2011,Grandma Tribbiani,misdemeanors,1,11.1111
+2012,Grandma Tribbiani,capricorn,1,11.1111
+2013,Grandma Tribbiani,caitlin,1,11.1111
+2014,Grandma Tribbiani,bravo,1,11.1111
+2015,Grandmother,father,3,4.1096
+2016,Grandmother,graduation,3,4.1096
+2017,Grandmother,gone,2,2.7397
+2018,Grandmother,phoe,2,2.7397
+2019,Grandmother,picture,2,2.7397
+2020,Grandmother,frame,2,2.7397
+2021,Grandmother,real,2,2.7397
+2022,Grandmother,harder,2,2.7397
+2023,Grandmother,pulls,2,2.7397
+2024,Grandmother,cab,2,2.7397
+2025,Grandmother,esther,1,1.3699
+2026,Grandmother,livingston,1,1.3699
+2027,Grandmother,scratches,1,1.3699
+2028,Grandmother,updating,1,1.3699
+2029,Grandmother,phonebook,1,1.3699
+2030,Grandmother,nervously,1,1.3699
+2031,Grandmother,gets,1,1.3699
+2032,Grandmother,box,1,1.3699
+2033,Grandmother,pictures,1,1.3699
+2034,Grandmother,meadow,1,1.3699
+2035,Gunter,yell,1,100.0
+2036,Gunther,birthday,4,1.8779
+2037,Gunther,leaving,2,0.939
+2038,Gunther,love,2,0.939
+2039,Gunther,muffins,2,0.939
+2040,Gunther,coffee,2,0.939
+2041,Gunther,hour,2,0.939
+2042,Gunther,wants,2,0.939
+2043,Gunther,work,2,0.939
+2044,Gunther,street,2,0.939
+2045,Gunther,came,2,0.939
+2046,Gunther,tray,2,0.939
+2047,Gunther,supposed,2,0.939
+2048,Gunther,sometime,2,0.939
+2049,Gunther,lover,2,0.939
+2050,Gunther,opening,2,0.939
+2051,Gunther,credits,2,0.939
+2052,Gunther,red,2,0.939
+2053,Gunther,jij,2,0.939
+2054,Gunther,changes,1,0.4695
+2055,Gunther,plans,1,0.4695
+2056,Guru Saj,guru,2,4.4444
+2057,Guru Saj,saj,2,4.4444
+2058,Guru Saj,koondis,2,4.4444
+2059,Guru Saj,must,1,2.2222
+2060,Guru Saj,relax,1,2.2222
+2061,Guru Saj,makes,1,2.2222
+2062,Guru Saj,attended,1,2.2222
+2063,Guru Saj,finest,1,2.2222
+2064,Guru Saj,medical,1,2.2222
+2065,Guru Saj,schools,1,2.2222
+2066,Guru Saj,central,1,2.2222
+2067,Guru Saj,america,1,2.2222
+2068,Guru Saj,skin,1,2.2222
+2069,Guru Saj,abnormality,1,2.2222
+2070,Guru Saj,seat,1,2.2222
+2071,Guru Saj,eeh,1,2.2222
+2072,Guru Saj,suspected,1,2.2222
+2073,Guru Saj,lie,1,2.2222
+2074,Guru Saj,sav,1,2.2222
+2075,Guru Saj,oughta,1,2.2222
+2076,Guy,phone,3,3.2258
+2077,Guy,bakersfield,2,2.1505
+2078,Guy,pick,2,2.1505
+2079,Guy,dom,2,2.1505
+2080,Guy,beautiful,2,2.1505
+2081,Guy,job,2,2.1505
+2082,Guy,jim,2,2.1505
+2083,Guy,elizabeth,1,1.0753
+2084,Guy,tom,1,1.0753
+2085,Guy,delivery,1,1.0753
+2086,Guy,mattress,1,1.0753
+2087,Guy,king,1,1.0753
+2088,Guy,sign,1,1.0753
+2089,Guy,bedroom,1,1.0753
+2090,Guy,gotcha,1,1.0753
+2091,Guy,return,1,1.0753
+2092,Guy,calls,1,1.0753
+2093,Guy,sent,1,1.0753
+2094,Guy,letters,1,1.0753
+2095,Guy,chance,1,1.0753
+2096,Guy All The Way In The Back,heard,1,100.0
+2097,Guys,hockey,3,50.0
+2098,Guys,oooooo,1,16.6667
+2099,Guys,greene,1,16.6667
+2100,Guys,coat,1,16.6667
+2101,Gym Employee,member,2,10.5263
+2102,Gym Employee,quit,1,5.2632
+2103,Gym Employee,realize,1,5.2632
+2104,Gym Employee,access,1,5.2632
+2105,Gym Employee,full,1,5.2632
+2106,Gym Employee,service,1,5.2632
+2107,Gym Employee,swedish,1,5.2632
+2108,Gym Employee,spa,1,5.2632
+2109,Gym Employee,dave,1,5.2632
+2110,Gym Employee,membership,1,5.2632
+2111,Gym Employee,office,1,5.2632
+2112,Gym Employee,handles,1,5.2632
+2113,Gym Employee,quitters,1,5.2632
+2114,Gym Employee,excuse,1,5.2632
+2115,Gym Employee,members,1,5.2632
+2116,Gym Employee,gym,1,5.2632
+2117,Gym Employee,problem,1,5.2632
+2118,Gym Employee,second,1,5.2632
+2119,Handyman,set,1,100.0
+2120,Hayley,kind,2,8.0
+2121,Hayley,excuse,1,4.0
+2122,Hayley,hayley,1,4.0
+2123,Hayley,love,1,4.0
+2124,Hayley,figured,1,4.0
+2125,Hayley,help,1,4.0
+2126,Hayley,seem,1,4.0
+2127,Hayley,dinner,1,4.0
+2128,Hayley,welcome,1,4.0
+2129,Hayley,coffee,1,4.0
+2130,Hayley,shock,1,4.0
+2131,Hayley,years,1,4.0
+2132,Hayley,marriage,1,4.0
+2133,Hayley,parents,1,4.0
+2134,Hayley,perfect,1,4.0
+2135,Hayley,couple,1,4.0
+2136,Hayley,divorced,1,4.0
+2137,Hayley,took,1,4.0
+2138,Hayley,hardest,1,4.0
+2139,Hayley,youngest,1,4.0
+2140,Health Inspector,restaurant,1,20.0
+2141,Health Inspector,clean,1,20.0
+2142,Health Inspector,tough,1,20.0
+2143,Health Inspector,making,1,20.0
+2144,Health Inspector,living,1,20.0
+2145,Helen,nina,1,16.6667
+2146,Helen,bookbinder,1,16.6667
+2147,Helen,send,1,16.6667
+2148,Helen,psychological,1,16.6667
+2149,Helen,profile,1,16.6667
+2150,Helen,personnel,1,16.6667
+2151,Helena,must,2,4.2553
+2152,Helena,life,2,4.2553
+2153,Helena,raining,2,4.2553
+2154,Helena,men,2,4.2553
+2155,Helena,darlings,1,2.1277
+2156,Helena,witty,1,2.1277
+2157,Helena,loved,1,2.1277
+2158,Helena,wonderful,1,2.1277
+2159,Helena,welcome,1,2.1277
+2160,Helena,regulars,1,2.1277
+2161,Helena,audience,1,2.1277
+2162,Helena,couple,1,2.1277
+2163,Helena,irregulars,1,2.1277
+2164,Helena,heard,1,2.1277
+2165,Helena,standing,1,2.1277
+2166,Helena,ovation,1,2.1277
+2167,Helena,early,1,2.1277
+2168,Helena,face,1,2.1277
+2169,Helena,unusual,1,2.1277
+2170,Helena,terribly,1,2.1277
+2171,Henrietta,uvula,1,100.0
+2172,Her Friends,awwww,1,50.0
+2173,Her Friends,end,1,50.0
+2174,Hilda,dear,1,50.0
+2175,Hilda,meeting,1,50.0
+2176,Hillary,except,1,3.8462
+2177,Hillary,become,1,3.8462
+2178,Hillary,chef,1,3.8462
+2179,Hillary,someday,1,3.8462
+2180,Hillary,soon,1,3.8462
+2181,Hillary,hope,1,3.8462
+2182,Hillary,open,1,3.8462
+2183,Hillary,restaurant,1,3.8462
+2184,Hillary,listener,1,3.8462
+2185,Hillary,shut,1,3.8462
+2186,Hillary,mouth,1,3.8462
+2187,Hillary,probably,1,3.8462
+2188,Hillary,bit,1,3.8462
+2189,Hillary,rarely,1,3.8462
+2190,Hillary,connect,1,3.8462
+2191,Hillary,date,1,3.8462
+2192,Hillary,eat,1,3.8462
+2193,Hillary,bread,1,3.8462
+2194,Hillary,laugh,1,3.8462
+2195,Hillary,move,1,3.8462
+2196,Hitchhiker,license,1,12.5
+2197,Hitchhiker,plate,1,12.5
+2198,Hitchhiker,game,1,12.5
+2199,Hitchhiker,train,1,12.5
+2200,Hitchhiker,station,1,12.5
+2201,Hitchhiker,address,1,12.5
+2202,Hitchhiker,phone,1,12.5
+2203,Hitchhiker,number,1,12.5
+2204,Hold Voice,stay,2,20.0
+2205,Hold Voice,line,2,20.0
+2206,Hold Voice,important,2,20.0
+2207,Hold Voice,patience,2,20.0
+2208,Hold Voice,caller,2,20.0
+2209,Hombre Man,hombre,2,25.0
+2210,Hombre Man,mornin,1,12.5
+2211,Hombre Man,territory,1,12.5
+2212,Hombre Man,saying,1,12.5
+2213,Hombre Man,annabelle,1,12.5
+2214,Hombre Man,heard,1,12.5
+2215,Hombre Man,doofus,1,12.5
+2216,Hooker,pretend,1,7.6923
+2217,Hooker,strip,1,7.6923
+2218,Hooker,cost,1,7.6923
+2219,Hooker,extra,1,7.6923
+2220,Hooker,extras,1,7.6923
+2221,Hooker,handcuffs,1,7.6923
+2222,Hooker,spanking,1,7.6923
+2223,Hooker,mind,1,7.6923
+2224,Hooker,smoke,1,7.6923
+2225,Hooker,taking,1,7.6923
+2226,Hooker,boys,1,7.6923
+2227,Hooker,close,1,7.6923
+2228,Hooker,robbing,1,7.6923
+2229,Hope,drake,2,100.0
+2230,Hoshi,boom,2,16.6667
+2231,Hoshi,iron,1,8.3333
+2232,Hoshi,steel,1,8.3333
+2233,Hoshi,computer,1,8.3333
+2234,Hoshi,support,1,8.3333
+2235,Hoshi,line,1,8.3333
+2236,Hoshi,hour,1,8.3333
+2237,Hoshi,half,1,8.3333
+2238,Hoshi,mail,1,8.3333
+2239,Hoshi,table,1,8.3333
+2240,Hoshi,fight,1,8.3333
+2241,Host,welcome,2,7.4074
+2242,Host,folks,2,7.4074
+2243,Host,refrigerator,2,7.4074
+2244,Host,glass,2,7.4074
+2245,Host,milk,2,7.4074
+2246,Host,darn,2,7.4074
+2247,Host,cartons,2,7.4074
+2248,Host,flingin,2,7.4074
+2249,Host,flangin,2,7.4074
+2250,Host,open,2,7.4074
+2251,Host,contestant,1,3.7037
+2252,Host,number,1,3.7037
+2253,Host,sixteen,1,3.7037
+2254,Host,rebecca,1,3.7037
+2255,Host,everybody,1,3.7037
+2256,Host,amazing,1,3.7037
+2257,Host,discoveries,1,3.7037
+2258,Hotel Clerk,room,2,22.2222
+2259,Hotel Clerk,liking,1,11.1111
+2260,Hotel Clerk,half,1,11.1111
+2261,Hotel Clerk,tank,1,11.1111
+2262,Hotel Clerk,left,1,11.1111
+2263,Hotel Clerk,ocean,1,11.1111
+2264,Hotel Clerk,view,1,11.1111
+2265,Hotel Clerk,unacceptable,1,11.1111
+2266,Housekeeper,waltham,2,8.3333
+2267,Housekeeper,oneself,2,8.3333
+2268,Housekeeper,residence,1,4.1667
+2269,Housekeeper,housekeeper,1,4.1667
+2270,Housekeeper,speaking,1,4.1667
+2271,Housekeeper,young,1,4.1667
+2272,Housekeeper,addresses,1,4.1667
+2273,Housekeeper,telephone,1,4.1667
+2274,Housekeeper,identifies,1,4.1667
+2275,Housekeeper,asks,1,4.1667
+2276,Housekeeper,person,1,4.1667
+2277,Housekeeper,wishes,1,4.1667
+2278,Housekeeper,speak,1,4.1667
+2279,Housekeeper,rehearsal,1,4.1667
+2280,Housekeeper,dinner,1,4.1667
+2281,Housekeeper,polite,1,4.1667
+2282,Housekeeper,fun,1,4.1667
+2283,Housekeeper,afraid,1,4.1667
+2284,Housekeeper,liberty,1,4.1667
+2285,Housekeeper,divulge,1,4.1667
+2286,Intern,cup,1,8.3333
+2287,Intern,coffee,1,8.3333
+2288,Intern,seriously,1,8.3333
+2289,Intern,intern,1,8.3333
+2290,Intern,usa,1,8.3333
+2291,Intern,end,1,8.3333
+2292,Intern,commercial,1,8.3333
+2293,Intern,girls,1,8.3333
+2294,Intern,hut,1,8.3333
+2295,Intern,tub,1,8.3333
+2296,Intern,making,1,8.3333
+2297,Intern,age,1,8.3333
+2298,Interviewer,dirty,4,11.4286
+2299,Interviewer,job,3,8.5714
+2300,Interviewer,firm,2,5.7143
+2301,Interviewer,gone,2,5.7143
+2302,Interviewer,slice,2,5.7143
+2303,Interviewer,real,2,5.7143
+2304,Interviewer,looks,2,5.7143
+2305,Interviewer,salad,2,5.7143
+2306,Interviewer,experience,1,2.8571
+2307,Interviewer,reason,1,2.8571
+2308,Interviewer,leaving,1,2.8571
+2309,Interviewer,comes,1,2.8571
+2310,Interviewer,reference,1,2.8571
+2311,Interviewer,lets,1,2.8571
+2312,Interviewer,person,1,2.8571
+2313,Interviewer,paper,1,2.8571
+2314,Interviewer,question,1,2.8571
+2315,Interviewer,advertising,1,2.8571
+2316,Interviewer,warned,1,2.8571
+2317,Interviewer,agency,1,2.8571
+2318,Isabella,list,3,25.0
+2319,Isabella,coffee,2,16.6667
+2320,Isabella,may,1,8.3333
+2321,Isabella,laminated,1,8.3333
+2322,Isabella,ironic,1,8.3333
+2323,Isabella,five,1,8.3333
+2324,Isabella,goofy,1,8.3333
+2325,Isabella,house,1,8.3333
+2326,Isabella,bumped,1,8.3333
+2327,Issac,chloe,2,11.1111
+2328,Issac,help,1,5.5556
+2329,Issac,switch,1,5.5556
+2330,Issac,crush,1,5.5556
+2331,Issac,quarter,1,5.5556
+2332,Issac,condom,1,5.5556
+2333,Issac,machine,1,5.5556
+2334,Issac,dog,1,5.5556
+2335,Issac,chick,1,5.5556
+2336,Issac,coffee,1,5.5556
+2337,Issac,matter,1,5.5556
+2338,Issac,love,1,5.5556
+2339,Issac,monogamy,1,5.5556
+2340,Issac,cruel,1,5.5556
+2341,Issac,rule,1,5.5556
+2342,Issac,problem,1,5.5556
+2343,Issac,promise,1,5.5556
+2344,Jack,emma,2,6.0606
+2345,Jack,seems,1,3.0303
+2346,Jack,far,1,3.0303
+2347,Jack,seventeen,1,3.0303
+2348,Jack,years,1,3.0303
+2349,Jack,true,1,3.0303
+2350,Jack,message,1,3.0303
+2351,Jack,becoming,1,3.0303
+2352,Jack,beyond,1,3.0303
+2353,Jack,grave,1,3.0303
+2354,Jack,cholesterol,1,3.0303
+2355,Jack,charts,1,3.0303
+2356,Jack,judy,1,3.0303
+2357,Jack,resemblance,1,3.0303
+2358,Jack,uncanny,1,3.0303
+2359,Jack,winter,1,3.0303
+2360,Jack,church,1,3.0303
+2361,Jack,lawn,1,3.0303
+2362,Jack,drove,1,3.0303
+2363,Jack,manger,1,3.0303
+2364,Jade,bob,4,8.6957
+2365,Jade,years,2,4.3478
+2366,Jade,probably,2,4.3478
+2367,Jade,jane,1,2.1739
+2368,Jade,number,1,2.1739
+2369,Jade,hoping,1,2.1739
+2370,Jade,hook,1,2.1739
+2371,Jade,barely,1,2.1739
+2372,Jade,nerve,1,2.1739
+2373,Jade,drunk,1,2.1739
+2374,Jade,naked,1,2.1739
+2375,Jade,usual,1,2.1739
+2376,Jade,teaching,1,2.1739
+2377,Jade,aerobics,1,2.1739
+2378,Jade,partying,1,2.1739
+2379,Jade,case,1,2.1739
+2380,Jade,wondering,1,2.1739
+2381,Jade,legs,1,2.1739
+2382,Jade,james,1,2.1739
+2383,Jade,bond,1,2.1739
+2384,Jake,fan,1,50.0
+2385,Jake,tuesday,1,50.0
+2386,Jamie,answer,1,8.3333
+2387,Jamie,telling,1,8.3333
+2388,Jamie,eat,1,8.3333
+2389,Jamie,home,1,8.3333
+2390,Jamie,kept,1,8.3333
+2391,Jamie,bringing,1,8.3333
+2392,Jamie,swordfish,1,8.3333
+2393,Jamie,looks,1,8.3333
+2394,Jamie,excuse,1,8.3333
+2395,Jamie,caffe,1,8.3333
+2396,Jamie,lattes,1,8.3333
+2397,Jamie,definitely,1,8.3333
+2398,Jane,jane,1,20.0
+2399,Jane,rogers,1,20.0
+2400,Jane,party,1,20.0
+2401,Jane,forgot,1,20.0
+2402,Jane,address,1,20.0
+2403,Janice,love,10,1.9531
+2404,Janice,janice,9,1.7578
+2405,Janice,sid,6,1.1719
+2406,Janice,moment,4,0.7812
+2407,Janice,wish,4,0.7812
+2408,Janice,somebody,4,0.7812
+2409,Janice,kiss,4,0.7812
+2410,Janice,fun,4,0.7812
+2411,Janice,gets,4,0.7812
+2412,Janice,married,4,0.7812
+2413,Janice,made,3,0.5859
+2414,Janice,house,3,0.5859
+2415,Janice,later,3,0.5859
+2416,Janice,husband,3,0.5859
+2417,Janice,family,3,0.5859
+2418,Janice,alone,3,0.5859
+2419,Janice,gawd,3,0.5859
+2420,Janice,party,3,0.5859
+2421,Janice,ling,3,0.5859
+2422,Janice,came,3,0.5859
+2423,Janine,blah,7,5.7377
+2424,Janine,dancer,4,3.2787
+2425,Janine,room,3,2.459
+2426,Janine,eve,3,2.459
+2427,Janine,happy,3,2.459
+2428,Janine,kiss,3,2.459
+2429,Janine,thanksgiving,2,1.6393
+2430,Janine,friends,2,1.6393
+2431,Janine,late,2,1.6393
+2432,Janine,dance,2,1.6393
+2433,Janine,nights,2,1.6393
+2434,Janine,row,2,1.6393
+2435,Janine,weeks,2,1.6393
+2436,Janine,lecroix,2,1.6393
+2437,Janine,roommate,2,1.6393
+2438,Janine,friend,2,1.6393
+2439,Janine,uptown,1,0.8197
+2440,Janine,none,1,0.8197
+2441,Janine,knows,1,0.8197
+2442,Janine,cook,1,0.8197
+2443,Janitor,monkey,3,4.918
+2444,Janitor,zoo,3,4.918
+2445,Janitor,knows,3,4.918
+2446,Janitor,idea,2,3.2787
+2447,Janitor,lipson,2,3.2787
+2448,Janitor,street,2,3.2787
+2449,Janitor,forgot,1,1.6393
+2450,Janitor,legs,1,1.6393
+2451,Janitor,meet,1,1.6393
+2452,Janitor,nocturnal,1,1.6393
+2453,Janitor,house,1,1.6393
+2454,Janitor,minutes,1,1.6393
+2455,Janitor,alive,1,1.6393
+2456,Janitor,bat,1,1.6393
+2457,Janitor,ambassador,1,1.6393
+2458,Janitor,darkness,1,1.6393
+2459,Janitor,flitting,1,1.6393
+2460,Janitor,cave,1,1.6393
+2461,Janitor,winged,1,1.6393
+2462,Janitor,messenger,1,1.6393
+2463,Jasmine,probably,1,33.3333
+2464,Jasmine,roommate,1,33.3333
+2465,Jasmine,knows,1,33.3333
+2466,Jason,slept,2,10.0
+2467,Jason,knowing,1,5.0
+2468,Jason,making,1,5.0
+2469,Jason,difference,1,5.0
+2470,Jason,kid,1,5.0
+2471,Jason,life,1,5.0
+2472,Jason,fire,1,5.0
+2473,Jason,department,1,5.0
+2474,Jason,sounded,1,5.0
+2475,Jason,serious,1,5.0
+2476,Jason,phone,1,5.0
+2477,Jason,passin,1,5.0
+2478,Jason,saw,1,5.0
+2479,Jason,playing,1,5.0
+2480,Jason,seeing,1,5.0
+2481,Jason,neither,1,5.0
+2482,Jason,break,1,5.0
+2483,Jason,real,1,5.0
+2484,Jason,easy,1,5.0
+2485,Jay Leno,book,2,9.5238
+2486,Jay Leno,mom,2,9.5238
+2487,Jay Leno,folks,1,4.7619
+2488,Jay Leno,euphoria,1,4.7619
+2489,Jay Leno,unbound,1,4.7619
+2490,Jay Leno,interesting,1,4.7619
+2491,Jay Leno,nora,1,4.7619
+2492,Jay Leno,tyler,1,4.7619
+2493,Jay Leno,kids,1,4.7619
+2494,Jay Leno,bed,1,4.7619
+2495,Jay Leno,arrested,1,4.7619
+2496,Jay Leno,london,1,4.7619
+2497,Jay Leno,tour,1,4.7619
+2498,Jay Leno,somehow,1,4.7619
+2499,Jay Leno,fabulous,1,4.7619
+2500,Jay Leno,bought,1,4.7619
+2501,Jay Leno,son,1,4.7619
+2502,Jay Leno,condoms,1,4.7619
+2503,Jay Leno,entertainment,1,4.7619
+2504,Jeanette,boards,1,33.3333
+2505,Jeanette,friday,1,33.3333
+2506,Jeanette,pitch,1,33.3333
+2507,Jeannie,sounds,1,16.6667
+2508,Jeannie,lovely,1,16.6667
+2509,Jeannie,set,1,16.6667
+2510,Jeannie,hope,1,16.6667
+2511,Jeannie,baby,1,16.6667
+2512,Jeannie,feels,1,16.6667
+2513,Jeannine,changed,1,20.0
+2514,Jeannine,thirty,1,20.0
+2515,Jeannine,seconds,1,20.0
+2516,Jeannine,alone,1,20.0
+2517,Jeannine,julio,1,20.0
+2518,Jen,number,1,20.0
+2519,Jen,later,1,20.0
+2520,Jen,forgot,1,20.0
+2521,Jen,paper,1,20.0
+2522,Jen,coat,1,20.0
+2523,Jennifer,katie,5,20.0
+2524,Jennifer,operation,2,8.0
+2525,Jennifer,previously,1,4.0
+2526,Jennifer,friends,1,4.0
+2527,Jennifer,fun,1,4.0
+2528,Jennifer,damn,1,4.0
+2529,Jennifer,monkey,1,4.0
+2530,Jennifer,geez,1,4.0
+2531,Jennifer,lisa,1,4.0
+2532,Jennifer,laugh,1,4.0
+2533,Jennifer,though,1,4.0
+2534,Jennifer,infectious,1,4.0
+2535,Jennifer,forget,1,4.0
+2536,Jennifer,starts,1,4.0
+2537,Jennifer,gone,1,4.0
+2538,Jennifer,kids,1,4.0
+2539,Jennifer,ben,1,4.0
+2540,Jennifer,intrigue,1,4.0
+2541,Jennifer,hang,1,4.0
+2542,Jennifer,conan,1,4.0
+2543,Jessica Ashley,idea,1,16.6667
+2544,Jessica Ashley,means,1,16.6667
+2545,Jessica Ashley,save,1,16.6667
+2546,Jessica Ashley,real,1,16.6667
+2547,Jessica Ashley,awards,1,16.6667
+2548,Jessica Ashley,excuse,1,16.6667
+2549,Jessica Lockhart,accident,1,16.6667
+2550,Jessica Lockhart,baby,1,16.6667
+2551,Jessica Lockhart,matter,1,16.6667
+2552,Jessica Lockhart,dina,1,16.6667
+2553,Jessica Lockhart,recognize,1,16.6667
+2554,Jessica Lockhart,mother,1,16.6667
+2555,Jester,may,1,14.2857
+2556,Jester,help,1,14.2857
+2557,Jester,signed,1,14.2857
+2558,Jester,velula,1,14.2857
+2559,Jester,nobody,1,14.2857
+2560,Jester,sees,1,14.2857
+2561,Jester,king,1,14.2857
+2562,Jill,date,4,3.1496
+2563,Jill,kind,3,2.3622
+2564,Jill,smart,3,2.3622
+2565,Jill,hire,2,1.5748
+2566,Jill,lawyer,2,1.5748
+2567,Jill,money,2,1.5748
+2568,Jill,friend,2,1.5748
+2569,Jill,different,2,1.5748
+2570,Jill,cheer,2,1.5748
+2571,Jill,enough,2,1.5748
+2572,Jill,stupid,2,1.5748
+2573,Jill,doubting,2,1.5748
+2574,Jill,somebody,2,1.5748
+2575,Jill,daddy,1,0.7874
+2576,Jill,sue,1,0.7874
+2577,Jill,pay,1,0.7874
+2578,Jill,learn,1,0.7874
+2579,Jill,value,1,0.7874
+2580,Jill,daughter,1,0.7874
+2581,Jill,proud,1,0.7874
+2582,Jim,wild,2,10.5263
+2583,Jim,seeing,1,5.2632
+2584,Jim,dinner,1,5.2632
+2585,Jim,clock,1,5.2632
+2586,Jim,bit,1,5.2632
+2587,Jim,party,1,5.2632
+2588,Jim,staring,1,5.2632
+2589,Jim,beautiful,1,5.2632
+2590,Jim,eyes,1,5.2632
+2591,Jim,breasts,1,5.2632
+2592,Jim,write,1,5.2632
+2593,Jim,erotic,1,5.2632
+2594,Jim,novels,1,5.2632
+2595,Jim,children,1,5.2632
+2596,Jim,wildly,1,5.2632
+2597,Jim,unpopular,1,5.2632
+2598,Jim,interested,1,5.2632
+2599,Jim,huge,1,5.2632
+2600,Jo Lynn,kitty,1,16.6667
+2601,Jo Lynn,mittens,1,16.6667
+2602,Jo Lynn,fitzhugh,1,16.6667
+2603,Jo Lynn,cat,1,16.6667
+2604,Jo Lynn,condo,1,16.6667
+2605,Jo Lynn,jinkies,1,16.6667
+2606,Joanna,sophie,6,3.5928
+2607,Joanna,sad,3,1.7964
+2608,Joanna,awkward,3,1.7964
+2609,Joanna,assistant,3,1.7964
+2610,Joanna,work,2,1.1976
+2611,Joanna,click,2,1.1976
+2612,Joanna,door,2,1.1976
+2613,Joanna,heart,2,1.1976
+2614,Joanna,called,2,1.1976
+2615,Joanna,butt,2,1.1976
+2616,Joanna,uncomfortable,2,1.1976
+2617,Joanna,friend,2,1.1976
+2618,Joanna,boss,2,1.1976
+2619,Joanna,office,2,1.1976
+2620,Joanna,friendly,2,1.1976
+2621,Joanna,sleep,2,1.1976
+2622,Joanna,job,2,1.1976
+2623,Joanna,filing,2,1.1976
+2624,Joanna,problem,2,1.1976
+2625,Joanna,must,2,1.1976
+2626,Joanne,apron,1,11.1111
+2627,Joanne,dad,1,11.1111
+2628,Joanne,making,1,11.1111
+2629,Joanne,partner,1,11.1111
+2630,Joanne,firm,1,11.1111
+2631,Joanne,reality,1,11.1111
+2632,Joanne,second,1,11.1111
+2633,Joanne,coming,1,11.1111
+2634,Joanne,home,1,11.1111
+2635,Joey,love,96,0.5213
+2636,Joey,baby,92,0.4995
+2637,Joey,credits,82,0.4452
+2638,Joey,work,71,0.3855
+2639,Joey,friend,69,0.3747
+2640,Joey,check,65,0.3529
+2641,Joey,break,62,0.3366
+2642,Joey,friends,61,0.3312
+2643,Joey,part,59,0.3204
+2644,Joey,remember,59,0.3204
+2645,Joey,hot,56,0.3041
+2646,Joey,help,55,0.2986
+2647,Joey,opening,53,0.2878
+2648,Joey,room,52,0.2823
+2649,Joey,end,52,0.2823
+2650,Joey,audition,51,0.2769
+2651,Joey,hand,49,0.2661
+2652,Joey,made,48,0.2606
+2653,Joey,money,48,0.2606
+2654,Joey,actor,46,0.2498
+2655,Joey All Nervous,sister,1,50.0
+2656,Joey All Nervous,raccoon,1,50.0
+2657,Joey Groans And,producer,1,9.0909
+2658,Joey Groans And,days,1,9.0909
+2659,Joey Groans And,left,1,9.0909
+2660,Joey Groans And,message,1,9.0909
+2661,Joey Groans And,machine,1,9.0909
+2662,Joey Groans And,asking,1,9.0909
+2663,Joey Groans And,parade,1,9.0909
+2664,Joey Groans And,everybody,1,9.0909
+2665,Joey Groans And,pissed,1,9.0909
+2666,Joey Groans And,meet,1,9.0909
+2667,Joey Groans And,santa,1,9.0909
+2668,Joey On Tv,damnit,1,50.0
+2669,Joey On Tv,doctor,1,50.0
+2670,Josh,beer,2,18.1818
+2671,Josh,dudes,1,9.0909
+2672,Josh,hope,1,9.0909
+2673,Josh,varsity,1,9.0909
+2674,Josh,though,1,9.0909
+2675,Josh,late,1,9.0909
+2676,Josh,game,1,9.0909
+2677,Josh,head,1,9.0909
+2678,Josh,dope,1,9.0909
+2679,Josh,party,1,9.0909
+2680,Joshua,burgin,5,3.0303
+2681,Joshua,parents,3,1.8182
+2682,Joshua,date,3,1.8182
+2683,Joshua,gloves,3,1.8182
+2684,Joshua,divorce,2,1.2121
+2685,Joshua,weird,2,1.2121
+2686,Joshua,swear,2,1.2121
+2687,Joshua,week,2,1.2121
+2688,Joshua,kids,2,1.2121
+2689,Joshua,sucks,2,1.2121
+2690,Joshua,wife,2,1.2121
+2691,Joshua,skirt,2,1.2121
+2692,Joshua,fun,2,1.2121
+2693,Joshua,wear,2,1.2121
+2694,Joshua,suits,2,1.2121
+2695,Joshua,fantastic,2,1.2121
+2696,Joshua,waltham,2,1.2121
+2697,Joshua,voice,1,0.6061
+2698,Joshua,sounded,1,0.6061
+2699,Joshua,squeaky,1,0.6061
+2700,Judge,annulment,3,6.383
+2701,Judge,based,3,6.383
+2702,Judge,marriage,2,4.2553
+2703,Judge,asking,1,2.1277
+2704,Judge,court,1,2.1277
+2705,Judge,petition,1,2.1277
+2706,Judge,seeking,1,2.1277
+2707,Judge,grounds,1,2.1277
+2708,Judge,mentally,1,2.1277
+2709,Judge,unstable,1,2.1277
+2710,Judge,fact,1,2.1277
+2711,Judge,intravenous,1,2.1277
+2712,Judge,drug,1,2.1277
+2713,Judge,user,1,2.1277
+2714,Judge,says,1,2.1277
+2715,Judge,lied,1,2.1277
+2716,Judge,sexual,1,2.1277
+2717,Judge,preference,1,2.1277
+2718,Judge,finally,1,2.1277
+2719,Judge,unable,1,2.1277
+2720,Judy,remember,2,5.5556
+2721,Judy,birthday,2,5.5556
+2722,Judy,emma,2,5.5556
+2723,Judy,jealous,1,2.7778
+2724,Judy,attention,1,2.7778
+2725,Judy,giving,1,2.7778
+2726,Judy,pulled,1,2.7778
+2727,Judy,testicles,1,2.7778
+2728,Judy,emergency,1,2.7778
+2729,Judy,room,1,2.7778
+2730,Judy,happy,1,2.7778
+2731,Judy,eighteenth,1,2.7778
+2732,Judy,grown,1,2.7778
+2733,Judy,grandfather,1,2.7778
+2734,Judy,parents,1,2.7778
+2735,Judy,died,1,2.7778
+2736,Judy,young,1,2.7778
+2737,Judy,heart,1,2.7778
+2738,Judy,disease,1,2.7778
+2739,Judy,kills,1,2.7778
+2740,Julie,cobb,3,3.0612
+2741,Julie,grad,2,2.0408
+2742,Julie,school,2,2.0408
+2743,Julie,third,2,2.0408
+2744,Julie,later,2,2.0408
+2745,Julie,grade,2,2.0408
+2746,Julie,teacher,2,2.0408
+2747,Julie,half,2,2.0408
+2748,Julie,cab,2,2.0408
+2749,Julie,probably,2,2.0408
+2750,Julie,skidmark,1,1.0204
+2751,Julie,broke,1,1.0204
+2752,Julie,judge,1,1.0204
+2753,Julie,ridicule,1,1.0204
+2754,Julie,cultures,1,1.0204
+2755,Julie,nipple,1,1.0204
+2756,Julie,sign,1,1.0204
+2757,Julie,virility,1,1.0204
+2758,Julie,huts,1,1.0204
+2759,Julie,women,1,1.0204
+2760,Julio,lip,2,7.4074
+2761,Julio,poem,2,7.4074
+2762,Julio,women,2,7.4074
+2763,Julio,adios,1,3.7037
+2764,Julio,mine,1,3.7037
+2765,Julio,flowers,1,3.7037
+2766,Julio,evil,1,3.7037
+2767,Julio,beaudalire,1,3.7037
+2768,Julio,read,1,3.7037
+2769,Julio,translation,1,3.7037
+2770,Julio,poet,1,3.7037
+2771,Julio,move,1,3.7037
+2772,Julio,shadow,1,3.7037
+2773,Julio,tree,1,3.7037
+2774,Julio,child,1,3.7037
+2775,Julio,laughing,1,3.7037
+2776,Julio,write,1,3.7037
+2777,Julio,epic,1,3.7037
+2778,Julio,empty,1,3.7037
+2779,Julio,vase,1,3.7037
+2780,Kara,meet,1,25.0
+2781,Kara,oww,1,25.0
+2782,Kara,kids,1,25.0
+2783,Kara,coffee,1,25.0
+2784,Karin,dating,2,33.3333
+2785,Karin,anymore,1,16.6667
+2786,Karin,figured,1,16.6667
+2787,Karin,work,1,16.6667
+2788,Karin,attracted,1,16.6667
+2789,Kash,seen,1,100.0
+2790,Kate,reason,5,4.065
+2791,Kate,happy,4,3.252
+2792,Kate,pick,3,2.439
+2793,Kate,stay,3,2.439
+2794,Kate,scene,3,2.439
+2795,Kate,yep,2,1.626
+2796,Kate,soap,2,1.626
+2797,Kate,caught,2,1.626
+2798,Kate,victor,2,1.626
+2799,Kate,kiss,2,1.626
+2800,Kate,milk,2,1.626
+2801,Kate,supposed,2,1.626
+2802,Kate,vic,2,1.626
+2803,Kate,fabulous,1,0.813
+2804,Kate,become,1,0.813
+2805,Kate,drama,1,0.813
+2806,Kate,critic,1,0.813
+2807,Kate,dumped,1,0.813
+2808,Kate,read,1,0.813
+2809,Kate,review,1,0.813
+2810,Kathy,love,3,2.4194
+2811,Kathy,course,2,1.6129
+2812,Kathy,must,2,1.6129
+2813,Kathy,looks,2,1.6129
+2814,Kathy,hair,2,1.6129
+2815,Kathy,probably,2,1.6129
+2816,Kathy,purse,2,1.6129
+2817,Kathy,work,2,1.6129
+2818,Kathy,date,2,1.6129
+2819,Kathy,amazing,2,1.6129
+2820,Kathy,friends,2,1.6129
+2821,Kathy,cute,1,0.8065
+2822,Kathy,assistant,1,0.8065
+2823,Kathy,story,1,0.8065
+2824,Kathy,borrow,1,0.8065
+2825,Kathy,keys,1,0.8065
+2826,Kathy,apartment,1,0.8065
+2827,Kathy,ahahaha,1,0.8065
+2828,Kathy,excuse,1,0.8065
+2829,Kathy,gift,1,0.8065
+2830,Katie,love,2,6.0606
+2831,Katie,chinese,2,6.0606
+2832,Katie,fun,2,6.0606
+2833,Katie,size,2,6.0606
+2834,Katie,sweet,2,6.0606
+2835,Katie,run,1,3.0303
+2836,Katie,bathroom,1,3.0303
+2837,Katie,lunch,1,3.0303
+2838,Katie,waiter,1,3.0303
+2839,Katie,nut,1,3.0303
+2840,Katie,hurt,1,3.0303
+2841,Katie,making,1,3.0303
+2842,Katie,nicest,1,3.0303
+2843,Katie,friends,1,3.0303
+2844,Katie,oww,1,3.0303
+2845,Katie,kicked,1,3.0303
+2846,Katie,walk,1,3.0303
+2847,Katie,door,1,3.0303
+2848,Katie,delivery,1,3.0303
+2849,Katie,realized,1,3.0303
+2850,Ken,york,2,9.5238
+2851,Ken,true,2,9.5238
+2852,Ken,donation,1,4.7619
+2853,Ken,made,1,4.7619
+2854,Ken,city,1,4.7619
+2855,Ken,ballet,1,4.7619
+2856,Ken,house,1,4.7619
+2857,Ken,reason,1,4.7619
+2858,Ken,tulsa,1,4.7619
+2859,Ken,fell,1,4.7619
+2860,Ken,asleep,1,4.7619
+2861,Ken,meeting,1,4.7619
+2862,Ken,took,1,4.7619
+2863,Ken,job,1,4.7619
+2864,Ken,without,1,4.7619
+2865,Ken,realizing,1,4.7619
+2866,Ken,saying,1,4.7619
+2867,Ken,smoke,1,4.7619
+2868,Ken,wife,1,4.7619
+2869,Kevin,couple,1,20.0
+2870,Kevin,parties,1,20.0
+2871,Kevin,numbers,1,20.0
+2872,Kevin,fun,1,20.0
+2873,Kevin,deal,1,20.0
+2874,Kid,found,1,5.0
+2875,Kid,finders,1,5.0
+2876,Kid,keepers,1,5.0
+2877,Kid,losers,1,5.0
+2878,Kid,weepers,1,5.0
+2879,Kid,excuse,1,5.0
+2880,Kid,singing,1,5.0
+2881,Kid,tells,1,5.0
+2882,Kid,truth,1,5.0
+2883,Kid,shouting,1,5.0
+2884,Kid,door,1,5.0
+2885,Kid,accidentally,1,5.0
+2886,Kid,drop,1,5.0
+2887,Kid,condom,1,5.0
+2888,Kid,case,1,5.0
+2889,Kid,kind,1,5.0
+2890,Kid,emergency,1,5.0
+2891,Kid,christine,1,5.0
+2892,Kid,trick,1,5.0
+2893,Kid,treat,1,5.0
+2894,Kids,trick,2,50.0
+2895,Kids,treat,2,50.0
+2896,Kiki,news,2,14.2857
+2897,Kiki,city,1,7.1429
+2898,Kiki,shopping,1,7.1429
+2899,Kiki,mom,1,7.1429
+2900,Kiki,work,1,7.1429
+2901,Kiki,aaand,1,7.1429
+2902,Kiki,true,1,7.1429
+2903,Kiki,subject,1,7.1429
+2904,Kiki,biggest,1,7.1429
+2905,Kiki,dumping,1,7.1429
+2906,Kiki,barry,1,7.1429
+2907,Kiki,altar,1,7.1429
+2908,Kiki,waitressing,1,7.1429
+2909,Kim,ralph,4,4.0404
+2910,Kim,kidding,3,3.0303
+2911,Kim,true,2,2.0202
+2912,Kim,keycard,2,2.0202
+2913,Kim,lunch,2,2.0202
+2914,Kim,job,2,2.0202
+2915,Kim,seen,2,2.0202
+2916,Kim,gave,2,2.0202
+2917,Kim,nancy,2,2.0202
+2918,Kim,cigarette,2,2.0202
+2919,Kim,quit,2,2.0202
+2920,Kim,trip,2,2.0202
+2921,Kim,read,1,1.0101
+2922,Kim,cancel,1,1.0101
+2923,Kim,fabric,1,1.0101
+2924,Kim,order,1,1.0101
+2925,Kim,taiwan,1,1.0101
+2926,Kim,interesting,1,1.0101
+2927,Kim,checked,1,1.0101
+2928,Kim,access,1,1.0101
+2929,Kitchen Worker,speak,1,50.0
+2930,Kitchen Worker,english,1,50.0
+2931,Kori,memorial,1,5.5556
+2932,Kori,service,1,5.5556
+2933,Kori,gone,1,5.5556
+2934,Kori,sad,1,5.5556
+2935,Kori,class,1,5.5556
+2936,Kori,talked,1,5.5556
+2937,Kori,passionately,1,5.5556
+2938,Kori,science,1,5.5556
+2939,Kori,remembered,1,5.5556
+2940,Kori,many,1,5.5556
+2941,Kori,times,1,5.5556
+2942,Kori,calling,1,5.5556
+2943,Kori,asking,1,5.5556
+2944,Kori,missed,1,5.5556
+2945,Kori,chance,1,5.5556
+2946,Kori,sick,1,5.5556
+2947,Kori,freak,1,5.5556
+2948,Kori,crush,1,5.5556
+2949,Krista,meet,1,8.3333
+2950,Krista,wish,1,8.3333
+2951,Krista,company,1,8.3333
+2952,Krista,fix,1,8.3333
+2953,Krista,pants,1,8.3333
+2954,Krista,upstairs,1,8.3333
+2955,Krista,stain,1,8.3333
+2956,Krista,set,1,8.3333
+2957,Krista,danny,1,8.3333
+2958,Krista,hurry,1,8.3333
+2959,Krista,bath,1,8.3333
+2960,Krista,cold,1,8.3333
+2961,Kristen,kristen,2,5.2632
+2962,Kristen,moved,1,2.6316
+2963,Kristen,four,1,2.6316
+2964,Kristen,blocks,1,2.6316
+2965,Kristen,block,1,2.6316
+2966,Kristen,world,1,2.6316
+2967,Kristen,excuse,1,2.6316
+2968,Kristen,moving,1,2.6316
+2969,Kristen,careful,1,2.6316
+2970,Kristen,helping,1,2.6316
+2971,Kristen,hurt,1,2.6316
+2972,Kristen,live,1,2.6316
+2973,Kristen,remember,1,2.6316
+2974,Kristen,plans,1,2.6316
+2975,Kristen,strong,1,2.6316
+2976,Kristen,grab,1,2.6316
+2977,Kristen,boxes,1,2.6316
+2978,Kristen,feeling,1,2.6316
+2979,Kristen,table,1,2.6316
+2980,Kristen,couple,1,2.6316
+2981,Kristin,lovers,1,20.0
+2982,Kristin,past,1,20.0
+2983,Kristin,years,1,20.0
+2984,Kristin,working,1,20.0
+2985,Kristin,major,1,20.0
+2986,Kyle,talked,1,12.5
+2987,Kyle,realized,1,12.5
+2988,Kyle,reason,1,12.5
+2989,Kyle,angry,1,12.5
+2990,Kyle,feelings,1,12.5
+2991,Kyle,weird,1,12.5
+2992,Kyle,commercial,1,12.5
+2993,Kyle,break,1,12.5
+2994,Lady,upstairs,2,22.2222
+2995,Lady,showing,1,11.1111
+2996,Lady,offer,1,11.1111
+2997,Lady,goning,1,11.1111
+2998,Lady,husband,1,11.1111
+2999,Lady,kids,1,11.1111
+3000,Lady,wall,1,11.1111
+3001,Lady,street,1,11.1111
+3002,Larry,kitchen,2,3.4483
+3003,Larry,points,2,3.4483
+3004,Larry,hat,2,3.4483
+3005,Larry,section,2,3.4483
+3006,Larry,dinner,2,3.4483
+3007,Larry,health,2,3.4483
+3008,Larry,bribes,1,1.7241
+3009,Larry,kidding,1,1.7241
+3010,Larry,check,1,1.7241
+3011,Larry,floors,1,1.7241
+3012,Larry,deducted,1,1.7241
+3013,Larry,wearing,1,1.7241
+3014,Larry,chef,1,1.7241
+3015,Larry,violation,1,1.7241
+3016,Larry,vunda,1,1.7241
+3017,Larry,number,1,1.7241
+3018,Larry,sometime,1,1.7241
+3019,Larry,beautiful,1,1.7241
+3020,Larry,evening,1,1.7241
+3021,Larry,mind,1,1.7241
+3022,Laura,lovely,2,5.2632
+3023,Laura,building,2,5.2632
+3024,Laura,friends,2,5.2632
+3025,Laura,gave,2,5.2632
+3026,Laura,number,2,5.2632
+3027,Laura,laura,1,2.6316
+3028,Laura,adoption,1,2.6316
+3029,Laura,interview,1,2.6316
+3030,Laura,water,1,2.6316
+3031,Laura,couples,1,2.6316
+3032,Laura,adopting,1,2.6316
+3033,Laura,realized,1,2.6316
+3034,Laura,remember,1,2.6316
+3035,Laura,date,1,2.6316
+3036,Laura,lived,1,2.6316
+3037,Laura,end,1,2.6316
+3038,Laura,promised,1,2.6316
+3039,Laura,brought,1,2.6316
+3040,Laura,either,1,2.6316
+3041,Laura,planning,1,2.6316
+3042,Lauren,vic,8,20.0
+3043,Lauren,victor,2,5.0
+3044,Lauren,ran,1,2.5
+3045,Lauren,hallway,1,2.5
+3046,Lauren,building,1,2.5
+3047,Lauren,slept,1,2.5
+3048,Lauren,dumped,1,2.5
+3049,Lauren,baby,1,2.5
+3050,Lauren,job,1,2.5
+3051,Lauren,waiting,1,2.5
+3052,Lauren,tarp,1,2.5
+3053,Lauren,closing,1,2.5
+3054,Lauren,credits,1,2.5
+3055,Lauren,fan,1,2.5
+3056,Lauren,schedule,1,2.5
+3057,Lauren,classes,1,2.5
+3058,Lauren,watch,1,2.5
+3059,Lauren,drake,1,2.5
+3060,Lauren,remoray,1,2.5
+3061,Lauren,days,1,2.5
+3062,Leader,cookies,2,12.5
+3063,Leader,girls,1,6.25
+3064,Leader,final,1,6.25
+3065,Leader,tallies,1,6.25
+3066,Leader,debbie,1,6.25
+3067,Leader,boxes,1,6.25
+3068,Leader,charla,1,6.25
+3069,Leader,dear,1,6.25
+3070,Leader,elizabeth,1,6.25
+3071,Leader,batting,1,6.25
+3072,Leader,sarah,1,6.25
+3073,Leader,although,1,6.25
+3074,Leader,looks,1,6.25
+3075,Leader,bought,1,6.25
+3076,Leader,awful,1,6.25
+3077,Lecturer,sheer,2,11.1111
+3078,Lecturer,oversized,2,11.1111
+3079,Lecturer,beginning,1,5.5556
+3080,Lecturer,layering,1,5.5556
+3081,Lecturer,fabrics,1,5.5556
+3082,Lecturer,colours,1,5.5556
+3083,Lecturer,instance,1,5.5556
+3084,Lecturer,navy,1,5.5556
+3085,Lecturer,blouse,1,5.5556
+3086,Lecturer,pink,1,5.5556
+3087,Lecturer,bracelets,1,5.5556
+3088,Lecturer,earrings,1,5.5556
+3089,Lecturer,oversizing,1,5.5556
+3090,Lecturer,accessories,1,5.5556
+3091,Lecturer,general,1,5.5556
+3092,Lecturer,popular,1,5.5556
+3093,Lennart,phone,2,2.3529
+3094,Lennart,act,2,2.3529
+3095,Lennart,bastard,2,2.3529
+3096,Lennart,learn,2,2.3529
+3097,Lennart,words,2,2.3529
+3098,Lennart,quickly,2,2.3529
+3099,Lennart,character,2,2.3529
+3100,Lennart,answer,2,2.3529
+3101,Lennart,loved,2,2.3529
+3102,Lennart,blessed,1,1.1765
+3103,Lennart,roles,1,1.1765
+3104,Lennart,making,1,1.1765
+3105,Lennart,fun,1,1.1765
+3106,Lennart,sell,1,1.1765
+3107,Lennart,money,1,1.1765
+3108,Lennart,phones,1,1.1765
+3109,Lennart,almost,1,1.1765
+3110,Lennart,lost,1,1.1765
+3111,Lennart,cousin,1,1.1765
+3112,Lennart,wireless,1,1.1765
+3113,Leslie,shoes,5,8.3333
+3114,Leslie,sticky,4,6.6667
+3115,Leslie,home,3,5.0
+3116,Leslie,sell,2,3.3333
+3117,Leslie,played,2,3.3333
+3118,Leslie,ran,1,1.6667
+3119,Leslie,vlad,1,1.6667
+3120,Leslie,fish,1,1.6667
+3121,Leslie,far,1,1.6667
+3122,Leslie,star,1,1.6667
+3123,Leslie,stew,1,1.6667
+3124,Leslie,anymore,1,1.6667
+3125,Leslie,sick,1,1.6667
+3126,Leslie,fired,1,1.6667
+3127,Leslie,hoping,1,1.6667
+3128,Leslie,wear,1,1.6667
+3129,Leslie,everyday,1,1.6667
+3130,Leslie,heel,1,1.6667
+3131,Leslie,holes,1,1.6667
+3132,Leslie,toes,1,1.6667
+3133,Lewis,grade,3,15.0
+3134,Lewis,love,3,15.0
+3135,Lewis,change,2,10.0
+3136,Lewis,noise,1,5.0
+3137,Lewis,professor,1,5.0
+3138,Lewis,midterms,1,5.0
+3139,Lewis,hoping,1,5.0
+3140,Lewis,changed,1,5.0
+3141,Lewis,ned,1,5.0
+3142,Lewis,yanking,1,5.0
+3143,Lewis,chain,1,5.0
+3144,Lewis,done,1,5.0
+3145,Lewis,teachers,1,5.0
+3146,Lewis,girlfriend,1,5.0
+3147,Lewis,awful,1,5.0
+3148,Liam,saw,1,11.1111
+3149,Liam,fact,1,11.1111
+3150,Liam,playing,1,11.1111
+3151,Liam,game,1,11.1111
+3152,Liam,park,1,11.1111
+3153,Liam,welcome,1,11.1111
+3154,Liam,cheers,1,11.1111
+3155,Liam,bloody,1,11.1111
+3156,Liam,scrum,1,11.1111
+3157,Lipson,died,2,7.4074
+3158,Lipson,saying,2,7.4074
+3159,Lipson,dean,1,3.7037
+3160,Lipson,lipson,1,3.7037
+3161,Lipson,zoo,1,3.7037
+3162,Lipson,administrator,1,3.7037
+3163,Lipson,question,1,3.7037
+3164,Lipson,afraid,1,3.7037
+3165,Lipson,news,1,3.7037
+3166,Lipson,marcel,1,3.7037
+3167,Lipson,passed,1,3.7037
+3168,Lipson,sick,1,3.7037
+3169,Lipson,sicker,1,3.7037
+3170,Lipson,sometimes,1,3.7037
+3171,Lipson,monkeys,1,3.7037
+3172,Lipson,die,1,3.7037
+3173,Lipson,certainly,1,3.7037
+3174,Lipson,fitting,1,3.7037
+3175,Lipson,gesture,1,3.7037
+3176,Lipson,bird,1,3.7037
+3177,Lisa,absolutely,2,18.1818
+3178,Lisa,everybody,1,9.0909
+3179,Lisa,fault,1,9.0909
+3180,Lisa,love,1,9.0909
+3181,Lisa,blanc,1,9.0909
+3182,Lisa,mess,1,9.0909
+3183,Lisa,fell,1,9.0909
+3184,Lisa,afraid,1,9.0909
+3185,Lisa,fall,1,9.0909
+3186,Lisa,silly,1,9.0909
+3187,Lisa Kudrow,previously,1,50.0
+3188,Lisa Kudrow,friends,1,50.0
+3189,Little Bully,hat,4,12.5
+3190,Little Bully,sitting,2,6.25
+3191,Little Bully,took,2,6.25
+3192,Little Bully,faces,2,6.25
+3193,Little Bully,keys,2,6.25
+3194,Little Bully,watches,2,6.25
+3195,Little Bully,walks,1,3.125
+3196,Little Bully,counter,1,3.125
+3197,Little Bully,supposed,1,3.125
+3198,Little Bully,joke,1,3.125
+3199,Little Bully,deal,1,3.125
+3200,Little Bully,coffee,1,3.125
+3201,Little Bully,house,1,3.125
+3202,Little Bully,weenies,1,3.125
+3203,Little Bully,watch,1,3.125
+3204,Little Bully,break,1,3.125
+3205,Little Bully,ribs,1,3.125
+3206,Little Bully,mail,1,3.125
+3207,Little Bully,box,1,3.125
+3208,Little Bully,apartment,1,3.125
+3209,Little Girl,dance,1,50.0
+3210,Little Girl,melinda,1,50.0
+3211,Lizzie,weird,2,18.1818
+3212,Lizzie,pick,1,9.0909
+3213,Lizzie,vowels,1,9.0909
+3214,Lizzie,saltines,1,9.0909
+3215,Lizzie,money,1,9.0909
+3216,Lizzie,tin,1,9.0909
+3217,Lizzie,foil,1,9.0909
+3218,Lizzie,hat,1,9.0909
+3219,Lizzie,change,1,9.0909
+3220,Lizzie,pretzel,1,9.0909
+3221,Locksmith,luck,1,50.0
+3222,Locksmith,buddy,1,50.0
+3223,Looking Down And,sister,1,50.0
+3224,Looking Down And,raccoon,1,50.0
+3225,Lorraine,brought,2,6.6667
+3226,Lorraine,checking,2,6.6667
+3227,Lorraine,coats,2,6.6667
+3228,Lorraine,wash,2,6.6667
+3229,Lorraine,cab,2,6.6667
+3230,Lorraine,smell,2,6.6667
+3231,Lorraine,hands,2,6.6667
+3232,Lorraine,white,2,6.6667
+3233,Lorraine,zinfandel,2,6.6667
+3234,Lorraine,glass,2,6.6667
+3235,Lorraine,red,2,6.6667
+3236,Lorraine,janice,2,6.6667
+3237,Lorraine,able,1,3.3333
+3238,Lorraine,pick,1,3.3333
+3239,Lorraine,quarters,1,3.3333
+3240,Lorraine,toes,1,3.3333
+3241,Lorraine,chocolate,1,3.3333
+3242,Lorraine,mousses,1,3.3333
+3243,Lowell,mardi,1,4.3478
+3244,Lowell,gras,1,4.3478
+3245,Lowell,without,1,4.3478
+3246,Lowell,paper,1,4.3478
+3247,Lowell,mache,1,4.3478
+3248,Lowell,heads,1,4.3478
+3249,Lowell,bout,1,4.3478
+3250,Lowell,kind,1,4.3478
+3251,Lowell,radar,1,4.3478
+3252,Lowell,speaking,1,4.3478
+3253,Lowell,friend,1,4.3478
+3254,Lowell,brian,1,4.3478
+3255,Lowell,payroll,1,4.3478
+3256,Lowell,yup,1,4.3478
+3257,Lowell,waaay,1,4.3478
+3258,Lowell,league,1,4.3478
+3259,Lowell,meet,1,4.3478
+3260,Lowell,ough,1,4.3478
+3261,Lowell,quit,1,4.3478
+3262,Lowell,smoking,1,4.3478
+3263,Luisa,monkey,6,11.3208
+3264,Luisa,years,2,3.7736
+3265,Luisa,luisa,2,3.7736
+3266,Luisa,mine,2,3.7736
+3267,Luisa,somebody,1,1.8868
+3268,Luisa,called,1,1.8868
+3269,Luisa,marcel,1,1.8868
+3270,Luisa,oookay,1,1.8868
+3271,Luisa,aware,1,1.8868
+3272,Luisa,possession,1,1.8868
+3273,Luisa,illegal,1,1.8868
+3274,Luisa,exotic,1,1.8868
+3275,Luisa,punishable,1,1.8868
+3276,Luisa,prison,1,1.8868
+3277,Luisa,confiscation,1,1.8868
+3278,Luisa,animal,1,1.8868
+3279,Luisa,gianetti,1,1.8868
+3280,Luisa,lincoln,1,1.8868
+3281,Luisa,high,1,1.8868
+3282,Luisa,sat,1,1.8868
+3283,Lydia,knick,2,5.4054
+3284,Lydia,fan,2,5.4054
+3285,Lydia,phone,2,5.4054
+3286,Lydia,popular,1,2.7027
+3287,Lydia,culture,1,2.7027
+3288,Lydia,class,1,2.7027
+3289,Lydia,suck,1,2.7027
+3290,Lydia,ewing,1,2.7027
+3291,Lydia,shot,1,2.7027
+3292,Lydia,hit,1,2.7027
+3293,Lydia,water,1,2.7027
+3294,Lydia,standing,1,2.7027
+3295,Lydia,boat,1,2.7027
+3296,Lydia,celtics,1,2.7027
+3297,Lydia,shut,1,2.7027
+3298,Lydia,rebuilding,1,2.7027
+3299,Lydia,waah,1,2.7027
+3300,Lydia,father,1,2.7027
+3301,Lydia,mom,1,2.7027
+3302,Lydia,calling,1,2.7027
+3303,Mac,learned,1,10.0
+3304,Mac,cheerleaders,1,10.0
+3305,Mac,high,1,10.0
+3306,Mac,explosives,1,10.0
+3307,Mac,mix,1,10.0
+3308,Mac,mac,1,10.0
+3309,Mac,done,1,10.0
+3310,Mac,without,1,10.0
+3311,Mac,buddy,1,10.0
+3312,Mac,genius,1,10.0
+3313,Mackenzie,parents,2,12.5
+3314,Mackenzie,eight,2,12.5
+3315,Mackenzie,friends,2,12.5
+3316,Mackenzie,happy,2,12.5
+3317,Mackenzie,hate,1,6.25
+3318,Mackenzie,ideas,1,6.25
+3319,Mackenzie,mom,1,6.25
+3320,Mackenzie,whiners,1,6.25
+3321,Mackenzie,wieners,1,6.25
+3322,Mackenzie,moving,1,6.25
+3323,Mackenzie,read,1,6.25
+3324,Mackenzie,bear,1,6.25
+3325,Malcom,kiss,2,7.1429
+3326,Malcom,binoculars,1,3.5714
+3327,Malcom,vision,1,3.5714
+3328,Malcom,goggles,1,3.5714
+3329,Malcom,book,1,3.5714
+3330,Malcom,pretend,1,3.5714
+3331,Malcom,read,1,3.5714
+3332,Malcom,watching,1,3.5714
+3333,Malcom,park,1,3.5714
+3334,Malcom,mad,1,3.5714
+3335,Malcom,lips,1,3.5714
+3336,Malcom,fun,1,3.5714
+3337,Malcom,log,1,3.5714
+3338,Malcom,kept,1,3.5714
+3339,Malcom,recording,1,3.5714
+3340,Malcom,movement,1,3.5714
+3341,Malcom,met,1,3.5714
+3342,Malcom,eventhough,1,3.5714
+3343,Malcom,loser,1,3.5714
+3344,Malcom,walking,1,3.5714
+3345,Male Guest,evening,1,100.0
+3346,Male Jeweler,ring,3,15.7895
+3347,Male Jeweler,help,1,5.2632
+3348,Male Jeweler,half,1,5.2632
+3349,Male Jeweler,carat,1,5.2632
+3350,Male Jeweler,diamond,1,5.2632
+3351,Male Jeweler,sapphires,1,5.2632
+3352,Male Jeweler,either,1,5.2632
+3353,Male Jeweler,side,1,5.2632
+3354,Male Jeweler,marry,1,5.2632
+3355,Male Jeweler,interested,1,5.2632
+3356,Male Jeweler,eight,1,5.2632
+3357,Male Jeweler,pay,1,5.2632
+3358,Male Jeweler,rather,1,5.2632
+3359,Male Jeweler,beautiful,1,5.2632
+3360,Male Jeweler,bills,1,5.2632
+3361,Male Jeweler,tad,1,5.2632
+3362,Male Jeweler,princess,1,5.2632
+3363,Man,excuse,2,2.8986
+3364,Man,sake,2,2.8986
+3365,Man,wells,2,2.8986
+3366,Man,police,1,1.4493
+3367,Man,officer,1,1.4493
+3368,Man,goodbody,1,1.4493
+3369,Man,east,1,1.4493
+3370,Man,end,1,1.4493
+3371,Man,law,1,1.4493
+3372,Man,says,1,1.4493
+3373,Man,accept,1,1.4493
+3374,Man,fare,1,1.4493
+3375,Man,report,1,1.4493
+3376,Man,medallion,1,1.4493
+3377,Man,number,1,1.4493
+3378,Man,heard,1,1.4493
+3379,Man,assistant,1,1.4493
+3380,Man,job,1,1.4493
+3381,Man,tag,1,1.4493
+3382,Man,jones,1,1.4493
+3383,Man At The Wedding,flash,1,25.0
+3384,Man At The Wedding,finger,1,25.0
+3385,Man At The Wedding,covering,1,25.0
+3386,Man At The Wedding,lens,1,25.0
+3387,Man On Tv,relax,1,50.0
+3388,Man On Tv,push,1,50.0
+3389,Man With A Bow Tie,wonderful,1,14.2857
+3390,Man With A Bow Tie,jarvis,1,14.2857
+3391,Man With A Bow Tie,oberblau,1,14.2857
+3392,Man With A Bow Tie,cornell,1,14.2857
+3393,Man With A Bow Tie,ideas,1,14.2857
+3394,Man With A Bow Tie,forth,1,14.2857
+3395,Man With A Bow Tie,young,1,14.2857
+3396,Manny,kissing,2,15.3846
+3397,Manny,job,1,7.6923
+3398,Manny,oversee,1,7.6923
+3399,Manny,heard,1,7.6923
+3400,Manny,speech,1,7.6923
+3401,Manny,knew,1,7.6923
+3402,Manny,saw,1,7.6923
+3403,Manny,weak,1,7.6923
+3404,Manny,pants,1,7.6923
+3405,Manny,undone,1,7.6923
+3406,Manny,blew,1,7.6923
+3407,Manny,blame,1,7.6923
+3408,Marc,doctor,2,13.3333
+3409,Marc,nonsense,1,6.6667
+3410,Marc,smile,1,6.6667
+3411,Marc,insisted,1,6.6667
+3412,Marc,closing,1,6.6667
+3413,Marc,curtain,1,6.6667
+3414,Marc,exam,1,6.6667
+3415,Marc,julie,1,6.6667
+3416,Marc,cervix,1,6.6667
+3417,Marc,dilated,1,6.6667
+3418,Marc,seven,1,6.6667
+3419,Marc,centimeters,1,6.6667
+3420,Marc,four,1,6.6667
+3421,Marc,fingers,1,6.6667
+3422,Marge,earl,1,100.0
+3423,Margha,chose,2,14.2857
+3424,Margha,margha,1,7.1429
+3425,Margha,mar,1,7.1429
+3426,Margha,gha,1,7.1429
+3427,Margha,stay,1,7.1429
+3428,Margha,watch,1,7.1429
+3429,Margha,game,1,7.1429
+3430,Margha,eat,1,7.1429
+3431,Margha,weird,1,7.1429
+3432,Margha,change,1,7.1429
+3433,Margha,answer,1,7.1429
+3434,Margha,shallow,1,7.1429
+3435,Margha,dork,1,7.1429
+3436,Marjorie,sleep,1,100.0
+3437,Mark,may,3,3.8961
+3438,Mark,dinner,2,2.5974
+3439,Mark,mark,2,2.5974
+3440,Mark,drink,2,2.5974
+3441,Mark,number,2,2.5974
+3442,Mark,help,2,2.5974
+3443,Mark,yep,2,2.5974
+3444,Mark,chair,1,1.2987
+3445,Mark,clever,1,1.2987
+3446,Mark,box,1,1.2987
+3447,Mark,full,1,1.2987
+3448,Mark,desk,1,1.2987
+3449,Mark,exactly,1,1.2987
+3450,Mark,promotion,1,1.2987
+3451,Mark,louis,1,1.2987
+3452,Mark,vuitton,1,1.2987
+3453,Mark,breath,1,1.2987
+3454,Mark,message,1,1.2987
+3455,Mark,anniversary,1,1.2987
+3456,Mark,coming,1,1.2987
+3457,Marsha,issues,2,14.2857
+3458,Marsha,banging,1,7.1429
+3459,Marsha,women,1,7.1429
+3460,Marsha,head,1,7.1429
+3461,Marsha,club,1,7.1429
+3462,Marsha,sits,1,7.1429
+3463,Marsha,home,1,7.1429
+3464,Marsha,mastodon,1,7.1429
+3465,Marsha,smell,1,7.1429
+3466,Marsha,carpet,1,7.1429
+3467,Marsha,speaking,1,7.1429
+3468,Marsha,wife,1,7.1429
+3469,Marsha,carol,1,7.1429
+3470,Mary Ellen,lawyer,1,20.0
+3471,Mary Ellen,nicer,1,20.0
+3472,Mary Ellen,days,1,20.0
+3473,Mary Ellen,lives,1,20.0
+3474,Mary Ellen,stay,1,20.0
+3475,Matress King,queen,2,8.3333
+3476,Matress King,prices,2,8.3333
+3477,Matress King,despair,1,4.1667
+3478,Matress King,fills,1,4.1667
+3479,Matress King,mattress,1,4.1667
+3480,Matress King,showroom,1,4.1667
+3481,Matress King,kingdom,1,4.1667
+3482,Matress King,suddenly,1,4.1667
+3483,Matress King,without,1,4.1667
+3484,Matress King,depressed,1,4.1667
+3485,Matress King,slash,1,4.1667
+3486,Matress King,check,1,4.1667
+3487,Matress King,four,1,4.1667
+3488,Matress King,ninety,1,4.1667
+3489,Matress King,nine,1,4.1667
+3490,Matress King,pillow,1,4.1667
+3491,Matress King,top,1,4.1667
+3492,Matress King,set,1,4.1667
+3493,Matress King,medieval,1,4.1667
+3494,Matress King,close,1,4.1667
+3495,Matt,sometimes,2,4.7619
+3496,Matt,whatever,2,4.7619
+3497,Matt,speak,1,2.381
+3498,Matt,gutter,1,2.381
+3499,Matt,clumsy,1,2.381
+3500,Matt,moments,1,2.381
+3501,Matt,booze,1,2.381
+3502,Matt,scene,1,2.381
+3503,Matt,tempted,1,2.381
+3504,Matt,remember,1,2.381
+3505,Matt,baking,1,2.381
+3506,Matt,cookies,1,2.381
+3507,Matt,apartment,1,2.381
+3508,Matt,waft,1,2.381
+3509,Matt,smell,1,2.381
+3510,Matt,across,1,2.381
+3511,Matt,hall,1,2.381
+3512,Matt,hang,1,2.381
+3513,Matt,sitting,1,2.381
+3514,Matt,eating,1,2.381
+3515,Matthew,happens,2,9.0909
+3516,Matthew,energy,1,4.5455
+3517,Matthew,comes,1,4.5455
+3518,Matthew,audience,1,4.5455
+3519,Matthew,brain,1,4.5455
+3520,Matthew,mouth,1,4.5455
+3521,Matthew,sometimes,1,4.5455
+3522,Matthew,work,1,4.5455
+3523,Matthew,absolutely,1,4.5455
+3524,Matthew,camera,1,4.5455
+3525,Matthew,hit,1,4.5455
+3526,Matthew,wall,1,4.5455
+3527,Matthew,necessarily,1,4.5455
+3528,Matthew,juice,1,4.5455
+3529,Matthew,gross,1,4.5455
+3530,Matthew,commercial,1,4.5455
+3531,Matthew,break,1,4.5455
+3532,Matthew,able,1,4.5455
+3533,Matthew,crack,1,4.5455
+3534,Matthew,coming,1,4.5455
+3535,Matthew Ashford,meet,1,100.0
+3536,Matthew Perry,eee,1,100.0
+3537,Max,minsk,5,15.1515
+3538,Max,david,2,6.0606
+3539,Max,daryl,1,3.0303
+3540,Max,hannah,1,3.0303
+3541,Max,quality,1,3.0303
+3542,Max,seen,1,3.0303
+3543,Max,pack,1,3.0303
+3544,Max,bags,1,3.0303
+3545,Max,russia,1,3.0303
+3546,Max,grant,1,3.0303
+3547,Max,years,1,3.0303
+3548,Max,expenses,1,3.0303
+3549,Max,paid,1,3.0303
+3550,Max,january,1,3.0303
+3551,Max,commercial,1,3.0303
+3552,Max,break,1,3.0303
+3553,Max,exciting,1,3.0303
+3554,Max,work,1,3.0303
+3555,Max,lifson,1,3.0303
+3556,Max,yamaguchi,1,3.0303
+3557,Meg,date,2,25.0
+3558,Meg,divorces,1,12.5
+3559,Meg,either,1,12.5
+3560,Meg,obviously,1,12.5
+3561,Meg,love,1,12.5
+3562,Meg,seem,1,12.5
+3563,Meg,creepy,1,12.5
+3564,Megan,married,2,7.4074
+3565,Megan,wedding,2,7.4074
+3566,Megan,band,2,7.4074
+3567,Megan,dresses,1,3.7037
+3568,Megan,amazing,1,3.7037
+3569,Megan,afford,1,3.7037
+3570,Megan,tip,1,3.7037
+3571,Megan,kidding,1,3.7037
+3572,Megan,july,1,3.7037
+3573,Megan,close,1,3.7037
+3574,Megan,photographer,1,3.7037
+3575,Megan,met,1,3.7037
+3576,Megan,photos,1,3.7037
+3577,Megan,nude,1,3.7037
+3578,Megan,almost,1,3.7037
+3579,Megan,called,1,3.7037
+3580,Megan,lucky,1,3.7037
+3581,Megan,fiancee,1,3.7037
+3582,Megan,wants,1,3.7037
+3583,Megan,heavy,1,3.7037
+3584,Mel,fired,1,100.0
+3585,Melanie,fruit,2,10.5263
+3586,Melanie,basket,2,10.5263
+3587,Melanie,friends,1,5.2632
+3588,Melanie,started,1,5.2632
+3589,Melanie,business,1,5.2632
+3590,Melanie,basketeers,1,5.2632
+3591,Melanie,child,1,5.2632
+3592,Melanie,inside,1,5.2632
+3593,Melanie,mmmmmm,1,5.2632
+3594,Melanie,blacked,1,5.2632
+3595,Melanie,fun,1,5.2632
+3596,Melanie,somebody,1,5.2632
+3597,Melanie,pegged,1,5.2632
+3598,Melanie,giver,1,5.2632
+3599,Melanie,generous,1,5.2632
+3600,Melanie,met,1,5.2632
+3601,Melanie,practically,1,5.2632
+3602,Melissa,ray,10,12.0482
+3603,Melissa,love,5,6.0241
+3604,Melissa,shut,3,3.6145
+3605,Melissa,party,3,3.6145
+3606,Melissa,kiss,3,3.6145
+3607,Melissa,tag,2,2.4096
+3608,Melissa,sorority,2,2.4096
+3609,Melissa,dinner,2,2.4096
+3610,Melissa,card,2,2.4096
+3611,Melissa,planner,2,2.4096
+3612,Melissa,remember,2,2.4096
+3613,Melissa,coconuts,2,2.4096
+3614,Melissa,flirting,1,1.2048
+3615,Melissa,forth,1,1.2048
+3616,Melissa,hoping,1,1.2048
+3617,Melissa,backpack,1,1.2048
+3618,Melissa,past,1,1.2048
+3619,Melissa,seven,1,1.2048
+3620,Melissa,newsletters,1,1.2048
+3621,Melissa,heard,1,1.2048
+3622,Mich,divorce,2,8.0
+3623,Mich,date,1,4.0
+3624,Mich,gone,1,4.0
+3625,Mich,seem,1,4.0
+3626,Mich,nervous,1,4.0
+3627,Mich,confused,1,4.0
+3628,Mich,years,1,4.0
+3629,Mich,cheers,1,4.0
+3630,Mich,cuter,1,4.0
+3631,Mich,boyfriend,1,4.0
+3632,Mich,fruitflies,1,4.0
+3633,Mich,dessert,1,4.0
+3634,Mich,check,1,4.0
+3635,Mich,hour,1,4.0
+3636,Mich,half,1,4.0
+3637,Mich,playing,1,4.0
+3638,Mich,movie,1,4.0
+3639,Mich,diner,1,4.0
+3640,Mich,head,1,4.0
+3641,Mich,trust,1,4.0
+3642,Michelle,love,2,5.2632
+3643,Michelle,public,2,5.2632
+3644,Michelle,bathrooms,2,5.2632
+3645,Michelle,pee,2,5.2632
+3646,Michelle,eric,2,5.2632
+3647,Michelle,boyfriend,2,5.2632
+3648,Michelle,emma,2,5.2632
+3649,Michelle,hola,1,2.6316
+3650,Michelle,break,1,2.6316
+3651,Michelle,unlovable,1,2.6316
+3652,Michelle,letting,1,2.6316
+3653,Michelle,freak,1,2.6316
+3654,Michelle,alone,1,2.6316
+3655,Michelle,amazing,1,2.6316
+3656,Michelle,met,1,2.6316
+3657,Michelle,broke,1,2.6316
+3658,Michelle,lose,1,2.6316
+3659,Michelle,worry,1,2.6316
+3660,Michelle,rebound,1,2.6316
+3661,Michelle,taking,1,2.6316
+3662,Mike,love,16,2.2695
+3663,Mike,mike,11,1.5603
+3664,Mike,married,8,1.1348
+3665,Mike,mom,7,0.9929
+3666,Mike,kind,7,0.9929
+3667,Mike,life,6,0.8511
+3668,Mike,game,6,0.8511
+3669,Mike,marry,6,0.8511
+3670,Mike,dad,6,0.8511
+3671,Mike,crap,6,0.8511
+3672,Mike,beer,6,0.8511
+3673,Mike,missed,5,0.7092
+3674,Mike,bag,5,0.7092
+3675,Mike,rat,5,0.7092
+3676,Mike,product,4,0.5674
+3677,Mike,milk,4,0.5674
+3678,Mike,point,4,0.5674
+3679,Mike,rats,4,0.5674
+3680,Mike,home,3,0.4255
+3681,Mike,dinner,3,0.4255
+3682,Mindy,barry,5,7.5758
+3683,Mindy,weird,2,3.0303
+3684,Mindy,maid,2,3.0303
+3685,Mindy,farber,2,3.0303
+3686,Mindy,hope,2,3.0303
+3687,Mindy,sitting,1,1.5152
+3688,Mindy,lately,1,1.5152
+3689,Mindy,oldest,1,1.5152
+3690,Mindy,friend,1,1.5152
+3691,Mindy,world,1,1.5152
+3692,Mindy,except,1,1.5152
+3693,Mindy,laurie,1,1.5152
+3694,Mindy,schaffer,1,1.5152
+3695,Mindy,anywhere,1,1.5152
+3696,Mindy,bitter,1,1.5152
+3697,Mindy,lost,1,1.5152
+3698,Mindy,weight,1,1.5152
+3699,Mindy,turns,1,1.5152
+3700,Mindy,face,1,1.5152
+3701,Mindy,straight,1,1.5152
+3702,Minister,emily,9,12.1622
+3703,Minister,friends,3,4.0541
+3704,Minister,family,3,4.0541
+3705,Minister,gathered,3,4.0541
+3706,Minister,repeat,3,4.0541
+3707,Minister,thee,3,4.0541
+3708,Minister,may,3,4.0541
+3709,Minister,celebrate,2,2.7027
+3710,Minister,joyous,2,2.7027
+3711,Minister,union,2,2.7027
+3712,Minister,shall,2,2.7027
+3713,Minister,wife,2,2.7027
+3714,Minister,ring,2,2.7027
+3715,Minister,symbol,2,2.7027
+3716,Minister,love,2,2.7027
+3717,Minister,lawfully,1,1.3514
+3718,Minister,wedded,1,1.3514
+3719,Minister,sickness,1,1.3514
+3720,Minister,health,1,1.3514
+3721,Minister,till,1,1.3514
+3722,Minster,thee,1,10.0
+3723,Minster,lawfully,1,10.0
+3724,Minster,wedded,1,10.0
+3725,Minster,husband,1,10.0
+3726,Minster,sickness,1,10.0
+3727,Minster,health,1,10.0
+3728,Minster,till,1,10.0
+3729,Minster,death,1,10.0
+3730,Minster,parts,1,10.0
+3731,Minster,repeat,1,10.0
+3732,Mischa,says,2,4.0
+3733,Mischa,boutros,2,4.0
+3734,Mischa,sergei,2,4.0
+3735,Mischa,walking,1,2.0
+3736,Mischa,makes,1,2.0
+3737,Mischa,strange,1,2.0
+3738,Mischa,city,1,2.0
+3739,Mischa,home,1,2.0
+3740,Mischa,eyes,1,2.0
+3741,Mischa,kiss,1,2.0
+3742,Mischa,asked,1,2.0
+3743,Mischa,bed,1,2.0
+3744,Mischa,gali,1,2.0
+3745,Mischa,wondering,1,2.0
+3746,Mischa,thinks,1,2.0
+3747,Mischa,hair,1,2.0
+3748,Mischa,golden,1,2.0
+3749,Mischa,sun,1,2.0
+3750,Mischa,chef,1,2.0
+3751,Mischa,vet,1,2.0
+3752,Missy,love,1,16.6667
+3753,Missy,took,1,16.6667
+3754,Missy,band,1,16.6667
+3755,Missy,science,1,16.6667
+3756,Missy,lab,1,16.6667
+3757,Missy,hours,1,16.6667
+3758,Mnca,mockolate,9,3.3708
+3759,Mnca,woo,7,2.6217
+3760,Mnca,bobby,6,2.2472
+3761,Mnca,fun,5,1.8727
+3762,Mnca,mmm,5,1.8727
+3763,Mnca,love,4,1.4981
+3764,Mnca,five,3,1.1236
+3765,Mnca,without,3,1.1236
+3766,Mnca,work,2,0.7491
+3767,Mnca,full,2,0.7491
+3768,Mnca,leaving,2,0.7491
+3769,Mnca,mind,2,0.7491
+3770,Mnca,paper,2,0.7491
+3771,Mnca,turns,2,0.7491
+3772,Mnca,later,2,0.7491
+3773,Mnca,may,2,0.7491
+3774,Mnca,job,2,0.7491
+3775,Mnca,cup,2,0.7491
+3776,Mnca,weekend,2,0.7491
+3777,Mnca,drink,2,0.7491
+3778,Molly,emma,4,16.6667
+3779,Molly,study,2,8.3333
+3780,Molly,mother,1,4.1667
+3781,Molly,remember,1,4.1667
+3782,Molly,panic,1,4.1667
+3783,Molly,behind,1,4.1667
+3784,Molly,curtain,1,4.1667
+3785,Molly,mace,1,4.1667
+3786,Molly,purse,1,4.1667
+3787,Molly,stay,1,4.1667
+3788,Molly,meet,1,4.1667
+3789,Molly,baby,1,4.1667
+3790,Molly,appartment,1,4.1667
+3791,Molly,sweet,1,4.1667
+3792,Molly,wemma,1,4.1667
+3793,Molly,demma,1,4.1667
+3794,Molly,home,1,4.1667
+3795,Molly,acting,1,4.1667
+3796,Molly,check,1,4.1667
+3797,Molly,tabatha,1,4.1667
+3798,Mona,mona,5,3.1847
+3799,Mona,love,4,2.5478
+3800,Mona,shirt,2,1.2739
+3801,Mona,date,2,1.2739
+3802,Mona,feelings,2,1.2739
+3803,Mona,work,2,1.2739
+3804,Mona,complicated,2,1.2739
+3805,Mona,strong,2,1.2739
+3806,Mona,wife,2,1.2739
+3807,Mona,pregnant,2,1.2739
+3808,Mona,change,2,1.2739
+3809,Mona,valentine,2,1.2739
+3810,Mona,hope,2,1.2739
+3811,Mona,apartment,2,1.2739
+3812,Mona,happy,2,1.2739
+3813,Mona,sweet,2,1.2739
+3814,Mona,cute,2,1.2739
+3815,Mona,dance,2,1.2739
+3816,Mona,pictures,2,1.2739
+3817,Mona,probably,2,1.2739
+3818,Monica,love,165,0.9673
+3819,Monica,baby,122,0.7152
+3820,Monica,work,112,0.6566
+3821,Monica,wedding,73,0.428
+3822,Monica,dad,72,0.4221
+3823,Monica,made,68,0.3986
+3824,Monica,married,64,0.3752
+3825,Monica,mom,62,0.3635
+3826,Monica,fun,54,0.3166
+3827,Monica,room,54,0.3166
+3828,Monica,sex,52,0.3048
+3829,Monica,friends,49,0.2873
+3830,Monica,everybody,48,0.2814
+3831,Monica,job,48,0.2814
+3832,Monica,dinner,47,0.2755
+3833,Monica,help,47,0.2755
+3834,Monica,remember,46,0.2697
+3835,Monica,party,46,0.2697
+3836,Monica,richard,46,0.2697
+3837,Monica,kind,45,0.2638
+3838,Morse,love,3,16.6667
+3839,Morse,slack,1,5.5556
+3840,Morse,sort,1,5.5556
+3841,Morse,test,1,5.5556
+3842,Morse,concentrating,1,5.5556
+3843,Morse,teaching,1,5.5556
+3844,Morse,face,1,5.5556
+3845,Morse,gets,1,5.5556
+3846,Morse,serious,1,5.5556
+3847,Morse,wear,1,5.5556
+3848,Morse,tight,1,5.5556
+3849,Morse,turtleneck,1,5.5556
+3850,Morse,sweater,1,5.5556
+3851,Morse,lecture,1,5.5556
+3852,Morse,hair,1,5.5556
+3853,Morse,pull,1,5.5556
+3854,Mover,dog,1,25.0
+3855,Mover,points,1,25.0
+3856,Mover,poecelain,1,25.0
+3857,Mover,greyhound,1,25.0
+3858,Mr A,dear,2,13.3333
+3859,Mr A,although,1,6.6667
+3860,Mr A,busy,1,6.6667
+3861,Mr A,sitting,1,6.6667
+3862,Mr A,spent,1,6.6667
+3863,Mr A,mid,1,6.6667
+3864,Mr A,stand,1,6.6667
+3865,Mr A,saying,1,6.6667
+3866,Mr A,wife,1,6.6667
+3867,Mr A,died,1,6.6667
+3868,Mr A,remember,1,6.6667
+3869,Mr A,sleep,1,6.6667
+3870,Mr A,worth,1,6.6667
+3871,Mr A,shot,1,6.6667
+3872,Mr Campbell,resum,2,12.5
+3873,Mr Campbell,james,1,6.25
+3874,Mr Campbell,campbell,1,6.25
+3875,Mr Campbell,quite,1,6.25
+3876,Mr Campbell,impressive,1,6.25
+3877,Mr Campbell,dating,1,6.25
+3878,Mr Campbell,profile,1,6.25
+3879,Mr Campbell,work,1,6.25
+3880,Mr Campbell,found,1,6.25
+3881,Mr Campbell,weird,1,6.25
+3882,Mr Campbell,ralph,1,6.25
+3883,Mr Campbell,lauren,1,6.25
+3884,Mr Campbell,lunch,1,6.25
+3885,Mr Campbell,hugo,1,6.25
+3886,Mr Campbell,boss,1,6.25
+3887,Mr Zellner,energy,1,100.0
+3888,Mr Zelner,may,2,8.0
+3889,Mr Zelner,help,1,4.0
+3890,Mr Zelner,tempting,1,4.0
+3891,Mr Zelner,true,1,4.0
+3892,Mr Zelner,talks,1,4.0
+3893,Mr Zelner,arrange,1,4.0
+3894,Mr Zelner,worst,1,4.0
+3895,Mr Zelner,world,1,4.0
+3896,Mr Zelner,worry,1,4.0
+3897,Mr Zelner,reading,1,4.0
+3898,Mr Zelner,collecting,1,4.0
+3899,Mr Zelner,rocks,1,4.0
+3900,Mr Zelner,obsessed,1,4.0
+3901,Mr Zelner,dinosaurs,1,4.0
+3902,Mr Zelner,surprise,1,4.0
+3903,Mr Zelner,hiring,1,4.0
+3904,Mr Zelner,fired,1,4.0
+3905,Mr Zelner,employees,1,4.0
+3906,Mr Zelner,main,1,4.0
+3907,Mr Zelner,job,1,4.0
+3908,Mrs Buffay,left,2,15.3846
+3909,Mrs Buffay,frank,2,15.3846
+3910,Mrs Buffay,schnoodle,1,7.6923
+3911,Mrs Buffay,dog,1,7.6923
+3912,Mrs Buffay,stitches,1,7.6923
+3913,Mrs Buffay,bringing,1,7.6923
+3914,Mrs Buffay,groceries,1,7.6923
+3915,Mrs Buffay,four,1,7.6923
+3916,Mrs Buffay,years,1,7.6923
+3917,Mrs Buffay,ago,1,7.6923
+3918,Mrs Buffay,expecting,1,7.6923
+3919,Mrs Green,father,3,4.7619
+3920,Mrs Green,house,3,4.7619
+3921,Mrs Green,barry,3,4.7619
+3922,Mrs Green,fun,2,3.1746
+3923,Mrs Green,straight,2,3.1746
+3924,Mrs Green,girls,2,3.1746
+3925,Mrs Green,work,1,1.5873
+3926,Mrs Green,wonderful,1,1.5873
+3927,Mrs Green,living,1,1.5873
+3928,Mrs Green,room,1,1.5873
+3929,Mrs Green,restaurant,1,1.5873
+3930,Mrs Green,gorgeous,1,1.5873
+3931,Mrs Green,saw,1,1.5873
+3932,Mrs Green,eat,1,1.5873
+3933,Mrs Green,eaten,1,1.5873
+3934,Mrs Green,daughter,1,1.5873
+3935,Mrs Green,apron,1,1.5873
+3936,Mrs Green,job,1,1.5873
+3937,Mrs Green,pour,1,1.5873
+3938,Mrs Green,coffee,1,1.5873
+3939,Mugger,wallets,1,25.0
+3940,Mugger,problem,1,25.0
+3941,Mugger,gun,1,25.0
+3942,Mugger,purse,1,25.0
+3943,Nancy,kidding,2,14.2857
+3944,Nancy,disagree,1,7.1429
+3945,Nancy,sent,1,7.1429
+3946,Nancy,designs,1,7.1429
+3947,Nancy,ralph,1,7.1429
+3948,Nancy,excited,1,7.1429
+3949,Nancy,line,1,7.1429
+3950,Nancy,smoke,1,7.1429
+3951,Nancy,absolutely,1,7.1429
+3952,Nancy,quitting,1,7.1429
+3953,Nancy,lately,1,7.1429
+3954,Nancy,tried,1,7.1429
+3955,Nancy,quit,1,7.1429
+3956,Narrator,cretaceous,1,20.0
+3957,Narrator,period,1,20.0
+3958,Narrator,ended,1,20.0
+3959,Narrator,dinosaurs,1,20.0
+3960,Narrator,gone,1,20.0
+3961,Nina,gotcha,2,9.0909
+3962,Nina,excuse,1,4.5455
+3963,Nina,net,1,4.5455
+3964,Nina,usage,1,4.5455
+3965,Nina,statistics,1,4.5455
+3966,Nina,hurt,1,4.5455
+3967,Nina,wenus,1,4.5455
+3968,Nina,douglas,1,4.5455
+3969,Nina,tie,1,4.5455
+3970,Nina,sec,1,4.5455
+3971,Nina,past,1,4.5455
+3972,Nina,couple,1,4.5455
+3973,Nina,days,1,4.5455
+3974,Nina,avoiding,1,4.5455
+3975,Nina,giving,1,4.5455
+3976,Nina,strange,1,4.5455
+3977,Nina,looks,1,4.5455
+3978,Nina,explain,1,4.5455
+3979,Nina,taking,1,4.5455
+3980,Nina,scissors,1,4.5455
+3981,Nurse,room,7,5.9829
+3982,Nurse,breathe,6,5.1282
+3983,Nurse,hospital,5,4.2735
+3984,Nurse,burke,4,3.4188
+3985,Nurse,private,4,3.4188
+3986,Nurse,doctor,3,2.5641
+3987,Nurse,semi,3,2.5641
+3988,Nurse,father,2,1.7094
+3989,Nurse,wesley,2,1.7094
+3990,Nurse,timothy,2,1.7094
+3991,Nurse,cleaned,1,0.8547
+3992,Nurse,bit,1,0.8547
+3993,Nurse,erica,1,0.8547
+3994,Nurse,recovery,1,0.8547
+3995,Nurse,absolutely,1,0.8547
+3996,Nurse,sedation,1,0.8547
+3997,Nurse,phone,1,0.8547
+3998,Nurse,speak,1,0.8547
+3999,Nurse,done,1,0.8547
+4000,Nurse,speed,1,0.8547
+4001,Old Woman,somebody,1,100.0
+4002,Older Scientist,seat,1,25.0
+4003,Older Scientist,andrew,1,25.0
+4004,Older Scientist,pay,1,25.0
+4005,Older Scientist,pear,1,25.0
+4006,Others,merry,2,50.0
+4007,Others,christmas,2,50.0
+4008,Owen,adopted,2,40.0
+4009,Owen,badge,1,20.0
+4010,Owen,paid,1,20.0
+4011,Owen,dollars,1,20.0
+4012,Pa,boarding,2,28.5714
+4013,Pa,final,1,14.2857
+4014,Pa,flight,1,14.2857
+4015,Pa,san,1,14.2857
+4016,Pa,diego,1,14.2857
+4017,Pa,gate,1,14.2857
+4018,Paleontologist,conference,1,25.0
+4019,Paleontologist,happens,1,25.0
+4020,Paleontologist,keynote,1,25.0
+4021,Paleontologist,speaker,1,25.0
+4022,Paolo,mma,2,8.0
+4023,Paolo,cold,2,8.0
+4024,Paolo,bona,1,4.0
+4025,Paolo,sera,1,4.0
+4026,Paolo,nora,1,4.0
+4027,Paolo,ciao,1,4.0
+4028,Paolo,bela,1,4.0
+4029,Paolo,monopoly,1,4.0
+4030,Paolo,sex,1,4.0
+4031,Paolo,bed,1,4.0
+4032,Paolo,poco,1,4.0
+4033,Paolo,leetle,1,4.0
+4034,Paolo,poke,1,4.0
+4035,Paolo,nose,1,4.0
+4036,Paolo,mmm,1,4.0
+4037,Paolo,mmaah,1,4.0
+4038,Paolo,buon,1,4.0
+4039,Paolo,giorno,1,4.0
+4040,Paolo,bella,1,4.0
+4041,Paolo,racquela,1,4.0
+4042,Parker,life,3,2.6549
+4043,Parker,picture,2,1.7699
+4044,Parker,lucky,2,1.7699
+4045,Parker,bow,2,1.7699
+4046,Parker,sounds,2,1.7699
+4047,Parker,massapequa,2,1.7699
+4048,Parker,room,2,1.7699
+4049,Parker,plate,2,1.7699
+4050,Parker,entire,2,1.7699
+4051,Parker,jenga,2,1.7699
+4052,Parker,mention,1,0.885
+4053,Parker,kidding,1,0.885
+4054,Parker,favorite,1,0.885
+4055,Parker,self,1,0.885
+4056,Parker,classic,1,0.885
+4057,Parker,glow,1,0.885
+4058,Parker,may,1,0.885
+4059,Parker,growing,1,0.885
+4060,Parker,inside,1,0.885
+4061,Parker,world,1,0.885
+4062,Party Guests,howard,21,95.4545
+4063,Party Guests,yay,1,4.5455
+4064,Passenger,horrible,2,6.8966
+4065,Passenger,person,2,6.8966
+4066,Passenger,terrible,2,6.8966
+4067,Passenger,excuse,1,3.4483
+4068,Passenger,planning,1,3.4483
+4069,Passenger,throughout,1,3.4483
+4070,Passenger,entire,1,3.4483
+4071,Passenger,flight,1,3.4483
+4072,Passenger,sedative,1,3.4483
+4073,Passenger,perhaps,1,3.4483
+4074,Passenger,slip,1,3.4483
+4075,Passenger,interrupt,1,3.4483
+4076,Passenger,love,1,3.4483
+4077,Passenger,ruin,1,3.4483
+4078,Passenger,happiest,1,3.4483
+4079,Passenger,life,1,3.4483
+4080,Passenger,afraid,1,3.4483
+4081,Passenger,agree,1,3.4483
+4082,Passenger,friend,1,3.4483
+4083,Passenger,plan,1,3.4483
+4084,Passerby,keys,1,100.0
+4085,Past Life Phoebe,bandages,3,60.0
+4086,Past Life Phoebe,dying,1,20.0
+4087,Past Life Phoebe,present,1,20.0
+4088,Patrick,worth,1,33.3333
+4089,Patrick,free,1,33.3333
+4090,Patrick,massage,1,33.3333
+4091,Patron,excuse,1,25.0
+4092,Patron,believed,1,25.0
+4093,Patron,saving,1,25.0
+4094,Patron,seat,1,25.0
+4095,Paul,lizzie,8,3.0769
+4096,Paul,elizabeth,4,1.5385
+4097,Paul,daughter,4,1.5385
+4098,Paul,chicken,4,1.5385
+4099,Paul,dad,4,1.5385
+4100,Paul,likes,4,1.5385
+4101,Paul,paul,3,1.1538
+4102,Paul,date,3,1.1538
+4103,Paul,many,3,1.1538
+4104,Paul,fifth,3,1.1538
+4105,Paul,fired,3,1.1538
+4106,Paul,love,3,1.1538
+4107,Paul,machine,3,1.1538
+4108,Paul,usually,2,0.7692
+4109,Paul,stevens,2,0.7692
+4110,Paul,age,2,0.7692
+4111,Paul,chance,2,0.7692
+4112,Paul,mind,2,0.7692
+4113,Paul,seconds,2,0.7692
+4114,Paul,mom,2,0.7692
+4115,Paula,seen,1,6.6667
+4116,Paula,fair,1,6.6667
+4117,Paula,share,1,6.6667
+4118,Paula,beef,1,6.6667
+4119,Paula,terrible,1,6.6667
+4120,Paula,friends,1,6.6667
+4121,Paula,realise,1,6.6667
+4122,Paula,odds,1,6.6667
+4123,Paula,happening,1,6.6667
+4124,Paula,slimmer,1,6.6667
+4125,Paula,meet,1,6.6667
+4126,Paula,waitwait,1,6.6667
+4127,Paula,coyotes,1,6.6667
+4128,Paula,cow,1,6.6667
+4129,Paula,dump,1,6.6667
+4130,Paulo,bon,1,25.0
+4131,Paulo,giorno,1,25.0
+4132,Paulo,tutti,1,25.0
+4133,Paulo,raquel,1,25.0
+4134,Pbs Volunteer,shot,1,33.3333
+4135,Pbs Volunteer,taking,1,33.3333
+4136,Pbs Volunteer,pledges,1,33.3333
+4137,Pete,world,6,2.0906
+4138,Pete,ultimate,5,1.7422
+4139,Pete,fighting,5,1.7422
+4140,Pete,champion,4,1.3937
+4141,Pete,head,3,1.0453
+4142,Pete,love,3,1.0453
+4143,Pete,second,3,1.0453
+4144,Pete,asking,3,1.0453
+4145,Pete,hurt,3,1.0453
+4146,Pete,hoshi,3,1.0453
+4147,Pete,promise,3,1.0453
+4148,Pete,moss,3,1.0453
+4149,Pete,fight,3,1.0453
+4150,Pete,couple,2,0.6969
+4151,Pete,check,2,0.6969
+4152,Pete,fit,2,0.6969
+4153,Pete,pin,2,0.6969
+4154,Pete,tip,2,0.6969
+4155,Pete,chef,2,0.6969
+4156,Pete,forget,2,0.6969
+4157,Peter,throwing,1,33.3333
+4158,Peter,built,1,33.3333
+4159,Peter,canoe,1,33.3333
+4160,Petrie,loved,1,33.3333
+4161,Petrie,stevie,1,33.3333
+4162,Petrie,wonder,1,33.3333
+4163,Phil,favourite,1,33.3333
+4164,Phil,purpose,1,33.3333
+4165,Phil,ricocheted,1,33.3333
+4166,Phoe,must,5,2.381
+4167,Phoe,sweet,4,1.9048
+4168,Phoe,russ,4,1.9048
+4169,Phoe,decide,4,1.9048
+4170,Phoe,made,3,1.4286
+4171,Phoe,hands,2,0.9524
+4172,Phoe,took,2,0.9524
+4173,Phoe,close,2,0.9524
+4174,Phoe,felt,2,0.9524
+4175,Phoe,julie,2,0.9524
+4176,Phoe,scott,2,0.9524
+4177,Phoe,asked,2,0.9524
+4178,Phoe,sex,2,0.9524
+4179,Phoe,kind,2,0.9524
+4180,Phoe,soooo,2,0.9524
+4181,Phoe,cake,2,0.9524
+4182,Phoe,betty,2,0.9524
+4183,Phoe,neil,2,0.9524
+4184,Phoe,attractive,1,0.4762
+4185,Phoe,exact,1,0.4762
+4186,Phoebe,love,135,0.7884
+4187,Phoebe,mike,78,0.4555
+4188,Phoebe,fun,70,0.4088
+4189,Phoebe,work,69,0.403
+4190,Phoebe,frank,67,0.3913
+4191,Phoebe,happy,65,0.3796
+4192,Phoebe,baby,60,0.3504
+4193,Phoebe,mom,56,0.327
+4194,Phoebe,friend,52,0.3037
+4195,Phoebe,married,49,0.2862
+4196,Phoebe,help,48,0.2803
+4197,Phoebe,money,48,0.2803
+4198,Phoebe,end,48,0.2803
+4199,Phoebe,coming,47,0.2745
+4200,Phoebe,made,47,0.2745
+4201,Phoebe,kind,45,0.2628
+4202,Phoebe,friends,45,0.2628
+4203,Phoebe,everyone,45,0.2628
+4204,Phoebe,left,45,0.2628
+4205,Phoebe,credits,45,0.2628
+4206,Phoebe Sr,puppy,5,10.4167
+4207,Phoebe Sr,baby,3,6.25
+4208,Phoebe Sr,babies,3,6.25
+4209,Phoebe Sr,gave,2,4.1667
+4210,Phoebe Sr,pottery,2,4.1667
+4211,Phoebe Sr,idea,2,4.1667
+4212,Phoebe Sr,giving,2,4.1667
+4213,Phoebe Sr,given,2,4.1667
+4214,Phoebe Sr,open,1,2.0833
+4215,Phoebe Sr,finish,1,2.0833
+4216,Phoebe Sr,glazing,1,2.0833
+4217,Phoebe Sr,nipples,1,2.0833
+4218,Phoebe Sr,working,1,2.0833
+4219,Phoebe Sr,mostly,1,2.0833
+4220,Phoebe Sr,nudes,1,2.0833
+4221,Phoebe Sr,combines,1,2.0833
+4222,Phoebe Sr,passions,1,2.0833
+4223,Phoebe Sr,erotica,1,2.0833
+4224,Phoebe Sr,coming,1,2.0833
+4225,Phoebe Sr,person,1,2.0833
+4226,Photographer,bridemaids,2,15.3846
+4227,Photographer,sec,1,7.6923
+4228,Photographer,change,1,7.6923
+4229,Photographer,film,1,7.6923
+4230,Photographer,shot,1,7.6923
+4231,Photographer,bloody,1,7.6923
+4232,Photographer,soldier,1,7.6923
+4233,Photographer,bride,1,7.6923
+4234,Photographer,groom,1,7.6923
+4235,Photographer,step,1,7.6923
+4236,Photographer,smile,1,7.6923
+4237,Photographer,ladies,1,7.6923
+4238,Pizza Guy,pizza,2,10.5263
+4239,Pizza Guy,bonehead,2,10.5263
+4240,Pizza Guy,somebody,1,5.2632
+4241,Pizza Guy,order,1,5.2632
+4242,Pizza Guy,mushroom,1,5.2632
+4243,Pizza Guy,pepper,1,5.2632
+4244,Pizza Guy,onion,1,5.2632
+4245,Pizza Guy,stephanopoulos,1,5.2632
+4246,Pizza Guy,dad,1,5.2632
+4247,Pizza Guy,kill,1,5.2632
+4248,Pizza Guy,goes,1,5.2632
+4249,Pizza Guy,across,1,5.2632
+4250,Pizza Guy,street,1,5.2632
+4251,Pizza Guy,must,1,5.2632
+4252,Pizza Guy,given,1,5.2632
+4253,Pizza Guy,sounds,1,5.2632
+4254,Pizza Guy,towel,1,5.2632
+4255,Policeman,license,4,16.6667
+4256,Policeman,nope,3,12.5
+4257,Policeman,hanson,1,4.1667
+4258,Policeman,picture,1,4.1667
+4259,Policeman,phenomenal,1,4.1667
+4260,Policeman,aquarius,1,4.1667
+4261,Policeman,yep,1,4.1667
+4262,Policeman,speed,1,4.1667
+4263,Policeman,anymore,1,4.1667
+4264,Policeman,promise,1,4.1667
+4265,Policeman,taken,1,4.1667
+4266,Policeman,meantime,1,4.1667
+4267,Policeman,drive,1,4.1667
+4268,Policeman,handle,1,4.1667
+4269,Policeman,stick,1,4.1667
+4270,Policeman,fast,1,4.1667
+4271,Policeman,traveling,1,4.1667
+4272,Policeman,petty,1,4.1667
+4273,Policeman,ticket,1,4.1667
+4274,Precious,mike,3,13.6364
+4275,Precious,precious,2,9.0909
+4276,Precious,girlfriend,1,4.5455
+4277,Precious,love,1,4.5455
+4278,Precious,life,1,4.5455
+4279,Precious,letting,1,4.5455
+4280,Precious,supposed,1,4.5455
+4281,Precious,warning,1,4.5455
+4282,Precious,proposed,1,4.5455
+4283,Precious,worst,1,4.5455
+4284,Precious,birthday,1,4.5455
+4285,Precious,deserve,1,4.5455
+4286,Precious,treated,1,4.5455
+4287,Precious,respect,1,4.5455
+4288,Precious,screw,1,4.5455
+4289,Precious,coward,1,4.5455
+4290,Precious,bastard,1,4.5455
+4291,Precious,hope,1,4.5455
+4292,Precious,rot,1,4.5455
+4293,Priest On Tv,chachi,3,23.0769
+4294,Priest On Tv,gathered,1,7.6923
+4295,Priest On Tv,join,1,7.6923
+4296,Priest On Tv,joanne,1,7.6923
+4297,Priest On Tv,louise,1,7.6923
+4298,Priest On Tv,cunningham,1,7.6923
+4299,Priest On Tv,charles,1,7.6923
+4300,Priest On Tv,arcola,1,7.6923
+4301,Priest On Tv,bound,1,7.6923
+4302,Priest On Tv,holy,1,7.6923
+4303,Priest On Tv,matrimony,1,7.6923
+4304,Producer,alrighty,1,20.0
+4305,Producer,top,1,20.0
+4306,Producer,costing,1,20.0
+4307,Producer,hundred,1,20.0
+4308,Producer,dollars,1,20.0
+4309,Professor Feesen,professor,1,100.0
+4310,Professor Sherman,mmm,1,100.0
+4311,Professor Spafford,crab,3,10.7143
+4312,Professor Spafford,allergic,3,10.7143
+4313,Professor Spafford,professor,1,3.5714
+4314,Professor Spafford,wife,1,3.5714
+4315,Professor Spafford,cruise,1,3.5714
+4316,Professor Spafford,galapagos,1,3.5714
+4317,Professor Spafford,sea,1,3.5714
+4318,Professor Spafford,food,1,3.5714
+4319,Professor Spafford,buffet,1,3.5714
+4320,Professor Spafford,clams,1,3.5714
+4321,Professor Spafford,mussels,1,3.5714
+4322,Professor Spafford,oysters,1,3.5714
+4323,Professor Spafford,cracked,1,3.5714
+4324,Professor Spafford,snow,1,3.5714
+4325,Professor Spafford,king,1,3.5714
+4326,Professor Spafford,pity,1,3.5714
+4327,Professor Spafford,shellfish,1,3.5714
+4328,Professor Spafford,peanuts,1,3.5714
+4329,Professor Spafford,cashews,1,3.5714
+4330,Professor Spafford,almonds,1,3.5714
+4331,Professore Clerk,throw,1,100.0
+4332,Prospective Nanny,smart,1,11.1111
+4333,Prospective Nanny,easier,1,11.1111
+4334,Prospective Nanny,transition,1,11.1111
+4335,Prospective Nanny,question,1,11.1111
+4336,Prospective Nanny,random,1,11.1111
+4337,Prospective Nanny,drug,1,11.1111
+4338,Prospective Nanny,testing,1,11.1111
+4339,Prospective Nanny,days,1,11.1111
+4340,Prospective Nanny,notice,1,11.1111
+4341,Quartet,boyfriend,2,10.5263
+4342,Quartet,edd,2,10.5263
+4343,Quartet,congratulations,1,5.2632
+4344,Quartet,week,1,5.2632
+4345,Quartet,brand,1,5.2632
+4346,Quartet,job,1,5.2632
+4347,Quartet,boss,1,5.2632
+4348,Quartet,support,1,5.2632
+4349,Quartet,loyal,1,5.2632
+4350,Quartet,loving,1,5.2632
+4351,Quartet,commercial,1,5.2632
+4352,Quartet,break,1,5.2632
+4353,Quartet,gift,1,5.2632
+4354,Quartet,women,1,5.2632
+4355,Quartet,headdddd,1,5.2632
+4356,Quartet,buttmunch,1,5.2632
+4357,Quartet,bedd,1,5.2632
+4358,Racel,talked,1,100.0
+4359,Rach,phone,12,3.7037
+4360,Rach,looks,5,1.5432
+4361,Rach,date,5,1.5432
+4362,Rach,cat,5,1.5432
+4363,Rach,julie,5,1.5432
+4364,Rach,closure,4,1.2346
+4365,Rach,russ,4,1.2346
+4366,Rach,ewww,4,1.2346
+4367,Rach,coat,4,1.2346
+4368,Rach,live,3,0.9259
+4369,Rach,michael,3,0.9259
+4370,Rach,hah,3,0.9259
+4371,Rach,called,3,0.9259
+4372,Rach,excuse,3,0.9259
+4373,Rach,wine,3,0.9259
+4374,Rach,sort,3,0.9259
+4375,Rach,feelings,3,0.9259
+4376,Rach,goin,3,0.9259
+4377,Rach,phoebs,2,0.6173
+4378,Rach,fun,2,0.6173
+4379,Rache,charlie,1,100.0
+4380,Rachel,love,184,1.0013
+4381,Rachel,baby,114,0.6203
+4382,Rachel,work,88,0.4789
+4383,Rachel,married,75,0.4081
+4384,Rachel,remember,72,0.3918
+4385,Rachel,emma,70,0.3809
+4386,Rachel,job,70,0.3809
+4387,Rachel,date,69,0.3755
+4388,Rachel,made,63,0.3428
+4389,Rachel,help,61,0.3319
+4390,Rachel,apartment,59,0.3211
+4391,Rachel,ugh,54,0.2938
+4392,Rachel,cute,53,0.2884
+4393,Rachel,friend,53,0.2884
+4394,Rachel,stupid,52,0.283
+4395,Rachel,break,52,0.283
+4396,Rachel,room,50,0.2721
+4397,Rachel,happy,50,0.2721
+4398,Rachel,coming,49,0.2666
+4399,Rachel,fun,48,0.2612
+4400,Rahcel,gobb,1,33.3333
+4401,Rahcel,gook,1,33.3333
+4402,Rahcel,luck,1,33.3333
+4403,Ray,game,2,7.1429
+4404,Ray,duncan,1,3.5714
+4405,Ray,erin,1,3.5714
+4406,Ray,help,1,3.5714
+4407,Ray,audition,1,3.5714
+4408,Ray,camera,1,3.5714
+4409,Ray,rolling,1,3.5714
+4410,Ray,whenever,1,3.5714
+4411,Ray,agents,1,3.5714
+4412,Ray,revised,1,3.5714
+4413,Ray,rules,1,3.5714
+4414,Ray,eliminated,1,3.5714
+4415,Ray,wheel,1,3.5714
+4416,Ray,cards,1,3.5714
+4417,Ray,complicated,1,3.5714
+4418,Ray,research,1,3.5714
+4419,Ray,showed,1,3.5714
+4420,Ray,follow,1,3.5714
+4421,Ray,gone,1,3.5714
+4422,Ray,basically,1,3.5714
+4423,Receptionist,schedule,2,2.3256
+4424,Receptionist,available,2,2.3256
+4425,Receptionist,twins,2,2.3256
+4426,Receptionist,completely,2,2.3256
+4427,Receptionist,satisfied,2,2.3256
+4428,Receptionist,gettleman,2,2.3256
+4429,Receptionist,lennart,2,2.3256
+4430,Receptionist,welcome,2,2.3256
+4431,Receptionist,spa,2,2.3256
+4432,Receptionist,glass,2,2.3256
+4433,Receptionist,doors,2,2.3256
+4434,Receptionist,client,2,2.3256
+4435,Receptionist,room,2,2.3256
+4436,Receptionist,work,2,2.3256
+4437,Receptionist,end,1,1.1628
+4438,Receptionist,research,1,1.1628
+4439,Receptionist,cycles,1,1.1628
+4440,Receptionist,applicants,1,1.1628
+4441,Receptionist,coming,1,1.1628
+4442,Receptionist,identical,1,1.1628
+4443,Referee,gentlemen,1,100.0
+4444,Richard,love,9,1.6605
+4445,Richard,kids,7,1.2915
+4446,Richard,richard,7,1.2915
+4447,Richard,date,5,0.9225
+4448,Richard,seeing,4,0.738
+4449,Richard,came,4,0.738
+4450,Richard,picture,4,0.738
+4451,Richard,dad,4,0.738
+4452,Richard,side,4,0.738
+4453,Richard,bed,4,0.738
+4454,Richard,fun,3,0.5535
+4455,Richard,blind,3,0.5535
+4456,Richard,hate,3,0.5535
+4457,Richard,platoon,3,0.5535
+4458,Richard,friends,3,0.5535
+4459,Richard,bedroom,3,0.5535
+4460,Richard,different,3,0.5535
+4461,Richard,bathroom,3,0.5535
+4462,Richard,college,3,0.5535
+4463,Richard,commercial,2,0.369
+4464,Rick,hour,2,11.7647
+4465,Rick,feet,1,5.8824
+4466,Rick,mind,1,5.8824
+4467,Rick,spending,1,5.8824
+4468,Rick,siadic,1,5.8824
+4469,Rick,area,1,5.8824
+4470,Rick,killing,1,5.8824
+4471,Rick,sit,1,5.8824
+4472,Rick,greenpeace,1,5.8824
+4473,Rick,bite,1,5.8824
+4474,Rick,amazing,1,5.8824
+4475,Rick,idea,1,5.8824
+4476,Rick,masseuse,1,5.8824
+4477,Rick,suddenly,1,5.8824
+4478,Rick,aware,1,5.8824
+4479,Rick,naked,1,5.8824
+4480,Rita,crap,1,33.3333
+4481,Rita,bag,1,33.3333
+4482,Rita,excuse,1,33.3333
+4483,Rob,songs,4,10.0
+4484,Rob,kids,3,7.5
+4485,Rob,truth,2,5.0
+4486,Rob,parents,2,5.0
+4487,Rob,rob,1,2.5
+4488,Rob,dohnen,1,2.5
+4489,Rob,music,1,2.5
+4490,Rob,schedule,1,2.5
+4491,Rob,performers,1,2.5
+4492,Rob,childrens,1,2.5
+4493,Rob,libraries,1,2.5
+4494,Rob,city,1,2.5
+4495,Rob,playing,1,2.5
+4496,Rob,idea,1,2.5
+4497,Rob,reason,1,2.5
+4498,Rob,fired,1,2.5
+4499,Rob,loved,1,2.5
+4500,Rob,nobody,1,2.5
+4501,Rob,tells,1,2.5
+4502,Rob,incredible,1,2.5
+4503,Robert,california,1,3.5714
+4504,Robert,coffee,1,3.5714
+4505,Robert,write,1,3.5714
+4506,Robert,phone,1,3.5714
+4507,Robert,check,1,3.5714
+4508,Robert,messages,1,3.5714
+4509,Robert,carry,1,3.5714
+4510,Robert,sock,1,3.5714
+4511,Robert,meet,1,3.5714
+4512,Robert,robert,1,3.5714
+4513,Robert,batting,1,3.5714
+4514,Robert,cage,1,3.5714
+4515,Robert,jeez,1,3.5714
+4516,Robert,honest,1,3.5714
+4517,Robert,wear,1,3.5714
+4518,Robert,tight,1,3.5714
+4519,Robert,display,1,3.5714
+4520,Robert,dropped,1,3.5714
+4521,Robert,keys,1,3.5714
+4522,Robert,gym,1,3.5714
+4523,Robin,cream,2,8.3333
+4524,Robin,napkin,2,8.3333
+4525,Robin,scooching,1,4.1667
+4526,Robin,feelin,1,4.1667
+4527,Robin,wife,1,4.1667
+4528,Robin,sleeping,1,4.1667
+4529,Robin,gynaecologist,1,4.1667
+4530,Robin,access,1,4.1667
+4531,Robin,feeling,1,4.1667
+4532,Robin,happening,1,4.1667
+4533,Robin,wound,1,4.1667
+4534,Robin,ooozing,1,4.1667
+4535,Robin,oozing,1,4.1667
+4536,Robin,pass,1,4.1667
+4537,Robin,tim,1,4.1667
+4538,Robin,hand,1,4.1667
+4539,Robin,enough,1,4.1667
+4540,Robin,longer,1,4.1667
+4541,Robin,friend,1,4.1667
+4542,Robin,finished,1,4.1667
+4543,Robin Williams,scooch,1,100.0
+4544,Roger,love,3,4.2254
+4545,Roger,parents,2,2.8169
+4546,Roger,marriage,2,2.8169
+4547,Roger,sibling,2,2.8169
+4548,Roger,tough,2,2.8169
+4549,Roger,kind,2,2.8169
+4550,Roger,stupid,2,2.8169
+4551,Roger,define,2,2.8169
+4552,Roger,laughter,1,1.4085
+4553,Roger,stops,1,1.4085
+4554,Roger,seems,1,1.4085
+4555,Roger,though,1,1.4085
+4556,Roger,intimacy,1,1.4085
+4557,Roger,issues,1,1.4085
+4558,Roger,humour,1,1.4085
+4559,Roger,keeping,1,1.4085
+4560,Roger,distance,1,1.4085
+4561,Roger,met,1,1.4085
+4562,Roger,adam,1,1.4085
+4563,Roger,child,1,1.4085
+4564,Ronni,ronni,3,7.8947
+4565,Ronni,waiting,1,2.6316
+4566,Ronni,cuter,1,2.6316
+4567,Ronni,pictures,1,2.6316
+4568,Ronni,cheese,1,2.6316
+4569,Ronni,nip,1,2.6316
+4570,Ronni,pets,1,2.6316
+4571,Ronni,pass,1,2.6316
+4572,Ronni,sorta,1,2.6316
+4573,Ronni,laid,1,2.6316
+4574,Ronni,sleeping,1,2.6316
+4575,Ronni,occasionally,1,2.6316
+4576,Ronni,person,1,2.6316
+4577,Ronni,wants,1,2.6316
+4578,Ronni,pose,1,2.6316
+4579,Ronni,chasing,1,2.6316
+4580,Ronni,tail,1,2.6316
+4581,Ronni,jumping,1,2.6316
+4582,Ronni,catch,1,2.6316
+4583,Ronni,frisbee,1,2.6316
+4584,Ross,love,141,0.6955
+4585,Ross,baby,108,0.5327
+4586,Ross,ben,96,0.4735
+4587,Ross,dad,81,0.3995
+4588,Ross,friend,78,0.3847
+4589,Ross,work,78,0.3847
+4590,Ross,emily,77,0.3798
+4591,Ross,break,75,0.3699
+4592,Ross,married,67,0.3305
+4593,Ross,fun,65,0.3206
+4594,Ross,carol,65,0.3206
+4595,Ross,remember,60,0.2959
+4596,Ross,mom,60,0.2959
+4597,Ross,help,60,0.2959
+4598,Ross,date,59,0.291
+4599,Ross,made,58,0.2861
+4600,Ross,years,53,0.2614
+4601,Ross,life,52,0.2565
+4602,Ross,happy,52,0.2565
+4603,Ross,sister,52,0.2565
+4604,Roy,warn,2,1.9048
+4605,Roy,ladies,2,1.9048
+4606,Roy,years,2,1.9048
+4607,Roy,dance,2,1.9048
+4608,Roy,chip,2,1.9048
+4609,Roy,elevator,1,0.9524
+4610,Roy,mexican,1,0.9524
+4611,Roy,food,1,0.9524
+4612,Roy,lunch,1,0.9524
+4613,Roy,goodbody,1,0.9524
+4614,Roy,young,1,0.9524
+4615,Roy,supposed,1,0.9524
+4616,Roy,downtown,1,0.9524
+4617,Roy,somebody,1,0.9524
+4618,Roy,plug,1,0.9524
+4619,Roy,box,1,0.9524
+4620,Roy,party,1,0.9524
+4621,Roy,started,1,0.9524
+4622,Roy,whaaaa,1,0.9524
+4623,Roy,attention,1,0.9524
+4624,Rtst,mockolate,4,5.8824
+4625,Rtst,chocolate,3,4.4118
+4626,Rtst,anyhoo,3,4.4118
+4627,Rtst,thanksgiving,3,4.4118
+4628,Rtst,approval,2,2.9412
+4629,Rtst,resume,1,1.4706
+4630,Rtst,muy,1,1.4706
+4631,Rtst,impressivo,1,1.4706
+4632,Rtst,completely,1,1.4706
+4633,Rtst,synthetic,1,1.4706
+4634,Rtst,substitute,1,1.4706
+4635,Rtst,ahead,1,1.4706
+4636,Rtst,piece,1,1.4706
+4637,Rtst,hopefully,1,1.4706
+4638,Rtst,dominates,1,1.4706
+4639,Rtst,major,1,1.4706
+4640,Rtst,food,1,1.4706
+4641,Rtst,preparation,1,1.4706
+4642,Rtst,holidays,1,1.4706
+4643,Rtst,easter,1,1.4706
+4644,Russ,friend,2,7.1429
+4645,Russ,type,2,7.1429
+4646,Russ,date,2,7.1429
+4647,Russ,jealous,2,7.1429
+4648,Russ,sounding,1,3.5714
+4649,Russ,hhhhiiiii,1,3.5714
+4650,Russ,sit,1,3.5714
+4651,Russ,chat,1,3.5714
+4652,Russ,kind,1,3.5714
+4653,Russ,paleontologist,1,3.5714
+4654,Russ,periodontist,1,3.5714
+4655,Russ,ditto,1,3.5714
+4656,Russ,dysprosium,1,3.5714
+4657,Russ,successful,1,3.5714
+4658,Russ,problem,1,3.5714
+4659,Russ,hum,1,3.5714
+4660,Russ,real,1,3.5714
+4661,Russ,doctor,1,3.5714
+4662,Russ,finish,1,3.5714
+4663,Russ,heard,1,3.5714
+4664,Russell,marriage,3,9.375
+4665,Russell,second,2,6.25
+4666,Russell,years,2,6.25
+4667,Russell,divorce,2,6.25
+4668,Russell,testify,2,6.25
+4669,Russell,married,1,3.125
+4670,Russell,attorney,1,3.125
+4671,Russell,business,1,3.125
+4672,Russell,client,1,3.125
+4673,Russell,altar,1,3.125
+4674,Russell,considered,1,3.125
+4675,Russell,therapy,1,3.125
+4676,Russell,couple,1,3.125
+4677,Russell,forms,1,3.125
+4678,Russell,fill,1,3.125
+4679,Russell,witnesses,1,3.125
+4680,Russell,mind,1,3.125
+4681,Russell,judge,1,3.125
+4682,Russell,course,1,3.125
+4683,Russell,annulment,1,3.125
+4684,Ryan,face,3,4.1096
+4685,Ryan,chicken,2,2.7397
+4686,Ryan,lightning,2,2.7397
+4687,Ryan,lovely,2,2.7397
+4688,Ryan,spent,2,2.7397
+4689,Ryan,scratching,2,2.7397
+4690,Ryan,dice,2,2.7397
+4691,Ryan,hands,2,2.7397
+4692,Ryan,beautiful,2,2.7397
+4693,Ryan,baby,1,1.3699
+4694,Ryan,sitting,1,1.3699
+4695,Ryan,window,1,1.3699
+4696,Ryan,veil,1,1.3699
+4697,Ryan,goin,1,1.3699
+4698,Ryan,small,1,1.3699
+4699,Ryan,home,1,1.3699
+4700,Ryan,bed,1,1.3699
+4701,Ryan,wish,1,1.3699
+4702,Ryan,build,1,1.3699
+4703,Ryan,machine,1,1.3699
+4704,Salesman,return,1,20.0
+4705,Salesman,pants,1,20.0
+4706,Salesman,help,1,20.0
+4707,Salesman,days,1,20.0
+4708,Salesman,christmas,1,20.0
+4709,Sally,sally,1,11.1111
+4710,Sally,ring,1,11.1111
+4711,Sally,assume,1,11.1111
+4712,Sally,single,1,11.1111
+4713,Sally,parent,1,11.1111
+4714,Sally,almost,1,11.1111
+4715,Sally,social,1,11.1111
+4716,Sally,life,1,11.1111
+4717,Sally,meet,1,11.1111
+4718,Salon Girl,seat,1,50.0
+4719,Salon Girl,sonia,1,50.0
+4720,Sandy,sandy,2,1.9608
+4721,Sandy,child,2,1.9608
+4722,Sandy,person,2,1.9608
+4723,Sandy,mind,2,1.9608
+4724,Sandy,home,2,1.9608
+4725,Sandy,wigglemunch,2,1.9608
+4726,Sandy,grumpus,2,1.9608
+4727,Sandy,although,2,1.9608
+4728,Sandy,saw,1,0.9804
+4729,Sandy,store,1,0.9804
+4730,Sandy,week,1,0.9804
+4731,Sandy,probably,1,0.9804
+4732,Sandy,mentally,1,0.9804
+4733,Sandy,undressed,1,0.9804
+4734,Sandy,elf,1,0.9804
+4735,Sandy,leaving,1,0.9804
+4736,Sandy,behind,1,0.9804
+4737,Sandy,piece,1,0.9804
+4738,Sandy,heart,1,0.9804
+4739,Sandy,straight,1,0.9804
+4740,Sarah,clams,3,3.0928
+4741,Sarah,space,3,3.0928
+4742,Sarah,dad,3,3.0928
+4743,Sarah,five,3,3.0928
+4744,Sarah,delicious,2,2.0619
+4745,Sarah,sell,2,2.0619
+4746,Sarah,trip,2,2.0619
+4747,Sarah,shuttle,2,2.0619
+4748,Sarah,says,2,2.0619
+4749,Sarah,sold,2,2.0619
+4750,Sarah,seventy,2,2.0619
+4751,Sarah,fries,1,1.0309
+4752,Sarah,stuffed,1,1.0309
+4753,Sarah,sweet,1,1.0309
+4754,Sarah,matter,1,1.0309
+4755,Sarah,mine,1,1.0309
+4756,Sarah,deal,1,1.0309
+4757,Sarah,mmmm,1,1.0309
+4758,Sarah,mmm,1,1.0309
+4759,Sarah,work,1,1.0309
+4760,Scott,enters,1,11.1111
+4761,Scott,projections,1,11.1111
+4762,Scott,kidding,1,11.1111
+4763,Scott,work,1,11.1111
+4764,Scott,fleischman,1,11.1111
+4765,Scott,group,1,11.1111
+4766,Scott,whatever,1,11.1111
+4767,Scott,touch,1,11.1111
+4768,Scott,sandwiches,1,11.1111
+4769,Sebastian,coffee,2,33.3333
+4770,Sebastian,cup,1,16.6667
+4771,Sebastian,excuse,1,16.6667
+4772,Sebastian,sometime,1,16.6667
+4773,Sebastian,later,1,16.6667
+4774,Second Dorm Guy,balloons,1,100.0
+4775,Security Guard,closed,1,14.2857
+4776,Security Guard,set,1,14.2857
+4777,Security Guard,share,1,14.2857
+4778,Security Guard,pocanos,1,14.2857
+4779,Security Guard,flipper,1,14.2857
+4780,Security Guard,excuse,1,14.2857
+4781,Security Guard,folks,1,14.2857
+4782,Sergei,plate,5,33.3333
+4783,Sergei,touchet,2,13.3333
+4784,Sergei,ameri,2,13.3333
+4785,Sergei,ccan,2,13.3333
+4786,Sergei,americccan,1,6.6667
+4787,Sergei,pie,1,6.6667
+4788,Sergei,everybody,1,6.6667
+4789,Sergei,end,1,6.6667
+4790,Shelley,cute,2,8.0
+4791,Shelley,brian,2,8.0
+4792,Shelley,gorgeous,1,4.0
+4793,Shelley,question,1,4.0
+4794,Shelley,dating,1,4.0
+4795,Shelley,anybody,1,4.0
+4796,Shelley,met,1,4.0
+4797,Shelley,somebody,1,4.0
+4798,Shelley,perfect,1,4.0
+4799,Shelley,date,1,4.0
+4800,Shelley,saturday,1,4.0
+4801,Shelley,shelley,1,4.0
+4802,Shelley,flush,1,4.0
+4803,Shelley,toilet,1,4.0
+4804,Shelley,opening,1,4.0
+4805,Shelley,credits,1,4.0
+4806,Shelley,phew,1,4.0
+4807,Shelley,dunno,1,4.0
+4808,Shelley,shame,1,4.0
+4809,Shelley,lowell,1,4.0
+4810,Sherman Whitfield,sherman,1,25.0
+4811,Sherman Whitfield,whitfield,1,25.0
+4812,Sherman Whitfield,london,1,25.0
+4813,Sherman Whitfield,institute,1,25.0
+4814,Shop Assistant,incentive,1,50.0
+4815,Shop Assistant,men,1,50.0
+4816,Sick Bastard,swear,1,100.0
+4817,Sid,luckiest,1,50.0
+4818,Sid,world,1,50.0
+4819,Singer,face,1,7.6923
+4820,Singer,help,1,7.6923
+4821,Singer,fall,1,7.6923
+4822,Singer,grace,1,7.6923
+4823,Singer,beside,1,7.6923
+4824,Singer,meeeee,1,7.6923
+4825,Singer,eeee,1,7.6923
+4826,Singer,song,1,7.6923
+4827,Singer,called,1,7.6923
+4828,Singer,loved,1,7.6923
+4829,Singer,singing,1,7.6923
+4830,Singer,partners,1,7.6923
+4831,Singer,left,1,7.6923
+4832,Sleep Clinic Worker,stay,1,16.6667
+4833,Sleep Clinic Worker,preparation,1,16.6667
+4834,Sleep Clinic Worker,sleep,1,16.6667
+4835,Sleep Clinic Worker,study,1,16.6667
+4836,Sleep Clinic Worker,alll,1,16.6667
+4837,Sleep Clinic Worker,minutes,1,16.6667
+4838,Smart Kid,mastodon,1,33.3333
+4839,Smart Kid,pliocene,1,33.3333
+4840,Smart Kid,epic,1,33.3333
+4841,Sonia,absolutely,1,11.1111
+4842,Sonia,meet,1,11.1111
+4843,Sonia,somebody,1,11.1111
+4844,Sonia,wax,1,11.1111
+4845,Sonia,tweeze,1,11.1111
+4846,Sonia,strays,1,11.1111
+4847,Sonia,may,1,11.1111
+4848,Sonia,sting,1,11.1111
+4849,Sonia,bit,1,11.1111
+4850,Soothing Male Voice,mom,1,20.0
+4851,Soothing Male Voice,dad,1,20.0
+4852,Soothing Male Voice,forget,1,20.0
+4853,Soothing Male Voice,miracle,1,20.0
+4854,Soothing Male Voice,birth,1,20.0
+4855,Sophie,brought,2,7.6923
+4856,Sophie,mark,2,7.6923
+4857,Sophie,picnic,1,3.8462
+4858,Sophie,boyfriend,1,3.8462
+4859,Sophie,monday,1,3.8462
+4860,Sophie,wearing,1,3.8462
+4861,Sophie,love,1,3.8462
+4862,Sophie,hole,1,3.8462
+4863,Sophie,punch,1,3.8462
+4864,Sophie,intimated,1,3.8462
+4865,Sophie,smart,1,3.8462
+4866,Sophie,strong,1,3.8462
+4867,Sophie,successful,1,3.8462
+4868,Sophie,women,1,3.8462
+4869,Sophie,macaroon,1,3.8462
+4870,Sophie,christmas,1,3.8462
+4871,Sophie,bonus,1,3.8462
+4872,Sophie,list,1,3.8462
+4873,Sophie,saw,1,3.8462
+4874,Sophie,working,1,3.8462
+4875,Spokeswoman,become,1,5.2632
+4876,Spokeswoman,penicillin,1,5.2632
+4877,Spokeswoman,twenty,1,5.2632
+4878,Spokeswoman,century,1,5.2632
+4879,Spokeswoman,hospital,1,5.2632
+4880,Spokeswoman,major,1,5.2632
+4881,Spokeswoman,steps,1,5.2632
+4882,Spokeswoman,toward,1,5.2632
+4883,Spokeswoman,leading,1,5.2632
+4884,Spokeswoman,revolution,1,5.2632
+4885,Spokeswoman,truly,1,5.2632
+4886,Spokeswoman,ironic,1,5.2632
+4887,Spokeswoman,hand,1,5.2632
+4888,Spokeswoman,consider,1,5.2632
+4889,Spokeswoman,size,1,5.2632
+4890,Spokeswoman,made,1,5.2632
+4891,Spokeswoman,possible,1,5.2632
+4892,Spokeswoman,peter,1,5.2632
+4893,Spokeswoman,becker,1,5.2632
+4894,Stage Director,phone,2,18.1818
+4895,Stage Director,answer,1,9.0909
+4896,Stage Director,pledges,1,9.0909
+4897,Stage Director,gary,1,9.0909
+4898,Stage Director,collins,1,9.0909
+4899,Stage Director,host,1,9.0909
+4900,Stage Director,answering,1,9.0909
+4901,Stage Director,phones,1,9.0909
+4902,Stage Director,doctor,1,9.0909
+4903,Stage Director,seconds,1,9.0909
+4904,Stage Manager,held,1,25.0
+4905,Stage Manager,curtain,1,25.0
+4906,Stage Manager,buddy,1,25.0
+4907,Stage Manager,onstage,1,25.0
+4908,Stanley,money,3,15.7895
+4909,Stanley,slight,1,5.2632
+4910,Stanley,change,1,5.2632
+4911,Stanley,plans,1,5.2632
+4912,Stanley,shut,1,5.2632
+4913,Stanley,probably,1,5.2632
+4914,Stanley,temporary,1,5.2632
+4915,Stanley,hoping,1,5.2632
+4916,Stanley,soon,1,5.2632
+4917,Stanley,hang,1,5.2632
+4918,Stanley,week,1,5.2632
+4919,Stanley,invest,1,5.2632
+4920,Stanley,movies,1,5.2632
+4921,Stanley,rich,1,5.2632
+4922,Stanley,worth,1,5.2632
+4923,Stanley,shot,1,5.2632
+4924,Stanley,staying,1,5.2632
+4925,Stephanie,cat,4,21.0526
+4926,Stephanie,smelly,3,15.7895
+4927,Stephanie,divorces,1,5.2632
+4928,Stephanie,bother,1,5.2632
+4929,Stephanie,date,1,5.2632
+4930,Stephanie,married,1,5.2632
+4931,Stephanie,stephanie,1,5.2632
+4932,Stephanie,song,1,5.2632
+4933,Stephanie,wrote,1,5.2632
+4934,Stephanie,loved,1,5.2632
+4935,Stephanie,zachary,1,5.2632
+4936,Stephanie,feeding,1,5.2632
+4937,Stephanie,smel,1,5.2632
+4938,Stephanie,top,1,5.2632
+4939,Steve,tartlets,3,2.3077
+4940,Steve,apartment,2,1.5385
+4941,Steve,lost,2,1.5385
+4942,Steve,sugar,2,1.5385
+4943,Steve,drowning,2,1.5385
+4944,Steve,help,2,1.5385
+4945,Steve,howard,2,1.5385
+4946,Steve,handy,2,1.5385
+4947,Steve,everyone,2,1.5385
+4948,Steve,work,2,1.5385
+4949,Steve,kind,2,1.5385
+4950,Steve,money,2,1.5385
+4951,Steve,greeter,1,0.7692
+4952,Steve,lovely,1,0.7692
+4953,Steve,polite,1,0.7692
+4954,Steve,dry,1,0.7692
+4955,Steve,smack,1,0.7692
+4956,Steve,ass,1,0.7692
+4957,Steve,judy,1,0.7692
+4958,Steve,fantastic,1,0.7692
+4959,Stevens,smacked,1,9.0909
+4960,Stevens,telling,1,9.0909
+4961,Stevens,smacks,1,9.0909
+4962,Stevens,kid,1,9.0909
+4963,Stevens,starting,1,9.0909
+4964,Stevens,dartmouth,1,9.0909
+4965,Stevens,fall,1,9.0909
+4966,Stevens,excuse,1,9.0909
+4967,Stevens,forgot,1,9.0909
+4968,Stevens,briefcase,1,9.0909
+4969,Stevens,accident,1,9.0909
+4970,Store Guy,everybody,1,20.0
+4971,Store Guy,openin,1,20.0
+4972,Store Guy,doors,1,20.0
+4973,Store Guy,boys,1,20.0
+4974,Store Guy,todd,1,20.0
+4975,Strange Man,knew,1,100.0
+4976,Stranger,live,1,7.6923
+4977,Stranger,husband,1,7.6923
+4978,Stranger,stopped,1,7.6923
+4979,Stranger,leaves,1,7.6923
+4980,Stranger,flowers,1,7.6923
+4981,Stranger,bar,1,7.6923
+4982,Stranger,opening,1,7.6923
+4983,Stranger,titles,1,7.6923
+4984,Stranger,honest,1,7.6923
+4985,Stranger,annoying,1,7.6923
+4986,Stranger,parents,1,7.6923
+4987,Stranger,baby,1,7.6923
+4988,Stranger,phone,1,7.6923
+4989,Stripper,lucky,1,20.0
+4990,Stripper,boys,1,20.0
+4991,Stripper,bedroom,1,20.0
+4992,Stripper,whenever,1,20.0
+4993,Stripper,waiting,1,20.0
+4994,Stu,party,2,16.6667
+4995,Stu,hooker,2,16.6667
+4996,Stu,bachelor,1,8.3333
+4997,Stu,problem,1,8.3333
+4998,Stu,hired,1,8.3333
+4999,Stu,husband,1,8.3333
+5000,Stu,hookers,1,8.3333
+5001,Stu,either,1,8.3333
+5002,Stu,expensive,1,8.3333
+5003,Stu,date,1,8.3333
+5004,Student,trib,1,5.5556
+5005,Student,audition,1,5.5556
+5006,Student,wondering,1,5.5556
+5007,Student,consider,1,5.5556
+5008,Student,coaching,1,5.5556
+5009,Student,role,1,5.5556
+5010,Student,children,1,5.5556
+5011,Student,nick,1,5.5556
+5012,Student,boxer,1,5.5556
+5013,Student,saw,1,5.5556
+5014,Student,friends,1,5.5556
+5015,Student,brains,1,5.5556
+5016,Student,smeared,1,5.5556
+5017,Student,across,1,5.5556
+5018,Student,canvas,1,5.5556
+5019,Student,suggestions,1,5.5556
+5020,Student,building,1,5.5556
+5021,Student,avenue,1,5.5556
+5022,Supervisor,toner,4,21.0526
+5023,Supervisor,script,2,10.5263
+5024,Supervisor,sell,2,10.5263
+5025,Supervisor,basically,1,5.2632
+5026,Supervisor,easy,1,5.2632
+5027,Supervisor,read,1,5.2632
+5028,Supervisor,possibly,1,5.2632
+5029,Supervisor,trial,1,5.2632
+5030,Supervisor,run,1,5.2632
+5031,Supervisor,supply,1,5.2632
+5032,Supervisor,manager,1,5.2632
+5033,Supervisor,whatever,1,5.2632
+5034,Supervisor,answer,1,5.2632
+5035,Supervisor,questions,1,5.2632
+5036,Susan,baby,5,3.125
+5037,Susan,carol,4,2.5
+5038,Susan,love,3,1.875
+5039,Susan,breathe,3,1.875
+5040,Susan,fun,3,1.875
+5041,Susan,knows,2,1.25
+5042,Susan,jordie,2,1.25
+5043,Susan,along,2,1.25
+5044,Susan,father,2,1.25
+5045,Susan,singing,2,1.25
+5046,Susan,college,2,1.25
+5047,Susan,world,1,0.625
+5048,Susan,done,1,0.625
+5049,Susan,space,1,0.625
+5050,Susan,carries,1,0.625
+5051,Susan,everywhere,1,0.625
+5052,Susan,security,1,0.625
+5053,Susan,blanket,1,0.625
+5054,Susan,ski,1,0.625
+5055,Susan,boots,1,0.625
+5056,Susie,underpants,3,2.6316
+5057,Susie,director,2,1.7544
+5058,Susie,assistant,2,1.7544
+5059,Susie,susie,2,1.7544
+5060,Susie,fourth,2,1.7544
+5061,Susie,grade,2,1.7544
+5062,Susie,wearing,2,1.7544
+5063,Susie,skirt,2,1.7544
+5064,Susie,underwear,2,1.7544
+5065,Susie,bathroom,2,1.7544
+5066,Susie,leaves,2,1.7544
+5067,Susie,mister,2,1.7544
+5068,Susie,clothes,2,1.7544
+5069,Susie,hurry,2,1.7544
+5070,Susie,whaddo,2,1.7544
+5071,Susie,problem,1,0.8772
+5072,Susie,chris,1,0.8772
+5073,Susie,makeup,1,0.8772
+5074,Susie,refuses,1,0.8772
+5075,Susie,acknowledge,1,0.8772
+5076,Tag,office,7,3.5897
+5077,Tag,person,3,1.5385
+5078,Tag,gay,3,1.5385
+5079,Tag,love,3,1.5385
+5080,Tag,telling,3,1.5385
+5081,Tag,desk,3,1.5385
+5082,Tag,contracts,3,1.5385
+5083,Tag,filled,2,1.0256
+5084,Tag,bar,2,1.0256
+5085,Tag,anymore,2,1.0256
+5086,Tag,girlfriend,2,1.0256
+5087,Tag,joke,2,1.0256
+5088,Tag,appreciate,2,1.0256
+5089,Tag,touchie,2,1.0256
+5090,Tag,cute,2,1.0256
+5091,Tag,weird,2,1.0256
+5092,Tag,sense,2,1.0256
+5093,Tag,butt,2,1.0256
+5094,Tag,broke,2,1.0256
+5095,Tag,feeling,2,1.0256
+5096,Tall Guy,almost,1,7.6923
+5097,Tall Guy,brought,1,7.6923
+5098,Tall Guy,wife,1,7.6923
+5099,Tall Guy,dating,1,7.6923
+5100,Tall Guy,came,1,7.6923
+5101,Tall Guy,fair,1,7.6923
+5102,Tall Guy,game,1,7.6923
+5103,Tall Guy,buddy,1,7.6923
+5104,Tall Guy,second,1,7.6923
+5105,Tall Guy,grade,1,7.6923
+5106,Tall Guy,pal,1,7.6923
+5107,Tall Guy,seconds,1,7.6923
+5108,Tall Guy,partner,1,7.6923
+5109,Tattoo Artist,blonde,2,66.6667
+5110,Tattoo Artist,room,1,33.3333
+5111,Teacher,dance,4,6.6667
+5112,Teacher,class,4,6.6667
+5113,Teacher,five,3,5.0
+5114,Teacher,six,3,5.0
+5115,Teacher,seven,2,3.3333
+5116,Teacher,eight,2,3.3333
+5117,Teacher,partner,2,3.3333
+5118,Teacher,alrighty,2,3.3333
+5119,Teacher,may,1,1.6667
+5120,Teacher,help,1,1.6667
+5121,Teacher,observe,1,1.6667
+5122,Teacher,spare,1,1.6667
+5123,Teacher,shoes,1,1.6667
+5124,Teacher,empty,1,1.6667
+5125,Teacher,yoghurt,1,1.6667
+5126,Teacher,containers,1,1.6667
+5127,Teacher,lying,1,1.6667
+5128,Teacher,started,1,1.6667
+5129,Teacher,everyone,1,1.6667
+5130,Teacher,grab,1,1.6667
+5131,Terry,audition,2,5.5556
+5132,Terry,sweetheart,2,5.5556
+5133,Terry,terrible,2,5.5556
+5134,Terry,different,1,2.7778
+5135,Terry,building,1,2.7778
+5136,Terry,scenes,1,2.7778
+5137,Terry,everybody,1,2.7778
+5138,Terry,surprised,1,2.7778
+5139,Terry,head,1,2.7778
+5140,Terry,fit,1,2.7778
+5141,Terry,small,1,2.7778
+5142,Terry,halls,1,2.7778
+5143,Terry,help,1,2.7778
+5144,Terry,advance,1,2.7778
+5145,Terry,waitress,1,2.7778
+5146,Terry,awful,1,2.7778
+5147,Terry,decided,1,2.7778
+5148,Terry,pay,1,2.7778
+5149,Terry,professional,1,2.7778
+5150,Terry,musician,1,2.7778
+5151,The Acting Teacher,basics,1,20.0
+5152,The Acting Teacher,anybody,1,20.0
+5153,The Acting Teacher,difference,1,20.0
+5154,The Acting Teacher,upstage,1,20.0
+5155,The Acting Teacher,downstage,1,20.0
+5156,The Assistant Director,richard,2,33.3333
+5157,The Assistant Director,crosby,1,16.6667
+5158,The Assistant Director,playing,1,16.6667
+5159,The Assistant Director,vincent,1,16.6667
+5160,The Assistant Director,sheet,1,16.6667
+5161,The Attendant,service,1,33.3333
+5162,The Attendant,progress,1,33.3333
+5163,The Attendant,seat,1,33.3333
+5164,The Bass Barber,omm,3,42.8571
+5165,The Bass Barber,pah,3,42.8571
+5166,The Bass Barber,boyfriend,1,14.2857
+5167,The Casting Director,director,4,6.0606
+5168,The Casting Director,part,3,4.5455
+5169,The Casting Director,raymond,3,4.5455
+5170,The Casting Director,seen,2,3.0303
+5171,The Casting Director,jewish,2,3.0303
+5172,The Casting Director,ben,2,3.0303
+5173,The Casting Director,kyle,2,3.0303
+5174,The Casting Director,soup,2,3.0303
+5175,The Casting Director,tried,1,1.5152
+5176,The Casting Director,saw,1,1.5152
+5177,The Casting Director,tape,1,1.5152
+5178,The Casting Director,loved,1,1.5152
+5179,The Casting Director,thinks,1,1.5152
+5180,The Casting Director,wants,1,1.5152
+5181,The Casting Director,meet,1,1.5152
+5182,The Casting Director,agent,1,1.5152
+5183,The Casting Director,nudity,1,1.5152
+5184,The Casting Director,terrific,1,1.5152
+5185,The Casting Director,important,1,1.5152
+5186,The Casting Director,movie,1,1.5152
+5187,The Chorus Line,hallelujah,1,50.0
+5188,The Chorus Line,amen,1,50.0
+5189,The Cigarette Guy,joshua,1,50.0
+5190,The Cigarette Guy,pick,1,50.0
+5191,The Cigarette Smoking Guy,baby,1,33.3333
+5192,The Cigarette Smoking Guy,strip,1,33.3333
+5193,The Cigarette Smoking Guy,club,1,33.3333
+5194,The Colonel,gawd,1,100.0
+5195,The Conductor,poughkeepsie,2,40.0
+5196,The Conductor,montreal,2,40.0
+5197,The Conductor,station,1,20.0
+5198,The Cooking Teacher,chef,4,8.0
+5199,The Cooking Teacher,yum,3,6.0
+5200,The Cooking Teacher,introduction,2,4.0
+5201,The Cooking Teacher,cooking,2,4.0
+5202,The Cooking Teacher,sauce,2,4.0
+5203,The Cooking Teacher,class,2,4.0
+5204,The Cooking Teacher,amazing,2,4.0
+5205,The Cooking Teacher,star,2,4.0
+5206,The Cooking Teacher,welcome,1,2.0
+5207,The Cooking Teacher,anyone,1,2.0
+5208,The Cooking Teacher,difference,1,2.0
+5209,The Cooking Teacher,hollandaise,1,2.0
+5210,The Cooking Teacher,bearnaise,1,2.0
+5211,The Cooking Teacher,ahead,1,2.0
+5212,The Cooking Teacher,head,1,2.0
+5213,The Cooking Teacher,fettuccini,1,2.0
+5214,The Cooking Teacher,alfredo,1,2.0
+5215,The Cooking Teacher,looks,1,2.0
+5216,The Cooking Teacher,dry,1,2.0
+5217,The Cooking Teacher,cheese,1,2.0
+5218,The Croupier,comin,1,14.2857
+5219,The Croupier,dice,1,14.2857
+5220,The Croupier,double,1,14.2857
+5221,The Croupier,nothin,1,14.2857
+5222,The Croupier,pay,1,14.2857
+5223,The Croupier,front,1,14.2857
+5224,The Croupier,line,1,14.2857
+5225,The Cute Guy,kind,1,20.0
+5226,The Cute Guy,embarrassing,1,20.0
+5227,The Cute Guy,coming,1,20.0
+5228,The Cute Guy,friend,1,20.0
+5229,The Cute Guy,knew,1,20.0
+5230,The Director,action,11,8.0882
+5231,The Director,alex,3,2.2059
+5232,The Director,cry,3,2.2059
+5233,The Director,richard,3,2.2059
+5234,The Director,excuse,3,2.2059
+5235,The Director,badda,3,2.2059
+5236,The Director,son,2,1.4706
+5237,The Director,line,2,1.4706
+5238,The Director,supposed,2,1.4706
+5239,The Director,scene,2,1.4706
+5240,The Director,theatre,2,1.4706
+5241,The Director,tribianni,2,1.4706
+5242,The Director,kate,2,1.4706
+5243,The Director,pick,2,1.4706
+5244,The Director,playing,1,0.7353
+5245,The Director,says,1,0.7353
+5246,The Director,momma,1,0.7353
+5247,The Director,cue,1,0.7353
+5248,The Director,remember,1,0.7353
+5249,The Director,top,1,0.7353
+5250,The Doctor,identical,2,4.1667
+5251,The Doctor,twins,2,4.1667
+5252,The Doctor,worry,2,4.1667
+5253,The Doctor,toe,2,4.1667
+5254,The Doctor,carrot,2,4.1667
+5255,The Doctor,giving,2,4.1667
+5256,The Doctor,birth,2,4.1667
+5257,The Doctor,tony,1,2.0833
+5258,The Doctor,study,1,2.0833
+5259,The Doctor,miller,1,2.0833
+5260,The Doctor,nervous,1,2.0833
+5261,The Doctor,says,1,2.0833
+5262,The Doctor,knife,1,2.0833
+5263,The Doctor,shoe,1,2.0833
+5264,The Doctor,course,1,2.0833
+5265,The Doctor,made,1,2.0833
+5266,The Doctor,wicker,1,2.0833
+5267,The Doctor,son,1,2.0833
+5268,The Doctor,attach,1,2.0833
+5269,The Doctor,brought,1,2.0833
+5270,The Dry Cleaner,wall,2,11.1111
+5271,The Dry Cleaner,wife,2,11.1111
+5272,The Dry Cleaner,table,1,5.5556
+5273,The Dry Cleaner,offensive,1,5.5556
+5274,The Dry Cleaner,russians,1,5.5556
+5275,The Dry Cleaner,showed,1,5.5556
+5276,The Dry Cleaner,terrorists,1,5.5556
+5277,The Dry Cleaner,villains,1,5.5556
+5278,The Dry Cleaner,ford,1,5.5556
+5279,The Dry Cleaner,customer,1,5.5556
+5280,The Dry Cleaner,brings,1,5.5556
+5281,The Dry Cleaner,clothes,1,5.5556
+5282,The Dry Cleaner,seen,1,5.5556
+5283,The Dry Cleaner,son,1,5.5556
+5284,The Dry Cleaner,bitch,1,5.5556
+5285,The Dry Cleaner,shop,1,5.5556
+5286,The Fan,autograph,3,15.0
+5287,The Fan,excuse,1,5.0
+5288,The Fan,biggest,1,5.0
+5289,The Fan,fan,1,5.0
+5290,The Fan,talented,1,5.0
+5291,The Fan,idea,1,5.0
+5292,The Fan,seen,1,5.0
+5293,The Fan,movies,1,5.0
+5294,The Fan,porn,1,5.0
+5295,The Fan,star,1,5.0
+5296,The Fan,sex,1,5.0
+5297,The Fan,toy,1,5.0
+5298,The Fan,story,1,5.0
+5299,The Fan,lawrence,1,5.0
+5300,The Fan,alabia,1,5.0
+5301,The Fan,comic,1,5.0
+5302,The Fan,book,1,5.0
+5303,The Fan,store,1,5.0
+5304,The Fireman,fire,2,9.5238
+5305,The Fireman,alarm,2,9.5238
+5306,The Fireman,trash,2,9.5238
+5307,The Fireman,chute,2,9.5238
+5308,The Fireman,found,1,4.7619
+5309,The Fireman,dump,1,4.7619
+5310,The Fireman,wrap,1,4.7619
+5311,The Fireman,blanket,1,4.7619
+5312,The Fireman,says,1,4.7619
+5313,The Fireman,property,1,4.7619
+5314,The Fireman,reattach,1,4.7619
+5315,The Fireman,law,1,4.7619
+5316,The Fireman,disconnect,1,4.7619
+5317,The Fireman,reset,1,4.7619
+5318,The Fireman,button,1,4.7619
+5319,The Fireman,plastic,1,4.7619
+5320,The Fireman,cover,1,4.7619
+5321,The Flight Attendant,flight,2,22.2222
+5322,The Flight Attendant,may,1,11.1111
+5323,The Flight Attendant,help,1,11.1111
+5324,The Flight Attendant,welcome,1,11.1111
+5325,The Flight Attendant,las,1,11.1111
+5326,The Flight Attendant,vegas,1,11.1111
+5327,The Flight Attendant,enjoy,1,11.1111
+5328,The Flight Attendant,hope,1,11.1111
+5329,The Food Critic,reason,1,10.0
+5330,The Food Critic,torn,1,10.0
+5331,The Food Critic,integrity,1,10.0
+5332,The Food Critic,desire,1,10.0
+5333,The Food Critic,avoid,1,10.0
+5334,The Food Critic,beating,1,10.0
+5335,The Food Critic,must,1,10.0
+5336,The Food Critic,honest,1,10.0
+5337,The Food Critic,soap,1,10.0
+5338,The Food Critic,abysmal,1,10.0
+5339,The Girls,happy,1,25.0
+5340,The Girls,thanksgiving,1,25.0
+5341,The Girls,balloons,1,25.0
+5342,The Girls,bra,1,25.0
+5343,The Grip,pal,1,50.0
+5344,The Grip,left,1,50.0
+5345,The Guys,mississippi,3,50.0
+5346,The Guys,awww,1,16.6667
+5347,The Guys,noo,1,16.6667
+5348,The Guys,pete,1,16.6667
+5349,The Head Librarian,help,2,18.1818
+5350,The Head Librarian,aware,1,9.0909
+5351,The Head Librarian,problem,1,9.0909
+5352,The Head Librarian,referring,1,9.0909
+5353,The Head Librarian,far,1,9.0909
+5354,The Head Librarian,increasing,1,9.0909
+5355,The Head Librarian,security,1,9.0909
+5356,The Head Librarian,afraid,1,9.0909
+5357,The Head Librarian,library,1,9.0909
+5358,The Head Librarian,understaffed,1,9.0909
+5359,The Hot Girl,chip,1,14.2857
+5360,The Hot Girl,handyman,1,14.2857
+5361,The Hot Girl,unfair,1,14.2857
+5362,The Hot Girl,everyone,1,14.2857
+5363,The Hot Girl,reacted,1,14.2857
+5364,The Hot Girl,moved,1,14.2857
+5365,The Hot Girl,jen,1,14.2857
+5366,The Housekeeper,turkey,1,50.0
+5367,The Housekeeper,present,1,50.0
+5368,The Instructor,ladies,1,9.0909
+5369,The Instructor,ends,1,9.0909
+5370,The Instructor,class,1,9.0909
+5371,The Instructor,remember,1,9.0909
+5372,The Instructor,safe,1,9.0909
+5373,The Instructor,keys,1,9.0909
+5374,The Instructor,jam,1,9.0909
+5375,The Instructor,attacker,1,9.0909
+5376,The Instructor,straight,1,9.0909
+5377,The Instructor,attacked,1,9.0909
+5378,The Instructor,wife,1,9.0909
+5379,The Interviewer,readers,4,4.3011
+5380,The Interviewer,soap,3,3.2258
+5381,The Interviewer,bit,2,2.1505
+5382,The Interviewer,days,2,2.1505
+5383,The Interviewer,lives,2,2.1505
+5384,The Interviewer,friends,2,2.1505
+5385,The Interviewer,opera,2,2.1505
+5386,The Interviewer,duties,2,2.1505
+5387,The Interviewer,poo,2,2.1505
+5388,The Interviewer,appreciate,1,1.0753
+5389,The Interviewer,taking,1,1.0753
+5390,The Interviewer,meet,1,1.0753
+5391,The Interviewer,magazine,1,1.0753
+5392,The Interviewer,paying,1,1.0753
+5393,The Interviewer,fancy,1,1.0753
+5394,The Interviewer,restaurant,1,1.0753
+5395,The Interviewer,cup,1,1.0753
+5396,The Interviewer,coffee,1,1.0753
+5397,The Interviewer,according,1,1.0753
+5398,The Interviewer,bio,1,1.0753
+5399,The Knocker,gary,1,33.3333
+5400,The Knocker,live,1,33.3333
+5401,The Knocker,upstairs,1,33.3333
+5402,The Librarian,five,1,25.0
+5403,The Librarian,minutes,1,25.0
+5404,The Librarian,cover,1,25.0
+5405,The Librarian,shift,1,25.0
+5406,The Little Girl,daddy,1,100.0
+5407,The Lurker,quarter,3,27.2727
+5408,The Lurker,lose,1,9.0909
+5409,The Lurker,chunk,1,9.0909
+5410,The Lurker,blond,1,9.0909
+5411,The Lurker,hair,1,9.0909
+5412,The Lurker,monday,1,9.0909
+5413,The Lurker,excuse,1,9.0909
+5414,The Lurker,played,1,9.0909
+5415,The Lurker,money,1,9.0909
+5416,The Man,candy,3,15.7895
+5417,The Man,change,2,10.5263
+5418,The Man,bus,2,10.5263
+5419,The Man,waiting,1,5.2632
+5420,The Man,excuse,1,5.2632
+5421,The Man,check,1,5.2632
+5422,The Man,tenants,1,5.2632
+5423,The Man,apparently,1,5.2632
+5424,The Man,running,1,5.2632
+5425,The Man,kind,1,5.2632
+5426,The Man,hot,1,5.2632
+5427,The Man,making,1,5.2632
+5428,The Man,poor,1,5.2632
+5429,The Man,bite,1,5.2632
+5430,The Man,blondie,1,5.2632
+5431,The Man In The Sportscar,hot,1,100.0
+5432,The Museum Official,wedding,3,10.7143
+5433,The Museum Official,heldi,2,7.1429
+5434,The Museum Official,morgan,2,7.1429
+5435,The Museum Official,chase,2,7.1429
+5436,The Museum Official,museum,2,7.1429
+5437,The Museum Official,calling,2,7.1429
+5438,The Museum Official,cancellation,2,7.1429
+5439,The Museum Official,interested,2,7.1429
+5440,The Museum Official,facility,2,7.1429
+5441,The Museum Official,available,2,7.1429
+5442,The Museum Official,aisle,1,3.5714
+5443,The Museum Official,ceremony,1,3.5714
+5444,The Museum Official,may,1,3.5714
+5445,The Museum Official,help,1,3.5714
+5446,The Museum Official,popular,1,3.5714
+5447,The Museum Official,waiting,1,3.5714
+5448,The Museum Official,list,1,3.5714
+5449,The Old Man,alone,1,100.0
+5450,The Paramedic,twenty,1,25.0
+5451,The Paramedic,severed,1,25.0
+5452,The Paramedic,toe,1,25.0
+5453,The Paramedic,foot,1,25.0
+5454,The Pastor,everyone,1,50.0
+5455,The Pastor,seats,1,50.0
+5456,The Photographer,smile,1,33.3333
+5457,The Photographer,seat,1,33.3333
+5458,The Photographer,uncomfortable,1,33.3333
+5459,The Porsche Owner,car,2,18.1818
+5460,The Porsche Owner,city,1,9.0909
+5461,The Porsche Owner,crazy,1,9.0909
+5462,The Porsche Owner,kind,1,9.0909
+5463,The Porsche Owner,street,1,9.0909
+5464,The Porsche Owner,theater,1,9.0909
+5465,The Porsche Owner,keys,1,9.0909
+5466,The Porsche Owner,coming,1,9.0909
+5467,The Porsche Owner,live,1,9.0909
+5468,The Porsche Owner,upstate,1,9.0909
+5469,The Potential Roommate,worry,1,20.0
+5470,The Potential Roommate,party,1,20.0
+5471,The Potential Roommate,fight,1,20.0
+5472,The Potential Roommate,string,1,20.0
+5473,The Potential Roommate,kitten,1,20.0
+5474,The Presenter,gavin,2,8.0
+5475,The Presenter,grant,2,8.0
+5476,The Presenter,young,2,8.0
+5477,The Presenter,restless,2,8.0
+5478,The Presenter,category,1,4.0
+5479,The Presenter,favorite,1,4.0
+5480,The Presenter,returning,1,4.0
+5481,The Presenter,male,1,4.0
+5482,The Presenter,character,1,4.0
+5483,The Presenter,nominees,1,4.0
+5484,The Presenter,john,1,4.0
+5485,The Presenter,wheeler,1,4.0
+5486,The Presenter,general,1,4.0
+5487,The Presenter,hospital,1,4.0
+5488,The Presenter,dunkin,1,4.0
+5489,The Presenter,harrington,1,4.0
+5490,The Presenter,passions,1,4.0
+5491,The Presenter,days,1,4.0
+5492,The Presenter,lives,1,4.0
+5493,The Presenter,soapie,1,4.0
+5494,The Producer,office,1,12.5
+5495,The Producer,set,1,12.5
+5496,The Producer,wardrobe,1,12.5
+5497,The Producer,fitting,1,12.5
+5498,The Producer,wayne,1,12.5
+5499,The Producer,created,1,12.5
+5500,The Producer,operates,1,12.5
+5501,The Producer,acquainted,1,12.5
+5502,The Professor,kurt,1,14.2857
+5503,The Professor,rathman,1,14.2857
+5504,The Professor,professor,1,14.2857
+5505,The Professor,paleontology,1,14.2857
+5506,The Professor,department,1,14.2857
+5507,The Professor,moment,1,14.2857
+5508,The Professor,lecture,1,14.2857
+5509,The Rabbi,greek,1,14.2857
+5510,The Rabbi,orthodox,1,14.2857
+5511,The Rabbi,father,1,14.2857
+5512,The Rabbi,kalebasous,1,14.2857
+5513,The Rabbi,begin,1,14.2857
+5514,The Rabbi,dearly,1,14.2857
+5515,The Rabbi,beloved,1,14.2857
+5516,The Saleslady,waltham,2,28.5714
+5517,The Saleslady,may,1,14.2857
+5518,The Saleslady,help,1,14.2857
+5519,The Saleslady,ladies,1,14.2857
+5520,The Saleslady,closing,1,14.2857
+5521,The Saleslady,ring,1,14.2857
+5522,The Salesman,couch,2,4.0
+5523,The Salesman,set,2,4.0
+5524,The Salesman,encyclopedias,2,4.0
+5525,The Salesman,bucks,2,4.0
+5526,The Salesman,book,2,4.0
+5527,The Salesman,picked,1,2.0
+5528,The Salesman,sign,1,2.0
+5529,The Salesman,enjoy,1,2.0
+5530,The Salesman,quite,1,2.0
+5531,The Salesman,add,1,2.0
+5532,The Salesman,afternoon,1,2.0
+5533,The Salesman,decision,1,2.0
+5534,The Salesman,maker,1,2.0
+5535,The Salesman,house,1,2.0
+5536,The Salesman,currently,1,2.0
+5537,The Salesman,buying,1,2.0
+5538,The Salesman,selling,1,2.0
+5539,The Salesman,question,1,2.0
+5540,The Salesman,friends,1,2.0
+5541,The Salesman,conversation,1,2.0
+5542,The Saleswoman,couch,3,23.0769
+5543,The Saleswoman,half,2,15.3846
+5544,The Saleswoman,return,1,7.6923
+5545,The Saleswoman,telling,1,7.6923
+5546,The Saleswoman,delivered,1,7.6923
+5547,The Saleswoman,store,1,7.6923
+5548,The Saleswoman,credit,1,7.6923
+5549,The Saleswoman,amount,1,7.6923
+5550,The Saleswoman,four,1,7.6923
+5551,The Saleswoman,dollars,1,7.6923
+5552,The Second Guest,college,1,33.3333
+5553,The Second Guest,live,1,33.3333
+5554,The Second Guest,door,1,33.3333
+5555,The Security Guard,true,1,20.0
+5556,The Security Guard,quarter,1,20.0
+5557,The Security Guard,taking,1,20.0
+5558,The Security Guard,outside,1,20.0
+5559,The Security Guard,throw,1,20.0
+5560,The Singing Man,sunshine,2,33.3333
+5561,The Singing Man,sky,1,16.6667
+5562,The Singing Man,clear,1,16.6667
+5563,The Singing Man,breakfast,1,16.6667
+5564,The Singing Man,near,1,16.6667
+5565,The Smoking Woman,worked,1,20.0
+5566,The Smoking Woman,real,1,20.0
+5567,The Smoking Woman,cigarette,1,20.0
+5568,The Smoking Woman,apologize,1,20.0
+5569,The Smoking Woman,tree,1,20.0
+5570,The Stripper,ring,2,10.0
+5571,The Stripper,birdies,1,5.0
+5572,The Stripper,chickens,1,5.0
+5573,The Stripper,ducks,1,5.0
+5574,The Stripper,pets,1,5.0
+5575,The Stripper,fun,1,5.0
+5576,The Stripper,throw,1,5.0
+5577,The Stripper,party,1,5.0
+5578,The Stripper,anybody,1,5.0
+5579,The Stripper,security,1,5.0
+5580,The Stripper,gunther,1,5.0
+5581,The Stripper,central,1,5.0
+5582,The Stripper,perk,1,5.0
+5583,The Stripper,stole,1,5.0
+5584,The Stripper,hardy,1,5.0
+5585,The Stripper,boys,1,5.0
+5586,The Stripper,steal,1,5.0
+5587,The Stripper,stupid,1,5.0
+5588,The Stripper,week,1,5.0
+5589,The Teacher,ben,2,4.3478
+5590,The Teacher,parents,2,4.3478
+5591,The Teacher,characterize,1,2.1739
+5592,The Teacher,theme,1,2.1739
+5593,The Teacher,book,1,2.1739
+5594,The Teacher,sort,1,2.1739
+5595,The Teacher,given,1,2.1739
+5596,The Teacher,anyone,1,2.1739
+5597,The Teacher,excellent,1,2.1739
+5598,The Teacher,shrewdly,1,2.1739
+5599,The Teacher,observed,1,2.1739
+5600,The Teacher,blue,1,2.1739
+5601,The Teacher,shirt,1,2.1739
+5602,The Teacher,venture,1,2.1739
+5603,The Teacher,repeating,1,2.1739
+5604,The Teacher,saying,1,2.1739
+5605,The Teacher,move,1,2.1739
+5606,The Teacher,late,1,2.1739
+5607,The Teacher,started,1,2.1739
+5608,The Teacher,everybody,1,2.1739
+5609,The Vampire,plunge,1,14.2857
+5610,The Vampire,stake,1,14.2857
+5611,The Vampire,dark,1,14.2857
+5612,The Vampire,places,1,14.2857
+5613,The Vampire,vampire,1,14.2857
+5614,The Vampire,layer,1,14.2857
+5615,The Vampire,hoping,1,14.2857
+5616,The Vendor,market,1,9.0909
+5617,The Vendor,scarves,1,9.0909
+5618,The Vendor,tulip,1,9.0909
+5619,The Vendor,post,1,9.0909
+5620,The Vendor,cards,1,9.0909
+5621,The Vendor,jealous,1,9.0909
+5622,The Vendor,fit,1,9.0909
+5623,The Vendor,londoners,1,9.0909
+5624,The Vendor,wear,1,9.0909
+5625,The Vendor,tourists,1,9.0909
+5626,The Vendor,choice,1,9.0909
+5627,The Waiter,hat,2,10.0
+5628,The Waiter,roasted,1,5.0
+5629,The Waiter,lobster,1,5.0
+5630,The Waiter,ravioli,1,5.0
+5631,The Waiter,progress,1,5.0
+5632,The Waiter,generous,1,5.0
+5633,The Waiter,holidays,1,5.0
+5634,The Waiter,hurts,1,5.0
+5635,The Waiter,wear,1,5.0
+5636,The Waiter,tight,1,5.0
+5637,The Waiter,trousers,1,5.0
+5638,The Waiter,remember,1,5.0
+5639,The Waiter,dragon,1,5.0
+5640,The Waiter,check,1,5.0
+5641,The Waiter,commercial,1,5.0
+5642,The Waiter,break,1,5.0
+5643,The Waiter,found,1,5.0
+5644,The Waiter,handle,1,5.0
+5645,The Waiter,true,1,5.0
+5646,The Waitress,wants,2,33.3333
+5647,The Waitress,says,1,16.6667
+5648,The Waitress,dry,1,16.6667
+5649,The Waitress,explain,1,16.6667
+5650,The Waitress,exactly,1,16.6667
+5651,The Wedding Guest,work,1,50.0
+5652,The Wedding Guest,frannie,1,50.0
+5653,The Whole Party,surprise,1,100.0
+5654,The Woman,candy,3,15.7895
+5655,The Woman,help,2,10.5263
+5656,The Woman,hours,1,5.2632
+5657,The Woman,coming,1,5.2632
+5658,The Woman,town,1,5.2632
+5659,The Woman,absolutely,1,5.2632
+5660,The Woman,indescribable,1,5.2632
+5661,The Woman,sweetheart,1,5.2632
+5662,The Woman,heavy,1,5.2632
+5663,The Woman,kristen,1,5.2632
+5664,The Woman,beautiful,1,5.2632
+5665,The Woman,knew,1,5.2632
+5666,The Woman,cry,1,5.2632
+5667,The Woman,megan,1,5.2632
+5668,The Woman,bailey,1,5.2632
+5669,The Woman,store,1,5.2632
+5670,The Woman Dealer,hands,1,33.3333
+5671,The Woman Dealer,bathroom,1,33.3333
+5672,The Woman Dealer,busy,1,33.3333
+5673,The Woman From Poughkeepsie,wake,1,100.0
+5674,The Writer,decision,1,100.0
+5675,Theodore,friends,1,5.5556
+5676,Theodore,tom,1,5.5556
+5677,Theodore,sue,1,5.5556
+5678,Theodore,angle,1,5.5556
+5679,Theodore,owwwww,1,5.5556
+5680,Theodore,recently,1,5.5556
+5681,Theodore,surgery,1,5.5556
+5682,Theodore,check,1,5.5556
+5683,Theodore,stitches,1,5.5556
+5684,Theodore,punch,1,5.5556
+5685,Theodore,stomach,1,5.5556
+5686,Theodore,imagine,1,5.5556
+5687,Theodore,sees,1,5.5556
+5688,Theodore,remember,1,5.5556
+5689,Theodore,michael,1,5.5556
+5690,Theodore,lovely,1,5.5556
+5691,Theodore,behaved,1,5.5556
+5692,Theodore,single,1,5.5556
+5693,Ticket Agent,afraid,2,5.4054
+5694,Ticket Agent,boarding,2,5.4054
+5695,Ticket Agent,flight,2,5.4054
+5696,Ticket Agent,class,2,5.4054
+5697,Ticket Agent,seats,2,5.4054
+5698,Ticket Agent,destination,1,2.7027
+5699,Ticket Agent,leaving,1,2.7027
+5700,Ticket Agent,thirty,1,2.7027
+5701,Ticket Agent,minutes,1,2.7027
+5702,Ticket Agent,seat,1,2.7027
+5703,Ticket Agent,left,1,2.7027
+5704,Ticket Agent,fare,1,2.7027
+5705,Ticket Agent,ticket,1,2.7027
+5706,Ticket Agent,twenty,1,2.7027
+5707,Ticket Agent,seven,1,2.7027
+5708,Ticket Agent,hundred,1,2.7027
+5709,Ticket Agent,dollars,1,2.7027
+5710,Ticket Agent,split,1,2.7027
+5711,Ticket Agent,credit,1,2.7027
+5712,Ticket Agent,card,1,2.7027
+5713,Ticket Counter Attendant,yemen,3,25.0
+5714,Ticket Counter Attendant,ticket,2,16.6667
+5715,Ticket Counter Attendant,travelling,1,8.3333
+5716,Ticket Counter Attendant,child,1,8.3333
+5717,Ticket Counter Attendant,library,1,8.3333
+5718,Ticket Counter Attendant,cards,1,8.3333
+5719,Ticket Counter Attendant,final,1,8.3333
+5720,Ticket Counter Attendant,boarding,1,8.3333
+5721,Ticket Counter Attendant,flight,1,8.3333
+5722,Tilly,eddie,2,20.0
+5723,Tilly,minowick,1,10.0
+5724,Tilly,tilly,1,10.0
+5725,Tilly,gather,1,10.0
+5726,Tilly,kind,1,10.0
+5727,Tilly,intense,1,10.0
+5728,Tilly,came,1,10.0
+5729,Tilly,drop,1,10.0
+5730,Tilly,tank,1,10.0
+5731,Tim,patch,2,3.0303
+5732,Tim,couple,2,3.0303
+5733,Tim,called,2,3.0303
+5734,Tim,talented,2,3.0303
+5735,Tim,saw,1,1.5152
+5736,Tim,left,1,1.5152
+5737,Tim,college,1,1.5152
+5738,Tim,standing,1,1.5152
+5739,Tim,outside,1,1.5152
+5740,Tim,dairy,1,1.5152
+5741,Tim,queen,1,1.5152
+5742,Tim,excellent,1,1.5152
+5743,Tim,patient,1,1.5152
+5744,Tim,scratch,1,1.5152
+5745,Tim,cornea,1,1.5152
+5746,Tim,wear,1,1.5152
+5747,Tim,days,1,1.5152
+5748,Tim,helps,1,1.5152
+5749,Tim,moved,1,1.5152
+5750,Tim,months,1,1.5152
+5751,Together,smelly,4,40.0
+5752,Together,cat,4,40.0
+5753,Together,feeding,1,10.0
+5754,Together,fault,1,10.0
+5755,Tom,assistant,1,4.0
+5756,Tom,lovely,1,4.0
+5757,Tom,ladies,1,4.0
+5758,Tom,dinner,1,4.0
+5759,Tom,work,1,4.0
+5760,Tom,bloomingdale,1,4.0
+5761,Tom,mom,1,4.0
+5762,Tom,calls,1,4.0
+5763,Tom,bloomies,1,4.0
+5764,Tom,friend,1,4.0
+5765,Tom,tom,1,4.0
+5766,Tom,gordon,1,4.0
+5767,Tom,class,1,4.0
+5768,Tom,barely,1,4.0
+5769,Tom,knew,1,4.0
+5770,Tom,came,1,4.0
+5771,Tom,heard,1,4.0
+5772,Tom,news,1,4.0
+5773,Tom,seeing,1,4.0
+5774,Tom,anyone,1,4.0
+5775,Tommy,idiot,5,7.3529
+5776,Tommy,coffee,4,5.8824
+5777,Tommy,quack,4,5.8824
+5778,Tommy,stupid,3,4.4118
+5779,Tommy,cup,2,2.9412
+5780,Tommy,ice,2,2.9412
+5781,Tommy,hot,2,2.9412
+5782,Tommy,dumb,2,2.9412
+5783,Tommy,doofy,2,2.9412
+5784,Tommy,fuzzy,2,2.9412
+5785,Tommy,eww,2,2.9412
+5786,Tommy,doo,2,2.9412
+5787,Tommy,seats,1,1.4706
+5788,Tommy,ticket,1,1.4706
+5789,Tommy,work,1,1.4706
+5790,Tommy,moron,1,1.4706
+5791,Tommy,says,1,1.4706
+5792,Tommy,surrounded,1,1.4706
+5793,Tommy,numbers,1,1.4706
+5794,Tommy,clue,1,1.4706
+5795,Tony,canoe,2,40.0
+5796,Tony,bucks,1,20.0
+5797,Tony,willing,1,20.0
+5798,Tony,trade,1,20.0
+5799,Tour Guide,sit,3,7.8947
+5800,Tour Guide,world,3,7.8947
+5801,Tour Guide,coats,2,5.2632
+5802,Tour Guide,blazers,2,5.2632
+5803,Tour Guide,perfect,2,5.2632
+5804,Tour Guide,peter,2,5.2632
+5805,Tour Guide,rhonda,2,5.2632
+5806,Tour Guide,white,1,2.6316
+5807,Tour Guide,blue,1,2.6316
+5808,Tour Guide,crazy,1,2.6316
+5809,Tour Guide,without,1,2.6316
+5810,Tour Guide,lab,1,2.6316
+5811,Tour Guide,museum,1,2.6316
+5812,Tour Guide,scientist,1,2.6316
+5813,Tour Guide,classes,1,2.6316
+5814,Tour Guide,grade,1,2.6316
+5815,Tour Guide,school,1,2.6316
+5816,Tour Guide,shared,1,2.6316
+5817,Tour Guide,puddin,1,2.6316
+5818,Tour Guide,gave,1,2.6316
+5819,Trainer,personal,1,12.5
+5820,Trainer,pressure,1,12.5
+5821,Trainer,starring,1,12.5
+5822,Trainer,movie,1,12.5
+5823,Trainer,human,1,12.5
+5824,Trainer,terms,1,12.5
+5825,Trainer,cybill,1,12.5
+5826,Trainer,shepard,1,12.5
+5827,Transit Authority Guy,assuming,1,50.0
+5828,Transit Authority Guy,father,1,50.0
+5829,Trudie Styler,ben,4,10.8108
+5830,Trudie Styler,jack,3,8.1081
+5831,Trudie Styler,poo,2,5.4054
+5832,Trudie Styler,concert,2,5.4054
+5833,Trudie Styler,tickets,2,5.4054
+5834,Trudie Styler,trudie,1,2.7027
+5835,Trudie Styler,must,1,2.7027
+5836,Trudie Styler,mum,1,2.7027
+5837,Trudie Styler,sit,1,2.7027
+5838,Trudie Styler,gather,1,2.7027
+5839,Trudie Styler,along,1,2.7027
+5840,Trudie Styler,lately,1,2.7027
+5841,Trudie Styler,sides,1,2.7027
+5842,Trudie Styler,story,1,2.7027
+5843,Trudie Styler,heard,1,2.7027
+5844,Trudie Styler,bit,1,2.7027
+5845,Trudie Styler,head,1,2.7027
+5846,Trudie Styler,father,1,2.7027
+5847,Trudie Styler,available,1,2.7027
+5848,Trudie Styler,work,1,2.7027
+5849,Tv,powerball,2,40.0
+5850,Tv,official,1,20.0
+5851,Tv,numbers,1,20.0
+5852,Tv,number,1,20.0
+5853,Tv Announcer,becker,2,9.0909
+5854,Tv Announcer,bruiser,2,9.0909
+5855,Tv Announcer,pete,1,4.5455
+5856,Tv Announcer,circling,1,4.5455
+5857,Tv Announcer,ring,1,4.5455
+5858,Tv Announcer,looks,1,4.5455
+5859,Tv Announcer,canvas,1,4.5455
+5860,Tv Announcer,favourite,1,4.5455
+5861,Tv Announcer,area,1,4.5455
+5862,Tv Announcer,marching,1,4.5455
+5863,Tv Announcer,band,1,4.5455
+5864,Tv Announcer,muskogee,1,4.5455
+5865,Tv Announcer,heres,1,4.5455
+5866,Tv Announcer,float,1,4.5455
+5867,Tv Announcer,stars,1,4.5455
+5868,Tv Announcer,popular,1,4.5455
+5869,Tv Announcer,daytime,1,4.5455
+5870,Tv Announcer,soap,1,4.5455
+5871,Tv Announcer,days,1,4.5455
+5872,Tv Announcer,lives,1,4.5455
+5873,Tv Doctor,save,1,50.0
+5874,Tv Doctor,drake,1,50.0
+5875,Uncle Dan,started,1,100.0
+5876,Ursula,working,3,2.9126
+5877,Ursula,help,2,1.9417
+5878,Ursula,twin,2,1.9417
+5879,Ursula,thirty,2,1.9417
+5880,Ursula,family,2,1.9417
+5881,Ursula,mom,2,1.9417
+5882,Ursula,excuse,2,1.9417
+5883,Ursula,five,2,1.9417
+5884,Ursula,years,2,1.9417
+5885,Ursula,dead,2,1.9417
+5886,Ursula,left,2,1.9417
+5887,Ursula,read,2,1.9417
+5888,Ursula,hang,2,1.9417
+5889,Ursula,poem,2,1.9417
+5890,Ursula,supposed,2,1.9417
+5891,Ursula,town,2,1.9417
+5892,Ursula,voice,1,0.9709
+5893,Ursula,real,1,0.9709
+5894,Ursula,seller,1,0.9709
+5895,Ursula,giving,1,0.9709
+5896,Van Damme,dying,4,16.6667
+5897,Van Damme,drew,3,12.5
+5898,Van Damme,cute,2,8.3333
+5899,Van Damme,friend,1,4.1667
+5900,Van Damme,normally,1,4.1667
+5901,Van Damme,threesome,1,4.1667
+5902,Van Damme,barrymore,1,4.1667
+5903,Van Damme,groundrules,1,4.1667
+5904,Van Damme,work,1,4.1667
+5905,Van Damme,disappointed,1,4.1667
+5906,Van Damme,perhaps,1,4.1667
+5907,Van Damme,crush,1,4.1667
+5908,Van Damme,walnut,1,4.1667
+5909,Van Damme,butt,1,4.1667
+5910,Van Damme,dead,1,4.1667
+5911,Van Damme,end,1,4.1667
+5912,Van Damme,contrl,1,4.1667
+5913,Van Damme,gif,1,4.1667
+5914,Vince,deal,2,6.0606
+5915,Vince,open,2,6.0606
+5916,Vince,hot,1,3.0303
+5917,Vince,saves,1,3.0303
+5918,Vince,highest,1,3.0303
+5919,Vince,force,1,3.0303
+5920,Vince,fire,1,3.0303
+5921,Vince,safety,1,3.0303
+5922,Vince,joke,1,3.0303
+5923,Vince,son,1,3.0303
+5924,Vince,saturday,1,3.0303
+5925,Vince,special,1,3.0303
+5926,Vince,felt,1,3.0303
+5927,Vince,finally,1,3.0303
+5928,Vince,share,1,3.0303
+5929,Vince,write,1,3.0303
+5930,Vince,journal,1,3.0303
+5931,Vince,relax,1,3.0303
+5932,Vince,exclusive,1,3.0303
+5933,Vince,made,1,3.0303
+5934,Voice,five,1,10.0
+5935,Voice,four,1,10.0
+5936,Voice,applause,1,10.0
+5937,Voice,wxrk,1,10.0
+5938,Voice,rock,1,10.0
+5939,Voice,daily,1,10.0
+5940,Voice,challenge,1,10.0
+5941,Voice,roommate,1,10.0
+5942,Voice,opening,1,10.0
+5943,Voice,credits,1,10.0
+5944,Waiter,gentleman,3,2.3438
+5945,Waiter,order,3,2.3438
+5946,Waiter,left,3,2.3438
+5947,Waiter,table,3,2.3438
+5948,Waiter,bar,2,1.5625
+5949,Waiter,end,2,1.5625
+5950,Waiter,chinese,2,1.5625
+5951,Waiter,wine,2,1.5625
+5952,Waiter,stood,2,1.5625
+5953,Waiter,pool,2,1.5625
+5954,Waiter,rest,2,1.5625
+5955,Waiter,party,2,1.5625
+5956,Waiter,hope,2,1.5625
+5957,Waiter,specials,2,1.5625
+5958,Waiter,waiter,2,1.5625
+5959,Waiter,sewage,2,1.5625
+5960,Waiter,garden,1,0.7812
+5961,Waiter,salad,1,0.7812
+5962,Waiter,seafood,1,0.7812
+5963,Waiter,platter,1,0.7812
+5964,Waiter In Drag,mmm,1,50.0
+5965,Waiter In Drag,straight,1,50.0
+5966,Waiters,happy,4,44.4444
+5967,Waiters,birthday,4,44.4444
+5968,Waiters,dear,1,11.1111
+5969,Waitress,customer,1,11.1111
+5970,Waitress,wants,1,11.1111
+5971,Waitress,complement,1,11.1111
+5972,Waitress,chef,1,11.1111
+5973,Waitress,coffee,1,11.1111
+5974,Waitress,check,1,11.1111
+5975,Waitress,side,1,11.1111
+5976,Waitress,steamed,1,11.1111
+5977,Waitress,vegetables,1,11.1111
+5978,Wayne,job,2,10.0
+5979,Wayne,spent,1,5.0
+5980,Wayne,years,1,5.0
+5981,Wayne,developing,1,5.0
+5982,Wayne,machine,1,5.0
+5983,Wayne,absolutely,1,5.0
+5984,Wayne,state,1,5.0
+5985,Wayne,art,1,5.0
+5986,Wayne,touch,1,5.0
+5987,Wayne,help,1,5.0
+5988,Wayne,saw,1,5.0
+5989,Wayne,stage,1,5.0
+5990,Wayne,beautiful,1,5.0
+5991,Wayne,sarah,1,5.0
+5992,Wayne,wish,1,5.0
+5993,Wayne,anyone,1,5.0
+5994,Wayne,guarantee,1,5.0
+5995,Wayne,teach,1,5.0
+5996,Wayne,women,1,5.0
+5997,Wedding Planner,rightie,1,20.0
+5998,Wedding Planner,everybody,1,20.0
+5999,Wedding Planner,bridesmaids,1,20.0
+6000,Wedding Planner,ushers,1,20.0
+6001,Wedding Planner,lines,1,20.0
+6002,Wendy,christmas,4,10.0
+6003,Wendy,insurance,2,5.0
+6004,Wendy,party,2,5.0
+6005,Wendy,ham,2,5.0
+6006,Wendy,married,2,5.0
+6007,Wendy,checking,1,2.5
+6008,Wendy,company,1,2.5
+6009,Wendy,beautiful,1,2.5
+6010,Wendy,decorations,1,2.5
+6011,Wendy,huge,1,2.5
+6012,Wendy,tree,1,2.5
+6013,Wendy,work,1,2.5
+6014,Wendy,stole,1,2.5
+6015,Wendy,ther,1,2.5
+6016,Wendy,feels,1,2.5
+6017,Wendy,pep,1,2.5
+6018,Wendy,home,1,2.5
+6019,Wendy,naah,1,2.5
+6020,Wendy,alone,1,2.5
+6021,Wendy,besides,1,2.5
+6022,Whitfield,quite,1,8.3333
+6023,Whitfield,impressed,1,8.3333
+6024,Whitfield,paper,1,8.3333
+6025,Whitfield,pre,1,8.3333
+6026,Whitfield,cretaceous,1,8.3333
+6027,Whitfield,fossils,1,8.3333
+6028,Whitfield,confirmed,1,8.3333
+6029,Whitfield,written,1,8.3333
+6030,Whitfield,seat,1,8.3333
+6031,Whitfield,left,1,8.3333
+6032,Whitfield,chair,1,8.3333
+6033,Whitfield,area,1,8.3333
+6034,Whitney,breakfast,1,14.2857
+6035,Whitney,door,1,14.2857
+6036,Whitney,proof,1,14.2857
+6037,Whitney,kyle,1,14.2857
+6038,Whitney,pick,1,14.2857
+6039,Whitney,reminiscing,1,14.2857
+6040,Whitney,work,1,14.2857
+6041,Will,hate,4,4.4444
+6042,Will,eat,3,3.3333
+6043,Will,yams,3,3.3333
+6044,Will,typical,3,3.3333
+6045,Will,club,3,3.3333
+6046,Will,hated,2,2.2222
+6047,Will,fun,2,2.2222
+6048,Will,remember,2,2.2222
+6049,Will,made,2,2.2222
+6050,Will,happy,1,1.1111
+6051,Will,thanksgiving,1,1.1111
+6052,Will,pounds,1,1.1111
+6053,Will,subway,1,1.1111
+6054,Will,sandwich,1,1.1111
+6055,Will,commercials,1,1.1111
+6056,Will,fat,1,1.1111
+6057,Will,sugar,1,1.1111
+6058,Will,dairy,1,1.1111
+6059,Will,throw,1,1.1111
+6060,Will,stunning,1,1.1111
+6061,Woman,love,5,3.1056
+6062,Woman,amazing,3,1.8634
+6063,Woman,years,3,1.8634
+6064,Woman,move,3,1.8634
+6065,Woman,sister,2,1.2422
+6066,Woman,porsche,2,1.2422
+6067,Woman,hour,2,1.2422
+6068,Woman,four,2,1.2422
+6069,Woman,ago,2,1.2422
+6070,Woman,excuse,2,1.2422
+6071,Woman,help,2,1.2422
+6072,Woman,suds,2,1.2422
+6073,Woman,gawd,2,1.2422
+6074,Woman,fan,2,1.2422
+6075,Woman,congratulations,2,1.2422
+6076,Woman,owe,1,0.6211
+6077,Woman,muffin,1,0.6211
+6078,Woman,latte,1,0.6211
+6079,Woman,seems,1,0.6211
+6080,Woman,date,1,0.6211
+6081,Woman At Door,favorite,1,50.0
+6082,Woman At Door,sister,1,50.0
+6083,Woman At Door In A Sing Song Voice,amy,1,100.0
+6084,Woman At The Wedding,course,1,33.3333
+6085,Woman At The Wedding,click,1,33.3333
+6086,Woman At The Wedding,picture,1,33.3333
+6087,Woman Giving Birth,coming,2,100.0
+6088,Woman On Train,coffee,2,18.1818
+6089,Woman On Train,made,1,9.0909
+6090,Woman On Train,beautiful,1,9.0909
+6091,Woman On Train,eyes,1,9.0909
+6092,Woman On Train,win,1,9.0909
+6093,Woman On Train,hour,1,9.0909
+6094,Woman On Train,ferry,1,9.0909
+6095,Woman On Train,ride,1,9.0909
+6096,Woman On Train,nova,1,9.0909
+6097,Woman On Train,scotia,1,9.0909
+6098,Woman On Tv,hurts,1,20.0
+6099,Woman On Tv,came,1,20.0
+6100,Woman On Tv,city,1,20.0
+6101,Woman On Tv,become,1,20.0
+6102,Woman On Tv,star,1,20.0
+6103,Young Ethan,gunpoint,3,5.8824
+6104,Young Ethan,telling,2,3.9216
+6105,Young Ethan,sex,2,3.9216
+6106,Young Ethan,icky,2,3.9216
+6107,Young Ethan,nine,1,1.9608
+6108,Young Ethan,actual,1,1.9608
+6109,Young Ethan,crimes,1,1.9608
+6110,Young Ethan,news,1,1.9608
+6111,Young Ethan,held,1,1.9608
+6112,Young Ethan,tourists,1,1.9608
+6113,Young Ethan,terrorised,1,1.9608
+6114,Young Ethan,kept,1,1.9608
+6115,Young Ethan,continue,1,1.9608
+6116,Young Ethan,staying,1,1.9608
+6117,Young Ethan,somewhere,1,1.9608
+6118,Young Ethan,strictly,1,1.9608
+6119,Young Ethan,technical,1,1.9608
+6120,Young Ethan,sense,1,1.9608
+6121,Young Ethan,course,1,1.9608
+6122,Young Ethan,kids,1,1.9608
+6123,Young Monica,end,1,100.0
+6124,Young Ross,bea,1,25.0
+6125,Young Ross,drink,1,25.0
+6126,Young Ross,tea,1,25.0
+6127,Young Ross,dance,1,25.0
+6128,Zack,home,2,7.1429
+6129,Zack,coaster,1,3.5714
+6130,Zack,ring,1,3.5714
+6131,Zack,wash,1,3.5714
+6132,Zack,although,1,3.5714
+6133,Zack,uncle,1,3.5714
+6134,Zack,voted,1,3.5714
+6135,Zack,dukakis,1,3.5714
+6136,Zack,okaaay,1,3.5714
+6137,Zack,meet,1,3.5714
+6138,Zack,dinner,1,3.5714
+6139,Zack,heard,1,3.5714
+6140,Zack,joke,1,3.5714
+6141,Zack,shown,1,3.5714
+6142,Zack,interest,1,3.5714
+6143,Zack,flattered,1,3.5714
+6144,Zack,quite,1,3.5714
+6145,Zack,frankly,1,3.5714
+6146,Zack,frightened,1,3.5714
+6147,Zack,ravioli,1,3.5714
+6148,Zoe,shut,2,50.0
+6149,Zoe,door,2,50.0

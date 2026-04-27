@@ -67,7 +67,7 @@ FRIENDS_FILLER = {
     "give", "try", "put", "call", "stop", "feel", "wait", "would", "could", "do",
     "need", "talk", "hear", "listen", "happen", "leave", "keep", "show", "find",
     "believe", "care", "ask", "bring", "start", "sound", "turn", "hold", "use",
-    "understand", "thought", "used", "went",
+    "understand", "thought", "used", "went","told","things","made"
 
     # Generic adverbs / modifiers / time
     "really", "right", "like", "just", "back", "still", "never", "first",
@@ -114,12 +114,16 @@ def nettoyerTexte(texte):
 # le tokenise et enleve les mots vide 
 # renvoie un array de token
 def tokeniserTexte(texte): 
-    tokens= word_tokenize(texte)
-    tokenNettoye = []
-    for t in tokens: 
-        if t not in motVide and len(t)>2 : 
-            tokenNettoye.append(lemmatizer.lemmatize(t))
-    return tokenNettoye
+    # tokens= word_tokenize(texte)
+    # tokenNettoye = []
+    # for t in tokens: 
+    #     if t not in motVide and len(t)>2 : 
+    #         tokenNettoye.append(lemmatizer.lemmatize(t))
+    # return [t for t in tokenNettoye if t not in motVide]
+    # 1. Tokenize
+    tokens = word_tokenize(texte.lower())
+    # 2. Filter: Keep only alphanumeric and non-stop words
+    return [w for w in tokens if w.isalnum() and w not in motVide and len(w)>2]
 
 # ==============================================================
 # FONCTIONS DIVERS
@@ -161,9 +165,30 @@ def plotEvolutionMots(df):
         data = df[df['mot']==mot]
         plt.plot(data['saison'],data['frequence_%'],label=mot,marker='o')
     plt.xlabel('Saison')
-    plt.ylabel('Frequency %')
-    plt.title('Evolution des frequences de mots au cours de la serie')
+    plt.ylabel('Frequence %')
+    plt.title('Evolution des frequences des 10 mots les plus frequent au cours de la serie')
     plt.legend()
     plt.tight_layout()
     plt.savefig('freqMotsCoursTemps.png')
+    plt.close()
+
+
+def plotFreqMotsParActeur(fma, top_n_acteurs=5):
+    totalActeurs = (fma.groupby('acteur')['nb_fois'].sum().sort_values(ascending = False))
+
+    topActeurs = totalActeurs.head(top_n_acteurs).index
+
+    fig,axes = plt.subplots(top_n_acteurs,1,figsize=(12,top_n_acteurs*4))
+
+    for ax,acteur in zip(axes,topActeurs): 
+        data = fma[fma["acteur"] == acteur].sort_values('nb_fois',ascending=False)
+        ax.bar(data['mot'],data['frequence_%'])
+        ax.set_title(f"{acteur}")
+        ax.set_xlabel("Mots")
+        ax.set_ylabel("Frequence %")
+        ax.tick_params(axis='x',rotation=45)
+    
+    fig.suptitle("Top 20 mots par acteur qui parle le plus", fontsize=14, y=1.01)
+    plt.tight_layout()
+    plt.savefig("freqMotsParActeur.png", bbox_inches='tight')
     plt.close()
