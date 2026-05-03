@@ -17,7 +17,8 @@ from gensim.models import Word2Vec
 from gensim.models.coherencemodel import CoherenceModel
 
 from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
+from sklearn.decomposition import PCA, TruncatedSVD
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.manifold import TSNE
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import normalize
@@ -263,3 +264,160 @@ def ldaParSaison(df, meilleurs_par_saison, min_tokens_par_scene=20):
 
     print("\nEntrainement termine.")
     return resultats
+
+# ==========================================================
+# TF-IDF ET KMEANS
+# ==========================================================
+
+def clusteringTfidf(df, groupby_cols=None, results_dir='results_tfidf', k_min=2, k_max=10, top_n_words=10, max_df=1.0, ngram_range=(1,2), use_svd=False):
+    """
+    Applique TF-IDF et KMeans sur les tokens.
+    Si groupby_cols est specifie, agrege les tokens par ces colonnes (ex: ['saison', 'episode']).
+    """
+    os.makedirs(results_dir, exist_ok=True)
+    
+    # Copie pour ne pas modifier l'original
+    docs = df.copy()
+    
+    if groupby_cols:
+        docs = docs.groupby(groupby_cols)['token'].sum().reset_index()
+    else:
+        docs = docs.reset_index(drop=True)
+        
+    docs['doc'] = docs['token'].apply(lambda x: ' '.join(x) if isinstance(x, list) else str(x))
+    docs = docs[docs['doc'].str.strip() != ''].copy()
+    docs = docs.reset_index(drop=True)
+    
+    corpus = docs['doc'].tolist()
+    print(f"Nombre de documents à analyser : {len(corpus)}")
+    
+    if len(corpus) < k_min:
+        print("Pas assez de documents pour le clustering.")
+        return None
+        
+    # --- TF-IDF ---
+    vectorizer = TfidfVectorizer(
+        lowercase=False,
+        token_pattern=r'(?u)\b\w+\b',
+        min_df=1,
+        max_df=max_df,
+        sublinear_tf=True,
+        ngram_range=ngram_range
+    )
+    X = vectorizer.fit_transform(corpus)
+    terms = np.array(vectorizer.get_feature_names_out())
+    
+    print("Matrice TF-IDF :", X.shape)
+    
+    # --- RECHERCHE DU MEILLEUR K ---
+    inertias = []
+    silhouettes = []
+    ks = list(range(k_min, min(k_max, len(corpus) - 1) + 1))
+    models_dict = {}
+    
+    for k in ks:
+        km = KMeans(n_clusters=k, random_state=42, n_init=20)
+        labels = km.fit_predict(X)
+        models_dict[k] = (km, labels)
+        inertias.append(km.inertia_)
+        
+        if len(set(labels)) > 1:
+            silhouettes.append(silhouette_score(X, labels))
+        else:
+            silhouettes.append(-1)
+            
+    scores = pd.DataFrame({'k': ks, 'inertia': inertias, 'silhouette': silhouettes})
+    scores.to_csv(os.path.join(results_dir, 'k_optimization_scores.csv'), index=False)
+    
+    best_k = int(scores.sort_values(['silhouette', 'k'], ascending=[False, True]).iloc[0]['k'])
+    km, labels = models_dict[best_k]
+    docs['cluster'] = labels
+    print("Meilleur k retenu =", best_k)
+    
+    # --- GRAPHE COUDE + SILHOUETTE ---
+    fig, ax1 = plt.subplots(figsize=(10,6))
+    ax1.plot(ks, inertias, marker='o', color='tab:blue', label='Méthode du coude')
+    ax1.set_xlabel('Nombre de clusters k')
+    ax1.set_ylabel('Inertie (coude)', color='tab:blue')
+    ax1.set_title('Optimisation du nombre de clusters')
+
+    ax2 = ax1.twinx()
+    ax2.plot(ks, silhouettes, marker='s', color='tab:orange', label='Silhouette')
+    ax2.set_ylabel('Score silhouette', color='tab:orange')
+    ax1.tick_params(axis='y', labelcolor='tab:blue')
+    ax2.tick_params(axis='y', labelcolor='tab:orange')
+    lines1, labels1 = ax1.get_legend_handles_labels()
+    lines2, labels2 = ax2.get_legend_handles_labels()
+    ax1.legend(lines1 + lines2, labels1 + labels2, loc='best')
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, 'elbow_silhouette.png'), dpi=200)
+    plt.close()
+
+    # --- TOP MOTS PAR CLUSTER ---
+    centers = km.cluster_centers_
+    rows = []
+    for i in range(best_k):
+        idx = centers[i].argsort()[::-1][:top_n_words]
+        top_words = terms[idx]
+        rows.append({'cluster': i, 'top_words': ', '.join(top_words)})
+
+        plt.figure(figsize=(10,5))
+        vals = centers[i][idx][::-1]
+        words = top_words[::-1]
+        plt.barh(words, vals)
+        plt.title(f'Top mots cluster {i}')
+        plt.tight_layout()
+        plt.savefig(os.path.join(results_dir, f'cluster_{i}_top_words.png'), dpi=200)
+        plt.close()
+
+    pd.DataFrame(rows).to_csv(os.path.join(results_dir, 'top_words_clusters.csv'), index=False)
+    docs.to_csv(os.path.join(results_dir, 'clusters_assignes.csv'), index=False)
+
+    # --- DIMENSION REDUCTION ET VISUALISATION ---
+    if use_svd:
+        reducer = TruncatedSVD(n_components=2, random_state=42)
+        X_2d = reducer.fit_transform(X)
+    else:
+        reducer = PCA(n_components=2, random_state=42)
+        X_2d = reducer.fit_transform(X.toarray())
+        
+    var_exp = reducer.explained_variance_ratio_ * 100
+
+    plt.figure(figsize=(12, 8))
+    for i in range(best_k):
+        mask = labels == i
+        subset = docs.loc[mask]
+        plt.scatter(X_2d[mask, 0], X_2d[mask, 1], label=f'Cluster {i}', alpha=0.75, s=28)
+        
+        for j, (_, row) in enumerate(subset.iterrows()):
+            label_txt = ""
+            if groupby_cols == ['saison', 'episode']:
+                try:
+                    label_txt = f"S{int(row['saison']):02d}E{int(row['episode']):02d}"
+                except:
+                    pass
+            elif groupby_cols == ['saison']:
+                try:
+                    label_txt = f"S{int(row['saison'])}"
+                except:
+                    pass
+            else:
+                try:
+                    label_txt = f"S{int(row['saison']):02d}E{int(row['episode']):02d}"
+                except:
+                    pass
+            
+            if label_txt:
+                plt.text(X_2d[mask, 0][j], X_2d[mask, 1][j], label_txt, fontsize=5, alpha=0.6)
+
+    plt.xlabel(f'Dim 1 ({var_exp[0]:.1f}%)')
+    plt.ylabel(f'Dim 2 ({var_exp[1]:.1f}%)')
+    plt.title(f'Projection PCA/SVD des clusters (k={best_k})')
+    plt.legend()
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, 'pca_clusters.png'), dpi=250)
+    plt.close()
+
+    print(f"Résultats enregistrés dans {results_dir}/")
+    return km, docs, X_2d
