@@ -2,12 +2,8 @@
 # LIBRAIRIES ET MODULES
 # ==========================================================
 import pandas as pd
-from tqdm import tqdm
 from collections import Counter
-from gensim import corpora
-from gensim import models
-import matplotlib.pyplot as plt
-import numpy as np
+
 # Module dependencies 
 import utils as ut
 
