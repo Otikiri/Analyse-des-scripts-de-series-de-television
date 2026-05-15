@@ -205,7 +205,7 @@ def construireIndex(df, par_scene=False):
     matrice_tfidf = vectorizer.fit_transform(df_docs['texte'])
 
     print(f"Index TF-IDF construit : {matrice_tfidf.shape[0]} documents, {matrice_tfidf.shape[1]} termes")
-    return vectorizer, matrice_tfidf, df_docs
+    return vectorizer, matrice_tfidf, df_docs, motsVidesRecherche
 
 
 # 2 - Vectorisation d'une requete
@@ -213,9 +213,9 @@ def construireIndex(df, par_scene=False):
 # la nettoie et la tokenise avec les memes fonctions que le reste du projet,
 # puis la transforme en vecteur TF-IDF avec le vectorizer précédent.
 
-def vectoriserRequete(requete, vectorizer, df):
+def vectoriserRequete(requete, vectorizer, motsVidesRecherche):
     texte_propre = nettoyerTexte(requete)
-    tokens = tokeniserTexteRecherche(texte_propre, df)
+    tokens = tokeniserTexteRecherche(texte_propre, motsVidesRecherche=motsVidesRecherche)
     texte_final = ' '.join(tokens)
     vecteur = vectorizer.transform([texte_final])
     return vecteur
@@ -233,8 +233,8 @@ def similariteCosinus(vecteur_requete, matrice_documents):
 # question -> nettoyage -> vectorisation -> similarite cosinus -> tri -> resultats
 # Cherche les top_k documents les plus proches d'une requete en langage naturel
 
-def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5):
-    vecteur = vectoriserRequete(requete, vectorizer, df)
+def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5, motsVidesRecherche=None):
+    vecteur = vectoriserRequete(requete, vectorizer, motsVidesRecherche)
     scores = similariteCosinus(vecteur, matrice_tfidf)
 
     resultats = df_docs.copy()
@@ -288,7 +288,7 @@ def determiner_type_question(question,df):
             
     # Si on a trouvé au moins une entité, c'est Q1. Sinon Q2.
     if len(entites_trouvees) > 0:
-        vectorizer,matrice_tfidf,df_docs=construireIndex(df, par_scene=False)
-        q1.rechercherQ1(question,df,vectorizer=vectorizer,matrice_tfidf=matrice_tfidf,df_docs=df_docs)
+        vectorizer, matrice_tfidf, df_docs, mots_vides = construireIndex(df, par_scene=False)
+        q1.rechercherQ1(question, df, vectorizer, matrice_tfidf, df_docs, motsVidesRecherche=mots_vides)
     else:
         q2.search_Q2(question,vectorizer,matrice_tfidf,df_docs)

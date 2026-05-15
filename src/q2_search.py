@@ -1,4 +1,4 @@
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances, manhattan_distances
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 
@@ -66,14 +66,54 @@ def vectorize_Q2(df, groupby_cols=None, max_df=0.95, ngram_range=(1, 2)):
     return tfidf_matrix, vectorizer, docs
 
 
-def search_Q2(question, vectorizer, tfidf_matrix, docs, top_k=5):
+def cosine_similarity_Q2(question_vector, tfidf_matrix):
+    """
+    Calcul du score de similarité cosinus entre la question et les documents.
+    """
+
+    similarities = cosine_similarity(question_vector, tfidf_matrix).flatten()
+
+    return similarities
+
+def euclidean_distance_Q2(question_vector, tfidf_matrix):
+    """
+    Calcul du score de similarité basé sur la distance euclidienne entre la question et les documents.
+    """
+
+    distances = euclidean_distances(question_vector, tfidf_matrix).flatten()
+
+    scores = 1 / (1 + distances)
+
+    return scores
+
+def manhattan_distance_Q2(question_vector, tfidf_matrix):
+    """
+    Calcul du score de similarité basé sur la distance de Manhattan entre la question et les documents.
+    """
+
+    distances = manhattan_distances(question_vector, tfidf_matrix).flatten()
+
+    scores = 1 / (1 + distances)
+
+    return scores
+
+def dot_product_Q2(question_vector, tfidf_matrix):
+    """
+    Calcul du score de similarité basé sur le produit scalaire entre la question et les documents.
+    """
+
+    scores = question_vector.dot(tfidf_matrix.T).toarray().flatten()
+
+    return scores
+
+def search_Q2(question, vectorizer, tfidf_matrix, docs, score_calculation, top_k=5):
     """
     Recherche de type Q2 : recherche par contenu sans filtrage.
     """
 
     question_vector = prepare_question(question, vectorizer)
 
-    similarities = cosine_similarity(question_vector, tfidf_matrix).flatten()
+    similarities = score_calculation(question_vector, tfidf_matrix)
 
     ranked_indices = similarities.argsort()[::-1]
 
@@ -95,6 +135,83 @@ def search_Q2(question, vectorizer, tfidf_matrix, docs, top_k=5):
 
     return results
 
+def search_Q2_lines(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_lines, vectorizer_lines, docs_lines, score_calculation, top_k=5):
+    """
+    Recherche de type Q2 : recherche par contenu au niveau des lignes.
+    """
+
+    question_vector = prepare_question(question, vectorizer)
+
+    question_vector_lines = prepare_question(question, vectorizer_lines)
+
+    similarities = score_calculation(question_vector, tfidf_matrix)
+
+    similarities_lines = score_calculation(question_vector_lines, tfidf_matrix_lines)
+
+    ranked_indices_lines = similarities_lines.argsort()[::-1]
+
+    ranked_indices = similarities.argsort()[::-1]
+
+    results = []
+
+    print("Top indices lignes :", ranked_indices_lines[:top_k])
+    print("Top ranked line extract : ", docs_lines.iloc[ranked_indices_lines[:top_k]][["saison", "episode", "ligne"]])
+    for idx in ranked_indices[:top_k]:
+        row = docs.iloc[idx]
+
+        saison = row.get("saison")
+        episode = row.get("episode")
+
+        matching_lines = docs_lines[
+            (docs_lines["saison"] == saison) &
+            (docs_lines["episode"] == episode)
+        ].copy()
+
+        ranked_indices_matching_lines = similarities_lines[matching_lines.index].argsort()[::-1]
+
+        result = {
+            "score": round(float(similarities[idx]), 4),
+            "saison": row.get("saison"),
+            "episode": row.get("episode"),
+            "title": row.get("nom fichier"),
+            "line": matching_lines.iloc[ranked_indices_matching_lines[0]].get("ligne") if not matching_lines.empty and "ligne" in docs_lines.columns else None,
+            "nombre_mots": row.get("nombres de mots") if "nombres de mots" in docs.columns else None
+        }
+
+        results.append(result)
+
+    return results
+
+def utiliser_moteur_Q2(df, question, score_calculation = cosine_similarity_Q2, top_k=5):
+    print("Recherche de type Q2...")
+
+    tfidf_matrix, vectorizer, docs = vectorize_Q2(
+        df,
+        groupby_cols=["saison", "episode"],
+        max_df=0.95,
+        ngram_range=(1, 2)
+    )
+    tfidf_matrix_lines, vectorizer_lines, docs_lines = vectorize_Q2(
+        df,
+        groupby_cols=["saison", "episode", "ligne"],
+        max_df=0.95,
+        ngram_range=(1, 2)
+    )
+
+    results = search_Q2_lines(
+        question,
+        vectorizer,
+        tfidf_matrix,
+        docs,
+        tfidf_matrix_lines,
+        vectorizer_lines,
+        docs_lines,
+        score_calculation=score_calculation,
+        top_k=top_k
+    )
+    return results
+
+
 
 def afficher_resultats_Q2(results):
     """
@@ -115,3 +232,11 @@ def afficher_resultats_Q2(results):
 
         if result["line"]:
             print(f"  Extrait du script : {result['line'][:300]}...")
+
+
+
+print("Chargement des données...")
+df = chargerDonnees("../datasets")
+
+results = utiliser_moteur_Q2(df, "learning french to get a job")
+afficher_resultats_Q2(results)
