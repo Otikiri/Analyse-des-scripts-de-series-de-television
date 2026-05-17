@@ -245,7 +245,6 @@ def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5):
     return resultats.reset_index(drop=True)
 
 
-
 #======================================================================
 #                        DETERMINATION DE TYPE
 #======================================================================
@@ -288,7 +287,10 @@ def determiner_type_question(question,df):
             
     # Si on a trouvé au moins une entité, c'est Q1. Sinon Q2.
     if len(entites_trouvees) > 0:
-        vectorizer,matrice_tfidf,df_docs=construireIndex(df, par_scene=False)
-        q1.rechercherQ1(question,df,vectorizer=vectorizer,matrice_tfidf=matrice_tfidf,df_docs=df_docs)
+        print("Q1")
+        vectorizer, matrice_tfidf, df_docs=construireIndex(df, par_scene=False)
+        return q1.rechercherQ1(question,df,vectorizer=vectorizer,matrice_tfidf=matrice_tfidf,df_docs=df_docs)
     else:
-        q2.search_Q2(question,vectorizer,matrice_tfidf,df_docs)
+        print("Q2")
+        #tfidf_matrix, vectorizer, df_docs=q2.vectorize_Q2(df,groupby_cols=['saison','episode'],max_df=0.95,ngram_range=(1,2))
+        q2.afficher_resultats_Q2(q2.utiliser_moteur_Q2(df,question))

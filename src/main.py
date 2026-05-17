@@ -63,21 +63,44 @@ warnings.filterwarnings('ignore')
 #============================================================================
 #                             MOTEUR DE RECHERCHE
 #============================================================================
-df = dl.chargerDonnees("../datasets/S01") 
-meilleur = pd.read_csv("m_csv1.csv")
-print(meilleur)
-meilleurs_par_saison = {
-    str(int(row['saison'])).zfill(2): {
-        'n_topics': int(row['n_topics']),
-        'alpha': row['alpha'],
-        'coherence': row['coherence'],
-        'perplexite': row['perplexite']
-    }
-    for _, row in meilleur.iterrows()
-}
-print(meilleurs_par_saison)
-res = cl.clusteringLDA(df, meilleurs_par_saison)
-print("lda\n",mt.construireSujetsEpLDA(df,res))
-print("bert\n",mt.construireSujetsEpBERTopic(df))
-print("keybert\n",mt.construireSujetsEpKeyBERT(df))
-print("tfidf\n",mt.construireSujetsEpTFIDF(df))
+# df = dl.chargerDonnees("../datasets/S01") 
+# meilleur = pd.read_csv("m_csv1.csv")
+# print(meilleur)
+# meilleurs_par_saison = {
+#     str(int(row['saison'])).zfill(2): {
+#         'n_topics': int(row['n_topics']),
+#         'alpha': row['alpha'],
+#         'coherence': row['coherence'],
+#         'perplexite': row['perplexite']
+#     }
+#     for _, row in meilleur.iterrows()
+# }
+# print(meilleurs_par_saison)
+# res = cl.clusteringLDA(df, meilleurs_par_saison)
+# print("lda\n",mt.construireSujetsEpLDA(df,res))
+# print("bert\n",mt.construireSujetsEpBERTopic(df))
+# print("keybert\n",mt.construireSujetsEpKeyBERT(df))
+# print("tfidf\n",mt.construireSujetsEpTFIDF(df))
+
+
+df = dl.chargerDonnees("../datasets")
+print(df.columns)
+q1_test = [
+    "Monica and Chandler announce their engagement. ", 
+    "Rachel's first day at her new job with Mark.",
+    "Joey learns to speak French for an audition.",
+    "Phoebe wants to sing at Monica's wedding.", 
+    "Ross is jealous of the gifts sent to Rachel's workplace."
+]
+
+q2_test = [
+    "Drinking a gallon of milk in ten seconds.",
+    "A poem about an empty vase written by a waiter.",
+    "Playing a racing video game on PlayStation while dressing like a nineteen-year-old.",
+    "Someone puts a turkey on their head to make people laugh.",
+    "Eating a stolen cheesecake off the floor in the hallway."
+]
+
+for i in q2_test:
+    print(i)
+    print(mt.determiner_type_question(i,df))
