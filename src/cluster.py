@@ -23,6 +23,56 @@ import pyLDAvis
 # Module dependencies
 import utils as ut
 
+def nommerClustersCentroide(labels, vecteurs, motsVocab, nMotsNom=3):
+    """
+    Approche par centroïde : trouve les mots les plus proches du centre géométrique.
+    """
+    vecteurs = np.array(vecteurs)
+    noms = {}
+    for c in sorted(set(labels)):
+        indices = np.where(np.array(labels) == c)[0]
+        if len(indices) == 0:
+            noms[c] = f"Cluster {c}"
+            continue
+        vecsC = vecteurs[indices]
+        centroide = np.mean(vecsC, axis=0)
+        distances = np.linalg.norm(vecsC - centroide, axis=1)
+        n = min(nMotsNom, len(distances))
+        indicesTop = np.argsort(distances)[:n]
+        motsTop = [motsVocab[indices[i]] for i in indicesTop]
+        noms[c] = " / ".join(motsTop)
+    return noms
+
+def nommerClustersTFIDF(labels, vecteurs, motsVocab, nMotsNom=3):
+    """
+    Approche par maximum de poids (TF-IDF / LDA) : 
+    trouve les mots ayant la plus forte probabilité/poids pour ce cluster.
+    """
+    vecteurs = np.array(vecteurs)
+    noms = {}
+    for c in sorted(set(labels)):
+        indices = np.where(np.array(labels) == c)[0]
+        if len(indices) == 0:
+            noms[c] = f"Cluster {c}"
+            continue
+        # Poids des mots appartenant à ce cluster pour la dimension c
+        poids = vecteurs[indices, c]
+        n = min(nMotsNom, len(poids))
+        # Trier par poids décroissant
+        indicesTopLocaux = np.argsort(poids)[::-1][:n]
+        motsTop = [motsVocab[indices[i]] for i in indicesTopLocaux]
+        noms[c] = " / ".join(motsTop)
+    return noms
+
+def nommerClusters(labels, vecteurs, motsVocab, nMotsNom=3, methode='tfidf'):
+    """
+    Fonction chapeau qui redirige vers la bonne méthode de nommage.
+    """
+    if methode == "tfidf":
+        return nommerClustersTFIDF(labels, vecteurs, motsVocab, nMotsNom)
+    else:
+        return nommerClustersCentroide(labels, vecteurs, motsVocab, nMotsNom)
+
 # ==========================================================
 # CLUSTERING ET W2VEC
 # ==========================================================
@@ -30,7 +80,7 @@ import utils as ut
 # Prend en parametre un dataframe avec des tokens
 # Entraine un modele Word2Vec et cluster les mots
 # renvoie le modele, un dataframe des clusters, les vecteurs et le score de coherence
-def clusteringW2v(df, numClusters=5, vectorSize=50, window=5, minCount=10):
+def clusteringW2v(df, numClusters=5, vectorSize=50, window=5, minCount=10, methodeNommage="centroide"):
     if 'token' not in df.columns:
         raise ValueError("Le dataframe doit contenir une colonne 'token'")
     phrases = df['token'].tolist()
@@ -45,63 +95,67 @@ def clusteringW2v(df, numClusters=5, vectorSize=50, window=5, minCount=10):
     # --- KMeans clustering ---
     print(f"Clustering KMeans en cours (K={numClusters})...")
     kmeans = KMeans(n_clusters=numClusters, random_state=42, n_init='auto')
-    labels_finaux = kmeans.fit_predict(vecteurs)
+    labelsFinaux = kmeans.fit_predict(vecteurs)
 
     # --- Calcul des Metriques ---
     inertie = kmeans.inertia_
-    score_silhouette = silhouette_score(vecteurs, labels_finaux)
+    scoreSilhouette = silhouette_score(vecteurs, labelsFinaux)
 
     topics = []
     for c in range(numClusters):
-        indices = np.where(labels_finaux == c)[0]
+        indices = np.where(labelsFinaux == c)[0]
         if len(indices) == 0: continue
-        vecteurs_cluster = vecteurs[indices]
-        centroide = np.mean(vecteurs_cluster, axis=0)
-        distances = np.linalg.norm(vecteurs_cluster - centroide, axis=1)
-        n_mots = min(10, len(distances))
-        indices_top = np.argsort(distances)[:n_mots]
-        mots_topic = [mots[indices[i]] for i in indices_top]
-        topics.append(mots_topic)
+        vecteursCluster = vecteurs[indices]
+        centroide = np.mean(vecteursCluster, axis=0)
+        distances = np.linalg.norm(vecteursCluster - centroide, axis=1)
+        nMots = min(10, len(distances))
+        indicesTop = np.argsort(distances)[:nMots]
+        motsTopic = [mots[indices[i]] for i in indicesTop]
+        topics.append(motsTopic)
 
     dictionary = corpora.Dictionary(phrases)
     cm = CoherenceModel(topics=topics, texts=phrases, dictionary=dictionary, coherence='c_v')
-    score_coherence = cm.get_coherence()
+    scoreCoherence = cm.get_coherence()
 
     print(f"\n--- SCORES POUR K={numClusters} ---")
     print(f"Inertie    : {inertie:.1f}")
-    print(f"Silhouette : {score_silhouette:.4f}")
-    print(f"Coherence  : {score_coherence:.4f}\n")
+    print(f"Silhouette : {scoreSilhouette:.4f}")
+    print(f"Coherence  : {scoreCoherence:.4f}\n")
 
+    nomsBruts = nommerClusters(labelsFinaux, vecteurs, mots, nMotsNom=3, methode=methodeNommage)
+    noms = {k: f"Cluster {k} - {v.replace(' / ', ', ')}" for k, v in nomsBruts.items()}
+    
     dfClusters = pd.DataFrame({
         'Mot': mots,
-        'Cluster': labels_finaux
+        'Cluster': labelsFinaux
     })
+    dfClusters['Nom_Cluster'] = dfClusters['Cluster'].map(noms)
     return model, dfClusters, vecteurs
 
 #======================================================================
 # LDA : LATENT DIRICHLET ALLOCATION
 #======================================================================
 
-def clusteringLDA(df, meilleurs_par_saison, min_tokens_par_scene=20):
+def clusteringLDA(df, meilleursParSaison, minTokensParScene=20, methodeNommage="tfidf"):
     resultats = {}
 
-    for season_id, df_saison in df.groupby('saison'):
-        print(f"\n--- Saison {season_id} ---")
+    for seasonId, dfSaison in df.groupby('saison'):
+        print(f"\n--- Saison {seasonId} ---")
 
-        if season_id not in meilleurs_par_saison:
+        if seasonId not in meilleursParSaison:
             print(f"  Pas de parametres optimaux, saison ignoree.")
             continue
 
-        meilleur = meilleurs_par_saison[season_id]
+        meilleur = meilleursParSaison[seasonId]
 
         # Grouper les tokens par scene
         textes = (
-            df_saison.groupby(['episode', 'scene_num'])['token']
+            dfSaison.groupby(['episode', 'scene_num'])['token']
             .apply(lambda rows: [t for tokens in rows for t in tokens])
             .tolist()
         )
 
-        textes = [t for t in textes if len(t) >= min_tokens_par_scene]
+        textes = [t for t in textes if len(t) >= minTokensParScene]
 
         if not textes:
             print(f"  Aucune scene suffisante, saison ignoree.")
@@ -120,17 +174,43 @@ def clusteringLDA(df, meilleurs_par_saison, min_tokens_par_scene=20):
                 num_topics=meilleur['n_topics'], passes=20, iterations=200,
                 alpha=meilleur['alpha'], eta='auto', random_state=42,
             )
-            resultats[season_id] = modele
+            resultats[seasonId] = modele
 
-            for idx, topic in modele.print_topics(num_words=10):
-                print(f"  Topic {idx}: {topic}")
+            # Adaptation pour nommerClusters
+            topicWordMatrix = modele.get_topics() # (num_topics, num_words)
+            wordVectors = topicWordMatrix.T # (num_words, num_topics)
+            wordLabels = np.argmax(wordVectors, axis=1)
+            motsVocab = [dictionnaire[i] for i in range(len(dictionnaire))]
+            
+            nomsBruts = nommerClusters(wordLabels, wordVectors, motsVocab, nMotsNom=3, methode=methodeNommage)
+            noms = {k: f"Topic {k} - {v.replace(' / ', ', ')}" for k, v in nomsBruts.items()}
+            
+            print("\n  --- Noms des topics générés ---")
+            for tId, nom in noms.items():
+                print(f"  * {nom}")
+            print()
+
+            for idx in range(meilleur['n_topics']):
+                nomTopic = noms[idx]
+                motsDuNom = [m.strip() for m in nomTopic.split('-')[-1].split(',')]
+                
+                # get_topic_terms returns list of (word_id, probability)
+                termsProbs = modele.get_topic_terms(idx, topn=20)
+                motsRestants = []
+                for wordId, prob in termsProbs:
+                    mot = dictionnaire[wordId]
+                    if mot not in motsDuNom:
+                        motsRestants.append(f'{prob:.3f}*"{mot}"')
+                    if len(motsRestants) == 10:
+                        break
+                print(f"  Détail Topic {idx} (contexte): {' + '.join(motsRestants)}")
 
         except Exception as e:
-            print(f"  Erreur saison {season_id}: {e}")
+            print(f"  Erreur saison {seasonId}: {e}")
         
         vis = gensimvis.prepare(modele,corpus,dictionnaire)
-        pyLDAvis.save_html(vis,'saison_'+season_id+'_lda.html')
-        print('saison_'+season_id+'_lda.html : saved')
+        pyLDAvis.save_html(vis,'saison_'+seasonId+'_lda.html')
+        print('saison_'+seasonId+'_lda.html : saved')
 
 
     print("\nEntrainement termine.")
@@ -140,18 +220,18 @@ def clusteringLDA(df, meilleurs_par_saison, min_tokens_par_scene=20):
 # TF-IDF ET KMEANS
 # ==========================================================
 
-def clusteringTfidf(df, groupby_cols=None, results_dir='results_tfidf', k_min=2, k_max=10, top_n_words=10, max_df=1.0, ngram_range=(1,1), use_svd=False):
+def clusteringTfidf(df, groupbyCols=None, resultsDir='results_tfidf', kMin=2, kMax=10, topNWords=10, maxDf=1.0, ngramRange=(1,1), useSvd=False, methodeNommage="tfidf"):
     """
     Applique TF-IDF et KMeans sur les tokens.
-    Si groupby_cols est specifie, agrege les tokens par ces colonnes (ex: ['saison', 'episode']).
+    Si groupbyCols est specifie, agrege les tokens par ces colonnes (ex: ['saison', 'episode']).
     """
-    os.makedirs(results_dir, exist_ok=True)
+    os.makedirs(resultsDir, exist_ok=True)
     
     # Copie pour ne pas modifier l'original
     docs = df.copy()
     
-    if groupby_cols:
-        docs = docs.groupby(groupby_cols)['token'].sum().reset_index()
+    if groupbyCols:
+        docs = docs.groupby(groupbyCols)['token'].sum().reset_index()
     else:
         docs = docs.reset_index(drop=True)
         
@@ -162,7 +242,7 @@ def clusteringTfidf(df, groupby_cols=None, results_dir='results_tfidf', k_min=2,
     corpus = docs['doc'].tolist()
     print(f"Nombre de documents à analyser : {len(corpus)}")
     
-    if len(corpus) < k_min:
+    if len(corpus) < kMin:
         print("Pas assez de documents pour le clustering.")
         return None
         
@@ -171,25 +251,31 @@ def clusteringTfidf(df, groupby_cols=None, results_dir='results_tfidf', k_min=2,
         lowercase=False,
         token_pattern=r'(?u)\b\w+\b',
         min_df=1,
-        max_df=max_df,
+        max_df=maxDf,
         sublinear_tf=True,
-        ngram_range=ngram_range
+        ngram_range=ngramRange
     )
     X = vectorizer.fit_transform(corpus)
     terms = np.array(vectorizer.get_feature_names_out())
     
     print("Matrice TF-IDF :", X.shape)
 
-    ks,inertias,silhouettes,best_k,km,labels = ut.rechercheBestK(k_min,k_max,corpus=corpus,results_dir=results_dir,docs=docs,X=X)
+    ks,inertias,silhouettes,bestK,km,labels = ut.rechercheBestK(kMin,kMax,corpus=corpus,results_dir=resultsDir,docs=docs,X=X)
 
-    ut.coudeTFIDF(ks,inertias,silhouettes,results_dir)
+    ut.coudeTFIDF(ks,inertias,silhouettes,resultsDir)
 
-    ut.topMotsParClusters(km,best_k,top_n_words,terms,results_dir,docs)
+    # Adaptation pour nommerClusters
+    wordVectors = km.cluster_centers_.T # (num_words, num_clusters)
+    wordLabels = np.argmax(wordVectors, axis=1)
+    
+    nomsBruts = nommerClusters(wordLabels, wordVectors, terms, nMotsNom=3, methode=methodeNommage)
+    noms = {k: f"Cluster {k} - {v.replace(' / ', ', ')}" for k, v in nomsBruts.items()}
+    
+    docs['nom_cluster'] = docs['cluster'].map(noms)
 
-    X_2d = ut.visualizationTFIDF(use_svd,best_k,labels,docs,groupby_cols,results_dir,X)
+    ut.topMotsParClusters(km,bestK,topNWords,terms,resultsDir,docs)
 
-    print(f"Résultats enregistrés dans {results_dir}/")
-    return km, docs, X_2d,vectorizer,X
+    X2d = ut.visualizationTFIDF(useSvd,bestK,labels,docs,groupbyCols,resultsDir,X)
 
-
-
+    print(f"Résultats enregistrés dans {resultsDir}/")
+    return km, docs, X2d,vectorizer,X
