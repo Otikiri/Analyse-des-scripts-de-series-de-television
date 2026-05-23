@@ -61,8 +61,8 @@ def construireSujetsEpTFIDF(df):
     
     km, docs, X_2d,vectorizer,X = cl.clusteringTfidf(
         df,
-        groupby_cols=['saison', 'episode'],
-        ngram_range=(1,1)
+        groupbyCols=['saison', 'episode'],
+        ngramRange=(1,1)
     )
     
     terms = np.array(vectorizer.get_feature_names_out())
@@ -91,8 +91,8 @@ def construireSujetsEpKeyBERT(df):
     # reuse clusteringTfidf to get docs with episode texts
     km, docs, X_2d,vectorizer,X = cl.clusteringTfidf(
         df,
-        groupby_cols=['saison', 'episode'],
-        ngram_range=(1,1)
+        groupbyCols=['saison', 'episode'],
+        ngramRange=(1,1)
     )
 
     sujets = []
@@ -120,8 +120,8 @@ def construireSujetsEpBERTopic(df):
     # reuse clusteringTfidf to get docs
     km, docs, X, vectorizer, X_tfidf = cl.clusteringTfidf(
         df,
-        groupby_cols=['saison', 'episode'],
-        ngram_range=(1,1)
+        groupbyCols=['saison', 'episode'],
+        ngramRange=(1,1)
     )
     
     corpus = docs['doc'].tolist()
