@@ -1,18 +1,17 @@
-
 import re 
 import cluster as cl 
 import pandas as pd
 import numpy as np 
 from collections import Counter
-from keybert import KeyBERT
-from bertopic import BERTopic
+# from keybert import KeyBERT
+# from bertopic import BERTopic
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from utils import nettoyerTexte, tokeniserTexte, tokeniserTexteRecherche
+from utils import nettoyerTexte, tokeniserTexteRecherche
 import q1_search as q1 
 import q2_search as q2
-import spacy
+import spacy 
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -84,79 +83,79 @@ def construireSujetsEpTFIDF(df):
     sujets_df.to_csv('sujets_episodes_tfidf.csv', index=False)
     return sujets_df
 
-def construireSujetsEpKeyBERT(df):
+# def construireSujetsEpKeyBERT(df):
     
-    kw_model = KeyBERT()
+#     kw_model = KeyBERT()
     
-    # reuse clusteringTfidf to get docs with episode texts
-    km, docs, X_2d,vectorizer,X = cl.clusteringTfidf(
-        df,
-        groupby_cols=['saison', 'episode'],
-        ngram_range=(1,1)
-    )
+#     # reuse clusteringTfidf to get docs with episode texts
+#     km, docs, X_2d,vectorizer,X = cl.clusteringTfidf(
+#         df,
+#         groupby_cols=['saison', 'episode'],
+#         ngram_range=(1,1)
+#     )
 
-    sujets = []
-    for idx, row in docs.iterrows():
-        keywords = kw_model.extract_keywords(
-            row['doc'],                      # episode text already built
-            keyphrase_ngram_range=(1,1),
-            stop_words='english',
-            top_n=5,
-            use_mmr=True,    # forces diverse results
-            diversity=0.7    # 0=no diversity, 1=maximum diversity
-        )
-        sujets.append({
-            'saison': row['saison'],
-            'episode': row['episode'],
-            'sujet': ', '.join([kw for kw, score in keywords])
-        })
+#     sujets = []
+#     for idx, row in docs.iterrows():
+#         keywords = kw_model.extract_keywords(
+#             row['doc'],                      # episode text already built
+#             keyphrase_ngram_range=(1,1),
+#             stop_words='english',
+#             top_n=5,
+#             use_mmr=True,    # forces diverse results
+#             diversity=0.7    # 0=no diversity, 1=maximum diversity
+#         )
+#         sujets.append({
+#             'saison': row['saison'],
+#             'episode': row['episode'],
+#             'sujet': ', '.join([kw for kw, score in keywords])
+#         })
     
-    sujets_df = pd.DataFrame(sujets)
-    sujets_df.to_csv('sujets_episodes.csv', index=False)
-    return sujets_df
+#     sujets_df = pd.DataFrame(sujets)
+#     sujets_df.to_csv('sujet_par_ep.csv', index=False)
+#     return sujets_df
 
-def construireSujetsEpBERTopic(df):
+# def construireSujetsEpBERTopic(df):
     
-    # reuse clusteringTfidf to get docs
-    km, docs, X, vectorizer, X_tfidf = cl.clusteringTfidf(
-        df,
-        groupby_cols=['saison', 'episode'],
-        ngram_range=(1,1)
-    )
+#     # reuse clusteringTfidf to get docs
+#     km, docs, X, vectorizer, X_tfidf = cl.clusteringTfidf(
+#         df,
+#         groupby_cols=['saison', 'episode'],
+#         ngram_range=(1,1)
+#     )
     
-    corpus = docs['doc'].tolist()
+#     corpus = docs['doc'].tolist()
     
-    # train BERTopic
-    # reduce min_topic_size for small datasets
-    topic_model = BERTopic(
-        language='english',
-        min_topic_size=2,      # default is 10, too high for 24 docs
-        calculate_probabilities=True
-)
-    topics, probs = topic_model.fit_transform(corpus)
+#     # train BERTopic
+#     # reduce min_topic_size for small datasets
+#     topic_model = BERTopic(
+#         language='english',
+#         min_topic_size=2,      # default is 10, too high for 24 docs
+#         calculate_probabilities=True
+# )
+#     topics, probs = topic_model.fit_transform(corpus)
     
-    # get topic labels
-    docs['topic_id'] = topics
+#     # get topic labels
+#     docs['topic_id'] = topics
     
-    sujets = []
-    for idx, row in docs.iterrows():
-        topic_id = row['topic_id']
+#     sujets = []
+#     for idx, row in docs.iterrows():
+#         topic_id = row['topic_id']
         
-        if topic_id == -1:  # -1 means outlier in BERTopic
-            sujet = 'divers'
-        else:
-            top_words = [w for w, score in topic_model.get_topic(topic_id)[:5]]
-            sujet = ', '.join(top_words)
+#         if topic_id == -1:  # -1 means outlier in BERTopic
+#             sujet = 'divers'
+#         else:
+#             top_words = [w for w, score in topic_model.get_topic(topic_id)[:5]]
+#             sujet = ', '.join(top_words)
         
-        sujets.append({
-            'saison': row['saison'],
-            'episode': row['episode'],
-            'sujet': sujet
-        })
+#         sujets.append({
+#             'saison': row['saison'],
+#             'episode': row['episode'],
+#             'sujet': sujet
+#         })
     
-    sujets_df = pd.DataFrame(sujets)
-    sujets_df.to_csv('sujets_episodes.csv', index=False)
-    return sujets_df, topic_model
+#     sujets_df = pd.DataFrame(sujets)
+#     sujets_df.to_csv('sujets_episodes.csv', index=False)
+#     return sujets_df, topic_model
 
 #======================================================================
 #                          RECHERCHE 
@@ -205,7 +204,7 @@ def construireIndex(df, par_scene=False):
     matrice_tfidf = vectorizer.fit_transform(df_docs['texte'])
 
     print(f"Index TF-IDF construit : {matrice_tfidf.shape[0]} documents, {matrice_tfidf.shape[1]} termes")
-    return vectorizer, matrice_tfidf, df_docs
+    return vectorizer, matrice_tfidf, df_docs, motsVidesRecherche
 
 
 # 2 - Vectorisation d'une requete
@@ -213,9 +212,9 @@ def construireIndex(df, par_scene=False):
 # la nettoie et la tokenise avec les memes fonctions que le reste du projet,
 # puis la transforme en vecteur TF-IDF avec le vectorizer précédent.
 
-def vectoriserRequete(requete, vectorizer, df):
+def vectoriserRequete(requete, vectorizer, motsVidesRecherche):
     texte_propre = nettoyerTexte(requete)
-    tokens = tokeniserTexteRecherche(texte_propre, df)
+    tokens = tokeniserTexteRecherche(texte_propre, motsVidesRecherche=motsVidesRecherche)
     texte_final = ' '.join(tokens)
     vecteur = vectorizer.transform([texte_final])
     return vecteur
@@ -233,8 +232,8 @@ def similariteCosinus(vecteur_requete, matrice_documents):
 # question -> nettoyage -> vectorisation -> similarite cosinus -> tri -> resultats
 # Cherche les top_k documents les plus proches d'une requete en langage naturel
 
-def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5):
-    vecteur = vectoriserRequete(requete, vectorizer, df)
+def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5, motsVidesRecherche=None):
+    vecteur = vectoriserRequete(requete, vectorizer, motsVidesRecherche)
     scores = similariteCosinus(vecteur, matrice_tfidf)
 
     resultats = df_docs.copy()
@@ -242,8 +241,27 @@ def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5):
 
     resultats = resultats.sort_values('score', ascending=False).head(top_k)
     resultats = resultats[resultats['score'] > 0]
+    resultats['question']=requete
     return resultats.reset_index(drop=True)
 
+#fonction d'affichage commune des resulats
+def miseEnFormeRes(res,sujet_df):
+    d = {
+        "question":res['question'],
+        "saison":res['saison'],
+        "episode":res['episode'],
+        "score":res['score']
+        }
+    df = pd.DataFrame(d)
+    df['rank'] = range(1,len(df)+1)
+
+    df = df.merge(sujet_df[['saison', 'episode', 'sujet']], 
+                  on=['saison', 'episode'], 
+                  how='left')
+    
+    # reorder columns
+    df = df[['rank', 'question', 'saison', 'episode', 'score', 'sujet']]
+    return df
 
 #======================================================================
 #                        DETERMINATION DE TYPE
@@ -287,10 +305,36 @@ def determiner_type_question(question,df):
             
     # Si on a trouvé au moins une entité, c'est Q1. Sinon Q2.
     if len(entites_trouvees) > 0:
-        print("Q1")
-        vectorizer, matrice_tfidf, df_docs=construireIndex(df, par_scene=False)
-        return q1.rechercherQ1(question,df,vectorizer=vectorizer,matrice_tfidf=matrice_tfidf,df_docs=df_docs)
+        # print("Q1")
+        vectorizer, matrice_tfidf, df_docs, motsVidesRecherche=construireIndex(df, par_scene=False)
+        return q1.rechercherQ1(question,df,vectorizer=vectorizer,matrice_tfidf=matrice_tfidf,df_docs=df_docs,motsVidesRecherche=motsVidesRecherche)
     else:
-        print("Q2")
-        #tfidf_matrix, vectorizer, df_docs=q2.vectorize_Q2(df,groupby_cols=['saison','episode'],max_df=0.95,ngram_range=(1,2))
-        q2.afficher_resultats_Q2(q2.utiliser_moteur_Q2(df,question))
+        # print("Q2")
+        return q2.utiliser_moteur_Q2(df,question)
+    
+
+#======================================================================
+#                        EVALUATION DU MODELE
+#======================================================================
+
+def calculerMRR(question_verite,resultats_df):
+    score_rr = []
+
+    for question, v_ep in question_verite.items():
+
+        res_question = resultats_df[resultats_df['question']==question].copy()
+        res_question['ep_id'] = res_question['saison']+'_'+res_question['episode']
+
+        rr = 0
+        for _, row in res_question.iterrows():
+            if row['ep_id'] in v_ep: 
+                rr = 1/ row['rank']
+                break 
+        
+        score_rr.append(rr)
+        print(f"Q: {question}")
+        print(f"   RR: {round(rr, 4)}")
+    
+    mrr = np.average(score_rr)
+    print(f"\nMRR global: {round(mrr, 4)}")
+    return mrr

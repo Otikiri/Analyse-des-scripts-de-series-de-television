@@ -1,8 +1,6 @@
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances, manhattan_distances
 from sklearn.feature_extraction.text import TfidfVectorizer
-import numpy as np
-
-from data_loader import chargerDonnees
+import pandas as pd
 
 
 def prepare_question(question, vectorizer):
@@ -17,7 +15,6 @@ def prepare_question(question, vectorizer):
     question_vector = vectorizer.transform([question])
 
     return question_vector
-
 
 def vectorize_Q2(df, groupby_cols=None, max_df=0.95, ngram_range=(1, 2)):
     """
@@ -47,7 +44,7 @@ def vectorize_Q2(df, groupby_cols=None, max_df=0.95, ngram_range=(1, 2)):
 
     corpus = docs["doc"].tolist()
 
-    print(f"Nombre de documents à analyser : {len(corpus)}")
+    #print(f"Nombre de documents à analyser : {len(corpus)}")
 
     vectorizer = TfidfVectorizer(
         lowercase=True,
@@ -61,10 +58,9 @@ def vectorize_Q2(df, groupby_cols=None, max_df=0.95, ngram_range=(1, 2)):
 
     tfidf_matrix = vectorizer.fit_transform(corpus)
 
-    print("Matrice TF-IDF :", tfidf_matrix.shape)
+    #print("Matrice TF-IDF :", tfidf_matrix.shape)
 
     return tfidf_matrix, vectorizer, docs
-
 
 def cosine_similarity_Q2(question_vector, tfidf_matrix):
     """
@@ -106,6 +102,8 @@ def dot_product_Q2(question_vector, tfidf_matrix):
 
     return scores
 
+
+#search_q2 obsolete ?? 
 def search_Q2(question, vectorizer, tfidf_matrix, docs, score_calculation, top_k=5):
     """
     Recherche de type Q2 : recherche par contenu sans filtrage.
@@ -154,8 +152,8 @@ def search_Q2_lines(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_lines
 
     results = []
 
-    print("Top indices lignes :", ranked_indices_lines[:top_k])
-    print("Top ranked line extract : ", docs_lines.iloc[ranked_indices_lines[:top_k]][["saison", "episode", "ligne"]])
+    #print("Top indices lignes :", ranked_indices_lines[:top_k])
+    #rint("Top ranked line extract : ", docs_lines.iloc[ranked_indices_lines[:top_k]][["saison", "episode", "ligne"]])
     for idx in ranked_indices[:top_k]:
         row = docs.iloc[idx]
 
@@ -170,20 +168,22 @@ def search_Q2_lines(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_lines
         ranked_indices_matching_lines = similarities_lines[matching_lines.index].argsort()[::-1]
 
         result = {
-            "score": round(float(similarities[idx]), 4),
             "saison": row.get("saison"),
             "episode": row.get("episode"),
             "title": row.get("nom fichier"),
-            "line": matching_lines.iloc[ranked_indices_matching_lines[0]].get("ligne") if not matching_lines.empty and "ligne" in docs_lines.columns else None,
-            "nombre_mots": row.get("nombres de mots") if "nombres de mots" in docs.columns else None
+            "score": round(float(similarities[idx]), 4),
+            "question" : question
+            #"line": matching_lines.iloc[ranked_indices_matching_lines[0]].get("ligne") if not matching_lines.empty and "ligne" in docs_lines.columns else None,
+            #"nombre_mots": row.get("nombres de mots") if "nombres de mots" in docs.columns else None
         }
 
         results.append(result)
-
-    return results
+        df_res = pd.DataFrame(results)
+        # df_res['rank'] = range(1,top_k+1)
+    return df_res
 
 def utiliser_moteur_Q2(df, question, score_calculation = cosine_similarity_Q2, top_k=5):
-    print("Recherche de type Q2...")
+    # print("Recherche de type Q2...")
 
     tfidf_matrix, vectorizer, docs = vectorize_Q2(
         df,
@@ -211,8 +211,6 @@ def utiliser_moteur_Q2(df, question, score_calculation = cosine_similarity_Q2, t
     )
     return results
 
-
-
 def afficher_resultats_Q2(results):
     """
     Affichage propre des résultats Q2.
@@ -227,16 +225,9 @@ def afficher_resultats_Q2(results):
         print(f"  Episode : {result['episode']}")
         print(f"  Titre du script : {result['title']}")
 
-        if result["nombre_mots"] is not None:
-            print(f"  Nombre de mots : {result['nombre_mots']}")
+        # if result["nombre_mots"] is not None:
+        #     print(f"  Nombre de mots : {result['nombre_mots']}")
 
-        if result["line"]:
-            print(f"  Extrait du script : {result['line'][:300]}...")
+        # if result["line"]:
+        #     print(f"  Extrait du script : {result['line'][:300]}...")
 
-
-
-# print("Chargement des données...")
-# df = chargerDonnees("datasets")
-
-# results = utiliser_moteur_Q2(df, "learning french to get a job")
-# afficher_resultats_Q2(results)

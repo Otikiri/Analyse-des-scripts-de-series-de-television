@@ -1,14 +1,14 @@
 # LIBRAIRIE 
-from gensim import models
-from gensim import corpora
+# from gensim import models
+# from gensim import corpora
 import pandas as pd 
-from tqdm import tqdm 
+# from tqdm import tqdm 
 
 # FICHIER PY
-import utils as ut
-import stats_lexical as sl
+#import utils as ut
+#import stats_lexical as sl
 import data_loader as dl
-import cluster as cl
+#import cluster as cl
 import moteur as mt 
 
 #to ignore warnings from KeyBERT
@@ -84,9 +84,13 @@ warnings.filterwarnings('ignore')
 
 
 df = dl.chargerDonnees("../datasets")
-print(df.columns)
+sujet_df = pd.read_csv("sujet_par_ep.csv")
+# mt.construireSujetsEpKeyBERT(df)
+sujet_df['saison'] = sujet_df['saison'].astype(str).str.zfill(2)
+sujet_df['episode'] = sujet_df['episode'].astype(str).str.zfill(2)
+
 q1_test = [
-    "Monica and Chandler announce their engagement. ", 
+    "Monica and Chandler announce their engagement.", 
     "Rachel's first day at her new job with Mark.",
     "Joey learns to speak French for an audition.",
     "Phoebe wants to sing at Monica's wedding.", 
@@ -101,6 +105,30 @@ q2_test = [
     "Eating a stolen cheesecake off the floor in the hallway."
 ]
 
-for i in q2_test:
+
+results = []
+for i in q1_test:
+    # print("question :",i)
+    results.append(mt.miseEnFormeRes(mt.determiner_type_question(i,df),sujet_df))
+
+for i in results: 
     print(i)
-    print(mt.determiner_type_question(i,df))
+    
+q1_verite = {
+    "Monica and Chandler announce their engagement." : ['07_01'], 
+    "Rachel's first day at her new job with Mark.": ['03_12'],
+    "Joey learns to speak French for an audition.": ['10_13'],
+    "Phoebe wants to sing at Monica's wedding.": ['07_01'], 
+    "Ross is jealous of the gifts sent to Rachel's workplace.": ['03_12']
+}
+
+q2_verite = {
+    "Drinking a gallon of milk in ten seconds.":['10_13'],
+    "A poem about an empty vase written by a waiter.": ['03_12'],
+    "Playing a racing video game on PlayStation while dressing like a nineteen-year-old.": ['07_01'],
+    "Someone puts a turkey on their head to make people laugh.": ['05_08'],
+    "Eating a stolen cheesecake off the floor in the hallway.": ['07_11']
+}
+
+results_df = pd.concat(results,ignore_index=True)
+mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
