@@ -123,7 +123,7 @@ def clusteringW2v(df, numClusters=5, vectorSize=50, window=5, minCount=10, metho
     print(f"Coherence  : {scoreCoherence:.4f}\n")
 
     nomsBruts = nommerClusters(labelsFinaux, vecteurs, mots, nMotsNom=3, methode=methodeNommage)
-    noms = {k: f"Cluster {k} - {v.replace(' / ', ', ')}" for k, v in nomsBruts.items()}
+    noms = {k: v.replace(' / ', ', ') for k, v in nomsBruts.items()}
     
     dfClusters = pd.DataFrame({
         'Mot': mots,
@@ -269,7 +269,7 @@ def clusteringTfidf(df, groupbyCols=None, resultsDir='results_tfidf', kMin=2, kM
     wordLabels = np.argmax(wordVectors, axis=1)
     
     nomsBruts = nommerClusters(wordLabels, wordVectors, terms, nMotsNom=3, methode=methodeNommage)
-    noms = {k: f"Cluster {k} - {v.replace(' / ', ', ')}" for k, v in nomsBruts.items()}
+    noms = {k: v.replace(' / ', ', ') for k, v in nomsBruts.items()}
     
     docs['nom_cluster'] = docs['cluster'].map(noms)
 
