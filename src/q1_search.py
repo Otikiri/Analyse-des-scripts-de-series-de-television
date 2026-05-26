@@ -1,6 +1,4 @@
 import spacy
-import pandas as pd
-import numpy as np
 import moteur as mt
 
 nlp = spacy.load("en_core_web_sm")
@@ -20,6 +18,8 @@ def extraireEntites(question, df=None):
 
     # 1. spaCy NER
     for ent in doc.ents:
+        if ent.root.pos_ == 'VERB':
+            continue
         if ent.label_ in {"PERSON", "GPE", "LOC", "FAC", "ORG"}:
             entites.append(ent.text.strip())
 
@@ -107,7 +107,7 @@ def filtrer_par_episode(df, entites):
 # ======================================================================
 
 def rechercherQ1(question, df, vectorizer, matrice_tfidf, df_docs,
-                 top_k=5, motsVidesRecherche=None):
+                 top_k=5, motsVidesRecherche=None, entites=None):
     """
     Moteur de recherche pour les questions de type Q1 (avec entites).
     
@@ -118,7 +118,8 @@ def rechercherQ1(question, df, vectorizer, matrice_tfidf, df_docs,
     
     Puis classe les episodes filtres par similarite TF-IDF avec la question.
     """
-    entites = extraireEntites(question, df)
+    if entites is None:
+        entites = extraireEntites(question, df)
     print(f"Entites detectees : {entites}")
 
     if not entites:
