@@ -198,6 +198,14 @@ def utiliser_moteur_Q2(df, question, score_calculation = cosine_similarity_Q2, t
         ngram_range=(1, 2)
     )
 
+
+    print("vectorizer vocab size:", len(vectorizer.vocabulary_))
+    print("vectorizer vocab size:", len(vectorizer_lines.vocabulary_))
+    print("tfidf_matrix shape:", tfidf_matrix.shape)
+    print("tfidf_matrix_lines shape:", tfidf_matrix_lines.shape)
+    print("docs shape:", docs.shape)
+    print("docs_lines shape:", docs_lines.shape)
+
     results = search_Q2_lines(
         question,
         vectorizer,

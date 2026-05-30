@@ -105,14 +105,14 @@ q2_test = [
     "Eating a stolen cheesecake off the floor in the hallway."
 ]
 
+mt.determiner_type_question("Drinking a gallon of milk in ten seconds.",df)
+# results = []
+# for i in q1_test:
+#     # print("question :",i)
+#     results.append(mt.miseEnFormeRes(mt.determiner_type_question(i,df),sujet_df))
 
-results = []
-for i in q1_test:
-    # print("question :",i)
-    results.append(mt.miseEnFormeRes(mt.determiner_type_question(i,df),sujet_df))
-
-for i in results: 
-    print(i)
+# for i in results: 
+#     print(i)
     
 q1_verite = {
     "Monica and Chandler announce their engagement." : ['07_01'], 
@@ -130,5 +130,5 @@ q2_verite = {
     "Eating a stolen cheesecake off the floor in the hallway.": ['07_11']
 }
 
-results_df = pd.concat(results,ignore_index=True)
-mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
+# results_df = pd.concat(results,ignore_index=True)
+# mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
