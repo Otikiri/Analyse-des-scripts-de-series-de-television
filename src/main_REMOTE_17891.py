@@ -63,6 +63,24 @@ warnings.filterwarnings('ignore')
 #============================================================================
 #                             MOTEUR DE RECHERCHE
 #============================================================================
+# df = dl.chargerDonnees("../datasets/S01") 
+# meilleur = pd.read_csv("m_csv1.csv")
+# print(meilleur)
+# meilleurs_par_saison = {
+#     str(int(row['saison'])).zfill(2): {
+#         'n_topics': int(row['n_topics']),
+#         'alpha': row['alpha'],
+#         'coherence': row['coherence'],
+#         'perplexite': row['perplexite']
+#     }
+#     for _, row in meilleur.iterrows()
+# }
+# print(meilleurs_par_saison)
+# res = cl.clusteringLDA(df, meilleurs_par_saison)
+# print("lda\n",mt.construireSujetsEpLDA(df,res))
+# print("bert\n",mt.construireSujetsEpBERTopic(df))
+# print("keybert\n",mt.construireSujetsEpKeyBERT(df))
+# print("tfidf\n",mt.construireSujetsEpTFIDF(df))
 
 
 df = dl.chargerDonnees("../datasets")
@@ -132,6 +150,6 @@ q2_verite = {
     "Eating a stolen cheesecake off the floor in the hallway.": ['07_11']
 }
 
-results_df = pd.concat(results,ignore_index=True)
+# results_df = pd.concat(results,ignore_index=True)
 # # print(results_df[['question', 'rank', 'saison', 'episode']].head(15))
-mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
+# mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
