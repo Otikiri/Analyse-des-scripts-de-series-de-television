@@ -143,7 +143,7 @@ def search_Q2_lines(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_lines
         result = {
             "saison": row.get("saison"),
             "episode": row.get("episode"),
-            "title": row.get("nom fichier"),
+            "titre": row.get("nom fichier"),
             "score": round(float(similarities[idx]), 4),
             "question" : question,
             "line": matching_lines.iloc[ranked_indices_matching_lines[0]].get("ligne") if not matching_lines.empty and "ligne" in docs_lines.columns else None,

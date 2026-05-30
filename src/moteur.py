@@ -73,6 +73,7 @@ def construireSujetsEpKeyBERT(df):
         sujets.append({
             'saison': row['saison'],
             'episode': row['episode'],
+            'titre': df[(df['episode']==row['episode']) & (df['saison']==row["saison"])]['nom fichier'].values[0],
             'sujet': ', '.join([kw for kw, score in keywords])
         })
     
@@ -182,12 +183,12 @@ def miseEnFormeRes(res,sujet_df):
     df = pd.DataFrame(d)
     df['rank'] = range(1,len(df)+1)
 
-    df = df.merge(sujet_df[['saison', 'episode', 'sujet']], 
+    df = df.merge(sujet_df[['saison', 'episode', 'sujet', 'titre']], 
                   on=['saison', 'episode'], 
                   how='left')
     
     # reorder columns
-    df = df[['rank', 'question', 'saison', 'episode', 'score', 'sujet']]
+    df = df[['rank', 'question', 'saison', 'episode','titre', 'score', 'sujet']]
     return df
 
 #======================================================================

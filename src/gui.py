@@ -2,21 +2,22 @@ import tkinter as tk
 from tkinter import ttk, scrolledtext
 import os
 import sys
+import pandas as pd
 
 # S'assurer que le dossier src est dans le path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from search_engine import SearchEngine
-
+from moteur import miseEnFormeRes
 
 class App(tk.Tk):
     """
     Classe principale de l'application GUI pour la recherche dans les scripts.
     """
-    def __init__(self, search_engine):
+    def __init__(self, search_engine,sujet_df):
         super().__init__()
         self.search_engine = search_engine
-        
+        self.sujet_df = sujet_df
         self.title("Moteur de Recherche - Scripts de Friends")
         self.geometry("800x600")
         
@@ -76,39 +77,38 @@ class App(tk.Tk):
         else:
             results = self.search_engine.search_q2(question)
             header = "Recherche par contenu (similarité sémantique)"
-
-        self.display_results(results, header)
+        res_df = pd.DataFrame(results)
+        res_df['question'] = question
+        self.display_results(miseEnFormeRes(res_df,self.sujet_df), header)
 
         self.status_label.config(text="Recherche terminée.")
         self.search_button.config(state='normal')
         self.results_text.config(state='disabled')
 
-    def display_results(self, results, header):
+    def display_results(self, results_df, header):
         """Affiche les résultats de recherche (format unifié Q1/Q2)."""
         self.results_text.insert(tk.END, f"{header}\n")
         self.results_text.insert(tk.END, "="*80 + "\n\n")
         
-        if not results:
+        if results_df is None or results_df.empty:
             self.results_text.insert(tk.END, "Aucun résultat trouvé.")
             return
 
-        for i, res in enumerate(results):
-            score = res.get('score', 0)
-            saison = res.get('saison', '?')
-            episode = res.get('episode', '?')
-            title = res.get('title', '')
-            texte = res.get('texte', '')
+        for _, row in results_df.iterrows():
+            score   = row.get('score', 0)
+            saison  = row.get('saison', '?')
+            episode = row.get('episode', '?')
+            titre   = row.get('titre', '')
+            sujet   = row.get('sujet', '')
+            rank    = row.get('rank', '?')
 
             ep_label = f"S{saison}E{episode}"
-            if title:
-                ep_label += f" ({title})"
+            if titre:
+                ep_label += f" ({titre})"
 
-            self.results_text.insert(tk.END, f"--- Résultat #{i+1} (Score: {score:.4f}) ---\n")
+            self.results_text.insert(tk.END, f"--- Résultat #{rank} (Score: {score:.4f}) ---\n")
             self.results_text.insert(tk.END, f"Épisode : {ep_label}\n")
-
-            if texte:
-                snippet = texte[:500] + '...' if len(texte) > 500 else texte
-                self.results_text.insert(tk.END, f"Extrait : {snippet}\n")
+            self.results_text.insert(tk.END, f"Sujet   : {sujet}\n")
             self.results_text.insert(tk.END, "\n")
 
 
@@ -117,5 +117,8 @@ if __name__ == "__main__":
     print("Initialisation du moteur de recherche... (cela peut prendre un moment)")
     search_engine = SearchEngine(DATA_PATH)
     print("Lancement de l'interface graphique...")
-    app = App(search_engine)
+    sujet_df = pd.read_csv("sujet_par_ep.csv")
+    sujet_df['saison'] = sujet_df['saison'].astype(str).str.zfill(2)
+    sujet_df['episode'] = sujet_df['episode'].astype(str).str.zfill(2)
+    app = App(search_engine,sujet_df)
     app.mainloop()
