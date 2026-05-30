@@ -1,16 +1,13 @@
-import re 
 import cluster as cl 
 import pandas as pd
 import numpy as np 
-from collections import Counter
+
 from keybert import KeyBERT
 # from bertopic import BERTopic
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from utils import nettoyerTexte, tokeniserTexteRecherche
-import q1_search as q1 
-import q2_search as q2
 import spacy 
 
 nlp = spacy.load("en_core_web_sm")
