@@ -21,40 +21,6 @@ warnings.filterwarnings('ignore')
 #======================================================================
 #                          CONSTRUCTION DE SUJET
 #======================================================================
-def construireSujetsEpLDA(df, resLDA):
-    sujets = []
-
-    for (saison, episode), groupe in df.groupby(['saison', 'episode']):
-
-        if saison not in resLDA:
-            continue
-
-        modele = resLDA[saison]
-        dictionnaire = modele.id2word
-        voteSuj = Counter()
-
-        for scene, grpScn in groupe.groupby('scene_num'):
-            tokens = [w for tokens in grpScn['token'] for w in tokens]
-            if len(tokens) < 20:
-                continue
-            bow = dictionnaire.doc2bow(tokens)  
-            topics = modele.get_document_topics(bow)
-            if topics:
-                dominant = max(topics, key=lambda x: x[1])
-                voteSuj[dominant[0]] += 1
-
-        if voteSuj:
-            best_topic = voteSuj.most_common(1)[0][0]
-            top_words = [w for w, p in modele.show_topic(best_topic, topn=5)]
-            sujets.append({
-                'saison': saison,
-                'episode': episode,
-                'sujet': ', '.join(top_words)
-            })
-
-    sujets_df = pd.DataFrame(sujets)
-    sujets_df.to_csv('sujets_episodes.csv', index=False)
-    return sujets_df
 
 def construireSujetsEpTFIDF(df):
     
@@ -114,55 +80,12 @@ def construireSujetsEpKeyBERT(df):
     sujets_df.to_csv('sujet_par_ep.csv', index=False)
     return sujets_df
 
-# def construireSujetsEpBERTopic(df):
-    
-#     # reuse clusteringTfidf to get docs
-#     km, docs, X, vectorizer, X_tfidf = cl.clusteringTfidf(
-#         df,
-#         groupby_cols=['saison', 'episode'],
-#         ngram_range=(1,1)
-#     )
-    
-#     corpus = docs['doc'].tolist()
-    
-#     # train BERTopic
-#     # reduce min_topic_size for small datasets
-#     topic_model = BERTopic(
-#         language='english',
-#         min_topic_size=2,      # default is 10, too high for 24 docs
-#         calculate_probabilities=True
-# )
-#     topics, probs = topic_model.fit_transform(corpus)
-    
-#     # get topic labels
-#     docs['topic_id'] = topics
-    
-#     sujets = []
-#     for idx, row in docs.iterrows():
-#         topic_id = row['topic_id']
-        
-#         if topic_id == -1:  # -1 means outlier in BERTopic
-#             sujet = 'divers'
-#         else:
-#             top_words = [w for w, score in topic_model.get_topic(topic_id)[:5]]
-#             sujet = ', '.join(top_words)
-        
-#         sujets.append({
-#             'saison': row['saison'],
-#             'episode': row['episode'],
-#             'sujet': sujet
-#         })
-    
-#     sujets_df = pd.DataFrame(sujets)
-#     sujets_df.to_csv('sujets_episodes.csv', index=False)
-#     return sujets_df, topic_model
 
 #======================================================================
 #                          RECHERCHE 
 #======================================================================
 
 # 1 - Construction de l'index tf-idf
-
 # Combiner tous les token d'un groupe (episode ou scene) en texte
 def combinerTokens(listes_de_tokens):
     tous_les_mots = []
@@ -170,6 +93,7 @@ def combinerTokens(listes_de_tokens):
         for mot in liste:
             tous_les_mots.append(mot)
     return ' '.join(tous_les_mots)
+
 
 # Creation de la matrice TF-IDF
 # A appeler en premier avant toute recherche, construit l'index TF-IDF
@@ -223,15 +147,14 @@ def vectoriserRequete(requete, vectorizer, motsVidesRecherche):
 # 3 - Similarité par cos
 # Calcule la similarite cosinus entre un vecteur requete et chaque ligne de la matrice documents.
 # Formule : cos(A, B) = (A . B) / (||A|| * ||B||)
-
 def similariteCosinus(vecteur_requete, matrice_documents):
     scores = cosine_similarity(vecteur_requete, matrice_documents)
     return scores.flatten() 
 
+
 # 4 - Recherche
 # question -> nettoyage -> vectorisation -> similarite cosinus -> tri -> resultats
 # Cherche les top_k documents les plus proches d'une requete en langage naturel
-
 def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5, motsVidesRecherche=None):
     vecteur = vectoriserRequete(requete, vectorizer, motsVidesRecherche)
     scores = similariteCosinus(vecteur, matrice_tfidf)
@@ -244,7 +167,11 @@ def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5, motsVid
     resultats['question']=requete
     return resultats.reset_index(drop=True)
 
-#fonction d'affichage commune des resulats
+
+#======================================================================
+#                       MISE EN FORME RESULTAT
+#======================================================================
+# fonction d'affichage commune des resulats
 def miseEnFormeRes(res,sujet_df):
     d = {
         "question":res['question'],

@@ -110,6 +110,17 @@ class SearchEngine:
             self.q2_matrix_lines, self.q2_vectorizer_lines, self.q2_docs_lines,
             top_k=top_k
         )
+
+
+        print("vectorizer vocab size:", len(self.q2_vectorizer.vocabulary_))
+        print("vectorizer lines vocab size:",len(self.q2_vectorizer_lines.vocabulary_))
+        print("tfidf_matrix shape:", self.q2_matrix.shape)
+        print("tfidf_matrix_lines shape:", self.q2_matrix_lines.shape)
+        print("docs shape:", self.q2_docs.shape)
+        print("docs_lines shape:", self.q2_docs_lines.shape)
+
+
+
         if hasattr(results, 'to_dict'):
             records = results.to_dict("records")
         else:
