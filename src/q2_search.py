@@ -102,41 +102,14 @@ def dot_product_Q2(question_vector, tfidf_matrix):
 
     return scores
 
-
-#search_q2 obsolete ?? 
-def search_Q2(question, vectorizer, tfidf_matrix, docs, score_calculation, top_k=5):
-    """
-    Recherche de type Q2 : recherche par contenu sans filtrage.
-    """
-
-    question_vector = prepare_question(question, vectorizer)
-
-    similarities = score_calculation(question_vector, tfidf_matrix)
-
-    ranked_indices = similarities.argsort()[::-1]
-
-    results = []
-
-    for idx in ranked_indices[:top_k]:
-        row = docs.iloc[idx]
-
-        result = {
-            "score": round(float(similarities[idx]), 4),
-            "saison": row.get("saison"),
-            "episode": row.get("episode"),
-            "title": row.get("nom fichier"),
-            "line": row.get("ligne") if "ligne" in docs.columns else None,
-            "nombre_mots": row.get("nombres de mots") if "nombres de mots" in docs.columns else None
-        }
-
-        results.append(result)
-
-    return results
-
 def search_Q2_lines(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_lines, vectorizer_lines, docs_lines, score_calculation, top_k=5):
     """
     Recherche de type Q2 : recherche par contenu au niveau des lignes.
     """
+
+    docs_lines = docs_lines.reset_index(drop=True)  
+    
+    docs = docs.reset_index(drop=True)        
 
     question_vector = prepare_question(question, vectorizer)
 

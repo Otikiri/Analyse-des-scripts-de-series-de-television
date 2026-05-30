@@ -106,20 +106,10 @@ class SearchEngine:
         """
         results = q2.utiliser_moteur_Q2(
             question, 
-            self.q2_vectorizer, self.q2_matrix, self.q2_docs,
-            self.q2_matrix_lines, self.q2_vectorizer_lines, self.q2_docs_lines,
-            top_k=top_k
+            vectorizer=self.q2_vectorizer,tfidf_matrix=self.q2_matrix,docs=self.q2_docs,
+            tfidf_matrix_lines=self.q2_matrix_lines,vectorizer_lines=self.q2_vectorizer_lines, 
+            docs_lines=self.q2_docs_lines,top_k=top_k
         )
-
-
-        print("vectorizer vocab size:", len(self.q2_vectorizer.vocabulary_))
-        print("vectorizer lines vocab size:",len(self.q2_vectorizer_lines.vocabulary_))
-        print("tfidf_matrix shape:", self.q2_matrix.shape)
-        print("tfidf_matrix_lines shape:", self.q2_matrix_lines.shape)
-        print("docs shape:", self.q2_docs.shape)
-        print("docs_lines shape:", self.q2_docs_lines.shape)
-
-
 
         if hasattr(results, 'to_dict'):
             records = results.to_dict("records")
