@@ -134,13 +134,13 @@ for question in q2_test:
 for i in results: 
     print(i)
     
-q1_verite = {
-    "Monica and Chandler announce their engagement." : ['07_01'], 
-    "Rachel's first day at her new job with Mark.": ['03_12'],
-    "Joey learns to speak French for an audition.": ['10_13'],
-    "Phoebe wants to sing at Monica's wedding.": ['07_01'], 
-    "Ross is jealous of the gifts sent to Rachel's workplace.": ['03_12']
-}
+# q1_verite = {
+#     "Monica and Chandler announce their engagement." : ['07_01'], 
+#     "Rachel's first day at her new job with Mark.": ['03_12'],
+#     "Joey learns to speak French for an audition.": ['10_13'],
+#     "Phoebe wants to sing at Monica's wedding.": ['07_01'], 
+#     "Ross is jealous of the gifts sent to Rachel's workplace.": ['03_12']
+# }
 
 q2_verite = {
     "Drinking a gallon of milk in ten seconds.":['10_13'],
@@ -151,5 +151,6 @@ q2_verite = {
 }
 
 results_df = pd.concat(results,ignore_index=True)
-# mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
-mrr2 = mt.calculerMRR(resultats_df=results_df,question_verite=q2_verite)
+# print(results_df[['question', 'rank', 'saison', 'episode']].head(15))
+mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q2_verite)
+

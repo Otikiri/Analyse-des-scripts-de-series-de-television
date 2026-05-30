@@ -14,6 +14,8 @@ import moteur as mt
 import q1_search as q1
 import q2_search as q2
 
+PERSONNAGES = {'ross', 'rachel', 'monica', 'chandler', 'joey', 'phoebe',
+    'mike', 'richard', 'emily', 'gunther', 'janice', 'carol'}
 
 class SearchEngine:
     def __init__(self, data_path):
@@ -43,14 +45,22 @@ class SearchEngine:
     #  Classification de la question
     # ------------------------------------------------------------------
 
+
+
+    
     def classify_question(self, question):
         """
         Détermine si une question est de type Q1 (avec entités) ou Q2 (sans).
         Utilise l'extraction d'entités de q1_search.py.
         Retourne (type_str, liste_entites).
         """
+
         entities = q1.extraireEntites(question, self.df)
-        if entities:
+
+        #on ne garde que les personnages "reels" => Waiter pas une entite
+        entites_valides = [e for e in entities if e.lower() in PERSONNAGES]
+
+        if entites_valides:
             return "Q1", entities
         return "Q2", []
 
@@ -104,6 +114,9 @@ class SearchEngine:
         Recherche de type Q2 : similarité TF-IDF sur le corpus complet.
         Retourne une liste de dicts normalisés.
         """
+        print("q2_docs shape before search:", self.q2_docs.shape)
+        print("q2_matrix shape before search:", self.q2_matrix.shape)
+
         results = q2.utiliser_moteur_Q2(
             question, 
             vectorizer=self.q2_vectorizer,tfidf_matrix=self.q2_matrix,docs=self.q2_docs,

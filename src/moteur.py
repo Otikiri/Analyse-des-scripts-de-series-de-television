@@ -202,6 +202,11 @@ def calculerMRR(question_verite,resultats_df):
         res_question = resultats_df[resultats_df['question']==question].copy()
         res_question['ep_id'] = res_question['saison']+'_'+res_question['episode']
 
+        # print(f"Q: {question}")
+        # print(f"  expected: {v_ep}")
+        # print(f"  got ep_ids: {res_question['ep_id'].tolist()}")
+        # print(f"  ranks: {res_question['rank'].tolist()}")
+              
         rr = 0
         for _, row in res_question.iterrows():
             if row['ep_id'] in v_ep: 

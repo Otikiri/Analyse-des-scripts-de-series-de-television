@@ -157,6 +157,8 @@ def search_Q2_lines(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_lines
 
 def utiliser_moteur_Q2(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_lines, vectorizer_lines, docs_lines, score_calculation=cosine_similarity_Q2, top_k=5):
     # Les matrices sont déjà construites (par search_engine.py), on passe directement à la recherche
+    # print("q2_docs shape during search:", docs.shape)
+    # print("q2_matrix shape during search:", tfidf_matrix.shape)
     results = search_Q2_lines(
         question,
         vectorizer,
@@ -170,23 +172,4 @@ def utiliser_moteur_Q2(question, vectorizer, tfidf_matrix, docs, tfidf_matrix_li
     )
     return results
 
-def afficher_resultats_Q2(results):
-    """
-    Affichage propre des résultats Q2.
-    """
-
-    print("Résultats de la recherche :")
-
-    for idx, result in enumerate(results):
-        print(f"\nRésultat {idx + 1} :")
-        print(f"  Score de similarité : {result['score']}")
-        print(f"  Saison : {result['saison']}")
-        print(f"  Episode : {result['episode']}")
-        print(f"  Titre du script : {result['title']}")
-
-        # if result["nombre_mots"] is not None:
-        #     print(f"  Nombre de mots : {result['nombre_mots']}")
-
-        # if result["line"]:
-        #     print(f"  Extrait du script : {result['line'][:300]}...")
 
