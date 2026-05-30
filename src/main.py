@@ -90,7 +90,6 @@ if not os.path.exists(csv_path):
     print(f"Fichier '{csv_path}' introuvable. Génération en cours via KeyBERT (cela peut prendre quelques minutes)...")
     mt.construireSujetsEpKeyBERT(df)
 sujet_df = pd.read_csv(csv_path)
-# mt.construireSujetsEpKeyBERT(df)
 
 sujet_df['saison'] = sujet_df['saison'].astype(str).str.zfill(2)
 sujet_df['episode'] = sujet_df['episode'].astype(str).str.zfill(2)
@@ -116,7 +115,7 @@ from search_engine import SearchEngine
 engine = SearchEngine("../datasets")
 
 results = []
-for question in q1_test + q2_test:
+for question in q2_test:
     # Classification and Search through the unified SearchEngine
     q_type, entities = engine.classify_question(question)
     
@@ -131,8 +130,8 @@ for question in q1_test + q2_test:
     
     results.append(mt.miseEnFormeRes(res_df, sujet_df))
 
-for i in results: 
-    print(i)
+# for i in results: 
+#     print(i)
     
 q1_verite = {
     "Monica and Chandler announce their engagement." : ['07_01'], 
@@ -151,4 +150,5 @@ q2_verite = {
 }
 
 results_df = pd.concat(results,ignore_index=True)
-mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
+# mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
+mrr2 = mt.calculerMRR(resultats_df=results_df,question_verite=q2_verite)
