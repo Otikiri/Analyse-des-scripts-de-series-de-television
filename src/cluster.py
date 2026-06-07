@@ -257,13 +257,13 @@ def clusteringTfidf(df, groupbyCols=None, resultsDir='results_tfidf', kMin=2, kM
     Applique TF-IDF et KMeans sur les tokens.
     Si groupbyCols est specifie, agrege les tokens par ces colonnes (ex: ['saison', 'episode']).
     """
-    os.makedirs(results_dir, exist_ok=True)
+    os.makedirs(resultsDir, exist_ok=True)
     
     # Copie pour ne pas modifier l'original
     docs = df.copy()
     
-    if groupby_cols:
-        docs = docs.groupby(groupby_cols)['token'].sum().reset_index()
+    if groupbyCols:
+        docs = docs.groupby(groupbyCols)['token'].sum().reset_index()
     else:
         docs = docs.reset_index(drop=True)
         
@@ -274,7 +274,7 @@ def clusteringTfidf(df, groupbyCols=None, resultsDir='results_tfidf', kMin=2, kM
     corpus = docs['doc'].tolist()
     print(f"Nombre de documents à analyser : {len(corpus)}")
     
-    if len(corpus) < k_min:
+    if len(corpus) < kMin:
         print("Pas assez de documents pour le clustering.")
         return None
         
@@ -283,18 +283,18 @@ def clusteringTfidf(df, groupbyCols=None, resultsDir='results_tfidf', kMin=2, kM
         lowercase=False,
         token_pattern=r'(?u)\b\w+\b',
         min_df=1,
-        max_df=max_df,
+        max_df=maxDf,
         sublinear_tf=True,
-        ngram_range=ngram_range
+        ngram_range=ngramRange
     )
     X = vectorizer.fit_transform(corpus)
     terms = np.array(vectorizer.get_feature_names_out())
     
     print("Matrice TF-IDF :", X.shape)
 
-    ks,inertias,silhouettes,best_k,km,labels = ut.rechercheBestK(k_min,k_max,corpus=corpus,results_dir=results_dir,docs=docs,X=X)
+    ks,inertias,silhouettes,best_k,km,labels = ut.rechercheBestK(kMin,kMax,corpus=corpus,results_dir=resultsDir,docs=docs,X=X)
 
-    ut.coudeTFIDF(ks,inertias,silhouettes,results_dir)
+    ut.coudeTFIDF(ks,inertias,silhouettes,resultsDir)
 
     # Adaptation pour nommerClusters
     wordVectors = km.cluster_centers_.T # (num_words, num_clusters)
@@ -306,9 +306,9 @@ def clusteringTfidf(df, groupbyCols=None, resultsDir='results_tfidf', kMin=2, kM
     if 'cluster' in docs.columns:
         docs['nom_cluster'] = docs['cluster'].map(noms)
 
-    ut.topMotsParClusters(km,best_k,top_n_words,terms,results_dir,docs)
+    ut.topMotsParClusters(km,best_k,topNWords,terms,resultsDir,docs)
 
-    X_2d = ut.visualizationTFIDF(use_svd,best_k,labels,docs,groupby_cols,results_dir,X)
+    X_2d = ut.visualizationTFIDF(useSvd,best_k,labels,docs,groupbyCols,resultsDir,X)
 
-    print(f"Résultats enregistrés dans {results_dir}/")
+    print(f"Résultats enregistrés dans {resultsDir}/")
     return km, docs, X_2d,vectorizer,X

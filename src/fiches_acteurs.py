@@ -5,6 +5,7 @@ import data_loader as dl
 import cluster as cl
 import graphe_acteurs as ga
 import role 
+import sentiment_classifier as sc 
 
 def menu():
     print("\n" + "="*40)
@@ -58,6 +59,11 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
     print("Calcul de l'importance des rôles en cours...")
     df_roles = role.calculer_importance_df(df)
     
+    print("Calcul des statistiques de sentiments en cours...")
+    stats_sent_ep = sc.calculer_statistiques_sentiments(df, groupby_cols=['acteur', 'saison', 'episode'])
+    stats_sent_saison = sc.calculer_statistiques_sentiments(df, groupby_cols=['acteur', 'saison'])
+    stats_sent_global = sc.calculer_statistiques_sentiments(df, groupby_cols=['acteur'])
+    
     acteurs = df['acteur'].value_counts()
     acteurs = acteurs[acteurs >= minLines].index.tolist()
     print(f"{len(acteurs)} acteur(s) qualifié(s) (>= {minLines} répliques)")
@@ -108,6 +114,13 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                 ]
                 statut_role = role_info['Statut Rôle'].iloc[0] if not role_info.empty else "Non défini"
                 
+                # Sentiments
+                sent_ep_info = stats_sent_ep[
+                    (stats_sent_ep['acteur'] == acteur) & 
+                    (stats_sent_ep['saison'] == saisonRow) & 
+                    (stats_sent_ep['episode'] == episodeRow)
+                ]
+                
                 df_doc = df.copy()
                 for col in colsDispo:
                     if col in row and not pd.isna(row[col]):
@@ -133,7 +146,13 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                     'pct_parole_saison_%':  ligneStats['pct_parole_saison'].iloc[0]  if not ligneStats.empty else np.nan,
                     'pct_repliques_saison_%': '',
                     'pct_repliques_global_%': '',
-                    'chemin_graphe': png_path
+                    'vader_Positif_%': sent_ep_info['vader_pct_Positif'].iloc[0] if not sent_ep_info.empty and 'vader_pct_Positif' in sent_ep_info.columns else '',
+                    'vader_Négatif_%': sent_ep_info['vader_pct_Négatif'].iloc[0] if not sent_ep_info.empty and 'vader_pct_Négatif' in sent_ep_info.columns else '',
+                    'vader_Neutre_%': sent_ep_info['vader_pct_Neutre'].iloc[0] if not sent_ep_info.empty and 'vader_pct_Neutre' in sent_ep_info.columns else '',
+                    'ml_Positif_%': sent_ep_info['ml_pct_Positif'].iloc[0] if not sent_ep_info.empty and 'ml_pct_Positif' in sent_ep_info.columns else '',
+                    'ml_Négatif_%': sent_ep_info['ml_pct_Négatif'].iloc[0] if not sent_ep_info.empty and 'ml_pct_Négatif' in sent_ep_info.columns else '',
+                    'ml_Neutre_%': sent_ep_info['ml_pct_Neutre'].iloc[0] if not sent_ep_info.empty and 'ml_pct_Neutre' in sent_ep_info.columns else '',
+                    'chemin_graphe': f"../results/fiches_acteurs/graphes/graphe_S{str(saisonRow).zfill(2)}E{str(episodeRow).zfill(2)}.png"
                 }
                 for i in range(1, 4):
                     if i <= len(top_inter):
@@ -158,6 +177,11 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                 if not os.path.exists(png_path):
                     ga.grapheSaison(df_saison, dossier_graphes, str(s).zfill(2))
                 
+                sent_saison_info = stats_sent_saison[
+                    (stats_sent_saison['acteur'] == acteur) & 
+                    (stats_sent_saison['saison'] == s)
+                ]
+                
                 ligne_dict = {
                     'acteur': acteur,
                     'saison': s,
@@ -172,7 +196,13 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                     'pct_parole_saison_%': ligne_s['pct_parole_saison'],
                     'pct_repliques_saison_%': ligne_s['pct_rep_saison'],
                     'pct_repliques_global_%': '',
-                    'chemin_graphe': png_path
+                    'vader_Positif_%': sent_saison_info['vader_pct_Positif'].iloc[0] if not sent_saison_info.empty and 'vader_pct_Positif' in sent_saison_info.columns else '',
+                    'vader_Négatif_%': sent_saison_info['vader_pct_Négatif'].iloc[0] if not sent_saison_info.empty and 'vader_pct_Négatif' in sent_saison_info.columns else '',
+                    'vader_Neutre_%': sent_saison_info['vader_pct_Neutre'].iloc[0] if not sent_saison_info.empty and 'vader_pct_Neutre' in sent_saison_info.columns else '',
+                    'ml_Positif_%': sent_saison_info['ml_pct_Positif'].iloc[0] if not sent_saison_info.empty and 'ml_pct_Positif' in sent_saison_info.columns else '',
+                    'ml_Négatif_%': sent_saison_info['ml_pct_Négatif'].iloc[0] if not sent_saison_info.empty and 'ml_pct_Négatif' in sent_saison_info.columns else '',
+                    'ml_Neutre_%': sent_saison_info['ml_pct_Neutre'].iloc[0] if not sent_saison_info.empty and 'ml_pct_Neutre' in sent_saison_info.columns else '',
+                    'chemin_graphe': f"../results/fiches_acteurs/graphes/graphe_S{str(s).zfill(2)}.png"
                 }
                 for i in range(1, 4):
                     if i <= len(top_inter_s):
@@ -194,6 +224,10 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
             if not os.path.exists(png_path):
                 ga.grapheAll(df, dossier_graphes)
             
+            sent_global_info = stats_sent_global[
+                (stats_sent_global['acteur'] == acteur)
+            ]
+            
             ligne_dict = {
                     'acteur': acteur,
                     'saison': 'TOUTES',
@@ -208,7 +242,13 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                     'pct_parole_saison_%': '',
                     'pct_repliques_saison_%': '',
                     'pct_repliques_global_%': ligne_g['pct_rep_global'],
-                    'chemin_graphe': png_path
+                    'vader_Positif_%': sent_global_info['vader_pct_Positif'].iloc[0] if not sent_global_info.empty and 'vader_pct_Positif' in sent_global_info.columns else '',
+                    'vader_Négatif_%': sent_global_info['vader_pct_Négatif'].iloc[0] if not sent_global_info.empty and 'vader_pct_Négatif' in sent_global_info.columns else '',
+                    'vader_Neutre_%': sent_global_info['vader_pct_Neutre'].iloc[0] if not sent_global_info.empty and 'vader_pct_Neutre' in sent_global_info.columns else '',
+                    'ml_Positif_%': sent_global_info['ml_pct_Positif'].iloc[0] if not sent_global_info.empty and 'ml_pct_Positif' in sent_global_info.columns else '',
+                    'ml_Négatif_%': sent_global_info['ml_pct_Négatif'].iloc[0] if not sent_global_info.empty and 'ml_pct_Négatif' in sent_global_info.columns else '',
+                    'ml_Neutre_%': sent_global_info['ml_pct_Neutre'].iloc[0] if not sent_global_info.empty and 'ml_pct_Neutre' in sent_global_info.columns else '',
+                    'chemin_graphe': "../results/fiches_acteurs/graphes/graphe_all.png"
             }
             for i in range(1, 4):
                 if i <= len(top_inter_g):
