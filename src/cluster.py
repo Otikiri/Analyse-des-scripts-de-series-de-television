@@ -24,8 +24,16 @@ import pyLDAvis
 import utils as ut
 
 def nommerClustersCentroide(labels, vecteurs, motsVocab, nMotsNom=3):
-    """
-    Approche par centroïde : trouve les mots les plus proches du centre géométrique.
+    """Approche par centroïde : trouve les mots les plus proches du centre géométrique.
+
+    Args:
+        labels (list or np.ndarray): Liste des labels de cluster associés à chaque mot.
+        vecteurs (list or np.ndarray): Matrice des vecteurs de mots.
+        motsVocab (list): Liste ordonnée des mots du vocabulaire correspondant aux vecteurs.
+        nMotsNom (int, optional): Nombre de mots-clés à extraire pour composer le nom. Valeur par défaut : 3.
+
+    Returns:
+        dict: Un dictionnaire associant l'identifiant du cluster à son nom généré (str).
     """
     vecteurs = np.array(vecteurs)
     noms = {}
@@ -44,9 +52,16 @@ def nommerClustersCentroide(labels, vecteurs, motsVocab, nMotsNom=3):
     return noms
 
 def nommerClustersTFIDF(labels, vecteurs, motsVocab, nMotsNom=3):
-    """
-    Approche par maximum de poids (TF-IDF / LDA) : 
-    trouve les mots ayant la plus forte probabilité/poids pour ce cluster.
+    """Approche par maximum de poids (TF-IDF / LDA) : trouve les mots ayant la plus forte probabilité/poids pour ce cluster.
+
+    Args:
+        labels (list or np.ndarray): Liste des labels de cluster associés à chaque mot.
+        vecteurs (list or np.ndarray): Matrice des poids/probabilités (mots en lignes, dimensions/clusters en colonnes).
+        motsVocab (list): Liste ordonnée des mots du vocabulaire.
+        nMotsNom (int, optional): Nombre de mots-clés à extraire pour composer le nom. Valeur par défaut : 3.
+
+    Returns:
+        dict: Un dictionnaire associant l'identifiant du cluster à son nom généré (str).
     """
     vecteurs = np.array(vecteurs)
     noms = {}
@@ -65,8 +80,17 @@ def nommerClustersTFIDF(labels, vecteurs, motsVocab, nMotsNom=3):
     return noms
 
 def nommerClusters(labels, vecteurs, motsVocab, nMotsNom=3, methode='tfidf'):
-    """
-    Fonction chapeau qui redirige vers la bonne méthode de nommage.
+    """Fonction chapeau qui redirige vers la bonne méthode de nommage de cluster (TF-IDF ou Centroïde).
+
+    Args:
+        labels (list or np.ndarray): Liste des labels de cluster associés à chaque mot.
+        vecteurs (list or np.ndarray): Matrice de vecteurs ou de poids.
+        motsVocab (list): Liste ordonnée des mots du vocabulaire.
+        nMotsNom (int, optional): Nombre de mots-clés à extraire pour composer le nom. Valeur par défaut : 3.
+        methode (str, optional): Algorithme choisi ('tfidf' ou autre pour 'centroide'). Valeur par défaut : 'tfidf'.
+
+    Returns:
+        dict: Un dictionnaire contenant les identifiants de cluster et leurs noms calculés.
     """
     if methode == "tfidf":
         return nommerClustersTFIDF(labels, vecteurs, motsVocab, nMotsNom)
@@ -77,10 +101,29 @@ def nommerClusters(labels, vecteurs, motsVocab, nMotsNom=3, methode='tfidf'):
 # CLUSTERING ET W2VEC
 # ==========================================================
 
-# Prend en parametre un dataframe avec des tokens
-# Entraine un modele Word2Vec et cluster les mots
-# renvoie le modele, un dataframe des clusters, les vecteurs et le score de coherence
+
 def clusteringW2v(df, numClusters=5, vectorSize=50, window=5, minCount=10, methodeNommage="centroide"):
+
+    """Entraîne un modèle Word2Vec, applique un partitionnement KMeans sur les vecteurs de mots et évalue la cohérence.
+
+    Args:
+        df (pd.DataFrame): Dataframe d'entrée devant posséder une colonne 'token' contenant des listes de chaînes.
+        numClusters (int, optional): Nombre de clusters cibles pour KMeans (K). Valeur par défaut : 5.
+        vectorSize (int, optional): Dimension de l'espace de plongement vectoriel. Valeur par défaut : 50.
+        window (int, optional): Fenêtre contextuelle maximale entre le mot cible et ses voisins. Valeur par défaut : 5.
+        minCount (int, optional): Fréquence minimale d'apparition d'un mot pour être retenu. Valeur par défaut : 10.
+        methodeNommage (str, optional): Approche de nommage des clusters ('centroide' ou 'tfidf'). Valeur par défaut : "centroide".
+
+    Raises:
+        ValueError: Si la colonne 'token' est absente ou si aucun mot ne respecte le filtre `minCount`.
+
+    Returns:
+        tuple: Un tuple de 3 éléments contenant :
+            - model (Word2Vec) : Le modèle de plongement de mots entraîné.
+            - dfClusters (pd.DataFrame) : Un DataFrame associant chaque mot à son cluster et au nom de ce cluster.
+            - vecteurs (np.ndarray) : La matrice normalisée des vecteurs de mots calculés.
+    """
+
     if 'token' not in df.columns:
         raise ValueError("Le dataframe doit contenir une colonne 'token'")
     phrases = df['token'].tolist()
@@ -136,7 +179,23 @@ def clusteringW2v(df, numClusters=5, vectorSize=50, window=5, minCount=10, metho
 # LDA : LATENT DIRICHLET ALLOCATION
 #======================================================================
 
+
+
+
 def clusteringLDA(df, meilleursParSaison, minTokensParScene=20, methodeNommage="tfidf"):
+    """Exécute la modélisation de sujets (LDA) par saison, nomme les thématiques et exporte les visualisations interactives HTML.
+
+    Args:
+        df (pd.DataFrame): Dataframe contenant les lignes de dialogue nettoyées et tokenisées, indexées par saison, épisode et scène.
+        meilleursParSaison (dict): Configuration optimisée par saison contenant le nombre de topics et l'hyperparamètre alpha.
+        minTokensParScene (int, optional): Seuil de tokens minimal requis sous lequel une scène est écartée de l'entraînement. Valeur par défaut : 20.
+        methodeNommage (str, optional): Algorithme utilisé pour labelliser les topics générés ('tfidf' ou 'centroide'). Valeur par défaut : "tfidf".
+
+    Returns:
+        dict: Un dictionnaire associant l'identifiant de la saison (seasonId) au modèle LdaModel correspondant.
+    """
+
+
     resultats = {}
 
     for seasonId, dfSaison in df.groupby('saison'):
@@ -221,9 +280,28 @@ def clusteringLDA(df, meilleursParSaison, minTokensParScene=20, methodeNommage="
 # ==========================================================
 
 def clusteringTfidf(df, groupbyCols=None, resultsDir='results_tfidf', kMin=2, kMax=10, topNWords=10, maxDf=1.0, ngramRange=(1,1), useSvd=False, methodeNommage="tfidf"):
-    """
-    Applique TF-IDF et KMeans sur les tokens.
-    Si groupbyCols est specifie, agrege les tokens par ces colonnes (ex: ['saison', 'episode']).
+
+    """Applique une vectorisation TF-IDF suivie d'un clustering KMeans automatique basé sur l'optimisation du score Silhouette.
+
+    Args:
+        df (pd.DataFrame): Dataframe d'entrée contenant la colonne 'token'.
+        groupbyCols (list, optional): Liste des colonnes de regroupement (ex: `['saison', 'episode']`) pour fusionner les tokens en un seul document. Valeur par défaut : None.
+        resultsDir (str, optional): Répertoire de sauvegarde des scores d'optimisation et figures. Valeur par défaut : 'results_tfidf'.
+        kMin (int, optional): Nombre minimal de clusters à tester. Valeur par défaut : 2.
+        kMax (int, optional): Nombre maximal de clusters à tester. Valeur par défaut : 10.
+        topNWords (int, optional): Nombre de mots principaux à tracer par graphique de cluster. Valeur par défaut : 10.
+        maxDf (float, optional): Seuil de fréquence de document maximale appliqué au TfidfVectorizer. Valeur par défaut : 1.0.
+        ngramRange (tuple, optional): Limites inférieures et supérieures de la taille des n-grammes à extraire. Valeur par défaut : (1,1).
+        useSvd (bool, optional): Utilise l'algorithme SVD (LSA) plutôt que le PCA par défaut pour projeter les graphiques en 2D. Valeur par défaut : False.
+        methodeNommage (str, optional): Stratégie de désignation linguistique des clusters. Valeur par défaut : "tfidf".
+
+    Returns:
+        tuple or None: Si les conditions de données sont réunies, retourne un tuple contenant :
+            - km (KMeans) : L'instance d'ajustement du modèle KMeans retenu.
+            - docs (pd.DataFrame) : Le jeu de données agrégé avec ses labels de cluster appliqués et traduits.
+            - X2d (np.ndarray) : Coordonnées réduites en 2 dimensions pour l'affichage graphique.
+            - vectorizer (TfidfVectorizer) : L'extracteur de caractéristiques TF-IDF ajusté au corpus.
+            - X (scipy.sparse.csr_matrix) : La matrice creuse des fréquences de termes TF-IDF.
     """
     os.makedirs(resultsDir, exist_ok=True)
     

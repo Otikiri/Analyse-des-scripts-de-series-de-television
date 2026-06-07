@@ -25,9 +25,21 @@ VERBES_ACTION = {
 }
 
 def clean_text(text):
+    """Supprime les balises HTML ou XML imbriquées ainsi que toutes les annotations textuelles placées entre parenthèses.
+    Args:
+        text (str): La chaîne de caractères brute à nettoyer.
+    Returns:
+        str: Le texte filtré et débarrassé des espaces superflus.
+    """
     return re.sub(r'<[^>]*>', '', re.sub(r'\([^)]*\)', '', text)).strip()
 
 def parse_actor_name(raw):
+    """Analyse, tronque et nettoie le nom brut d'un intervenant en éliminant les indications de mise en scène ou de mouvement corporel jointes.
+    Args:
+        raw (str): Le nom extrait brut du fichier de script.
+    Returns:
+        str or None: Le nom de l'acteur nettoyé ou None si la chaîne commence directement par un verbe ou un modificateur d'action invalide.
+    """
     mots = raw.split()
     idx = next((i for i, w in enumerate(mots) if w.lower() in VERBES_ACTION), None)
     if idx is None:
@@ -39,9 +51,15 @@ def parse_actor_name(raw):
         return ' '.join(before)
     return raw
 
-# Prend en parametre le path d'un fichier .txt
-# Retourne un dataframe [acteur, ligne, scene_num]
 def parserScript(nomFich):
+    """Analyse un fichier script texte individuel d'un épisode pour extraire les répliques chronologiques de chaque personnage et l'index de scène associé.
+
+    Args:
+        nomFich (str): Chemin d'accès absolu ou relatif vers le fichier de script `.txt`.
+
+    Returns:
+        pd.DataFrame: Un DataFrame structuré contenant les colonnes : ['acteur', 'ligne', 'scene_num'].
+    """
     dialogues = []
 
     with open(nomFich, 'r', encoding='utf-8', errors='replace') as fich:
@@ -108,10 +126,13 @@ def parserScript(nomFich):
 
     return pd.DataFrame(dialogues)
 
-
-# Prend en parametre le path du repertoire contenant les scripts
-# Retourne un dataframe [acteur, ligne, scene_num, saison, episode, nom_fichier]
 def parserRepertoire(path):
+    """Parcourt de manière récursive un répertoire à la recherche de scripts conformes à un format de nommage saison/épisode (ex: S01E01.txt) et consolide le tout.
+    Args:
+        path (str): Emplacement racine du dossier hébergeant les scripts.
+    Returns:
+        pd.DataFrame: Un DataFrame unifié comprenant les colonnes : ['acteur', 'ligne', 'scene_num', 'saison', 'episode', 'nom fichier'].
+    """
     toutDonnes = []
 
     for pathFichier in glob.glob(os.path.join(path, '**', '*.txt'), recursive=True):

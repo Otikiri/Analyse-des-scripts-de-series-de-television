@@ -11,10 +11,14 @@ import utils as ut
 # STATS GLOBAL DE MOTS
 #---------------------------------------------------------------
 
-# Tableau des statistiques des mots
-# Donne les statistiques globale sur tout les mots de la serie/saison
-# Retourne un dataframe [mot, nb_fois,frequence]
 def donnerStatsMots(df): 
+    """Calcule les statistiques globales d'occurrences et de fréquences relatives de l'intégralité des mots du corpus.
+    Args:
+        df (pd.DataFrame): Dataframe source contenant la colonne 'token'.
+    Returns:
+        pd.DataFrame: Tableau structuré contenant les colonnes ['mot', 'nb_fois', 'frequence_%'] classé par ordre décroissant de présence.
+    """
+
     ttMots = ut.retournerTokens(df)
     compteur = Counter(ttMots)
     total = sum(compteur.values())
@@ -33,10 +37,14 @@ def donnerStatsMots(df):
 # FREQ DE MOTS PAR CONVERSATIONS
 #---------------------------------------------------------------
 
-# Analyse de frequence de mots par conversation
-# Frequence des mots dans toute les conversations de la serie/saison
-# Retourne un dataFrame avec colonne [id_conv, acteur, nb_fois, frequence_%]
 def freqMotsParConversation(df):
+    """Analyse la composition lexicale de chaque interaction/ligne de dialogue de manière isolée pour en extraire la fréquence relative locale.
+    Args:
+        df (pd.DataFrame): Dataframe source contenant les listes de tokens et l'identité des acteurs.
+    Returns:
+        pd.DataFrame: Un dictionnaire tabulaire structuré contenant les colonnes : ['id_conv', 'acteur', 'mot', 'nb_fois', 'frequence_%'].
+    """
+
     lignes = []
     for id, ligne in df.iterrows(): 
         compteur = Counter(ligne['token'])
@@ -56,10 +64,13 @@ def freqMotsParConversation(df):
 # FREQ DE MOTS PAR ACTEUR
 #---------------------------------------------------------------
 
-# Analyse de mots par acteur
-# Frequence relative par rapport au nombre total des tokens utilise par l'acteur 
-# Retourne un dataframe [acteur,mot,nb_fois,frequence_%]
 def freqMotsParActeur(df): 
+    """Identifie le top 20 des expressions et mots les plus caractéristiques prononcés par chaque personnage par rapport à son vocabulaire global.
+    Args:
+        df (pd.DataFrame): Le DataFrame complet des lignes de scripts.
+    Returns:
+        pd.DataFrame: Tableau associatif structuré contenant les colonnes ['acteur', 'mot', 'nb_fois', 'frequence_%'].
+    """
     lignes = []
 
     for acteur,groupe in df.groupby('acteur'): 
@@ -81,10 +92,16 @@ def freqMotsParActeur(df):
 # FREQ DE MOTS PAR EPISODES
 #---------------------------------------------------------------
 
-# Analyse de mots par episode
-# Frequence relative par rapport au nombre total de tokens par episode
-# Retourne un dataframe [saison,episode,mot,nb_fois,frequence]
 def freqMotsParEpisode(df):
+    """Calcule le profil de distribution des 20 mots les plus denses pour chaque épisode unique de la série.
+
+    Args:
+        df (pd.DataFrame): Le DataFrame d'entrée regroupant les saisons et épisodes.
+
+    Returns:
+        pd.DataFrame: Tableau détaillé contenant les variables ['saison', 'episode', 'mot', 'nb_fois', 'frequence_%'].
+    """
+
     lignes = []
     for (saison,episode), groupe in df.groupby(['saison','episode']):
         ttMots = ut.retournerTokens(groupe)
@@ -107,10 +124,17 @@ def freqMotsParEpisode(df):
 # ANALYSE FREQUENTIELLES DES MOTS AU LONG DU TEMPS
 #---------------------------------------------------------------
 
-# Analyse frequentielle de au cours de la serie
-# Compte tout les mots dans la serie qui appartient a l'array 
-# Retourne un dataframe [saison,mot,nb_fois,frequence]
 def freqMotsAuCoursDuTemps(df, motsASuivre=['love', 'wedding', 'coffee', 'baby', 'job']):
+    """Mesure et suit l'évolution macro-temporelle de la fréquence d'apparition d'un groupe de marqueurs thématiques spécifiques à travers les saisons.
+
+    Args:
+        df (pd.DataFrame): Le DataFrame d'entrée structuré par saison.
+        motsASuivre (list, optional): Liste des chaînes de caractères à pister dans l'index. Valeur par défaut : ['love', 'wedding', 'coffee', 'baby', 'job'].
+
+    Returns:
+        pd.DataFrame: Un tableau chronologique contenant les colonnes ['saison', 'mot', 'nb_fois', 'frequence_%'].
+    """
+    
     lignes = []
     for saison, groupe in df.groupby('saison'): 
         ttMots = ut.retournerTokens(groupe)

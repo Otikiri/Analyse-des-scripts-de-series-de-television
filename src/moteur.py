@@ -20,7 +20,15 @@ warnings.filterwarnings('ignore')
 #======================================================================
 
 def construireSujetsEpTFIDF(df):
-    
+    """Génère une synthèse des sujets principaux par épisode en extrayant les 5 mots possédant la valeur TF-IDF la plus élevée, puis l'enregistre au format CSV.
+
+    Args:
+        df (pd.DataFrame): Dataframe source contenant les lignes de scripts.
+
+    Returns:
+        pd.DataFrame: Un DataFrame contenant les colonnes ['saison', 'episode', 'sujet'].
+    """
+
     km, docs, X_2d,vectorizer,X = cl.clusteringTfidf(
         df,
         groupbyCols=['saison', 'episode'],
@@ -47,7 +55,15 @@ def construireSujetsEpTFIDF(df):
     return sujets_df
 
 def construireSujetsEpKeyBERT(df):
-    
+    """Extrait des mots-clés thématiques diversifiés par épisode en utilisant des représentations d'embeddings KeyBERT (modèle MMR), puis l'enregistre au format CSV.
+
+    Args:
+        df (pd.DataFrame): Dataframe source des dialogues de la série.
+
+    Returns:
+        pd.DataFrame: Un DataFrame contenant les colonnes ['saison', 'episode', 'titre', 'sujet'].
+    """
+
     kw_model = KeyBERT()
     
     # reuse clusteringTfidf to get docs with episode texts
@@ -83,9 +99,17 @@ def construireSujetsEpKeyBERT(df):
 #                          RECHERCHE 
 #======================================================================
 
-# 1 - Construction de l'index tf-idf
-# Combiner tous les token d'un groupe (episode ou scene) en texte
+
 def combinerTokens(listes_de_tokens):
+    """Fusionne une structure imbriquée de listes de jetons textuels en une unique chaîne de caractères délimitée par des espaces.
+
+    Args:
+        listes_de_tokens (list): Une liste contenant des sous-listes de tokens (mots).
+
+    Returns:
+        str: Le texte complet regroupé.
+    """
+
     tous_les_mots = []
     for liste in listes_de_tokens:
         for mot in liste:
@@ -93,10 +117,20 @@ def combinerTokens(listes_de_tokens):
     return ' '.join(tous_les_mots)
 
 
-# Creation de la matrice TF-IDF
-# A appeler en premier avant toute recherche, construit l'index TF-IDF
 def construireIndex(df, par_scene=False):
+    """Construit la matrice et l'index de recherche inversé TF-IDF sur le corpus textuel, nettoyé de ses entités de personnages.
 
+    Args:
+        df (pd.DataFrame): Dataframe global contenant le texte d'origine et la variable 'acteur'.
+        par_scene (bool, optional): Si True, indexe au niveau granulaire de la scène, sinon agrège par épisode. Valeur par défaut : False.
+
+    Returns:
+        tuple: Un ensemble de variables d'indexation contenant :
+            - vectorizer (TfidfVectorizer) : Le modèle de transformation vectoriel ajusté.
+            - matrice_tfidf (scipy.sparse.csr_matrix) : La matrice de poids TF-IDF résultante.
+            - df_docs (pd.DataFrame) : Le référentiel des documents associés contenant les textes consolidés.
+            - motsVidesRecherche (set) : L'ensemble des stop-words appliqués à l'exclusion des protagonistes.
+    """
     # On choisit de travailler par scene ou par episode
     if par_scene:
         colonnes_groupe = ['saison', 'episode', 'scene_num']
@@ -129,12 +163,18 @@ def construireIndex(df, par_scene=False):
     return vectorizer, matrice_tfidf, df_docs, motsVidesRecherche
 
 
-# 2 - Vectorisation d'une requete
-# Prend une question en langage naturel,
-# la nettoie et la tokenise avec les memes fonctions que le reste du projet,
-# puis la transforme en vecteur TF-IDF avec le vectorizer précédent.
-
 def vectoriserRequete(requete, vectorizer, motsVidesRecherche):
+    """Nettoie, normalise et projette une requête textuelle formulée en langage naturel dans l'espace vectoriel TF-IDF configuré.
+
+    Args:
+        requete (str): La phrase ou question brute de l'utilisateur.
+        vectorizer (TfidfVectorizer): L'indexeur TF-IDF ajusté au préalable.
+        motsVidesRecherche (set): Le dictionnaire d'exclusion de mots.
+
+    Returns:
+        scipy.sparse.csr_matrix: Un vecteur creux à une ligne représentant le profil TF-IDF de la requête.
+    """
+
     texte_propre = nettoyerTexte(requete)
     tokens = tokeniserTexteRecherche(texte_propre, motsVidesRecherche=motsVidesRecherche)
     texte_final = ' '.join(tokens)
@@ -142,18 +182,35 @@ def vectoriserRequete(requete, vectorizer, motsVidesRecherche):
     return vecteur
 
 
-# 3 - Similarité par cos
-# Calcule la similarite cosinus entre un vecteur requete et chaque ligne de la matrice documents.
-# Formule : cos(A, B) = (A . B) / (||A|| * ||B||)
 def similariteCosinus(vecteur_requete, matrice_documents):
+    """Calcule la métrique d'alignement ou de proximité angulaire par cosinus entre un vecteur requête et l'ensemble des documents de l'index.
+
+    Args:
+        vecteur_requete (scipy.sparse.csr_matrix): Le vecteur de la question d'entrée.
+        matrice_documents (scipy.sparse.csr_matrix): La matrice globale de documents TF-IDF.
+
+    Returns:
+        np.ndarray: Un tableau 1D regroupant l'ensemble des scores de similarité compris entre 0.0 et 1.0.
+    """
     scores = cosine_similarity(vecteur_requete, matrice_documents)
     return scores.flatten() 
 
 
-# 4 - Recherche
-# question -> nettoyage -> vectorisation -> similarite cosinus -> tri -> resultats
-# Cherche les top_k documents les plus proches d'une requete en langage naturel
 def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5, motsVidesRecherche=None):
+    """Orchestre la chaîne complète d'analyse pour retourner les documents du corpus les plus pertinents vis-à-vis d'une requête utilisateur.
+
+    Args:
+        requete (str): La requête saisie en langage naturel.
+        vectorizer (TfidfVectorizer): Le vectoriseur entraîné.
+        matrice_tfidf (scipy.sparse.csr_matrix): L'index des poids de termes.
+        df_docs (pd.DataFrame): Le tableau référentiel de correspondances de documents.
+        df (pd.DataFrame): Dataframe original de travail.
+        top_k (int, optional): Nombre maximal de résultats ordonnés à extraire. Valeur par défaut : 5.
+        motsVidesRecherche (set, optional): Le dictionnaire d'exclusion de stop-words personnalisé. Valeur par défaut : None.
+
+    Returns:
+        pd.DataFrame: Extrait trié par score décroissant restreint aux correspondances strictes (score > 0).
+    """
     vecteur = vectoriserRequete(requete, vectorizer, motsVidesRecherche)
     scores = similariteCosinus(vecteur, matrice_tfidf)
 
@@ -169,8 +226,17 @@ def rechercher(requete, vectorizer, matrice_tfidf, df_docs, df, top_k=5, motsVid
 #======================================================================
 #                       MISE EN FORME RESULTAT
 #======================================================================
-# fonction d'affichage commune des resulats
+
 def miseEnFormeRes(res,sujet_df):
+    """Met en forme les résultats bruts d'un moteur de recherche en y injectant les rangs, titres d'épisodes et mots-clés thématiques associés.
+
+    Args:
+        res (pd.DataFrame): Résultats retournés par la fonction `rechercher`.
+        sujet_df (pd.DataFrame): Référentiel thématique préalablement généré contenant les résumés ou titres.
+
+    Returns:
+        pd.DataFrame: Un DataFrame structuré et réordonné contenant les colonnes : ['rank', 'question', 'saison', 'episode', 'titre', 'score', 'sujet'].
+    """
     d = {
         "question":res['question'],
         "saison":res['saison'],
@@ -193,6 +259,15 @@ def miseEnFormeRes(res,sujet_df):
 #======================================================================
 
 def calculerMRR(question_verite,resultats_df):
+    """Calcule le score de performance MRR (Mean Reciprocal Rank) du système de recherche face à un référentiel de vérité terrain.
+
+    Args:
+        question_verite (dict): Un dictionnaire associant chaque question à la liste des identifiants uniques attendus (`'saison_episode'`).
+        resultats_df (pd.DataFrame): L'ensemble agrégé des résultats prédits par l'application pour ces requêtes.
+
+    Returns:
+        float: La moyenne globale des rangs réciproques calculée (valeur entre 0 et 1).
+    """
     score_rr = []
 
     for question, v_ep in question_verite.items():
