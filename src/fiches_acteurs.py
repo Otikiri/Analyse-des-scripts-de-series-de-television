@@ -6,23 +6,67 @@ import cluster as cl
 import graphe_acteurs as ga
 
 def menu():
+    """Affiche le menu de sélection pour la génération des fiches acteurs.
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
     print("\n" + "="*40)
     print("  FICHES ACTEURS")
     print("  1. Par saison   2. Par épisode   3. Tout   0. Quitter")
     print("="*40)
 
 def dmdInt(label):
+    """Demande une saisie entière à l'utilisateur.
+
+    Args:
+        label (str): Le message à afficher lors de la demande de saisie.
+
+    Returns:
+        int: La valeur entière saisie par l'utilisateur.
+    """
     valeur = int(input(label))
     return valeur
 
 def getChemin(base, numSaison):
+    """Construit le chemin de répertoire pour une saison donnée.
+
+    Args:
+        base (str): Le chemin de base du répertoire.
+        numSaison (int ou str): Le numéro de la saison.
+
+    Returns:
+        str: Le chemin complet vers le dossier de la saison (ex: base/S01).
+    """
     return os.path.join(base, f"S{str(numSaison).zfill(2)}")
 
 def dmdActeur():
+    """Demande le nom d'un acteur spécifique à l'utilisateur.
+
+    Args:
+        None
+
+    Returns:
+        str ou None: Le nom de l'acteur sans espaces superflus, ou None si l'entrée est vide.
+    """
     valeur = input("Nom de l'acteur (Entrée = tous) : ").strip()
     return valeur or None
 
 def _calcStats(df):
+    """Calcule des statistiques détaillées sur les temps de parole et les répliques.
+
+    Génère un DataFrame avec le nombre de mots et de répliques par acteur, 
+    ainsi que les pourcentages par rapport au total (par épisode, par saison et globalement).
+
+    Args:
+        df (pd.DataFrame): Le DataFrame contenant les scripts parsés.
+
+    Returns:
+        pd.DataFrame: Un DataFrame contenant les statistiques calculées.
+    """
     statsEp = df.groupby(['acteur','saison','episode'])['nombres de mots'].sum().reset_index().rename(columns={'nombres de mots':'nb_mots_acteur_ep'})
     totalEp = df.groupby(['saison','episode'])['nombres de mots'].sum().reset_index().rename(columns={'nombres de mots':'nb_mots_total_ep'})
     totalSaison = df.groupby('saison')['nombres de mots'].sum().reset_index().rename(columns={'nombres de mots':'nb_mots_total_saison'})
@@ -47,6 +91,21 @@ def _calcStats(df):
 
 
 def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLines=50, groupbyCols=None):
+    """Génère les fiches individuelles pour chaque acteur sous forme de fichiers CSV.
+
+    Calcule les mots-clés (via clustering), intègre les statistiques de parole,
+    trouve les interlocuteurs principaux et lie les graphes relationnels.
+
+    Args:
+        df (pd.DataFrame): Le DataFrame contenant les scripts parsés.
+        outputDir (str, optional): Le dossier où sauvegarder les fiches CSV. Defaults to "fiches_acteurs".
+        method (str, optional): La méthode d'extraction de mots-clés. Defaults to "tfidf".
+        minLines (int, optional): Le seuil minimal de répliques pour qualifier un acteur. Defaults to 50.
+        groupbyCols (list of str, optional): Les colonnes de regroupement (ex: par épisode). Defaults to None.
+
+    Returns:
+        list of str: Une liste des chemins vers les fichiers CSV générés.
+    """
     if groupbyCols is None:
         groupbyCols = ['saison', 'episode']
     os.makedirs(outputDir, exist_ok=True)

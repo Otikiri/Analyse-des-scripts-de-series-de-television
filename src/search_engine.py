@@ -19,8 +19,16 @@ PERSONNAGES = {'ross', 'rachel', 'monica', 'chandler', 'joey', 'phoebe',
 
 class SearchEngine:
     def __init__(self, data_path):
-        """
-        Charge les données et construit l'index TF-IDF une seule fois.
+        """Charge les données et construit les index TF-IDF une seule fois au démarrage.
+
+        Args:
+            data_path (str): Le chemin vers le dossier contenant les fichiers de données.
+
+        Raises:
+            ValueError: Si le chargement des données échoue ou si le dataframe est vide.
+            
+        Returns:
+            None
         """
         print("Chargement des données pour le moteur de recherche...")
         self.df = dl.chargerDonnees(data_path)
@@ -49,10 +57,16 @@ class SearchEngine:
 
     
     def classify_question(self, question):
-        """
-        Détermine si une question est de type Q1 (avec entités) ou Q2 (sans).
-        Utilise l'extraction d'entités de q1_search.py.
-        Retourne (type_str, liste_entites).
+        """Détermine si une question est de type Q1 (avec entités) ou Q2 (sans entités).
+
+        Utilise l'extraction d'entités de q1_search.py et vérifie si les entités 
+        trouvées correspondent à des personnages principaux connus.
+
+        Args:
+            question (str): La question posée par l'utilisateur.
+
+        Returns:
+            tuple: Un tuple (type_str, liste_entites) où type_str est "Q1" ou "Q2".
         """
 
         entities = q1.extraireEntites(question, self.df)
@@ -70,8 +84,16 @@ class SearchEngine:
 
     @staticmethod
     def _normalize(records):
-        """
-        Garantit que chaque dict a les clés : score, saison, episode, title, texte.
+        """Normalise le format des dictionnaires de résultats pour l'interface graphique.
+
+        Garantit que chaque dictionnaire possède les mêmes clés : score, saison, episode, 
+        title, et texte, peu importe s'il provient d'une recherche Q1 ou Q2.
+
+        Args:
+            records (list of dict): Les résultats bruts issus de la recherche.
+
+        Returns:
+            list of dict: Les résultats formatés et normalisés.
         """
         out = []
         for r in records:
@@ -93,9 +115,18 @@ class SearchEngine:
     # ------------------------------------------------------------------
 
     def search_q1(self, question, top_k=5, entites=None):
-        """
-        Recherche de type Q1 : filtre par entités puis classe par TF-IDF.
-        Retourne une liste de dicts normalisés.
+        """Effectue une recherche de type Q1 basée sur le filtrage par entités.
+
+        Filtre les documents par les entités détectées, puis classe les résultats 
+        restants en utilisant la similarité TF-IDF.
+
+        Args:
+            question (str): La question de l'utilisateur.
+            top_k (int, optional): Le nombre maximal de résultats à retourner. Defaults to 5.
+            entites (list of str, optional): Liste des entités préalablement extraites. Defaults to None.
+
+        Returns:
+            list of dict: Les top_k résultats correspondants, au format normalisé.
         """
         results_df = q1.rechercherQ1(
             question, self.df,
@@ -110,9 +141,17 @@ class SearchEngine:
     # ------------------------------------------------------------------
 
     def search_q2(self, question, top_k=5):
-        """
-        Recherche de type Q2 : similarité TF-IDF sur le corpus complet.
-        Retourne une liste de dicts normalisés.
+        """Effectue une recherche de type Q2 par similarité sémantique globale.
+
+        Recherche la similarité TF-IDF sur le corpus complet sans filtrage préalable 
+        par entités, idéal pour les questions d'action ou d'objets.
+
+        Args:
+            question (str): La question de l'utilisateur.
+            top_k (int, optional): Le nombre maximal de résultats à retourner. Defaults to 5.
+
+        Returns:
+            list of dict: Les top_k résultats correspondants, au format normalisé.
         """
         print("q2_docs shape before search:", self.q2_docs.shape)
         print("q2_matrix shape before search:", self.q2_matrix.shape)

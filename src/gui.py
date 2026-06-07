@@ -14,7 +14,16 @@ class App(tk.Tk):
     """
     Classe principale de l'application GUI pour la recherche dans les scripts.
     """
-    def __init__(self, search_engine,sujet_df):
+    def __init__(self, search_engine, sujet_df):
+        """Initialise la fenêtre principale de l'application.
+
+        Args:
+            search_engine (SearchEngine): L'instance du moteur de recherche pré-chargée.
+            sujet_df (pd.DataFrame): Le DataFrame contenant les sujets des épisodes.
+
+        Returns:
+            None
+        """
         super().__init__()
         self.search_engine = search_engine
         self.sujet_df = sujet_df
@@ -24,7 +33,18 @@ class App(tk.Tk):
         self.create_widgets()
 
     def create_widgets(self):
-        """Crée les widgets de l'interface graphique."""
+        """Crée les widgets de l'interface graphique.
+        
+        Initialise et place les différents éléments de l'interface utilisateur, 
+        incluant la zone de saisie, le bouton de recherche, la barre de statut 
+        et la zone d'affichage des résultats.
+        
+        Args:
+            None
+
+        Returns:
+            None
+        """
         main_frame = ttk.Frame(self, padding="10")
         main_frame.pack(fill=tk.BOTH, expand=True)
         
@@ -53,7 +73,17 @@ class App(tk.Tk):
         self.results_text.pack(fill=tk.BOTH, expand=True)
 
     def perform_search(self, event=None):
-        """Lance le processus de recherche à partir de la question de l'utilisateur."""
+        """Lance le processus de recherche à partir de la question de l'utilisateur.
+        
+        Récupère la question saisie, détermine son type (Q1 ou Q2) via le SearchEngine, 
+        effectue la recherche correspondante, et met à jour l'interface avec les résultats.
+        
+        Args:
+            event (tk.Event, optional): L'événement déclencheur (ex: appui sur Entrée). Defaults to None.
+
+        Returns:
+            None
+        """
         question = self.question_entry.get()
         if not question:
             return
@@ -86,7 +116,18 @@ class App(tk.Tk):
         self.results_text.config(state='disabled')
 
     def display_results(self, results_df, header):
-        """Affiche les résultats de recherche (format unifié Q1/Q2)."""
+        """Affiche les résultats de recherche (format unifié Q1/Q2).
+        
+        Prend un DataFrame contenant les résultats formatés et les insère dans 
+        la zone de texte de l'interface graphique avec un en-tête approprié.
+        
+        Args:
+            results_df (pd.DataFrame): Le DataFrame contenant les résultats (score, saison, episode, etc.).
+            header (str): Le titre ou l'en-tête à afficher au-dessus des résultats.
+
+        Returns:
+            None
+        """
         self.results_text.insert(tk.END, f"{header}\n")
         self.results_text.insert(tk.END, "="*80 + "\n\n")
         

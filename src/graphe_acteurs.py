@@ -14,7 +14,17 @@ import matplotlib.pyplot as plt
 
 
 def parserEntetesScenes(cheminDossier):
-    """Extrait les textes des en-têtes de scènes depuis les fichiers du dossier."""
+    """Extrait les textes des en-têtes de scènes depuis les fichiers du dossier.
+
+    Parcourt récursivement les fichiers texte d'un répertoire pour extraire les lignes
+    d'en-tête (commençant par '['), qui indiquent le lieu et souvent les personnages présents.
+
+    Args:
+        cheminDossier (str): Le chemin vers le répertoire contenant les fichiers scripts.
+
+    Returns:
+        dict: Un dictionnaire indexé par (saison, episode, scene_num) contenant le texte de l'en-tête.
+    """
     entetes = {}
     if not cheminDossier:
         return entetes
@@ -39,7 +49,18 @@ def parserEntetesScenes(cheminDossier):
 
 
 def trouverActeursDansTexte(texte, acteursConnus):
-    """Identifie quels acteurs d'une liste connue sont mentionnés dans un texte."""
+    """Identifie quels acteurs d'une liste connue sont mentionnés dans un texte.
+
+    Recherche des correspondances de mots entiers (insensibles à la casse) 
+    dans une chaîne de caractères donnée.
+
+    Args:
+        texte (str): Le texte à analyser (ex: une ligne d'en-tête de scène).
+        acteursConnus (list of str): La liste des noms d'acteurs à rechercher.
+
+    Returns:
+        set: Un ensemble (set) contenant les noms des acteurs trouvés dans le texte.
+    """
     trouves = set()
     texte_lower = texte.lower()
     for acteur in acteursConnus:
@@ -50,7 +71,16 @@ def trouverActeursDansTexte(texte, acteursConnus):
 
 
 def construirePresenceParScene(df, entetes, acteursConnus):
-    """Combine les présences issues des dialogues et des en-têtes pour chaque scène."""
+    """Combine les présences issues des dialogues et des en-têtes pour chaque scène.
+
+    Args:
+        df (pd.DataFrame): DataFrame contenant les dialogues avec les colonnes saison, episode, scene_num, acteur.
+        entetes (dict): Dictionnaire des textes d'en-tête par scène.
+        acteursConnus (list of str): Liste des acteurs principaux à surveiller.
+
+    Returns:
+        dict: Un dictionnaire combiné indexé par scène (saison, episode, scene_num) listant les acteurs présents.
+    """
     presence = defaultdict(set)
     for _, row in df.iterrows():
         cle = (row['saison'], row['episode'], row['scene_num'])
@@ -62,7 +92,19 @@ def construirePresenceParScene(df, entetes, acteursConnus):
 
 
 def calculerLiaisons(df, presenceParScene):
-    """Compte les scènes partagées et regroupe les dialogues pour chaque paire d'acteurs."""
+    """Compte les scènes partagées et regroupe les dialogues pour chaque paire d'acteurs.
+
+    Crée des arêtes de graphe pondérées en comptant combien de fois deux acteurs 
+    apparaissent dans la même scène.
+
+    Args:
+        df (pd.DataFrame): DataFrame contenant les dialogues.
+        presenceParScene (dict): Dictionnaire des présences généré par construirePresenceParScene.
+
+    Returns:
+        tuple: (liaisons, textes_paires) où liaisons est un compteur des scènes communes 
+        par paire, et textes_paires regroupe les lignes dites lorsqu'ils sont ensemble.
+    """
     liaisons      = defaultdict(int)
     textes_paires = defaultdict(list)
     grouped = df.groupby(['saison', 'episode', 'scene_num'])
@@ -87,7 +129,19 @@ def calculerLiaisons(df, presenceParScene):
 
 
 def analyserReseau(df, cheminDossier):
-    """Filtre les acteurs principaux, normalise leurs liaisons et extrait leurs sujets."""
+    """Filtre les acteurs principaux, normalise leurs liaisons et extrait leurs sujets.
+
+    Calcule l'intensité des relations (poids relatif) entre chaque paire de personnages principaux, 
+    et extrait les mots-clés de leurs échanges à l'aide de TF-IDF.
+
+    Args:
+        df (pd.DataFrame): Le DataFrame contenant les dialogues originaux.
+        cheminDossier (str ou None): Chemin vers les fichiers textes pour les en-têtes (peut être None).
+
+    Returns:
+        tuple: (df_res, acteursConnus, metrics) contenant le DataFrame des interactions, 
+        la liste des acteurs et un tuple des métriques (mots_par_acteur, episodes_par_acteur).
+    """
     MAPPING_ACTEURS = {
         "Rach": "Rachel",
         "Rache": "Rachel",
@@ -197,7 +251,21 @@ def analyserReseau(df, cheminDossier):
 
 
 def afficherGraphe(df_inter, metrics, output_png=None, limit_nodes=15, titre_saison=""):
-    """Génère et sauvegarde une image du réseau d'interactions avec NetworkX."""
+    """Génère et sauvegarde une image du réseau d'interactions avec NetworkX.
+
+    Crée un graphe visuel où les nœuds sont les acteurs (taille proportionnelle au volume 
+    de parole) et les arêtes sont leurs interactions (épaisseur proportionnelle aux scènes communes).
+
+    Args:
+        df_inter (pd.DataFrame): Le DataFrame des interactions entre acteurs.
+        metrics (tuple): (mots_par_acteur, episodes_par_acteur) calculé lors de l'analyse.
+        output_png (str, optional): Chemin du fichier image à sauvegarder. Defaults to None.
+        limit_nodes (int, optional): Nombre maximal de nœuds à afficher. Defaults to 15.
+        titre_saison (str, optional): Titre du graphique. Defaults to "".
+
+    Returns:
+        bool: True si le graphe a été généré avec succès, False sinon (ex: pas assez de données).
+    """
     mots_par_acteur, _ = metrics
 
     top_actors = sorted(mots_par_acteur, key=mots_par_acteur.get, reverse=True)[:limit_nodes]
@@ -263,9 +331,18 @@ def afficherGraphe(df_inter, metrics, output_png=None, limit_nodes=15, titre_sai
 
 
 def obtenirTopInterlocuteurs(df, acteur_cible, top_n=3):
-    """
-    Calcule les interactions pour un dataframe donné et renvoie le top N 
-    des interlocuteurs pour un acteur précis (avec pourcentage et sujets).
+    """Calcule les interactions pour un dataframe donné et renvoie le top N des interlocuteurs.
+
+    Analyse les scènes partagées et retourne les interlocuteurs les plus fréquents 
+    d'un acteur spécifique, accompagnés d'un pourcentage de liaison et des sujets discutés.
+
+    Args:
+        df (pd.DataFrame): Le DataFrame contenant les dialogues à analyser.
+        acteur_cible (str): Le nom de l'acteur pour lequel chercher les interlocuteurs.
+        top_n (int, optional): Le nombre d'interlocuteurs principaux à retourner. Defaults to 3.
+
+    Returns:
+        list of dict: Une liste de dictionnaires contenant 'acteur', 'pct', et 'sujets'.
     """
     tous_acteurs = df['acteur'].dropna().unique().tolist()
     if acteur_cible not in tous_acteurs:
@@ -333,7 +410,17 @@ def obtenirTopInterlocuteurs(df, acteur_cible, top_n=3):
 
 
 def grapheEpisode(df_episode, dossier_sortie, numSaison, numEpisode):
-    """Génère l'analyse réseau et le graphe pour un épisode."""
+    """Génère l'analyse réseau et le graphe pour un épisode spécifique.
+
+    Args:
+        df_episode (pd.DataFrame): Le DataFrame restreint à l'épisode ciblé.
+        dossier_sortie (str): Le répertoire où sauvegarder le graphe et le CSV.
+        numSaison (int ou str): Le numéro de la saison.
+        numEpisode (int ou str): Le numéro de l'épisode.
+
+    Returns:
+        bool: True si la génération a réussi, False sinon.
+    """
     print(f"\nGÉNÉRATION GRAPHE S{str(numSaison).zfill(2)}E{str(numEpisode).zfill(2)}")
     df_inter, acteurs, metrics = analyserReseau(df_episode, None) # chemin_dossier peut être None si on se base sur les dialogues uniquement
     
@@ -352,7 +439,16 @@ def grapheEpisode(df_episode, dossier_sortie, numSaison, numEpisode):
 
 
 def grapheSaison(df_saison, dossier_sortie, numSaison):
-    """Génère l'analyse réseau et le graphe pour une saison."""
+    """Génère l'analyse réseau et le graphe pour une saison entière.
+
+    Args:
+        df_saison (pd.DataFrame): Le DataFrame restreint à la saison ciblée.
+        dossier_sortie (str): Le répertoire où sauvegarder le graphe et le CSV.
+        numSaison (int ou str): Le numéro de la saison.
+
+    Returns:
+        bool: True si la génération a réussi, False sinon.
+    """
     print(f"\nGÉNÉRATION GRAPHE SAISON {numSaison}")
     df_inter, acteurs, metrics = analyserReseau(df_saison, None)
     
@@ -371,7 +467,15 @@ def grapheSaison(df_saison, dossier_sortie, numSaison):
 
 
 def grapheAll(df_total, dossier_sortie):
-    """Génère l'analyse réseau et le graphe pour toutes les saisons."""
+    """Génère l'analyse réseau et le graphe pour l'intégralité du corpus.
+
+    Args:
+        df_total (pd.DataFrame): Le DataFrame global contenant tous les scripts.
+        dossier_sortie (str): Le répertoire où sauvegarder le graphe et le CSV.
+
+    Returns:
+        bool: True si la génération a réussi, False sinon.
+    """
     print(f"\nGÉNÉRATION GRAPHE GLOBAL")
     df_inter, acteurs, metrics = analyserReseau(df_total, None)
     

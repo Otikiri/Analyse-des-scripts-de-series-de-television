@@ -9,9 +9,18 @@ nlp = spacy.load("en_core_web_sm")
 # ======================================================================
 
 def extraireEntites(question, df=None):
-    """
-    Extrait les noms de personnages et lieux mentionnes dans la question.
-    Combine spaCy NER et le DataFrame acteurs.
+    """Extrait les noms de personnages et lieux mentionnés dans la question.
+
+    Combine l'outil de reconnaissance d'entités nommées (NER) de spaCy et le DataFrame 
+    des acteurs en guise de solution de repli (fallback). Ignore les verbes majuscules 
+    pour éviter les faux positifs.
+
+    Args:
+        question (str): La question posée par l'utilisateur.
+        df (pd.DataFrame, optional): DataFrame contenant la liste des acteurs connus pour le fallback. Defaults to None.
+
+    Returns:
+        list of str: Une liste des entités uniques détectées, en conservant l'ordre d'apparition.
     """
     doc = nlp(question)
     entites = []
@@ -59,7 +68,18 @@ def extraireEntites(question, df=None):
 # ======================================================================
 
 def filtrer_par_scene(df, entites):
-    """Trouve les episodes ou TOUTES les entites apparaissent dans la meme scene."""
+    """Trouve les épisodes où TOUTES les entités apparaissent dans la même scène.
+
+    Parcourt le DataFrame groupé par saison, épisode et numéro de scène pour 
+    vérifier la cooccurrence des entités spécifiées au niveau microscopique (la scène).
+
+    Args:
+        df (pd.DataFrame): Le DataFrame contenant le script des épisodes.
+        entites (list of str): Les entités à rechercher.
+
+    Returns:
+        set of tuple: Un ensemble de tuples (saison, episode) correspondants.
+    """
     episodes = set()
     
     for (saison, episode), groupe in df.groupby(['saison', 'episode']):
@@ -82,7 +102,18 @@ def filtrer_par_scene(df, entites):
 
 
 def filtrer_par_episode(df, entites):
-    """Trouve les episodes ou TOUTES les entites apparaissent (pas forcement meme scene)."""
+    """Trouve les épisodes où TOUTES les entités apparaissent (pas forcément dans la même scène).
+
+    Parcourt le DataFrame groupé par saison et épisode pour vérifier la cooccurrence 
+    des entités spécifiées au niveau macroscopique (l'épisode entier).
+
+    Args:
+        df (pd.DataFrame): Le DataFrame contenant le script des épisodes.
+        entites (list of str): Les entités à rechercher.
+
+    Returns:
+        set of tuple: Un ensemble de tuples (saison, episode) correspondants.
+    """
     episodes = set()
     
     for (saison, episode), groupe in df.groupby(['saison', 'episode']):
@@ -108,15 +139,27 @@ def filtrer_par_episode(df, entites):
 
 def rechercherQ1(question, df, vectorizer, matrice_tfidf, df_docs,
                  top_k=5, motsVidesRecherche=None, entites=None):
-    """
-    Moteur de recherche pour les questions de type Q1 (avec entites).
+    """Moteur de recherche pour les questions de type Q1 (avec entités).
     
-    Strategie de recherche en cascade :
-      1. Filtre par scene (toutes entites dans la meme scene)
-      2. Si aucun resultat -> filtre par episode (toutes entites dans le meme episode)
-      3. Si aucun resultat -> recherche globale sans filtrage
+    Stratégie de recherche en cascade :
+      1. Filtre par scène (toutes entités dans la même scène)
+      2. Si aucun résultat -> filtre par épisode (toutes entités dans le même épisode)
+      3. Si aucun résultat -> recherche globale sans filtrage
     
-    Puis classe les episodes filtres par similarite TF-IDF avec la question.
+    Puis classe les épisodes filtrés par similarité TF-IDF avec la question.
+
+    Args:
+        question (str): La question posée.
+        df (pd.DataFrame): Le DataFrame source des scripts.
+        vectorizer (TfidfVectorizer): Le vectoriseur pré-entraîné.
+        matrice_tfidf (scipy.sparse.csr_matrix): La matrice TF-IDF pré-calculée.
+        df_docs (pd.DataFrame): Le DataFrame des documents groupés par épisode.
+        top_k (int, optional): Nombre de résultats à retourner. Defaults to 5.
+        motsVidesRecherche (list, optional): Mots vides à ignorer. Defaults to None.
+        entites (list of str, optional): Entités pré-extraites. Si None, elles seront extraites. Defaults to None.
+
+    Returns:
+        pd.DataFrame: Un DataFrame contenant les top_k résultats classés.
     """
     if entites is None:
         entites = extraireEntites(question, df)
