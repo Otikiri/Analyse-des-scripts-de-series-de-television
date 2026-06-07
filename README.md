@@ -52,6 +52,24 @@ L'objectif est de permettre à un utilisateur de retrouver des scènes ou des é
     *   Une application de bureau développée avec Tkinter permet de poser des questions et d'afficher les résultats de manière claire et lisible.
 
 ---
+## Partie 3 : Génération des Fiches Acteurs (Groupe 1)
+
+Ce projet permet désormais d'analyser en profondeur les interactions pour chaque acteur majeur, et génère des **fiches acteurs** détaillées :
+1. **Sujets dominants** : Extraits à l'aide de TF-IDF et du clustering les thématiques principales abordées par l'acteur par épisode.
+2. **Sentiments** : Chaque réplique est analysée via un modèle naïf (**VADER**) et via un modèle d'apprentissage supervisé (entrainé sur un jeu de données Kaggle `sentiment_analysis.csv` avec `ComplementNB`). Les répartitions (Positif, Négatif, Neutre) figurent sur la fiche.
+3. **Réseau et Interactions** : Le réseau des personnages est tracé en calculant le poids des interactions basé sur le temps relatif de conversation (les scènes partagées normalisées par la durée totale). Les fiches incluent les "Top 3 Interlocuteurs" et les sujets qui les lient. Des graphes visuels (`.png`) sont aussi générés.
+4. **Statut et Rôles** : Le système détermine de manière automatique, par calcul de centralité et de présence, si l'acteur est un personnage "Principal", "Secondaire", ou "Tertiaire" dans un épisode donné.
+
+### Lancer la génération des Fiches Acteurs
+
+Un script dédié (`main2.py`) a été mis en place pour executer l'ensemble de ces tâches.
+
+```bash
+python src/main2.py
+```
+
+> [!NOTE]
+> Pour que le modèle de Machine Learning des sentiments (Naive Bayes) puisse s'entraîner correctement, vous devez télécharger le fichier `sentiment_analysis.csv` depuis [ce dataset Kaggle](https://www.kaggle.com/datasets/mdismielhossenabir/sentiment-analysis) et le placer dans le dossier `datasets/`. S'il est absent, le script continuera de fonctionner mais les métadonnées ML seront ignorées.
 
 ## Structure et Description des Fichiers
 
@@ -132,21 +150,3 @@ Une fenêtre s'ouvrira, vous permettant d'interagir avec le moteur de recherche.
 
 Les résultats s'afficheront dans la zone principale, formatés pour une lecture facile.
 
-## Partie 3 : Génération des Fiches Acteurs (Groupe 1)
-
-Ce projet permet désormais d'analyser en profondeur les interactions pour chaque acteur majeur, et génère des **fiches acteurs** détaillées :
-1. **Sujets dominants** : Extraits à l'aide de TF-IDF et du clustering, on obtient les thématiques principales abordées par l'acteur par épisode.
-2. **Sentiments** : Chaque réplique est analysée via un modèle naïf (**VADER**) et via un modèle d'apprentissage supervisé (entrainé sur un jeu de données Kaggle `sentiment_analysis.csv` avec `ComplementNB`). Les répartitions (Positif, Négatif, Neutre) figurent sur la fiche.
-3. **Réseau et Interactions** : Le réseau des personnages est tracé en calculant le poids des interactions basé sur le temps relatif de conversation (les scènes partagées normalisées par la durée totale). Les fiches incluent les "Top 3 Interlocuteurs" et les sujets qui les lient. Des graphes visuels (`.png`) sont aussi générés.
-4. **Statut et Rôles** : Le système détermine de manière automatique, par calcul de centralité et de présence, si l'acteur est un personnage "Principal", "Secondaire", ou "Tertiaire" dans un épisode donné.
-
-### Lancer la génération des Fiches Acteurs
-
-Un script dédié (`main2.py`) a été mis en place pour orchestrer l'ensemble de ces tâches.
-
-```bash
-python src/main2.py
-```
-
-> [!NOTE]
-> Pour que le modèle de Machine Learning des sentiments (Naive Bayes) puisse s'entraîner correctement, vous devez télécharger le fichier `sentiment_analysis.csv` depuis [ce dataset Kaggle](https://www.kaggle.com/datasets/mdismielhossenabir/sentiment-analysis) et le placer dans le dossier `datasets/`. S'il est absent, le script continuera de fonctionner mais les métadonnées ML seront ignorées.
