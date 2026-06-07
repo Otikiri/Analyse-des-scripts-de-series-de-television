@@ -4,69 +4,26 @@ import numpy as np
 import data_loader as dl
 import cluster as cl
 import graphe_acteurs as ga
+import role 
 
 def menu():
-    """Affiche le menu de sélection pour la génération des fiches acteurs.
-
-    Args:
-        None
-
-    Returns:
-        None
-    """
     print("\n" + "="*40)
     print("  FICHES ACTEURS")
     print("  1. Par saison   2. Par épisode   3. Tout   0. Quitter")
     print("="*40)
 
 def dmdInt(label):
-    """Demande une saisie entière à l'utilisateur.
-
-    Args:
-        label (str): Le message à afficher lors de la demande de saisie.
-
-    Returns:
-        int: La valeur entière saisie par l'utilisateur.
-    """
     valeur = int(input(label))
     return valeur
 
 def getChemin(base, numSaison):
-    """Construit le chemin de répertoire pour une saison donnée.
-
-    Args:
-        base (str): Le chemin de base du répertoire.
-        numSaison (int ou str): Le numéro de la saison.
-
-    Returns:
-        str: Le chemin complet vers le dossier de la saison (ex: base/S01).
-    """
     return os.path.join(base, f"S{str(numSaison).zfill(2)}")
 
 def dmdActeur():
-    """Demande le nom d'un acteur spécifique à l'utilisateur.
-
-    Args:
-        None
-
-    Returns:
-        str ou None: Le nom de l'acteur sans espaces superflus, ou None si l'entrée est vide.
-    """
     valeur = input("Nom de l'acteur (Entrée = tous) : ").strip()
     return valeur or None
 
 def _calcStats(df):
-    """Calcule des statistiques détaillées sur les temps de parole et les répliques.
-
-    Génère un DataFrame avec le nombre de mots et de répliques par acteur, 
-    ainsi que les pourcentages par rapport au total (par épisode, par saison et globalement).
-
-    Args:
-        df (pd.DataFrame): Le DataFrame contenant les scripts parsés.
-
-    Returns:
-        pd.DataFrame: Un DataFrame contenant les statistiques calculées.
-    """
     statsEp = df.groupby(['acteur','saison','episode'])['nombres de mots'].sum().reset_index().rename(columns={'nombres de mots':'nb_mots_acteur_ep'})
     totalEp = df.groupby(['saison','episode'])['nombres de mots'].sum().reset_index().rename(columns={'nombres de mots':'nb_mots_total_ep'})
     totalSaison = df.groupby('saison')['nombres de mots'].sum().reset_index().rename(columns={'nombres de mots':'nb_mots_total_saison'})
@@ -91,32 +48,25 @@ def _calcStats(df):
 
 
 def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLines=50, groupbyCols=None):
-    """Génère les fiches individuelles pour chaque acteur sous forme de fichiers CSV.
-
-    Calcule les mots-clés (via clustering), intègre les statistiques de parole,
-    trouve les interlocuteurs principaux et lie les graphes relationnels.
-
-    Args:
-        df (pd.DataFrame): Le DataFrame contenant les scripts parsés.
-        outputDir (str, optional): Le dossier où sauvegarder les fiches CSV. Defaults to "fiches_acteurs".
-        method (str, optional): La méthode d'extraction de mots-clés. Defaults to "tfidf".
-        minLines (int, optional): Le seuil minimal de répliques pour qualifier un acteur. Defaults to 50.
-        groupbyCols (list of str, optional): Les colonnes de regroupement (ex: par épisode). Defaults to None.
-
-    Returns:
-        list of str: Une liste des chemins vers les fichiers CSV générés.
-    """
     if groupbyCols is None:
         groupbyCols = ['saison', 'episode']
     os.makedirs(outputDir, exist_ok=True)
+    
     stats = _calcStats(df)
+    
+    ## NOUVEAU : Calcul des rôles pour toute la série UNE SEULE FOIS pour éviter de ralentir le script
+    print("Calcul de l'importance des rôles en cours...")
+    df_roles = role.calculer_importance_df(df)
+    
     acteurs = df['acteur'].value_counts()
     acteurs = acteurs[acteurs >= minLines].index.tolist()
     print(f"{len(acteurs)} acteur(s) qualifié(s) (>= {minLines} répliques)")
     fiches = []
+    
     for acteur in acteurs:
         if pd.isna(acteur) or not str(acteur).strip():
             continue
+            
         dfActeur = df[df['acteur'] == acteur].copy()
         colsDispo = [c for c in groupbyCols if c in dfActeur.columns]
         nbDocs = dfActeur[colsDispo].drop_duplicates().shape[0]
@@ -137,6 +87,8 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
             termes = np.array(vectorizer.get_feature_names_out())
             statsActeur = stats[stats['acteur'] == acteur]
             lignes = []
+            
+            # 1. Boucle sur les épisodes
             for idx, row in docs.iterrows():
                 saisonRow  = row.get('saison', df['saison'].iloc[0])
                 episodeRow = row.get('episode', df['episode'].iloc[0])
@@ -147,6 +99,14 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                     (statsActeur['saison'] == saisonRow) &
                     (statsActeur['episode'] == episodeRow)
                 ]
+                
+                ## NOUVEAU : Récupération du statut du rôle pour cet acteur, cette saison et cet épisode
+                role_info = df_roles[
+                    (df_roles['Acteur'] == acteur) & 
+                    (df_roles['Saison'] == saisonRow) & 
+                    (df_roles['Episode'] == episodeRow)
+                ]
+                statut_role = role_info['Statut Rôle'].iloc[0] if not role_info.empty else "Non défini"
                 
                 df_doc = df.copy()
                 for col in colsDispo:
@@ -164,6 +124,8 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                     'saison': saisonRow,
                     'episode': episodeRow,
                     'scene': sceneRow,
+                    ## NOUVEAU : Ajout de la colonne rôle
+                    'statut_role': statut_role,
                     'mots_cles': motsCles,
                     'sujet_serie (cluster)': row['nom_cluster'],
                     'nb_mots_acteur_ep': int(ligneStats['nb_mots_acteur_ep'].iloc[0]) if not ligneStats.empty else 0,
@@ -184,6 +146,7 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                         ligne_dict[f'sujetsLiaison{i}'] = ""
                 lignes.append(ligne_dict)
             
+            # 2. Boucle sur les bilans de saisons
             saisons_acteur = statsActeur['saison'].unique()
             for s in saisons_acteur:
                 ligne_s = statsActeur[statsActeur['saison'] == s].iloc[0]
@@ -200,6 +163,8 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                     'saison': s,
                     'episode': 'BILAN SAISON',
                     'scene': '',
+                    ## NOUVEAU : Vide pour le bilan saison, car le rôle est calculé par épisode
+                    'statut_role': '',
                     'mots_cles': '',
                     'sujet_serie (cluster)': '',
                     'nb_mots_acteur_ep': '',
@@ -220,6 +185,7 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                         ligne_dict[f'sujetsLiaison{i}'] = ""
                 lignes.append(ligne_dict)
             
+            # 3. Bilan global
             ligne_g = statsActeur.iloc[0]
             top_inter_g = ga.obtenirTopInterlocuteurs(df, acteur, top_n=3)
             
@@ -233,6 +199,8 @@ def genererFichesActeurs(df, outputDir="fiches_acteurs", method="tfidf", minLine
                     'saison': 'TOUTES',
                     'episode': 'BILAN GLOBAL',
                     'scene': '',
+                    ## NOUVEAU : Vide pour le bilan global
+                    'statut_role': '',
                     'mots_cles': '',
                     'sujet_serie (cluster)': '',
                     'nb_mots_acteur_ep': '',
