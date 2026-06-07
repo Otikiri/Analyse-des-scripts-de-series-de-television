@@ -54,8 +54,6 @@ class SearchEngine:
     # ------------------------------------------------------------------
 
 
-
-    
     def classify_question(self, question):
         """Détermine si une question est de type Q1 (avec entités) ou Q2 (sans entités).
 

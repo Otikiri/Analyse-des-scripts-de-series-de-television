@@ -65,73 +65,73 @@ warnings.filterwarnings('ignore')
 #============================================================================
 
 
-# df = dl.chargerDonnees("../datasets")
+df = dl.chargerDonnees("../datasets")
 
-# csv_path = "sujet_par_ep.csv"
-# if not os.path.exists(csv_path):
-#     print(f"Fichier '{csv_path}' introuvable. Génération en cours via KeyBERT (cela peut prendre quelques minutes)...")
-#     mt.construireSujetsEpKeyBERT(df)
-# sujet_df = pd.read_csv(csv_path)
+csv_path = "sujet_par_ep.csv"
+if not os.path.exists(csv_path):
+    print(f"Fichier '{csv_path}' introuvable. Génération en cours via KeyBERT (cela peut prendre quelques minutes)...")
+    mt.construireSujetsEpKeyBERT(df)
+sujet_df = pd.read_csv(csv_path)
 
-# sujet_df['saison'] = sujet_df['saison'].astype(str).str.zfill(2)
-# sujet_df['episode'] = sujet_df['episode'].astype(str).str.zfill(2)
+sujet_df['saison'] = sujet_df['saison'].astype(str).str.zfill(2)
+sujet_df['episode'] = sujet_df['episode'].astype(str).str.zfill(2)
 
-# q1_test = [
-#     "Monica and Chandler announce their engagement.", 
-#     "Rachel's first day at her new job with Mark.",
-#     "Joey learns to speak French for an audition.",
-#     "Phoebe wants to sing at Monica's wedding.", 
-#     "Ross is jealous of the gifts sent to Rachel's workplace."
-# ]
+q1_test = [
+    "Monica and Chandler announce their engagement.", 
+    "Rachel's first day at her new job with Mark.",
+    "Joey learns to speak French for an audition.",
+    "Phoebe wants to sing at Monica's wedding.", 
+    "Ross is jealous of the gifts sent to Rachel's workplace."
+]
 
-# q2_test = [
-#     "Drinking a gallon of milk in ten seconds.",
-#     "A poem about an empty vase written by a waiter.",
-#     "Playing a racing video game on PlayStation while dressing like a nineteen-year-old.",
-#     "Someone puts a turkey on their head to make people laugh.",
-#     "Eating a stolen cheesecake off the floor in the hallway."
-# ]
+q2_test = [
+    "Drinking a gallon of milk in ten seconds.",
+    "A poem about an empty vase written by a waiter.",
+    "Playing a racing video game on PlayStation while dressing like a nineteen-year-old.",
+    "Someone puts a turkey on their head to make people laugh.",
+    "Eating a stolen cheesecake off the floor in the hallway."
+]
 
-# from search_engine import SearchEngine
+from search_engine import SearchEngine
 
-# engine = SearchEngine("../datasets")
+engine = SearchEngine("../datasets")
 
-# results = []
-# for question in q1_test:
-#     # Classification and Search through the unified SearchEngine
-#     q_type, entities = engine.classify_question(question)
+results = []
+for question in q1_test:
+    # Classification and Search through the unified SearchEngine
+    q_type, entities = engine.classify_question(question)
     
-#     if q_type == "Q1":
-#         res_dicts = engine.search_q1(question)
-#     else:
-#         res_dicts = engine.search_q2(question)
+    if q_type == "Q1":
+        res_dicts = engine.search_q1(question)
+    else:
+        res_dicts = engine.search_q2(question)
         
-#     # Convert back to DataFrame format for the evaluation pipeline
-#     res_df = pd.DataFrame(res_dicts)
-#     res_df['question'] = question
+    # Convert back to DataFrame format for the evaluation pipeline
+    res_df = pd.DataFrame(res_dicts)
+    res_df['question'] = question
     
-#     results.append(mt.miseEnFormeRes(res_df, sujet_df))
+    results.append(mt.miseEnFormeRes(res_df, sujet_df))
 
-# for i in results: 
-#     print(i)
+for i in results: 
+    print(i)
     
 
-# q1_verite = {
-#     "Monica and Chandler announce their engagement." : ['07_01'], 
-#     "Rachel's first day at her new job with Mark.": ['03_12'],
-#     "Joey learns to speak French for an audition.": ['10_13'],
-#     "Phoebe wants to sing at Monica's wedding.": ['07_01'], 
-#     "Ross is jealous of the gifts sent to Rachel's workplace.": ['03_12']
-# }
+q1_verite = {
+    "Monica and Chandler announce their engagement." : ['07_01'], 
+    "Rachel's first day at her new job with Mark.": ['03_12'],
+    "Joey learns to speak French for an audition.": ['10_13'],
+    "Phoebe wants to sing at Monica's wedding.": ['07_01'], 
+    "Ross is jealous of the gifts sent to Rachel's workplace.": ['03_12']
+}
 
-# q2_verite = {
-#     "Drinking a gallon of milk in ten seconds.":['10_13'],
-#     "A poem about an empty vase written by a waiter.": ['03_12'],
-#     "Playing a racing video game on PlayStation while dressing like a nineteen-year-old.": ['07_01'],
-#     "Someone puts a turkey on their head to make people laugh.": ['05_08'],
-#     "Eating a stolen cheesecake off the floor in the hallway.": ['07_11']
-# }
+q2_verite = {
+    "Drinking a gallon of milk in ten seconds.":['10_13'],
+    "A poem about an empty vase written by a waiter.": ['03_12'],
+    "Playing a racing video game on PlayStation while dressing like a nineteen-year-old.": ['07_01'],
+    "Someone puts a turkey on their head to make people laugh.": ['05_08'],
+    "Eating a stolen cheesecake off the floor in the hallway.": ['07_11']
+}
 
-# results_df = pd.concat(results,ignore_index=True)
-# # # print(results_df[['question', 'rank', 'saison', 'episode']].head(15))
-# mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)
+results_df = pd.concat(results,ignore_index=True)
+# # print(results_df[['question', 'rank', 'saison', 'episode']].head(15))
+mrr = mt.calculerMRR(resultats_df=results_df,question_verite=q1_verite)

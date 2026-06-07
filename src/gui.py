@@ -153,13 +153,13 @@ class App(tk.Tk):
             self.results_text.insert(tk.END, "\n")
 
 
-# if __name__ == "__main__":
-#     DATA_PATH = "../datasets"
-#     print("Initialisation du moteur de recherche... (cela peut prendre un moment)")
-#     search_engine = SearchEngine(DATA_PATH)
-#     print("Lancement de l'interface graphique...")
-#     sujet_df = pd.read_csv("sujet_par_ep.csv")
-#     sujet_df['saison'] = sujet_df['saison'].astype(str).str.zfill(2)
-#     sujet_df['episode'] = sujet_df['episode'].astype(str).str.zfill(2)
-#     app = App(search_engine,sujet_df)
-#     app.mainloop()
+if __name__ == "__main__":
+    DATA_PATH = "../datasets"
+    print("Initialisation du moteur de recherche... (cela peut prendre un moment)")
+    search_engine = SearchEngine(DATA_PATH)
+    print("Lancement de l'interface graphique...")
+    sujet_df = pd.read_csv("sujet_par_ep.csv")
+    sujet_df['saison'] = sujet_df['saison'].astype(str).str.zfill(2)
+    sujet_df['episode'] = sujet_df['episode'].astype(str).str.zfill(2)
+    app = App(search_engine,sujet_df)
+    app.mainloop()
