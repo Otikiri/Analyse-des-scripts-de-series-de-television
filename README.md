@@ -32,7 +32,7 @@ Cette partie se concentre sur la compréhension des données textuelles. Les scr
 
 ---
 
-## Partie 2 : Moteur de Recherche d'Information
+## Partie 2 : Moteur de Recherche d'Information (Groupe 2)
 
 L'objectif est de permettre à un utilisateur de retrouver des scènes ou des épisodes en posant des questions en langage naturel.
 
