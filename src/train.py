@@ -1,9 +1,14 @@
 import re
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB, ComplementNB
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Chemins absolus basés sur l'emplacement du script (fonctionne peu importe d'où on le lance)
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(SRC_DIR)
 
 # =========================
 # CLEAN TEXT
@@ -17,7 +22,7 @@ def clean_text(text):
 # =========================
 # LOAD DATASET
 # =========================
-df = pd.read_csv("sentiment_analysis.csv")
+df = pd.read_csv(os.path.join(BASE_DIR, "datasets", "sentiment_analysis.csv"))
 
 # nettoyage sécurisé
 df["text"] = df["text"].apply(clean_text)
@@ -68,7 +73,7 @@ print(confusion_matrix(y_test, y_pred))
 # =========================
 # FRIENDS DATASET
 # =========================
-df_friends = pd.read_csv("../results/df.csv")
+df_friends = pd.read_csv(os.path.join(BASE_DIR, "results", "DEBUG", "df.csv"))
 
 # =========================
 # CLEAN FRIENDS TEXT (IMPORTANT)
@@ -136,19 +141,34 @@ positive_examples = df_friends[
     df_friends["sentiment_pred"] == "positive"
 ][["acteur", "texte nettoyer"]]
 
-print(positive_examples.sample(20))
-
 negative_examples = df_friends[
     df_friends["sentiment_pred"] == "negative"
 ][["acteur", "texte nettoyer"]]
-
-print(negative_examples.sample(20))
 
 neutral_examples = df_friends[
     df_friends["sentiment_pred"] == "neutral"
 ][["acteur", "texte nettoyer"]]
 
-print(neutral_examples.sample(20))
+# =========================
+# EXEMPLES PAR SENTIMENT
+# =========================
+print("\n" + "="*50)
+print("EXEMPLES DE PHRASES PAR SENTIMENT")
+print("="*50)
+
+if not positive_examples.empty:
+    row = positive_examples.sample(1).iloc[0]
+    print(f"\n[POSITIF]  ({row['acteur']}) : {row['texte nettoyer']}")
+
+if not negative_examples.empty:
+    row = negative_examples.sample(1).iloc[0]
+    print(f"\n[NÉGATIF]  ({row['acteur']}) : {row['texte nettoyer']}")
+
+if not neutral_examples.empty:
+    row = neutral_examples.sample(1).iloc[0]
+    print(f"\n[NEUTRE]   ({row['acteur']}) : {row['texte nettoyer']}")
+
+print("="*50)
 
 positive_examples.to_csv("positive_examples.csv", index=False)
 negative_examples.to_csv("negative_examples.csv", index=False)
